@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Manager
+  - Huesped
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Huesped
+  - Proyectil
+  - Damage
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Fondo
+    uniqueID: 1560903807
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Enfrente
+    uniqueID: 1717663213
+    locked: 0
+  - name: UI
+    uniqueID: 3004985823
+    locked: 0
