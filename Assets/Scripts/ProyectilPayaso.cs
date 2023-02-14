@@ -15,7 +15,7 @@ public class ProyectilPayaso : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        timer = Random.Range(5f, 12f);
+        timer = Random.Range(1f, 8f);
         Destroy(gameObject, 4);
     }
 

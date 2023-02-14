@@ -27,4 +27,10 @@ public class MainMenu : MonoBehaviour
             SceneManager.LoadScene("Recepcion", LoadSceneMode.Single);
         }
     }
+
+    public void NewGame()
+    {
+        manager.Restart();
+        SceneManager.LoadScene("Cinematica", LoadSceneMode.Single);
+    }
 }

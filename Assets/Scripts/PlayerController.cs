@@ -10,6 +10,10 @@ public class PlayerController : MonoBehaviour
 
     public Rigidbody2D rb;
     public float speed;
+    public float iceSpeed;
+    float impulsoSpeed = 0.003f;
+    float impulsoMax = 2;
+    float impulsoMin = -2;
     public float jumpForce;
 
     bool isFacingRight = true;
@@ -18,11 +22,14 @@ public class PlayerController : MonoBehaviour
     public GameObject groundCheck, up, down;
     public LayerMask groundLayer;
 
+    public Vector2 velocidadRebote;
     public bool canMove;
 
     float currentGravity;
     bool normalGravity = true;
-    public Vector2 velocidadRebote;
+
+    //habitaciones
+    public bool esquimal, marciano;
 
     //Android Buttons
     bool isLeft = false;
@@ -37,28 +44,47 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (canMove && !android)
+        {
+            if (Input.GetAxisRaw("Horizontal") == 1)
+            {
+                isRight = true;
+            }
+            if (Input.GetAxisRaw("Horizontal") == -1)
+            {
+                isLeft = true;
+            }
+            if (Input.GetAxisRaw("Horizontal") == 0)
+            {
+                isRight = false;
+                isLeft = false;
+            }
+
+            if (Input.GetKeyDown("space"))
+            {
+                isJump = true;
+            }
+
+        }       
+        //Android
         if (canMove)
         {
-            horizontal = Input.GetAxisRaw("Horizontal");
-            anim.SetFloat("horizontal", horizontal);
-        }       
+            if (isJump && marciano)
+            {
+                Debug.Log("Cambio");
+                //GravedadAlReves();
+            }
 
-        if (Input.GetKeyDown("space") && IsGrounded() && canMove)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            anim.Play("PlayerJump");
-        }
-        //Android
-        if (android && canMove)
-        {
             if (isLeft)
             {
                 horizontal = -1;
+                iceSpeed = -1;
                 anim.SetFloat("horizontal", horizontal);
             }
             if (isRight)
             {
                 horizontal = 1;
+                iceSpeed = 1;
                 anim.SetFloat("horizontal", horizontal);
             }
             if (!isLeft && !isRight)
@@ -71,13 +97,59 @@ public class PlayerController : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                 anim.Play("PlayerJump");
                 isJump = false;
+                if (marciano)
+                {
+                    GravedadAlReves();
+                }             
             }
         }
         Flip();
+
+        //Esquimal
+        if (esquimal)
+        {
+            if (isRight)
+            {
+                iceSpeed += impulsoSpeed;
+                if(iceSpeed > impulsoMax)
+                {
+                    iceSpeed = impulsoMax;
+                }
+            }
+            if (isLeft)
+            {
+                iceSpeed -= impulsoSpeed;
+                if (iceSpeed < impulsoMin)
+                {
+                    iceSpeed = impulsoMin;
+                }
+            }
+
+            if (iceSpeed > 0)
+            {
+                iceSpeed -= impulsoSpeed;
+                if (iceSpeed < 0)
+                {
+                    iceSpeed = 0;
+                }
+            }
+            if (iceSpeed < 0)
+            {
+                iceSpeed += impulsoSpeed;
+                if (iceSpeed > 0)
+                {
+                    iceSpeed = 0;
+                }
+            }
+        }        
     }
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        if (esquimal)
+        {
+            rb.AddForce(transform.right * iceSpeed, ForceMode2D.Impulse);
+        }       
     }
     private void Flip()
     {
@@ -91,7 +163,7 @@ public class PlayerController : MonoBehaviour
     }
     private bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.transform.position, 0.2f, groundLayer);
+        return Physics2D.OverlapCircle(groundCheck.transform.position, 0.1f, groundLayer);
     }
 
     public void GravedadAlReves()
@@ -114,6 +186,14 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+    public void RestablecerGravedadAlReves()
+    {
+        if (!normalGravity)
+        {
+            GravedadAlReves();
+        }
+    }
+
     public void CambioDeGravedad(float gravedad)
     {
         rb.gravityScale = gravedad;

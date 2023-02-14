@@ -33,13 +33,11 @@ public class Recepcion : MonoBehaviour
 
         textNoche.text = ("Noche: " + manager.noche);
 
-        //Guardar Juego
-        //manager.Guardar();
-
         AsignarReputacion();
         generadorHuespeds.GenerateNewGuest();
         ResetearMuertes();
-        manager.Guardar();
+        //Guardar Juego
+        //manager.Guardar();
     }
     public void ResetearMuertes()
     {

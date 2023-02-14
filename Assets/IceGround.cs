@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GravedadAlReves : MonoBehaviour
+public class IceGround : MonoBehaviour
 {
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerController>().marciano = true;
+            collision.GetComponent<PlayerController>().esquimal = true;
         }
     }
 
@@ -17,8 +16,7 @@ public class GravedadAlReves : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerController>().marciano = false;
-            collision.SendMessage("RestablecerGravedadAlReves");
+            collision.GetComponent<PlayerController>().esquimal = false;
         }
     }
 }
