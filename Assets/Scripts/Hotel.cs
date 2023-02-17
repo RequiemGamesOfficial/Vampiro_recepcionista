@@ -19,7 +19,7 @@ public class Hotel : MonoBehaviour
     public GameObject piso3Construccion, piso3Azotea, piso3, piso3Compra;
     public GameObject piso4Construccion, piso4Azotea, piso4, piso4Compra;
     public GameObject numeroHPiso3, numeroHPiso4;
-    public GameObject bolsaBasura;
+    public GameObject basura1, basura2, basura3, basura4;
 
     //Habitaciones
     public string habitacionActual;
@@ -35,13 +35,15 @@ public class Hotel : MonoBehaviour
     public int presupuesto;
 
     public AudioSource audioSource;
+    public Text textNoche;
 
     private void Start()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
+        textNoche.text = (":" + manager.noche);
 
         //ActivarPuertas/pisos/adornos y DesactivarBasura
-        if(manager.h4 >= 1)
+        if (manager.h4 >= 1)
         {
             tablasH4.SetActive(false);
             puerta201.SetActive(true);
@@ -89,13 +91,24 @@ public class Hotel : MonoBehaviour
             puerta403.SetActive(true);
         }
 
-
         if (manager.basura1 >= 1)
         {
-            bolsaBasura.SetActive(false);
+            basura1.SetActive(false);
+        }
+        if (manager.basura2 >= 1)
+        {
+            basura2.SetActive(false);
+        }
+        if (manager.basura3 >= 1)
+        {
+            basura3.SetActive(false);
+        }
+        if (manager.basura4 >= 1)
+        {
+            basura4.SetActive(false);
         }
 
-        if(manager.piso3 >= 1)
+        if (manager.piso3 >= 1)
         {
             piso3Compra.SetActive(false);
             if(manager.piso3 >= 2)
@@ -146,6 +159,39 @@ public class Hotel : MonoBehaviour
         {
             puerta201.GetComponent<CambioDeLugar>().nuevoLugar = manager.habitacion04.huespedName;
         }
+        //
+        if (manager.habitacion05 != null)
+        {
+            puerta202.GetComponent<CambioDeLugar>().nuevoLugar = manager.habitacion05.huespedName;
+        }
+        if (manager.habitacion06 != null)
+        {
+            puerta203.GetComponent<CambioDeLugar>().nuevoLugar = manager.habitacion06.huespedName;
+        }
+        if (manager.habitacion07 != null)
+        {
+            puerta301.GetComponent<CambioDeLugar>().nuevoLugar = manager.habitacion07.huespedName;
+        }
+        if (manager.habitacion08 != null)
+        {
+            puerta302.GetComponent<CambioDeLugar>().nuevoLugar = manager.habitacion08.huespedName;
+        }
+        if (manager.habitacion09 != null)
+        {
+            puerta303.GetComponent<CambioDeLugar>().nuevoLugar = manager.habitacion09.huespedName;
+        }
+        if (manager.habitacion10 != null)
+        {
+            puerta401.GetComponent<CambioDeLugar>().nuevoLugar = manager.habitacion10.huespedName;
+        }
+        if (manager.habitacion11 != null)
+        {
+            puerta402.GetComponent<CambioDeLugar>().nuevoLugar = manager.habitacion11.huespedName;
+        }
+        if (manager.habitacion12 != null)
+        {
+            puerta403.GetComponent<CambioDeLugar>().nuevoLugar = manager.habitacion12.huespedName;
+        }
 
         //Mejora Hotel
         presupuesto = manager.money;
@@ -172,6 +218,11 @@ public class Hotel : MonoBehaviour
     public void Piso4()
     {
         player.transform.position = new Vector3(0, 20.006f, 0);
+    }
+
+    public void TeleportTo(Vector3 place)
+    {
+        player.transform.position = place;
     }
 
     public void HabitacionHombre(int habitacion)

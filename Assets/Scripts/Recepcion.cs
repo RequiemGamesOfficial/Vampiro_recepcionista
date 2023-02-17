@@ -31,7 +31,7 @@ public class Recepcion : MonoBehaviour
         manager.ResetearHabitaciones();
         habitacionesDisponibles = manager.habitaciones;
 
-        textNoche.text = ("Noche: " + manager.noche);
+        textNoche.text = (":"+ manager.noche);
 
         AsignarReputacion();
         generadorHuespeds.GenerateNewGuest();

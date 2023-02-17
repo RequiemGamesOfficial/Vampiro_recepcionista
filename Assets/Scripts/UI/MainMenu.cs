@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
         manager.Cargar();
-        tMPro.text = "Noche:" + manager.noche;
+        tMPro.text = ":" + manager.noche;
     }
 
     public void ChangeScene()

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-String-Tables-Spanish (es)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-String-Tables-Spanish (es)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b4fdaacb3cd4f9a489274bb5684d7198
+  m_SerializeEntries:
+  - m_GUID: 29306d58e5e200e4ba51ade9787118d4
+    m_Address: MenuUI_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    - Preload
+  - m_GUID: 4cabfced9c6ce83409e05515dcb528d0
+    m_Address: Recepcion_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    - Preload
+  - m_GUID: 4e714c4bb594c104bb84e62cfd9f447f
+    m_Address: Hotel_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    - Preload
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: d06577281ce312748b50a3d478ce7180, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 555a163e964fd844faae9e3721d3b3f4, type: 2}
+    - {fileID: 11400000, guid: 5d0443e119a27f742b47ed651154e40f, type: 2}
