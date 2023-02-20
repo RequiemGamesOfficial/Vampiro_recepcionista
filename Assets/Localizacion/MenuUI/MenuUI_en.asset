@@ -74,6 +74,10 @@ MonoBehaviour:
     m_Localized: Menu
     m_Metadata:
       m_Items: []
+  - m_Id: 1130228308312064
+    m_Localized: Post processing
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

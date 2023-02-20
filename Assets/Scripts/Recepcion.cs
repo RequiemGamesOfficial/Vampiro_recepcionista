@@ -10,6 +10,7 @@ public class Recepcion : MonoBehaviour
     public GameObject panelHuesped, yesButton, nextButton, tablaHabitaciones;
     public GameObject huesped;
     public Text huespedText;
+    public Image huespedImage;
     public Text textNoche;
 
     public HuespedData currentHuespedData;
@@ -137,18 +138,19 @@ public class Recepcion : MonoBehaviour
             }          
         }
     }
-    public void ActualizarTablaHabitaciones()
-    {
-        if(manager.habitaciones >= 4)
-        {
-            if (manager.habitacion04 != null)
-            {
-                llave4.SetActive(false);
-                telaraña4.SetActive(true);
-            }
-        }      
-    }
-
+    
+    //AgregarHabitaciones
+    //public void ActualizarTablaHabitaciones()
+    //{
+    //    if(manager.habitaciones >= 4)
+    //    {
+    //        if (manager.habitacion04 != null)
+    //        {
+    //            llave4.SetActive(false);
+    //            telaraña4.SetActive(true);
+    //        }
+    //    }      
+    //}
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -170,6 +172,7 @@ public class Recepcion : MonoBehaviour
         currentHuespedData = huespedData;
         huesped = huespedObject;
         huespedText.text = huespedData.huespedName;
+        huespedImage.sprite = huespedData.sprite;
         panelHuesped.SetActive(true);
         if(habitacionesDisponibles <= 0)
         {

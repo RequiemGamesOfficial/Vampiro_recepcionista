@@ -23,7 +23,8 @@ public class Hotel : MonoBehaviour
 
     //Habitaciones
     public string habitacionActual;
-    public GameObject activadorHombre, activadorMujer, activadorPayaso, activadorPadrecito, activadorDrogo, activadorMusico,activadorMago;
+    public GameObject activadorHombre, activadorMujer, activadorPayaso, activadorPadrecito, activadorDrogo, activadorMusico, activadorMago, activadorTesla;
+    public GameObject activadorSamurai,activadorExplorer,activadorSkater,activadorEskimo,activadorCastaway,activadorAlien, activadorAstronaut, activadorBlind;
     public Stats stats;
 
     public ChangeScene changeScene;
@@ -603,7 +604,493 @@ public class Hotel : MonoBehaviour
         player.transform.position = activadorMusico.transform.position;
         cameraObject.transform.position = player.transform.position;
     }
+    //
+    public void HabitacionAstronaut(int habitacion)
+    {
+        if (habitacion == 1 && manager.habitacion01Dead)
+        {
+            activadorAstronaut.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 2 && manager.habitacion02Dead)
+        {
+            activadorAstronaut.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 3 && manager.habitacion03Dead)
+        {
+            activadorAstronaut.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 4 && manager.habitacion04Dead)
+        {
+            activadorAstronaut.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 5 && manager.habitacion05Dead)
+        {
+            activadorAstronaut.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 6 && manager.habitacion06Dead)
+        {
+            activadorAstronaut.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 7 && manager.habitacion07Dead)
+        {
+            activadorAstronaut.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 8 && manager.habitacion08Dead)
+        {
+            activadorAstronaut.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 9 && manager.habitacion09Dead)
+        {
+            activadorAstronaut.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 10 && manager.habitacion10Dead)
+        {
+            activadorAstronaut.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 11 && manager.habitacion11Dead)
+        {
+            activadorAstronaut.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 12 && manager.habitacion12Dead)
+        {
+            activadorAstronaut.SendMessage("HuespedMuerto");
+        }
 
+        player.transform.position = activadorAstronaut.transform.position;
+        cameraObject.transform.position = player.transform.position;
+    }
+    public void HabitacionBlind(int habitacion)
+    {
+        if (habitacion == 1 && manager.habitacion01Dead)
+        {
+            activadorBlind.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 2 && manager.habitacion02Dead)
+        {
+            activadorBlind.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 3 && manager.habitacion03Dead)
+        {
+            activadorBlind.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 4 && manager.habitacion04Dead)
+        {
+            activadorBlind.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 5 && manager.habitacion05Dead)
+        {
+            activadorBlind.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 6 && manager.habitacion06Dead)
+        {
+            activadorBlind.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 7 && manager.habitacion07Dead)
+        {
+            activadorBlind.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 8 && manager.habitacion08Dead)
+        {
+            activadorBlind.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 9 && manager.habitacion09Dead)
+        {
+            activadorBlind.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 10 && manager.habitacion10Dead)
+        {
+            activadorBlind.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 11 && manager.habitacion11Dead)
+        {
+            activadorBlind.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 12 && manager.habitacion12Dead)
+        {
+            activadorBlind.SendMessage("HuespedMuerto");
+        }
+
+        player.transform.position = activadorBlind.transform.position;
+        cameraObject.transform.position = player.transform.position;
+    }
+    public void HabitacionEskimo(int habitacion)
+    {
+        if (habitacion == 1 && manager.habitacion01Dead)
+        {
+            activadorEskimo.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 2 && manager.habitacion02Dead)
+        {
+            activadorEskimo.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 3 && manager.habitacion03Dead)
+        {
+            activadorEskimo.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 4 && manager.habitacion04Dead)
+        {
+            activadorEskimo.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 5 && manager.habitacion05Dead)
+        {
+            activadorEskimo.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 6 && manager.habitacion06Dead)
+        {
+            activadorEskimo.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 7 && manager.habitacion07Dead)
+        {
+            activadorEskimo.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 8 && manager.habitacion08Dead)
+        {
+            activadorEskimo.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 9 && manager.habitacion09Dead)
+        {
+            activadorEskimo.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 10 && manager.habitacion10Dead)
+        {
+            activadorEskimo.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 11 && manager.habitacion11Dead)
+        {
+            activadorEskimo.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 12 && manager.habitacion12Dead)
+        {
+            activadorEskimo.SendMessage("HuespedMuerto");
+        }
+
+        player.transform.position = activadorEskimo.transform.position;
+        cameraObject.transform.position = player.transform.position;
+    }
+    public void HabitacionExplorer(int habitacion)
+    {
+        if (habitacion == 1 && manager.habitacion01Dead)
+        {
+            activadorExplorer.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 2 && manager.habitacion02Dead)
+        {
+            activadorExplorer.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 3 && manager.habitacion03Dead)
+        {
+            activadorExplorer.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 4 && manager.habitacion04Dead)
+        {
+            activadorExplorer.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 5 && manager.habitacion05Dead)
+        {
+            activadorExplorer.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 6 && manager.habitacion06Dead)
+        {
+            activadorExplorer.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 7 && manager.habitacion07Dead)
+        {
+            activadorExplorer.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 8 && manager.habitacion08Dead)
+        {
+            activadorExplorer.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 9 && manager.habitacion09Dead)
+        {
+            activadorExplorer.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 10 && manager.habitacion10Dead)
+        {
+            activadorExplorer.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 11 && manager.habitacion11Dead)
+        {
+            activadorExplorer.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 12 && manager.habitacion12Dead)
+        {
+            activadorExplorer.SendMessage("HuespedMuerto");
+        }
+
+        player.transform.position = activadorExplorer.transform.position;
+        cameraObject.transform.position = player.transform.position;
+    }
+    public void HabitacionAlien(int habitacion)
+    {
+        if (habitacion == 1 && manager.habitacion01Dead)
+        {
+            activadorAlien.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 2 && manager.habitacion02Dead)
+        {
+            activadorAlien.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 3 && manager.habitacion03Dead)
+        {
+            activadorAlien.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 4 && manager.habitacion04Dead)
+        {
+            activadorAlien.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 5 && manager.habitacion05Dead)
+        {
+            activadorAlien.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 6 && manager.habitacion06Dead)
+        {
+            activadorAlien.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 7 && manager.habitacion07Dead)
+        {
+            activadorAlien.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 8 && manager.habitacion08Dead)
+        {
+            activadorAlien.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 9 && manager.habitacion09Dead)
+        {
+            activadorAlien.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 10 && manager.habitacion10Dead)
+        {
+            activadorAlien.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 11 && manager.habitacion11Dead)
+        {
+            activadorAlien.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 12 && manager.habitacion12Dead)
+        {
+            activadorAlien.SendMessage("HuespedMuerto");
+        }
+
+        player.transform.position = activadorAlien.transform.position;
+        cameraObject.transform.position = player.transform.position;
+    }
+    public void HabitacionCastaway(int habitacion)
+    {
+        if (habitacion == 1 && manager.habitacion01Dead)
+        {
+            activadorCastaway.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 2 && manager.habitacion02Dead)
+        {
+            activadorCastaway.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 3 && manager.habitacion03Dead)
+        {
+            activadorCastaway.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 4 && manager.habitacion04Dead)
+        {
+            activadorCastaway.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 5 && manager.habitacion05Dead)
+        {
+            activadorCastaway.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 6 && manager.habitacion06Dead)
+        {
+            activadorCastaway.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 7 && manager.habitacion07Dead)
+        {
+            activadorCastaway.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 8 && manager.habitacion08Dead)
+        {
+            activadorCastaway.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 9 && manager.habitacion09Dead)
+        {
+            activadorCastaway.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 10 && manager.habitacion10Dead)
+        {
+            activadorCastaway.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 11 && manager.habitacion11Dead)
+        {
+            activadorCastaway.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 12 && manager.habitacion12Dead)
+        {
+            activadorCastaway.SendMessage("HuespedMuerto");
+        }
+
+        player.transform.position = activadorCastaway.transform.position;
+        cameraObject.transform.position = player.transform.position;
+    }
+    public void HabitacionSkater(int habitacion)
+    {
+        if (habitacion == 1 && manager.habitacion01Dead)
+        {
+            activadorSkater.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 2 && manager.habitacion02Dead)
+        {
+            activadorSkater.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 3 && manager.habitacion03Dead)
+        {
+            activadorSkater.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 4 && manager.habitacion04Dead)
+        {
+            activadorSkater.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 5 && manager.habitacion05Dead)
+        {
+            activadorSkater.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 6 && manager.habitacion06Dead)
+        {
+            activadorSkater.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 7 && manager.habitacion07Dead)
+        {
+            activadorSkater.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 8 && manager.habitacion08Dead)
+        {
+            activadorSkater.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 9 && manager.habitacion09Dead)
+        {
+            activadorSkater.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 10 && manager.habitacion10Dead)
+        {
+            activadorSkater.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 11 && manager.habitacion11Dead)
+        {
+            activadorSkater.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 12 && manager.habitacion12Dead)
+        {
+            activadorSkater.SendMessage("HuespedMuerto");
+        }
+
+        player.transform.position = activadorSkater.transform.position;
+        cameraObject.transform.position = player.transform.position;
+    }
+    public void HabitacionSamurai(int habitacion)
+    {
+        if (habitacion == 1 && manager.habitacion01Dead)
+        {
+            activadorSamurai.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 2 && manager.habitacion02Dead)
+        {
+            activadorSamurai.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 3 && manager.habitacion03Dead)
+        {
+            activadorSamurai.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 4 && manager.habitacion04Dead)
+        {
+            activadorSamurai.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 5 && manager.habitacion05Dead)
+        {
+            activadorSamurai.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 6 && manager.habitacion06Dead)
+        {
+            activadorSamurai.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 7 && manager.habitacion07Dead)
+        {
+            activadorSamurai.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 8 && manager.habitacion08Dead)
+        {
+            activadorSamurai.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 9 && manager.habitacion09Dead)
+        {
+            activadorSamurai.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 10 && manager.habitacion10Dead)
+        {
+            activadorSamurai.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 11 && manager.habitacion11Dead)
+        {
+            activadorSamurai.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 12 && manager.habitacion12Dead)
+        {
+            activadorSamurai.SendMessage("HuespedMuerto");
+        }
+
+        player.transform.position = activadorSamurai.transform.position;
+        cameraObject.transform.position = player.transform.position;
+    }
+    public void HabitacionTesla(int habitacion)
+    {
+        if (habitacion == 1 && manager.habitacion01Dead)
+        {
+            activadorTesla.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 2 && manager.habitacion02Dead)
+        {
+            activadorTesla.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 3 && manager.habitacion03Dead)
+        {
+            activadorTesla.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 4 && manager.habitacion04Dead)
+        {
+            activadorTesla.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 5 && manager.habitacion05Dead)
+        {
+            activadorTesla.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 6 && manager.habitacion06Dead)
+        {
+            activadorTesla.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 7 && manager.habitacion07Dead)
+        {
+            activadorTesla.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 8 && manager.habitacion08Dead)
+        {
+            activadorTesla.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 9 && manager.habitacion09Dead)
+        {
+            activadorTesla.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 10 && manager.habitacion10Dead)
+        {
+            activadorTesla.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 11 && manager.habitacion11Dead)
+        {
+            activadorTesla.SendMessage("HuespedMuerto");
+        }
+        if (habitacion == 12 && manager.habitacion12Dead)
+        {
+            activadorTesla.SendMessage("HuespedMuerto");
+        }
+
+        player.transform.position = activadorTesla.transform.position;
+        cameraObject.transform.position = player.transform.position;
+    }
     //Actualizar muertes
     public void AsesinatoHabitacion()
     {
@@ -666,12 +1153,14 @@ public class Hotel : MonoBehaviour
             {
                 habitacion1UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion01.huespedName;
                 habitacion1UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion01.money;
+                habitacion1UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion01.sprite;
                 manager.money += manager.habitacion01.money;
             }
             else
             {
                 habitacion1UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion01.huespedName;
-                habitacion1UI.transform.GetChild(1).GetComponent<Text>().text = "Reputacion " + manager.habitacion01.reputation;
+                habitacion1UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion01.reputation;
+                habitacion1UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion01.sprite;
                 manager.reputation += manager.habitacion01.reputation;
             }            
         }
@@ -681,12 +1170,14 @@ public class Hotel : MonoBehaviour
             {
                 habitacion2UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion02.huespedName;
                 habitacion2UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion02.money;
+                habitacion2UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion02.sprite;
                 manager.money += manager.habitacion02.money;
             }
             else
             {
                 habitacion2UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion02.huespedName;
-                habitacion2UI.transform.GetChild(1).GetComponent<Text>().text = "Reputacion " + manager.habitacion02.reputation;
+                habitacion2UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion02.reputation;
+                habitacion2UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion02.sprite;
                 manager.reputation += manager.habitacion02.reputation;
             }
         }
@@ -696,12 +1187,14 @@ public class Hotel : MonoBehaviour
             {
                 habitacion3UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion03.huespedName;
                 habitacion3UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion03.money;
+                habitacion3UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion03.sprite;
                 manager.money += manager.habitacion03.money;
             }
             else
             {
                 habitacion3UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion03.huespedName;
-                habitacion3UI.transform.GetChild(1).GetComponent<Text>().text = "Reputacion " + manager.habitacion03.reputation;
+                habitacion3UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion03.reputation;
+                habitacion3UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion03.sprite;
                 manager.reputation += manager.habitacion03.reputation;
             }
         }
@@ -711,12 +1204,14 @@ public class Hotel : MonoBehaviour
             {
                 habitacion4UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion04.huespedName;
                 habitacion4UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion04.money;
+                habitacion4UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion04.sprite;
                 manager.money += manager.habitacion04.money;
             }
             else
             {
                 habitacion4UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion04.huespedName;
-                habitacion4UI.transform.GetChild(1).GetComponent<Text>().text = "Reputacion " + manager.habitacion04.reputation;
+                habitacion4UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion04.reputation;
+                habitacion4UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion04.sprite;
                 manager.reputation += manager.habitacion04.reputation;
             }
         }
@@ -726,12 +1221,14 @@ public class Hotel : MonoBehaviour
             {
                 habitacion5UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion05.huespedName;
                 habitacion5UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion05.money;
+                habitacion5UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion05.sprite;
                 manager.money += manager.habitacion05.money;
             }
             else
             {
                 habitacion5UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion05.huespedName;
-                habitacion5UI.transform.GetChild(1).GetComponent<Text>().text = "Reputacion " + manager.habitacion05.reputation;
+                habitacion5UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion05.reputation;
+                habitacion5UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion05.sprite;
                 manager.reputation += manager.habitacion05.reputation;
             }
         }
@@ -741,12 +1238,14 @@ public class Hotel : MonoBehaviour
             {
                 habitacion6UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion06.huespedName;
                 habitacion6UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion06.money;
+                habitacion6UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion06.sprite;
                 manager.money += manager.habitacion06.money;
             }
             else
             {
                 habitacion6UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion06.huespedName;
-                habitacion6UI.transform.GetChild(1).GetComponent<Text>().text = "Reputacion " + manager.habitacion06.reputation;
+                habitacion6UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion06.reputation;
+                habitacion6UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion06.sprite;
                 manager.reputation += manager.habitacion06.reputation;
             }
         }
@@ -756,12 +1255,14 @@ public class Hotel : MonoBehaviour
             {
                 habitacion7UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion07.huespedName;
                 habitacion7UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion07.money;
+                habitacion7UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion07.sprite;
                 manager.money += manager.habitacion07.money;
             }
             else
             {
                 habitacion7UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion07.huespedName;
-                habitacion7UI.transform.GetChild(1).GetComponent<Text>().text = "Reputacion " + manager.habitacion07.reputation;
+                habitacion7UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion07.reputation;
+                habitacion7UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion07.sprite;
                 manager.reputation += manager.habitacion07.reputation;
             }
         }
@@ -771,12 +1272,14 @@ public class Hotel : MonoBehaviour
             {
                 habitacion8UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion08.huespedName;
                 habitacion8UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion08.money;
+                habitacion8UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion08.sprite;
                 manager.money += manager.habitacion08.money;
             }
             else
             {
                 habitacion8UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion08.huespedName;
-                habitacion8UI.transform.GetChild(1).GetComponent<Text>().text = "Reputacion " + manager.habitacion08.reputation;
+                habitacion8UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion08.reputation;
+                habitacion8UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion08.sprite;
                 manager.reputation += manager.habitacion08.reputation;
             }
         }
@@ -786,12 +1289,14 @@ public class Hotel : MonoBehaviour
             {
                 habitacion9UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion09.huespedName;
                 habitacion9UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion09.money;
+                habitacion9UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion09.sprite;
                 manager.money += manager.habitacion09.money;
             }
             else
             {
                 habitacion9UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion09.huespedName;
-                habitacion9UI.transform.GetChild(1).GetComponent<Text>().text = "Reputacion " + manager.habitacion09.reputation;
+                habitacion9UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion09.reputation;
+                habitacion9UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion09.sprite;
                 manager.reputation += manager.habitacion09.reputation;
             }
         }
@@ -801,12 +1306,14 @@ public class Hotel : MonoBehaviour
             {
                 habitacion10UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion10.huespedName;
                 habitacion10UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion10.money;
+                habitacion10UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion10.sprite;
                 manager.money += manager.habitacion10.money;
             }
             else
             {
                 habitacion10UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion10.huespedName;
-                habitacion10UI.transform.GetChild(1).GetComponent<Text>().text = "Reputacion " + manager.habitacion10.reputation;
+                habitacion10UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion10.reputation;
+                habitacion10UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion10.sprite;
                 manager.reputation += manager.habitacion10.reputation;
             }
         }
@@ -816,12 +1323,14 @@ public class Hotel : MonoBehaviour
             {
                 habitacion11UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion11.huespedName;
                 habitacion11UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion11.money;
+                habitacion11UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion11.sprite;
                 manager.money += manager.habitacion11.money;
             }
             else
             {
                 habitacion11UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion11.huespedName;
-                habitacion11UI.transform.GetChild(1).GetComponent<Text>().text = "Reputacion " + manager.habitacion11.reputation;
+                habitacion11UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion11.reputation;
+                habitacion11UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion11.sprite;
                 manager.reputation += manager.habitacion11.reputation;
             }
         }

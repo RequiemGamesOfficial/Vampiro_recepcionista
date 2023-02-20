@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Manager
   - Huesped
+  - Wall
   layers:
   - Default
   - TransparentFX

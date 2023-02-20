@@ -43,33 +43,70 @@ public class CambioDeLugar : MonoBehaviour
         }
 
         //Habitaciones
-        if (nuevoLugar == "Hombre")
+        if (nuevoLugar == "Man")
         {
             hotel.HabitacionHombre(numeroHabitacion);
         }
-        if (nuevoLugar == "Mujer")
+        if (nuevoLugar == "Women")
         {
             hotel.HabitacionMujer(numeroHabitacion);
         }
-        if (nuevoLugar == "Payaso")
+        if (nuevoLugar == "Clown")
         {
             hotel.HabitacionPayaso(numeroHabitacion);
         }
-        if (nuevoLugar == "Padrecito")
+        if (nuevoLugar == "Priest")
         {
             hotel.HabitacionPadrecito(numeroHabitacion);
         }
-        if (nuevoLugar == "Drogo")
+        if (nuevoLugar == "Junkie")
         {
             hotel.HabitacionDrogo(numeroHabitacion);
         }
-        if (nuevoLugar == "Mago")
+        if (nuevoLugar == "Magician")
         {
             hotel.HabitacionMago(numeroHabitacion);
         }
-        if (nuevoLugar == "Musico")
+        if (nuevoLugar == "Musician")
         {
             hotel.HabitacionMusico(numeroHabitacion);
+        }
+        //
+        if (nuevoLugar == "Astronaut")
+        {
+            hotel.HabitacionAstronaut(numeroHabitacion);
+        }
+        if (nuevoLugar == "Blind")
+        {
+            hotel.HabitacionBlind(numeroHabitacion);
+        }
+        if (nuevoLugar == "Eskimo")
+        {
+            hotel.HabitacionEskimo(numeroHabitacion);
+        }
+        if (nuevoLugar == "Explorer")
+        {
+            hotel.HabitacionExplorer(numeroHabitacion);
+        }
+        if (nuevoLugar == "Alien")
+        {
+            hotel.HabitacionAlien(numeroHabitacion);
+        }
+        if (nuevoLugar == "Castaway")
+        {
+            hotel.HabitacionCastaway(numeroHabitacion);
+        }
+        if (nuevoLugar == "Skater")
+        {
+            hotel.HabitacionSkater(numeroHabitacion);
+        }
+        if (nuevoLugar == "Samurai")
+        {
+            hotel.HabitacionSamurai(numeroHabitacion);
+        }
+        if (nuevoLugar == "Tesla")
+        {
+            hotel.HabitacionTesla(numeroHabitacion);
         }
 
         hotel.FadeToBlack();

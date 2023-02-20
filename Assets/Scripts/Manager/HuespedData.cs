@@ -11,7 +11,8 @@ public class HuespedData : ScriptableObject
     public int reputation;
     public int money;
     //public bool dead;
-    public Image icon;
+    //public Image icon;
+    public Sprite sprite;
 
     public string HuespedName { get { return huespedName; } }
     public int Blood { get { return blood; } }
