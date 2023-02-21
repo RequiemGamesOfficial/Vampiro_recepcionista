@@ -9,6 +9,14 @@ public class CalidadGrafica : MonoBehaviour
 
     public GameObject globalVolume;
 
+    private void Start()
+    {
+        if(toggle != true)
+        {
+            globalVolume.SetActive(false);
+        }
+    }
+
     public void ActivarPostPrecessing(bool postPrecessing)
     {
         Debug.Log("Activar");
