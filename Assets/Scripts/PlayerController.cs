@@ -206,8 +206,7 @@ public class PlayerController : MonoBehaviour
     }
 
     public void Rebote(Vector2 puntoGolpe)
-    {
-        anim.Play("PlayerDamage");
+    {       
         rb.velocity = new Vector2(-velocidadRebote.x * puntoGolpe.x, velocidadRebote.y);
     }
 

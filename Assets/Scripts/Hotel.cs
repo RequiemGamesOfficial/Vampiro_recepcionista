@@ -206,7 +206,7 @@ public class Hotel : MonoBehaviour
     //habitaciones Cambio de lugar del jugador y la camara A HABITACION CORRESPONDIENTE
     public void Piso1()
     {
-        player.transform.position = new Vector3(0, -1.153f, 0);
+        player.transform.position = new Vector3(0, 0f, 0);
     }
     public void Piso2()
     {

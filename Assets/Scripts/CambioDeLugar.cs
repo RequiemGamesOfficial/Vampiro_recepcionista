@@ -15,10 +15,13 @@ public class CambioDeLugar : MonoBehaviour
     public AudioSource audioSource;
     public GameObject button;
 
+    ControllerManager controllerManager;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && detected)
         {
+            controllerManager.OffSkate(false);
             ChangeFloor();
         }
     }
@@ -137,6 +140,7 @@ public class CambioDeLugar : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            controllerManager = collision.GetComponent<ControllerManager>();
             detected = true;
             button.SetActive(true);
         }

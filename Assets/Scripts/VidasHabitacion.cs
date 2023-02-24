@@ -8,8 +8,11 @@ public class VidasHabitacion : MonoBehaviour
     public GameObject vidasHabitacionUI,vida1,vida2,vida3;
     public CambioDeLugar cambioDeLugar;
     public Hotel hotel;
+    public bool skating;
 
     public PlayerController playerController;
+    public Animator anim;
+    public ControllerManager controllerManager;
     [SerializeField] private float tiempoPerdidaControl;
 
     public void Activar()
@@ -31,19 +34,31 @@ public class VidasHabitacion : MonoBehaviour
         if(vidas == 2)
         {
             vida3.SetActive(false);
-            playerController.Rebote(posicion);
+            anim.Play("PlayerDamage");
+            if (!skating)
+            {
+                playerController.Rebote(posicion);                
+            }
             StartCoroutine(DesactivarColision());
         }
         if(vidas == 1)
         {
             vida2.SetActive(false);
-            playerController.Rebote(posicion);
+            anim.Play("PlayerDamage");
+            if (!skating)
+            {
+                playerController.Rebote(posicion);              
+            }
             StartCoroutine(DesactivarColision());
         }
         if( vidas == 0)
         {
             vida1.SetActive(false);
             cambioDeLugar.ChangeFloor();
+            if (controllerManager.skating)
+            {
+                controllerManager.OffSkate(false);
+            }           
             hotel.FadeToBlack();
             Desactivar();
         }
