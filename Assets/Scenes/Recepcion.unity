@@ -1054,6 +1054,10 @@ MonoBehaviour:
   padrecito: {fileID: 2416954468279513501, guid: c78584a0346dcd141ad269398a963a9a, type: 3}
   musico: {fileID: 2416954468279513501, guid: f372db5d35f61fb41bebc609276833f6, type: 3}
   mago: {fileID: 2416954468279513501, guid: 17a4ba49e948a0542aeb47415f838bca, type: 3}
+  ciego: {fileID: 2416954468279513501, guid: 65c9adf97e45bc14a8b3b6d4fedf9030, type: 3}
+  marciano: {fileID: 2416954468279513501, guid: e2e10104b76c3f64a896ae6ba62d1948, type: 3}
+  esquimal: {fileID: 2416954468279513501, guid: 7589d5b8616ee874d918f223dec5ca92, type: 3}
+  astronauta: {fileID: 2416954468279513501, guid: a43dd57f91686224a812c515e6b26a8e, type: 3}
   hombreData: {fileID: 11400000, guid: 1eb1a98930f99204097e64e39d5f576a, type: 2}
   mujerData: {fileID: 11400000, guid: b3fe3c12bc69d4543bbee4f860be4b56, type: 2}
   payasoData: {fileID: 11400000, guid: d0941a92d9d92484580fa8049bf1cca9, type: 2}
@@ -1061,6 +1065,10 @@ MonoBehaviour:
   padrecitoData: {fileID: 11400000, guid: 570f2e853bd59c2409e77092bda748c3, type: 2}
   musicoData: {fileID: 11400000, guid: fcbeedebb6e0c734c9a29549060dd483, type: 2}
   magoData: {fileID: 11400000, guid: 1eb1a98930f99204097e64e39d5f576a, type: 2}
+  ciegoData: {fileID: 11400000, guid: 16af3dda4fd1d0a43bb77009bf644863, type: 2}
+  marcianoData: {fileID: 11400000, guid: 2465a33c003cdc54e8772478430e0d46, type: 2}
+  esquimalData: {fileID: 11400000, guid: 049567f8ffdfcd24ea38aaa6753b8b65, type: 2}
+  astronautaData: {fileID: 11400000, guid: eb4d9ff7582c65c48afa63d8f9110e17, type: 2}
   gameObjectToEnable: {fileID: 286171204}
   fullHotel: 0
 --- !u!4 &178369479

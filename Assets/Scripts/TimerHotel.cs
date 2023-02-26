@@ -14,6 +14,7 @@ public class TimerHotel : MonoBehaviour
     public Slider slider;
 
     public GameObject resultadosPanel;
+    public GameObject fade;
 
     void Start()
     {
@@ -46,6 +47,7 @@ public class TimerHotel : MonoBehaviour
     {
         print("TimeOver");
         hotel.ChecarHaibitaciones();
+        fade.SetActive(false);
         Time.timeScale = 0;
         resultadosPanel.SetActive(true);
         //playerController.canMove = false;      

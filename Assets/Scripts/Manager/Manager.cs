@@ -45,50 +45,62 @@ public class Manager : MonoBehaviour
         if(habitacion == 1 && habitacion01 == null)
         {
             habitacion01 = huespedData;
+            return;
         }
         if (habitacion == 2 && habitacion02 == null)
         {
             habitacion02 = huespedData;
+            return;
         }
         if (habitacion == 3 && habitacion03 == null)
         {
             habitacion03 = huespedData;
+            return;
         }
         if (habitacion == 4 && habitacion04 == null)
         {
             habitacion04 = huespedData;
+            return;
         }
         if (habitacion == 5 && habitacion05 == null)
         {
             habitacion05 = huespedData;
+            return;
         }
         if (habitacion == 6 && habitacion06 == null)
         {
             habitacion06 = huespedData;
+            return;
         }
         if (habitacion == 7 && habitacion07 == null)
         {
             habitacion07 = huespedData;
+            return;
         }
         if (habitacion == 8 && habitacion08 == null)
         {
             habitacion08 = huespedData;
+            return;
         }
         if (habitacion == 9 && habitacion09 == null)
         {
             habitacion09 = huespedData;
+            return;
         }
         if (habitacion == 10 && habitacion10 == null)
         {
             habitacion10 = huespedData;
+            return;
         }
         if (habitacion == 11 && habitacion11 == null)
         {
             habitacion11 = huespedData;
+            return;
         }
         if (habitacion == 12 && habitacion12 == null)
         {
             habitacion12 = huespedData;
+            return;
         }
     }  
 
@@ -115,34 +127,42 @@ public class Manager : MonoBehaviour
         if(habitacion == 4)
         {
             h4 += 1;
+            return;
         }
         if (habitacion == 5)
         {
             h5 += 1;
+            return;
         }
         if (habitacion == 6)
         {
             h6 += 1;
+            return;
         }
         if (habitacion == 7)
         {
             h7 += 1;
+            return;
         }
         if (habitacion == 8)
         {
             h8 += 1;
+            return;
         }
         if (habitacion == 9)
         {
             h9 += 1;
+            return;
         }
         if (habitacion == 10)
         {
             h10 += 1;
+            return;
         }
         if (habitacion == 11)
         {
             h11 += 1;
+            return;
         }
         if (habitacion == 12)
         {

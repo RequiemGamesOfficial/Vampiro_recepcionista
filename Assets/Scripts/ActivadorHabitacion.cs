@@ -7,6 +7,7 @@ public class ActivadorHabitacion : MonoBehaviour
     public GameObject huespedVivo, huespedMuerto;
     public bool dead;
     VidasHabitacion vidasHabitacion;
+    public GameObject obetoExtra;
 
     private void Start()
     {
@@ -33,6 +34,10 @@ public class ActivadorHabitacion : MonoBehaviour
                 huespedVivo.SendMessage("RestartDead");
             }
             vidasHabitacion.Activar();
+            if(obetoExtra != null)
+            {
+                obetoExtra.SetActive(true);
+            }
         }
     }
 

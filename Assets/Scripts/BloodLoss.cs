@@ -19,11 +19,13 @@ public class BloodLoss : MonoBehaviour
         {
             if (manager.noche >=5)
             {
-                manager.blood -= 20;
+                //manager.blood -= 20;
+                manager.blood -= 10;
             }
             else
             {
-                manager.blood -= 15;
+                //manager.blood -= 15;
+                manager.blood -= 10;
             }            
         }
 

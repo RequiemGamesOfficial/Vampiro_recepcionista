@@ -5,9 +5,9 @@ using UnityEngine;
 public class GeneradorHuespeds : MonoBehaviour
 {
 
-    [SerializeField] GameObject hombre, mujer, payaso, drogo, padrecito, musico,mago;
-    [SerializeField] HuespedData hombreData, mujerData, payasoData, drogoData, padrecitoData, musicoData, magoData;
-    GameObject huesped01,huesped02,huesped03,huesped04,huesped05,huesped06;
+    [SerializeField] GameObject hombre, mujer, payaso, drogo, padrecito, musico, mago,ciego,marciano,esquimal,astronauta;
+    [SerializeField] HuespedData hombreData, mujerData, payasoData, drogoData, padrecitoData, musicoData, magoData,ciegoData, marcianoData, esquimalData, astronautaData;
+    GameObject huesped01,huesped02,huesped03,huesped04,huesped05,huesped06,huesped07,huesped08;
 
     int huespedNumber;
     //activa el boton de continuar
@@ -18,21 +18,25 @@ public class GeneradorHuespeds : MonoBehaviour
     //Crea Huespedes depediendo de la reputacion
     public void VIPReputation()
     {
-        huesped01 = hombre;
-        huesped02 = mujer;
+        huesped01 = astronauta;
+        huesped02 = hombre;
         huesped03 = payaso;
-        huesped04 = drogo;
+        huesped04 = musico;
         huesped05 = padrecito;
-        huesped06 = musico;
+        huesped06 = esquimal;
+        huesped07 = ciego;
+        huesped08 = marciano;
     }
     public void HighReputation()
     {
         huesped01 = hombre;
-        huesped02 = mujer;
+        huesped02 = astronauta;
         huesped03 = payaso;
-        huesped04 = drogo;
+        huesped04 = musico;
         huesped05 = padrecito;
-        huesped06 = musico;
+        huesped06 = esquimal;
+        huesped07 = ciego;
+        huesped08 = marciano;
     }
     public void NormalReputation()
     {
@@ -41,7 +45,9 @@ public class GeneradorHuespeds : MonoBehaviour
         huesped03 = payaso;
         huesped04 = drogo;
         huesped05 = padrecito;
-        huesped06 = musico;
+        huesped06 = esquimal;
+        huesped07 = ciego;
+        huesped08 = astronauta;
     }
     public void LowReputation()
     {
@@ -49,17 +55,21 @@ public class GeneradorHuespeds : MonoBehaviour
         huesped02 = mujer;
         huesped03 = payaso;
         huesped04 = drogo;
-        huesped05 = padrecito;
-        huesped06 = musico;
+        huesped05 = astronauta;
+        huesped06 = mago;
+        huesped07 = musico;
+        huesped08 = drogo;
     }
     public void MediocreReputation()
     {
         huesped01 = hombre;
-        huesped02 = mujer;
+        huesped02 = mago;
         huesped03 = payaso;
         huesped04 = drogo;
-        huesped05 = padrecito;
-        huesped06 = musico;
+        huesped05 = drogo;
+        huesped06 = mago;
+        huesped07 = musico;
+        huesped08 = drogo;
     }
 
     public void GenerateNewGuest()
@@ -70,7 +80,7 @@ public class GeneradorHuespeds : MonoBehaviour
             gameObjectToEnable.SetActive(true);
             fullHotel = true;
         }
-        huespedNumber = Random.Range(1, 7);
+        huespedNumber = Random.Range(1, 9);
         
         if(huespedNumber == 1)
         {
@@ -81,37 +91,51 @@ public class GeneradorHuespeds : MonoBehaviour
         }
         if (huespedNumber == 2)
         {
-            if (huesped01 != null)
+            if (huesped02 != null)
             {
                 Instantiate(huesped02, new Vector2(this.transform.position.x - 1, this.transform.position.y), Quaternion.identity);
             }
         }
         if (huespedNumber == 3)
         {
-            if (huesped01 != null)
+            if (huesped03 != null)
             {
                 Instantiate(huesped03, new Vector2(this.transform.position.x - 2, this.transform.position.y), Quaternion.identity);
             }
         }
         if (huespedNumber == 4)
         {
-            if (huesped01 != null)
+            if (huesped04 != null)
             {
                 Instantiate(huesped04, new Vector2(this.transform.position.x - 3, this.transform.position.y), Quaternion.identity);
             }
         }
         if (huespedNumber == 5)
         {
-            if (huesped01 != null)
+            if (huesped05 != null)
             {
                 Instantiate(huesped05, new Vector2(this.transform.position.x - 4, this.transform.position.y), Quaternion.identity);
             }
         }
         if (huespedNumber == 6)
         {
-            if (huesped01 != null)
+            if (huesped06 != null)
             {
                 Instantiate(huesped06, new Vector2(this.transform.position.x - 5, this.transform.position.y), Quaternion.identity);
+            }
+        }
+        if (huespedNumber == 7)
+        {
+            if (huesped07 != null)
+            {
+                Instantiate(huesped07, new Vector2(this.transform.position.x - 5, this.transform.position.y), Quaternion.identity);
+            }
+        }
+        if (huespedNumber == 8)
+        {
+            if (huesped08 != null)
+            {
+                Instantiate(huesped08, new Vector2(this.transform.position.x - 5, this.transform.position.y), Quaternion.identity);
             }
         }
     }
