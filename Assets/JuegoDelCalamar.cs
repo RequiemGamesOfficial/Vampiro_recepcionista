@@ -6,23 +6,42 @@ public class JuegoDelCalamar : MonoBehaviour
 {
 
     public AudioSource luzVerde;
-    public GameObject dollyMuñeca;
+    public GameObject demon,damageArea;
     public GameObject player;
+    PlayerController playerController;
+    public bool attack,attacking;
 
     void Start()
     {
-        StartCoroutine(OpenDolli(5.0f, 3.0f));
+        StartCoroutine(OpenDemon(3.0f));
+        playerController = player.GetComponent<PlayerController>();
+
     }
 
-    IEnumerator OpenDolli(float fireTime, float waitTime)
+    public void Update()
+    {
+        if(attack && playerController.horizontal != 0)
+        {
+            if (!attacking)
+            {
+                attacking = true;
+                Instantiate(damageArea, player.transform.position, Quaternion.identity);
+            }
+        }
+    }
+
+    IEnumerator OpenDemon(float waitTime)
     {
         while (true)
         {
-            dollyMuñeca.SetActive(false);
+            attack = false;
+            attacking = false;
+            demon.SetActive(false);
             luzVerde.Play();
             yield return new WaitWhile(() => luzVerde.isPlaying);
-            dollyMuñeca.SetActive(true);
+            demon.SetActive(true);
             luzVerde.Stop();
+            attack = true;
             yield return new WaitForSeconds(waitTime);
         }
     }

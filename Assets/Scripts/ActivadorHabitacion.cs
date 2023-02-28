@@ -48,6 +48,10 @@ public class ActivadorHabitacion : MonoBehaviour
             vidasHabitacion.Desactivar();
             huespedVivo.SetActive(false);
             huespedMuerto.SetActive(false);
+            if (obetoExtra != null)
+            {
+                obetoExtra.SetActive(false);
+            }
         }
     }
 }

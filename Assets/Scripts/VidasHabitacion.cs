@@ -35,7 +35,7 @@ public class VidasHabitacion : MonoBehaviour
         {
             vida3.SetActive(false);
             anim.Play("PlayerDamage");
-            if (!skating)
+            if (!skating && posicion != null)
             {
                 playerController.Rebote(posicion);                
             }
@@ -45,7 +45,7 @@ public class VidasHabitacion : MonoBehaviour
         {
             vida2.SetActive(false);
             anim.Play("PlayerDamage");
-            if (!skating)
+            if (!skating && posicion != null)
             {
                 playerController.Rebote(posicion);              
             }
