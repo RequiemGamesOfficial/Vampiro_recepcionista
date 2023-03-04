@@ -74795,7 +74795,7 @@ MonoBehaviour:
   canMove: 1
   esquimal: 0
   marciano: 0
-  android: 0
+  android: 1
 --- !u!4 &2085065517
 Transform:
   m_ObjectHideFlags: 0
