@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 255b6bf70c70e214385c6fe6b99b790c
+guid: 297ddfae4baad1e4fb70afa559be08dd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,71 +113,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: escenario_menu_0
+      name: jardin_japones_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 993
-        height: 559
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea0a70e47cc65cb4584f7183f19b71be
-      internalID: 887848167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: escenario_menu_1
-      rect:
-        serializedVersion: 2
-        x: 638
-        y: 427
-        width: 102
-        height: 81
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf14ec7ad6b87f348841b65e5940a7ff
-      internalID: -1116549201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: escenario_menu_2
-      rect:
-        serializedVersion: 2
-        x: 306
-        y: 0
-        width: 687
-        height: 559
+        x: 4
+        y: 4
+        width: 44
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,8 +131,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad82e01580731304a8895f26e78bcfe4
-      internalID: -1800152186
+      spriteID: 52864c91ccb748149a63db3d596dc184
+      internalID: -1013148171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jardin_japones_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 4
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282cf56ea271e9546a10622c8d36ec41
+      internalID: 1365562758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jardin_japones_2
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 4
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954ea51bef67d634bb01ddebc3bcabb2
+      internalID: -1812771192
       vertices: []
       indices: 
       edges: []
@@ -202,9 +190,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      escenario_menu_0: 887848167
-      escenario_menu_1: -1116549201
-      escenario_menu_2: -1800152186
+      jardin_japones_0: -1013148171
+      jardin_japones_1: 1365562758
+      jardin_japones_2: -1812771192
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

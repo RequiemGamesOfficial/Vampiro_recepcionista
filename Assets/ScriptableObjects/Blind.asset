@@ -16,4 +16,4 @@ MonoBehaviour:
   blood: 7
   reputation: -10
   money: 100
-  sprite: {fileID: 1635108383, guid: 9769876b61a14c74f8bf6225343a8953, type: 3}
+  sprite: {fileID: 949006367, guid: 9769876b61a14c74f8bf6225343a8953, type: 3}

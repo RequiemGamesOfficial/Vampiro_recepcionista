@@ -114,9 +114,9 @@ public class Hotel : MonoBehaviour
             piso3Compra.SetActive(false);
             if(manager.piso3 >= 2)
             {
-                piso3Azotea.SetActive(false);
-                numeroHPiso3.SetActive(true);
+                piso3Azotea.SetActive(false);               
                 piso3.SetActive(true);
+                numeroHPiso3.SetActive(true);
             }
             if (manager.piso3 == 1)
             {
@@ -131,9 +131,9 @@ public class Hotel : MonoBehaviour
                 piso4Compra.SetActive(false);
                 if (manager.piso4 >= 2)
                 {
-                    piso4Azotea.SetActive(false);
-                    numeroHPiso4.SetActive(true);
+                    piso4Azotea.SetActive(false);                    
                     piso4.SetActive(true);
+                    numeroHPiso4.SetActive(true);
                 }
                 if (manager.piso4 == 1)
                 {
