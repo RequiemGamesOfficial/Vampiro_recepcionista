@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Eskimo
   m_EditorClassIdentifier: 
   huespedName: Eskimo
+  id: 10
   blood: 8
   reputation: -20
   money: 100
+  nights: 1
   sprite: {fileID: -77384184, guid: 9769876b61a14c74f8bf6225343a8953, type: 3}

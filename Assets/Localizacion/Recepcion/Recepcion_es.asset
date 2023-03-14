@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 337147920384
-    m_Localized: Huesped
+    m_Localized: "Hu\xE9sped"
     m_Metadata:
       m_Items: []
   - m_Id: 366407385088
@@ -36,6 +36,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 243468140544
     m_Localized: Cuartos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7597998990491648
+    m_Localized: por noche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7598062941044736
+    m_Localized: 'Noches:'
     m_Metadata:
       m_Items: []
   references:

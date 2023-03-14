@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Musician
   m_EditorClassIdentifier: 
   huespedName: Musician
+  id: 6
   blood: 5
   reputation: -10
   money: 50
+  nights: 0
   sprite: {fileID: 1154693833, guid: 9769876b61a14c74f8bf6225343a8953, type: 3}

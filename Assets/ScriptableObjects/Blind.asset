@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Blind
   m_EditorClassIdentifier: 
   huespedName: Blind
+  id: 12
   blood: 7
   reputation: -10
   money: 100
+  nights: 0
   sprite: {fileID: 949006367, guid: 9769876b61a14c74f8bf6225343a8953, type: 3}

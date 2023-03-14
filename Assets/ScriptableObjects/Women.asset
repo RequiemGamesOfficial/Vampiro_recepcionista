@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Women
   m_EditorClassIdentifier: 
   huespedName: Women
+  id: 2
   blood: 15
   reputation: -30
   money: 200
+  nights: 2
   sprite: {fileID: 796954650, guid: 9769876b61a14c74f8bf6225343a8953, type: 3}

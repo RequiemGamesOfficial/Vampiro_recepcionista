@@ -10,6 +10,8 @@ public class Recepcion : MonoBehaviour
     public GameObject panelHuesped, yesButton, nextButton, tablaHabitaciones;
     public GameObject huesped;
     public Text huespedText;
+    public Text moneyText;
+    public Text nightsText;
     public Image huespedImage;
     public Text textNoche;
 
@@ -29,8 +31,10 @@ public class Recepcion : MonoBehaviour
         AdministracionLlaves();
         manager.noche += 1;
         //opcional por ahora
-        manager.ResetearHabitaciones();
-        habitacionesDisponibles = manager.habitaciones;
+        /////
+        //manager.ResetearHabitaciones();
+        /////
+        habitacionesDisponibles = manager.habitacionesDisponibles;
 
         textNoche.text = (":"+ manager.noche);
 
@@ -58,47 +62,63 @@ public class Recepcion : MonoBehaviour
 
     public void AdministracionLlaves()
     {
-        if(manager.h4 >= 1)
+        if(manager.h1Nights <= 0)
+        {
+            llave1.SetActive(true);
+            telaraña1.SetActive(false);
+        }
+        if (manager.h2Nights <= 0)
+        {
+            llave2.SetActive(true);
+            telaraña2.SetActive(false);
+        }
+        if (manager.h3Nights <= 0)
+        {
+            llave3.SetActive(true);
+            telaraña3.SetActive(false);
+        }
+
+        if (manager.h4 >= 1 && manager.h4Nights <= 0)
         {
             llave4.SetActive(true);
             telaraña4.SetActive(false);
         }
-        if (manager.h5 >= 1)
+        if (manager.h5 >= 1 && manager.h5Nights <= 0)
         {
             llave5.SetActive(true);
             telaraña5.SetActive(false);
         }
-        if (manager.h6 >= 1)
+        if (manager.h6 >= 1 && manager.h6Nights <= 0)
         {
             llave6.SetActive(true);
             telaraña6.SetActive(false);
         }
-        if (manager.h7 >= 1)
+        if (manager.h7 >= 1 && manager.h7Nights <= 0)
         {
             llave7.SetActive(true);
             telaraña7.SetActive(false);
         }
-        if (manager.h8 >= 1)
+        if (manager.h8 >= 1 && manager.h8Nights <= 0)
         {
             llave8.SetActive(true);
             telaraña8.SetActive(false);
         }
-        if (manager.h9 >= 1)
+        if (manager.h9 >= 1 && manager.h9Nights <= 0)
         {
             llave9.SetActive(true);
             telaraña9.SetActive(false);
         }
-        if (manager.h10 >= 1)
+        if (manager.h10 >= 1 && manager.h10Nights <= 0)
         {
             llave10.SetActive(true);
             telaraña10.SetActive(false);
         }
-        if (manager.h11 >= 1)
+        if (manager.h11 >= 1 && manager.h11Nights <= 0)
         {
             llave11.SetActive(true);
             telaraña11.SetActive(false);
         }
-        if (manager.h12 >= 1)
+        if (manager.h12 >= 1 && manager.h12Nights <= 0)
         {
             llave12.SetActive(true);
             telaraña12.SetActive(false);
@@ -139,19 +159,6 @@ public class Recepcion : MonoBehaviour
         }
     }
     
-    //AgregarHabitaciones
-    //public void ActualizarTablaHabitaciones()
-    //{
-    //    if(manager.habitaciones >= 4)
-    //    {
-    //        if (manager.habitacion04 != null)
-    //        {
-    //            llave4.SetActive(false);
-    //            telaraña4.SetActive(true);
-    //        }
-    //    }      
-    //}
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Huesped"))
@@ -172,6 +179,10 @@ public class Recepcion : MonoBehaviour
         currentHuespedData = huespedData;
         huesped = huespedObject;
         huespedText.text = huespedData.huespedName;
+        moneyText.text = ("$" + huespedData.money);
+        int randomNumber = Random.Range(1, 4);
+        huespedData.nights = randomNumber;
+        nightsText.text = ("" + huespedData.nights);
         huespedImage.sprite = huespedData.sprite;
         panelHuesped.SetActive(true);
         if(habitacionesDisponibles <= 0)

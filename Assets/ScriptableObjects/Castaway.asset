@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Castaway
   m_EditorClassIdentifier: 
   huespedName: Castaway
+  id: 7
   blood: 10
   reputation: -20
   money: 100
+  nights: 0
   sprite: {fileID: -331593697, guid: 9769876b61a14c74f8bf6225343a8953, type: 3}

@@ -7,9 +7,11 @@ using UnityEngine.UI;
 public class HuespedData : ScriptableObject
 {
     public string huespedName;
+    public int id;
     public int blood;
     public int reputation;
     public int money;
+    public int nights;
     //public bool dead;
     //public Image icon;
     public Sprite sprite;

@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Alien
   m_EditorClassIdentifier: 
   huespedName: Alien
-  blood: 0
-  reputation: 0
-  money: 0
+  id: 13
+  blood: 11
+  reputation: -25
+  money: 250
+  nights: 0
   sprite: {fileID: 435679992, guid: 9769876b61a14c74f8bf6225343a8953, type: 3}

@@ -1255,7 +1255,8 @@ public class Hotel : MonoBehaviour
     //Checar Habitaciones Para los resultados-Llamado desde TimerHotel al terminar el tiempo
     public void ChecarHaibitaciones()
     {
-        if(manager.habitacion01 != null)
+        manager.habitacionesDisponibles = manager.habitaciones;
+        if (manager.habitacion01 != null)
         {
             if (!manager.habitacion01Dead)
             {
@@ -1263,6 +1264,17 @@ public class Hotel : MonoBehaviour
                 habitacion1UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion01.money;
                 habitacion1UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion01.sprite;
                 manager.money += manager.habitacion01.money;
+                manager.h1Nights -= 1;
+                if(manager.h1Nights <= 0)
+                {
+                    manager.h1Nights = 0;
+                    //manager.h1ID = 0;
+                }
+                habitacion1UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h1Nights;
+                if(manager.h1Nights >= 1)
+                {
+                    manager.habitacionesDisponibles -= 1;
+                }
             }
             else
             {
@@ -1270,6 +1282,8 @@ public class Hotel : MonoBehaviour
                 habitacion1UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion01.reputation;
                 habitacion1UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion01.sprite;
                 manager.reputation += manager.habitacion01.reputation;
+                manager.h1Nights = 0;
+                habitacion1UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h1Nights;
             }            
         }
         if (manager.habitacion02 != null)
@@ -1280,6 +1294,16 @@ public class Hotel : MonoBehaviour
                 habitacion2UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion02.money;
                 habitacion2UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion02.sprite;
                 manager.money += manager.habitacion02.money;
+                manager.h2Nights -= 1;
+                if (manager.h2Nights <= 0)
+                {
+                    manager.h2Nights = 0;
+                }
+                habitacion2UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h2Nights;
+                if (manager.h2Nights >= 1)
+                {
+                    manager.habitacionesDisponibles -= 1;
+                }
             }
             else
             {
@@ -1287,6 +1311,8 @@ public class Hotel : MonoBehaviour
                 habitacion2UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion02.reputation;
                 habitacion2UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion02.sprite;
                 manager.reputation += manager.habitacion02.reputation;
+                manager.h2Nights = 0;
+                habitacion2UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h2Nights;
             }
         }
         if (manager.habitacion03 != null)
@@ -1297,6 +1323,16 @@ public class Hotel : MonoBehaviour
                 habitacion3UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion03.money;
                 habitacion3UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion03.sprite;
                 manager.money += manager.habitacion03.money;
+                manager.h3Nights -= 1;
+                if (manager.h3Nights <= 0)
+                {
+                    manager.h3Nights = 0;
+                }
+                habitacion3UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h3Nights;
+                if (manager.h3Nights >= 1)
+                {
+                    manager.habitacionesDisponibles -= 1;
+                }
             }
             else
             {
@@ -1304,6 +1340,8 @@ public class Hotel : MonoBehaviour
                 habitacion3UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion03.reputation;
                 habitacion3UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion03.sprite;
                 manager.reputation += manager.habitacion03.reputation;
+                manager.h3Nights = 0;
+                habitacion3UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h3Nights;
             }
         }
         if (manager.habitacion04 != null)
@@ -1314,6 +1352,16 @@ public class Hotel : MonoBehaviour
                 habitacion4UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion04.money;
                 habitacion4UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion04.sprite;
                 manager.money += manager.habitacion04.money;
+                manager.h4Nights -= 1;
+                if (manager.h4Nights <= 0)
+                {
+                    manager.h4Nights = 0;
+                }
+                habitacion4UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h4Nights;
+                if (manager.h4Nights >= 1)
+                {
+                    manager.habitacionesDisponibles -= 1;
+                }
             }
             else
             {
@@ -1321,6 +1369,8 @@ public class Hotel : MonoBehaviour
                 habitacion4UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion04.reputation;
                 habitacion4UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion04.sprite;
                 manager.reputation += manager.habitacion04.reputation;
+                manager.h4Nights = 0;
+                habitacion4UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h4Nights;
             }
         }
         if (manager.habitacion05 != null)
@@ -1331,6 +1381,16 @@ public class Hotel : MonoBehaviour
                 habitacion5UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion05.money;
                 habitacion5UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion05.sprite;
                 manager.money += manager.habitacion05.money;
+                manager.h5Nights -= 1;
+                if (manager.h5Nights <= 0)
+                {
+                    manager.h5Nights = 0;
+                }
+                habitacion5UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h5Nights;
+                if (manager.h5Nights >= 1)
+                {
+                    manager.habitacionesDisponibles -= 1;
+                }
             }
             else
             {
@@ -1338,6 +1398,8 @@ public class Hotel : MonoBehaviour
                 habitacion5UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion05.reputation;
                 habitacion5UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion05.sprite;
                 manager.reputation += manager.habitacion05.reputation;
+                manager.h5Nights = 0;
+                habitacion5UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h5Nights;
             }
         }
         if (manager.habitacion06 != null)
@@ -1348,6 +1410,16 @@ public class Hotel : MonoBehaviour
                 habitacion6UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion06.money;
                 habitacion6UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion06.sprite;
                 manager.money += manager.habitacion06.money;
+                manager.h6Nights -= 1;
+                if (manager.h6Nights <= 0)
+                {
+                    manager.h6Nights = 0;
+                }
+                habitacion6UI.transform.GetChild(3).GetComponent<Text>().text = "N-" + manager.h6Nights;
+                if (manager.h6Nights >= 1)
+                {
+                    manager.habitacionesDisponibles -= 1;
+                }
             }
             else
             {
@@ -1355,6 +1427,8 @@ public class Hotel : MonoBehaviour
                 habitacion6UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion06.reputation;
                 habitacion6UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion06.sprite;
                 manager.reputation += manager.habitacion06.reputation;
+                manager.h6Nights = 0;
+                habitacion6UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h6Nights;
             }
         }
         if (manager.habitacion07 != null)
@@ -1365,6 +1439,16 @@ public class Hotel : MonoBehaviour
                 habitacion7UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion07.money;
                 habitacion7UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion07.sprite;
                 manager.money += manager.habitacion07.money;
+                manager.h7Nights -= 1;
+                if (manager.h7Nights <= 0)
+                {
+                    manager.h7Nights = 0;
+                }
+                habitacion7UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h7Nights;
+                if (manager.h7Nights >= 1)
+                {
+                    manager.habitacionesDisponibles -= 1;
+                }
             }
             else
             {
@@ -1372,6 +1456,8 @@ public class Hotel : MonoBehaviour
                 habitacion7UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion07.reputation;
                 habitacion7UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion07.sprite;
                 manager.reputation += manager.habitacion07.reputation;
+                manager.h7Nights = 0;
+                habitacion7UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h7Nights;
             }
         }
         if (manager.habitacion08 != null)
@@ -1382,6 +1468,16 @@ public class Hotel : MonoBehaviour
                 habitacion8UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion08.money;
                 habitacion8UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion08.sprite;
                 manager.money += manager.habitacion08.money;
+                manager.h8Nights -= 1;
+                if (manager.h8Nights <= 0)
+                {
+                    manager.h8Nights = 0;
+                }
+                habitacion8UI.transform.GetChild(3).GetComponent<Text>().text = "N-" + manager.h8Nights;
+                if (manager.h8Nights >= 1)
+                {
+                    manager.habitacionesDisponibles -= 1;
+                }
             }
             else
             {
@@ -1389,6 +1485,8 @@ public class Hotel : MonoBehaviour
                 habitacion8UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion08.reputation;
                 habitacion8UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion08.sprite;
                 manager.reputation += manager.habitacion08.reputation;
+                manager.h8Nights = 0;
+                habitacion8UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h8Nights;
             }
         }
         if (manager.habitacion09 != null)
@@ -1399,6 +1497,16 @@ public class Hotel : MonoBehaviour
                 habitacion9UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion09.money;
                 habitacion9UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion09.sprite;
                 manager.money += manager.habitacion09.money;
+                manager.h9Nights -= 1;
+                if (manager.h9Nights <= 0)
+                {
+                    manager.h9Nights = 0;
+                }
+                habitacion9UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h9Nights;
+                if (manager.h9Nights >= 1)
+                {
+                    manager.habitacionesDisponibles -= 1;
+                }
             }
             else
             {
@@ -1406,6 +1514,8 @@ public class Hotel : MonoBehaviour
                 habitacion9UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion09.reputation;
                 habitacion9UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion09.sprite;
                 manager.reputation += manager.habitacion09.reputation;
+                manager.h9Nights = 0;
+                habitacion9UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h9Nights;
             }
         }
         if (manager.habitacion10 != null)
@@ -1416,6 +1526,16 @@ public class Hotel : MonoBehaviour
                 habitacion10UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion10.money;
                 habitacion10UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion10.sprite;
                 manager.money += manager.habitacion10.money;
+                manager.h10Nights -= 1;
+                if (manager.h10Nights <= 0)
+                {
+                    manager.h10Nights = 0;
+                }
+                habitacion10UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h10Nights;
+                if (manager.h10Nights >= 1)
+                {
+                    manager.habitacionesDisponibles -= 1;
+                }
             }
             else
             {
@@ -1423,6 +1543,8 @@ public class Hotel : MonoBehaviour
                 habitacion10UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion10.reputation;
                 habitacion10UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion10.sprite;
                 manager.reputation += manager.habitacion10.reputation;
+                manager.h10Nights = 0;
+                habitacion10UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h10Nights;
             }
         }
         if (manager.habitacion11 != null)
@@ -1433,6 +1555,16 @@ public class Hotel : MonoBehaviour
                 habitacion11UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion11.money;
                 habitacion11UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion11.sprite;
                 manager.money += manager.habitacion11.money;
+                manager.h11Nights -= 1;
+                if (manager.h11Nights <= 0)
+                {
+                    manager.h11Nights = 0;
+                }
+                habitacion11UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h11Nights;
+                if (manager.h11Nights >= 1)
+                {
+                    manager.habitacionesDisponibles -= 1;
+                }
             }
             else
             {
@@ -1440,6 +1572,8 @@ public class Hotel : MonoBehaviour
                 habitacion11UI.transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.habitacion11.reputation;
                 habitacion11UI.transform.GetChild(2).GetComponent<Image>().sprite = manager.habitacion11.sprite;
                 manager.reputation += manager.habitacion11.reputation;
+                manager.h11Nights = 0;
+                habitacion11UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h11Nights;
             }
         }
         if (manager.habitacion12 != null)
@@ -1449,12 +1583,24 @@ public class Hotel : MonoBehaviour
                 habitacion12UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion12.huespedName;
                 habitacion12UI.transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.habitacion12.money;
                 manager.money += manager.habitacion12.money;
+                manager.h12Nights -= 1;
+                if (manager.h12Nights <= 0)
+                {
+                    manager.h12Nights = 0;
+                }
+                habitacion12UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h12Nights;
+                if (manager.h12Nights >= 1)
+                {
+                    manager.habitacionesDisponibles -= 1;
+                }
             }
             else
             {
                 habitacion12UI.transform.GetChild(0).GetComponent<Text>().text = manager.habitacion12.huespedName;
                 habitacion12UI.transform.GetChild(1).GetComponent<Text>().text = "Reputacion " + manager.habitacion12.reputation;
                 manager.reputation += manager.habitacion12.reputation;
+                manager.h12Nights = 0;
+                habitacion12UI.transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.h12Nights;
             }
         }
 

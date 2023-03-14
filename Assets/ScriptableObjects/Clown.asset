@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Clown
   m_EditorClassIdentifier: 
   huespedName: Clown
+  id: 3
   blood: 8
   reputation: -15
   money: 100
+  nights: 3
   sprite: {fileID: -870893897, guid: 9769876b61a14c74f8bf6225343a8953, type: 3}

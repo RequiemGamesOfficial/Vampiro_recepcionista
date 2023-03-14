@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Magician
   m_EditorClassIdentifier: 
   huespedName: Magician
+  id: 4
   blood: 6
   reputation: -20
   money: 150
+  nights: 2
   sprite: {fileID: 796528221, guid: 9769876b61a14c74f8bf6225343a8953, type: 3}

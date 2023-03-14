@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Skater
   m_EditorClassIdentifier: 
   huespedName: Skater
+  id: 11
   blood: 7
   reputation: -15
   money: 50
+  nights: 0
   sprite: {fileID: 0}

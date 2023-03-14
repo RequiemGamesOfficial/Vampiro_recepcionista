@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Junkie
   m_EditorClassIdentifier: 
   huespedName: Junkie
+  id: 5
   blood: 3
   reputation: 0
   money: 25
+  nights: 1
   sprite: {fileID: -1586011119, guid: 9769876b61a14c74f8bf6225343a8953, type: 3}

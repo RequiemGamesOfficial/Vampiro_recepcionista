@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Explorer
   m_EditorClassIdentifier: 
   huespedName: Explorer
+  id: 15
   blood: 9
   reputation: 0
   money: 0
+  nights: 0
   sprite: {fileID: 936676941, guid: 9769876b61a14c74f8bf6225343a8953, type: 3}
