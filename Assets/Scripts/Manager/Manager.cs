@@ -17,6 +17,7 @@ public class Manager : MonoBehaviour
     public int h4, h5, h6, h7, h8, h9,h10,h11,h12;
     public int piso3, piso4;
     public int basura1, basura2, basura3, basura4;
+    public int playa1, playa2, playa3, japones1, japones2, japones3;
 
     public HuespedData habitacion01, habitacion02, habitacion03, habitacion04, habitacion05, habitacion06, habitacion07, habitacion08, habitacion09;
     public HuespedData habitacion10, habitacion11, habitacion12;
@@ -209,23 +210,63 @@ public class Manager : MonoBehaviour
             piso4 += 1;
         }
     }
-    public void QuitarBasura(int basura)
+    public void MejoraHotel(int mejora)
     {
-        if(basura == 1)
+        if(mejora == 0)
+        {
+            return;
+        }
+        
+        if(mejora == 1)
         {
             basura1 += 1;
+            return;
         }
-        if (basura == 2)
+        if (mejora == 2)
         {
             basura2 += 1;
+            return;
         }
-        if (basura == 3)
+        if (mejora == 3)
         {
             basura3 += 1;
+            return;
         }
-        if (basura == 4)
+        if (mejora == 4)
         {
             basura4 += 1;
+            return;
+        }
+        //Adornos
+        if (mejora == 5)
+        {
+            playa1 += 1;
+            return;
+        }
+        if (mejora == 6)
+        {
+            playa2 += 1;
+            return;
+        }
+        if (mejora == 7)
+        {
+            playa3 += 1;
+            return;
+        }
+        if (mejora == 8)
+        {
+            japones1 += 1;
+            return;
+        }
+        if (mejora == 9)
+        {
+            japones2 += 1;
+            return;
+        }
+        if (mejora == 10)
+        {
+            japones3 += 1;
+            return;
         }
     }
     //AsignarIDhabitaciones, poner huespedes en las habitaciones/ llamado desde Cargar();

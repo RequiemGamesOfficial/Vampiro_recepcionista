@@ -23,8 +23,7 @@ public class Hotel : MonoBehaviour
 
     //Habitaciones
     public string habitacionActual;
-    public GameObject activadorHombre, activadorMujer, activadorPayaso, activadorPadrecito, activadorDrogo, activadorMusico, activadorMago, activadorTesla;
-    public GameObject activadorSamurai,activadorExplorer,activadorSkater,activadorEskimo,activadorCastaway,activadorAlien, activadorAstronaut, activadorBlind;
+    ActivadorHabitacion activadorHabitacion;
     public Stats stats;
 
     public ChangeScene changeScene;
@@ -37,6 +36,12 @@ public class Hotel : MonoBehaviour
 
     public AudioSource audioSource;
     public Text textNoche;
+
+    public GameObject posicionHabitacion;
+    public GameObject hHombrePrefab, hMujerPrefab,hPayasoPrefab, hMagoPrefab, hDrogoPrefab, hMusicoPrefab, hNaufragoPrefab, hSamuraiPrefab;
+    public GameObject hPadrecitoPrefab, hEsquimalPrefab, hPatinetoPrefab, hCiegoPrefab, hMarcianoPrefab, hTeslaPrefab, hExploradoraPrefab, hAstronautaPrefab;
+
+    GameObject habitacionActualGameObject;
 
     private void Start()
     {
@@ -207,6 +212,11 @@ public class Hotel : MonoBehaviour
     public void Piso1()
     {
         player.transform.position = new Vector3(0, 0f, 0);
+        Debug.Log("BorrarHabitacionCreada");
+        if(habitacionActualGameObject != null)
+        {
+            Destroy(habitacionActualGameObject, 0.5f);
+        }
     }
     public void Piso2()
     {
@@ -225,967 +235,165 @@ public class Hotel : MonoBehaviour
     {
         player.transform.position = place;
     }
-
-    public void HabitacionHombre(int habitacion)
-    {               
-        if(habitacion <= 6)
+    //Checar estado de habitacion Vivo/Muerto llamado desde las habitaciones de los huespedes
+    void ChecarEstadoHabitacionYPosicionarJugador(int habitacion)
+    {
+        activadorHabitacion = habitacionActualGameObject.GetComponentInChildren<ActivadorHabitacion>();
+        if (habitacion <= 6)
         {
             if (habitacion == 1 && manager.habitacion01Dead)
             {
-                activadorHombre.SendMessage("HuespedMuerto");
+                activadorHabitacion.SendMessage("HuespedMuerto");
             }
             if (habitacion == 2 && manager.habitacion02Dead)
             {
-                activadorHombre.SendMessage("HuespedMuerto");
+                activadorHabitacion.SendMessage("HuespedMuerto");
             }
             if (habitacion == 3 && manager.habitacion03Dead)
             {
-                activadorHombre.SendMessage("HuespedMuerto");
+                activadorHabitacion.SendMessage("HuespedMuerto");
             }
             if (habitacion == 4 && manager.habitacion04Dead)
             {
-                activadorHombre.SendMessage("HuespedMuerto");
+                activadorHabitacion.SendMessage("HuespedMuerto");
             }
             if (habitacion == 5 && manager.habitacion05Dead)
             {
-                activadorHombre.SendMessage("HuespedMuerto");
+                activadorHabitacion.SendMessage("HuespedMuerto");
             }
             if (habitacion == 6 && manager.habitacion06Dead)
             {
-                activadorHombre.SendMessage("HuespedMuerto");
+                activadorHabitacion.SendMessage("HuespedMuerto");
             }
         }
         else
         {
             if (habitacion == 7 && manager.habitacion07Dead)
             {
-                activadorHombre.SendMessage("HuespedMuerto");
+                activadorHabitacion.SendMessage("HuespedMuerto");
             }
             if (habitacion == 8 && manager.habitacion08Dead)
             {
-                activadorHombre.SendMessage("HuespedMuerto");
+                activadorHabitacion.SendMessage("HuespedMuerto");
             }
             if (habitacion == 9 && manager.habitacion09Dead)
             {
-                activadorHombre.SendMessage("HuespedMuerto");
+                activadorHabitacion.SendMessage("HuespedMuerto");
             }
             if (habitacion == 10 && manager.habitacion10Dead)
             {
-                activadorHombre.SendMessage("HuespedMuerto");
+                activadorHabitacion.SendMessage("HuespedMuerto");
             }
             if (habitacion == 11 && manager.habitacion11Dead)
             {
-                activadorHombre.SendMessage("HuespedMuerto");
+                activadorHabitacion.SendMessage("HuespedMuerto");
             }
             if (habitacion == 12 && manager.habitacion12Dead)
             {
-                activadorHombre.SendMessage("HuespedMuerto");
+                activadorHabitacion.SendMessage("HuespedMuerto");
             }
-        }       
-
-        player.transform.position = activadorHombre.transform.position;
+        }
+        habitacionActualGameObject.transform.parent = posicionHabitacion.transform;
+        player.transform.position = new Vector3(67.75f, 5.4f, 0);
         cameraObject.transform.position = player.transform.position;
+    }
+    //
+    public void HabitacionHombre(int habitacion)
+    {
+        habitacionActualGameObject = Instantiate(hHombrePrefab, posicionHabitacion.transform.position, Quaternion.identity);
+        //Decirle al activadorHombre que esta muerto y posicionar jugador
+        ChecarEstadoHabitacionYPosicionarJugador(habitacion);       
     }
     public void HabitacionMujer(int habitacion)
     {
-        if (habitacion <= 6)
-        {
-            if (habitacion == 1 && manager.habitacion01Dead)
-            {
-                activadorMujer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 2 && manager.habitacion02Dead)
-            {
-                activadorMujer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 3 && manager.habitacion03Dead)
-            {
-                activadorMujer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 4 && manager.habitacion04Dead)
-            {
-                activadorMujer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 5 && manager.habitacion05Dead)
-            {
-                activadorMujer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 6 && manager.habitacion06Dead)
-            {
-                activadorMujer.SendMessage("HuespedMuerto");
-            }
-        }
-        else
-        {
-            if (habitacion == 7 && manager.habitacion07Dead)
-            {
-                activadorMujer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 8 && manager.habitacion08Dead)
-            {
-                activadorMujer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 9 && manager.habitacion09Dead)
-            {
-                activadorMujer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 10 && manager.habitacion10Dead)
-            {
-                activadorMujer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 11 && manager.habitacion11Dead)
-            {
-                activadorMujer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 12 && manager.habitacion12Dead)
-            {
-                activadorMujer.SendMessage("HuespedMuerto");
-            }
-        }
-        
-        player.transform.position = activadorMujer.transform.position;
-        cameraObject.transform.position = player.transform.position;
+        habitacionActualGameObject = Instantiate(hMujerPrefab, posicionHabitacion.transform.position, Quaternion.identity);
+        //Decirle al activadorHombre que esta muerto y posicionar jugador
+        ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionPayaso(int habitacion)
     {
-        if (habitacion <= 6)
-        {
-            if (habitacion == 1 && manager.habitacion01Dead)
-            {
-                activadorPayaso.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 2 && manager.habitacion02Dead)
-            {
-                activadorPayaso.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 3 && manager.habitacion03Dead)
-            {
-                activadorPayaso.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 4 && manager.habitacion04Dead)
-            {
-                activadorPayaso.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 5 && manager.habitacion05Dead)
-            {
-                activadorPayaso.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 6 && manager.habitacion06Dead)
-            {
-                activadorPayaso.SendMessage("HuespedMuerto");
-            }
-        }
-        else
-        {
-            if (habitacion == 7 && manager.habitacion07Dead)
-            {
-                activadorPayaso.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 8 && manager.habitacion08Dead)
-            {
-                activadorPayaso.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 9 && manager.habitacion09Dead)
-            {
-                activadorPayaso.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 10 && manager.habitacion10Dead)
-            {
-                activadorPayaso.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 11 && manager.habitacion11Dead)
-            {
-                activadorPayaso.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 12 && manager.habitacion12Dead)
-            {
-                activadorPayaso.SendMessage("HuespedMuerto");
-            }
-        }
-        
-        player.transform.position = activadorPayaso.transform.position;
-        cameraObject.transform.position = player.transform.position;
+        habitacionActualGameObject = Instantiate(hPayasoPrefab, posicionHabitacion.transform.position, Quaternion.identity);
+        //Decirle al activadorHombre que esta muerto y posicionar jugador
+        ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionPadrecito(int habitacion)
     {
-        if (habitacion <= 6)
-        {
-            if (habitacion == 1 && manager.habitacion01Dead)
-            {
-                activadorPadrecito.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 2 && manager.habitacion02Dead)
-            {
-                activadorPadrecito.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 3 && manager.habitacion03Dead)
-            {
-                activadorPadrecito.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 4 && manager.habitacion04Dead)
-            {
-                activadorPadrecito.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 5 && manager.habitacion05Dead)
-            {
-                activadorPadrecito.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 6 && manager.habitacion06Dead)
-            {
-                activadorPadrecito.SendMessage("HuespedMuerto");
-            }
-        }
-        else
-        {
-            if (habitacion == 7 && manager.habitacion07Dead)
-            {
-                activadorPadrecito.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 8 && manager.habitacion08Dead)
-            {
-                activadorPadrecito.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 9 && manager.habitacion09Dead)
-            {
-                activadorPadrecito.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 10 && manager.habitacion10Dead)
-            {
-                activadorPadrecito.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 11 && manager.habitacion11Dead)
-            {
-                activadorPadrecito.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 12 && manager.habitacion12Dead)
-            {
-                activadorPadrecito.SendMessage("HuespedMuerto");
-            }
-        }
-
-        player.transform.position = activadorPadrecito.transform.position;
-        cameraObject.transform.position = player.transform.position;
+        habitacionActualGameObject = Instantiate(hPadrecitoPrefab, posicionHabitacion.transform.position, Quaternion.identity);
+        //Decirle al activadorHombre que esta muerto y posicionar jugador 
+        ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionDrogo(int habitacion)
     {
-        if (habitacion <= 6)
-        {
-            if (habitacion == 1 && manager.habitacion01Dead)
-            {
-                activadorDrogo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 2 && manager.habitacion02Dead)
-            {
-                activadorDrogo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 3 && manager.habitacion03Dead)
-            {
-                activadorDrogo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 4 && manager.habitacion04Dead)
-            {
-                activadorDrogo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 5 && manager.habitacion05Dead)
-            {
-                activadorDrogo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 6 && manager.habitacion06Dead)
-            {
-                activadorDrogo.SendMessage("HuespedMuerto");
-            }
-        }
-        else
-        {
-            if (habitacion == 7 && manager.habitacion07Dead)
-            {
-                activadorDrogo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 8 && manager.habitacion08Dead)
-            {
-                activadorDrogo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 9 && manager.habitacion09Dead)
-            {
-                activadorDrogo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 10 && manager.habitacion10Dead)
-            {
-                activadorDrogo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 11 && manager.habitacion11Dead)
-            {
-                activadorDrogo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 12 && manager.habitacion12Dead)
-            {
-                activadorDrogo.SendMessage("HuespedMuerto");
-            }
-        }        
-
-        player.transform.position = activadorDrogo.transform.position;
-        cameraObject.transform.position = player.transform.position;
+        habitacionActualGameObject = Instantiate(hDrogoPrefab, posicionHabitacion.transform.position, Quaternion.identity);
+        //Decirle al activadorHombre que esta muerto y posicionar jugador 
+        ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionMago(int habitacion)
     {
-        if (habitacion <= 6)
-        {
-            if (habitacion == 1 && manager.habitacion01Dead)
-            {
-                activadorMago.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 2 && manager.habitacion02Dead)
-            {
-                activadorMago.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 3 && manager.habitacion03Dead)
-            {
-                activadorMago.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 4 && manager.habitacion04Dead)
-            {
-                activadorMago.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 5 && manager.habitacion05Dead)
-            {
-                activadorMago.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 6 && manager.habitacion06Dead)
-            {
-                activadorMago.SendMessage("HuespedMuerto");
-            }
-        }
-        else
-        {
-            if (habitacion == 7 && manager.habitacion07Dead)
-            {
-                activadorMago.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 8 && manager.habitacion08Dead)
-            {
-                activadorMago.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 9 && manager.habitacion09Dead)
-            {
-                activadorMago.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 10 && manager.habitacion10Dead)
-            {
-                activadorMago.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 11 && manager.habitacion11Dead)
-            {
-                activadorMago.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 12 && manager.habitacion12Dead)
-            {
-                activadorMago.SendMessage("HuespedMuerto");
-            }
-        }               
-
-        player.transform.position = activadorMago.transform.position;
-        cameraObject.transform.position = player.transform.position;
+        habitacionActualGameObject = Instantiate(hMagoPrefab, posicionHabitacion.transform.position, Quaternion.identity);
+        //Decirle al activadorHombre que esta muerto y posicionar jugador 
+        ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionMusico(int habitacion)
     {
-        if (habitacion <= 6)
-        {
-            if (habitacion == 1 && manager.habitacion01Dead)
-            {
-                activadorMusico.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 2 && manager.habitacion02Dead)
-            {
-                activadorMusico.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 3 && manager.habitacion03Dead)
-            {
-                activadorMusico.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 4 && manager.habitacion04Dead)
-            {
-                activadorMusico.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 5 && manager.habitacion05Dead)
-            {
-                activadorMusico.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 6 && manager.habitacion06Dead)
-            {
-                activadorMusico.SendMessage("HuespedMuerto");
-            }
-        }
-        else
-        {
-            if (habitacion == 7 && manager.habitacion07Dead)
-            {
-                activadorMusico.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 8 && manager.habitacion08Dead)
-            {
-                activadorMusico.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 9 && manager.habitacion09Dead)
-            {
-                activadorMusico.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 10 && manager.habitacion10Dead)
-            {
-                activadorMusico.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 11 && manager.habitacion11Dead)
-            {
-                activadorMusico.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 12 && manager.habitacion12Dead)
-            {
-                activadorMusico.SendMessage("HuespedMuerto");
-            }
-        }
-               
-        player.transform.position = activadorMusico.transform.position;
-        cameraObject.transform.position = player.transform.position;
+        habitacionActualGameObject = Instantiate(hMusicoPrefab, posicionHabitacion.transform.position, Quaternion.identity);
+        //Decirle al activadorHombre que esta muerto y posicionar jugador 
+        ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     //
     public void HabitacionAstronaut(int habitacion)
     {
-        if (habitacion <= 6)
-        {
-            if (habitacion == 1 && manager.habitacion01Dead)
-            {
-                activadorAstronaut.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 2 && manager.habitacion02Dead)
-            {
-                activadorAstronaut.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 3 && manager.habitacion03Dead)
-            {
-                activadorAstronaut.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 4 && manager.habitacion04Dead)
-            {
-                activadorAstronaut.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 5 && manager.habitacion05Dead)
-            {
-                activadorAstronaut.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 6 && manager.habitacion06Dead)
-            {
-                activadorAstronaut.SendMessage("HuespedMuerto");
-            }
-        }
-        else
-        {
-            if (habitacion == 7 && manager.habitacion07Dead)
-            {
-                activadorAstronaut.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 8 && manager.habitacion08Dead)
-            {
-                activadorAstronaut.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 9 && manager.habitacion09Dead)
-            {
-                activadorAstronaut.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 10 && manager.habitacion10Dead)
-            {
-                activadorAstronaut.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 11 && manager.habitacion11Dead)
-            {
-                activadorAstronaut.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 12 && manager.habitacion12Dead)
-            {
-                activadorAstronaut.SendMessage("HuespedMuerto");
-            }
-        }
-               
-        player.transform.position = activadorAstronaut.transform.position;
-        cameraObject.transform.position = player.transform.position;
+        habitacionActualGameObject = Instantiate(hAstronautaPrefab, posicionHabitacion.transform.position, Quaternion.identity);
+        //Decirle al activadorHombre que esta muerto y posicionar jugador 
+        ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionBlind(int habitacion)
     {
-        if (habitacion <= 6)
-        {
-            if (habitacion == 1 && manager.habitacion01Dead)
-            {
-                activadorBlind.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 2 && manager.habitacion02Dead)
-            {
-                activadorBlind.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 3 && manager.habitacion03Dead)
-            {
-                activadorBlind.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 4 && manager.habitacion04Dead)
-            {
-                activadorBlind.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 5 && manager.habitacion05Dead)
-            {
-                activadorBlind.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 6 && manager.habitacion06Dead)
-            {
-                activadorBlind.SendMessage("HuespedMuerto");
-            }
-        }
-        else
-        {
-            if (habitacion == 7 && manager.habitacion07Dead)
-            {
-                activadorBlind.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 8 && manager.habitacion08Dead)
-            {
-                activadorBlind.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 9 && manager.habitacion09Dead)
-            {
-                activadorBlind.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 10 && manager.habitacion10Dead)
-            {
-                activadorBlind.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 11 && manager.habitacion11Dead)
-            {
-                activadorBlind.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 12 && manager.habitacion12Dead)
-            {
-                activadorBlind.SendMessage("HuespedMuerto");
-            }
-        }             
-
-        player.transform.position = activadorBlind.transform.position;
-        cameraObject.transform.position = player.transform.position;
+        habitacionActualGameObject = Instantiate(hCiegoPrefab, posicionHabitacion.transform.position, Quaternion.identity);
+        //Decirle al activadorHombre que esta muerto y posicionar jugador 
+        ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionEskimo(int habitacion)
     {
-        if (habitacion <= 6)
-        {
-            if (habitacion == 1 && manager.habitacion01Dead)
-            {
-                activadorEskimo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 2 && manager.habitacion02Dead)
-            {
-                activadorEskimo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 3 && manager.habitacion03Dead)
-            {
-                activadorEskimo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 4 && manager.habitacion04Dead)
-            {
-                activadorEskimo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 5 && manager.habitacion05Dead)
-            {
-                activadorEskimo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 6 && manager.habitacion06Dead)
-            {
-                activadorEskimo.SendMessage("HuespedMuerto");
-            }
-        }
-        else
-        {
-            if (habitacion == 7 && manager.habitacion07Dead)
-            {
-                activadorEskimo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 8 && manager.habitacion08Dead)
-            {
-                activadorEskimo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 9 && manager.habitacion09Dead)
-            {
-                activadorEskimo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 10 && manager.habitacion10Dead)
-            {
-                activadorEskimo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 11 && manager.habitacion11Dead)
-            {
-                activadorEskimo.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 12 && manager.habitacion12Dead)
-            {
-                activadorEskimo.SendMessage("HuespedMuerto");
-            }
-        }
-
-        player.transform.position = activadorEskimo.transform.position;
-        cameraObject.transform.position = player.transform.position;
+        habitacionActualGameObject = Instantiate(hEsquimalPrefab, posicionHabitacion.transform.position, Quaternion.identity);
+        //Decirle al activadorHombre que esta muerto y posicionar jugador 
+        ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionExplorer(int habitacion)
     {
-        if(habitacion <= 6)
-        {
-            if (habitacion == 1 && manager.habitacion01Dead)
-            {
-                activadorExplorer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 2 && manager.habitacion02Dead)
-            {
-                activadorExplorer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 3 && manager.habitacion03Dead)
-            {
-                activadorExplorer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 4 && manager.habitacion04Dead)
-            {
-                activadorExplorer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 5 && manager.habitacion05Dead)
-            {
-                activadorExplorer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 6 && manager.habitacion06Dead)
-            {
-                activadorExplorer.SendMessage("HuespedMuerto");
-            }
-        }
-        else
-        {
-            if (habitacion == 7 && manager.habitacion07Dead)
-            {
-                activadorExplorer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 8 && manager.habitacion08Dead)
-            {
-                activadorExplorer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 9 && manager.habitacion09Dead)
-            {
-                activadorExplorer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 10 && manager.habitacion10Dead)
-            {
-                activadorExplorer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 11 && manager.habitacion11Dead)
-            {
-                activadorExplorer.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 12 && manager.habitacion12Dead)
-            {
-                activadorExplorer.SendMessage("HuespedMuerto");
-            }
-        }                
-
-        player.transform.position = activadorExplorer.transform.position;
-        cameraObject.transform.position = player.transform.position;
+        habitacionActualGameObject = Instantiate(hExploradoraPrefab, posicionHabitacion.transform.position, Quaternion.identity);
+        //Decirle al activadorHombre que esta muerto y posicionar jugador 
+        ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionAlien(int habitacion)
     {
-        if (habitacion <= 6)
-        {
-            if (habitacion == 1 && manager.habitacion01Dead)
-            {
-                activadorAlien.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 2 && manager.habitacion02Dead)
-            {
-                activadorAlien.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 3 && manager.habitacion03Dead)
-            {
-                activadorAlien.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 4 && manager.habitacion04Dead)
-            {
-                activadorAlien.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 5 && manager.habitacion05Dead)
-            {
-                activadorAlien.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 6 && manager.habitacion06Dead)
-            {
-                activadorAlien.SendMessage("HuespedMuerto");
-            }
-        }
-        else
-        {
-            if (habitacion == 7 && manager.habitacion07Dead)
-            {
-                activadorAlien.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 8 && manager.habitacion08Dead)
-            {
-                activadorAlien.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 9 && manager.habitacion09Dead)
-            {
-                activadorAlien.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 10 && manager.habitacion10Dead)
-            {
-                activadorAlien.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 11 && manager.habitacion11Dead)
-            {
-                activadorAlien.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 12 && manager.habitacion12Dead)
-            {
-                activadorAlien.SendMessage("HuespedMuerto");
-            }
-        }
-
-        player.transform.position = activadorAlien.transform.position;
-        cameraObject.transform.position = player.transform.position;
+        habitacionActualGameObject = Instantiate(hMarcianoPrefab, posicionHabitacion.transform.position, Quaternion.identity);
+        //Decirle al activadorHombre que esta muerto y posicionar jugador 
+        ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionCastaway(int habitacion)
     {
-        if (habitacion <= 6)
-        {
-            if (habitacion == 1 && manager.habitacion01Dead)
-            {
-                activadorCastaway.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 2 && manager.habitacion02Dead)
-            {
-                activadorCastaway.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 3 && manager.habitacion03Dead)
-            {
-                activadorCastaway.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 4 && manager.habitacion04Dead)
-            {
-                activadorCastaway.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 5 && manager.habitacion05Dead)
-            {
-                activadorCastaway.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 6 && manager.habitacion06Dead)
-            {
-                activadorCastaway.SendMessage("HuespedMuerto");
-            }
-        }
-        else
-        {
-            if (habitacion == 7 && manager.habitacion07Dead)
-            {
-                activadorCastaway.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 8 && manager.habitacion08Dead)
-            {
-                activadorCastaway.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 9 && manager.habitacion09Dead)
-            {
-                activadorCastaway.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 10 && manager.habitacion10Dead)
-            {
-                activadorCastaway.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 11 && manager.habitacion11Dead)
-            {
-                activadorCastaway.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 12 && manager.habitacion12Dead)
-            {
-                activadorCastaway.SendMessage("HuespedMuerto");
-            }
-        }       
-
-        player.transform.position = activadorCastaway.transform.position;
-        cameraObject.transform.position = player.transform.position;
+        habitacionActualGameObject = Instantiate(hNaufragoPrefab, posicionHabitacion.transform.position, Quaternion.identity);
+        //Decirle al activadorHombre que esta muerto y posicionar jugador 
+        ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionSkater(int habitacion)
     {
-        if (habitacion <= 6)
-        {
-            if (habitacion == 1 && manager.habitacion01Dead)
-            {
-                activadorSkater.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 2 && manager.habitacion02Dead)
-            {
-                activadorSkater.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 3 && manager.habitacion03Dead)
-            {
-                activadorSkater.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 4 && manager.habitacion04Dead)
-            {
-                activadorSkater.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 5 && manager.habitacion05Dead)
-            {
-                activadorSkater.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 6 && manager.habitacion06Dead)
-            {
-                activadorSkater.SendMessage("HuespedMuerto");
-            }
-        }
-        else
-        {
-            if (habitacion == 7 && manager.habitacion07Dead)
-            {
-                activadorSkater.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 8 && manager.habitacion08Dead)
-            {
-                activadorSkater.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 9 && manager.habitacion09Dead)
-            {
-                activadorSkater.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 10 && manager.habitacion10Dead)
-            {
-                activadorSkater.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 11 && manager.habitacion11Dead)
-            {
-                activadorSkater.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 12 && manager.habitacion12Dead)
-            {
-                activadorSkater.SendMessage("HuespedMuerto");
-            }
-        }
-        
-        player.transform.position = activadorSkater.transform.position;
-        cameraObject.transform.position = player.transform.position;
+        habitacionActualGameObject = Instantiate(hPatinetoPrefab, posicionHabitacion.transform.position, Quaternion.identity);
+        //Decirle al activadorHombre que esta muerto y posicionar jugador 
+        ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionSamurai(int habitacion)
     {
-        if (habitacion <= 6)
-        {
-            if (habitacion == 1 && manager.habitacion01Dead)
-            {
-                activadorSamurai.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 2 && manager.habitacion02Dead)
-            {
-                activadorSamurai.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 3 && manager.habitacion03Dead)
-            {
-                activadorSamurai.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 4 && manager.habitacion04Dead)
-            {
-                activadorSamurai.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 5 && manager.habitacion05Dead)
-            {
-                activadorSamurai.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 6 && manager.habitacion06Dead)
-            {
-                activadorSamurai.SendMessage("HuespedMuerto");
-            }
-        }
-        else
-        {
-            if (habitacion == 7 && manager.habitacion07Dead)
-            {
-                activadorSamurai.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 8 && manager.habitacion08Dead)
-            {
-                activadorSamurai.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 9 && manager.habitacion09Dead)
-            {
-                activadorSamurai.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 10 && manager.habitacion10Dead)
-            {
-                activadorSamurai.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 11 && manager.habitacion11Dead)
-            {
-                activadorSamurai.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 12 && manager.habitacion12Dead)
-            {
-                activadorSamurai.SendMessage("HuespedMuerto");
-            }
-        }
-
-        player.transform.position = activadorSamurai.transform.position;
-        cameraObject.transform.position = player.transform.position;
+        habitacionActualGameObject = Instantiate(hSamuraiPrefab, posicionHabitacion.transform.position, Quaternion.identity);
+        //Decirle al activadorHombre que esta muerto y posicionar jugador 
+        ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionTesla(int habitacion)
     {
-        if (habitacion <= 6)
-        {
-            if (habitacion == 1 && manager.habitacion01Dead)
-            {
-                activadorTesla.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 2 && manager.habitacion02Dead)
-            {
-                activadorTesla.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 3 && manager.habitacion03Dead)
-            {
-                activadorTesla.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 4 && manager.habitacion04Dead)
-            {
-                activadorTesla.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 5 && manager.habitacion05Dead)
-            {
-                activadorTesla.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 6 && manager.habitacion06Dead)
-            {
-                activadorTesla.SendMessage("HuespedMuerto");
-            }
-        }
-        else
-        {
-            if (habitacion == 7 && manager.habitacion07Dead)
-            {
-                activadorTesla.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 8 && manager.habitacion08Dead)
-            {
-                activadorTesla.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 9 && manager.habitacion09Dead)
-            {
-                activadorTesla.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 10 && manager.habitacion10Dead)
-            {
-                activadorTesla.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 11 && manager.habitacion11Dead)
-            {
-                activadorTesla.SendMessage("HuespedMuerto");
-            }
-            if (habitacion == 12 && manager.habitacion12Dead)
-            {
-                activadorTesla.SendMessage("HuespedMuerto");
-            }
-        }
-               
-        player.transform.position = activadorTesla.transform.position;
-        cameraObject.transform.position = player.transform.position;
+        habitacionActualGameObject = Instantiate(hTeslaPrefab, posicionHabitacion.transform.position, Quaternion.identity);
+        //Decirle al activadorHombre que esta muerto y posicionar jugador 
+        ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     //Actualizar muertes
     public void AsesinatoHabitacion()
@@ -1629,7 +837,7 @@ public class Hotel : MonoBehaviour
         audioSource.Play();
         presupuesto -= costo;
         manager.money = presupuesto;
-        manager.QuitarBasura(id);
+        manager.MejoraHotel(id);
         manager.reputation += reputacion;
         stats.SetValoresActuales();
     }

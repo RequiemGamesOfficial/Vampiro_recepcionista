@@ -7,7 +7,7 @@ public class HuespedHotel : MonoBehaviour
     bool detected;
     public bool dead;
 
-    public Hotel hotel;
+    private Hotel hotel;
     public Animator anim, anim2;
 
     [SerializeField] HuespedData huespedData;
@@ -16,7 +16,11 @@ public class HuespedHotel : MonoBehaviour
     public AudioSource audioSource;
     public GameObject proyectil;
     public GameObject button;
-       
+
+    private void Start()
+    {
+        hotel = GameObject.FindGameObjectWithTag("HotelManager").GetComponent<Hotel>();
+    }
     public void RestartDead()
     {
         Debug.Log("RestartDead");

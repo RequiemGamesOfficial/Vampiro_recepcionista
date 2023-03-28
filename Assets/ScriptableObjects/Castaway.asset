@@ -18,4 +18,4 @@ MonoBehaviour:
   reputation: -20
   money: 100
   nights: 0
-  sprite: {fileID: -331593697, guid: 9769876b61a14c74f8bf6225343a8953, type: 3}
+  sprite: {fileID: 1635108383, guid: 9769876b61a14c74f8bf6225343a8953, type: 3}

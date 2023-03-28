@@ -7,7 +7,7 @@ public class CambioDeLugar : MonoBehaviour
     bool detected;
     public string nuevoLugar;
 
-    public Hotel hotel;
+    private Hotel hotel;
 
     public bool habitacion;
     public int numeroHabitacion;
@@ -16,6 +16,11 @@ public class CambioDeLugar : MonoBehaviour
     public GameObject button;
 
     ControllerManager controllerManager;
+
+    private void Start()
+    {
+        hotel = GameObject.FindGameObjectWithTag("HotelManager").GetComponent<Hotel>();
+    }
 
     private void Update()
     {
@@ -45,6 +50,38 @@ public class CambioDeLugar : MonoBehaviour
             if (numeroHabitacion == 4)
             {
                 hotel.habitacionActual = "habitacion4";
+            }
+            if (numeroHabitacion == 5)
+            {
+                hotel.habitacionActual = "habitacion5";
+            }
+            if (numeroHabitacion == 6)
+            {
+                hotel.habitacionActual = "habitacion6";
+            }
+            if (numeroHabitacion == 7)
+            {
+                hotel.habitacionActual = "habitacion7";
+            }
+            if (numeroHabitacion == 8)
+            {
+                hotel.habitacionActual = "habitacion8";
+            }
+            if (numeroHabitacion == 9)
+            {
+                hotel.habitacionActual = "habitacion9";
+            }
+            if (numeroHabitacion == 10)
+            {
+                hotel.habitacionActual = "habitacion10";
+            }
+            if (numeroHabitacion == 11)
+            {
+                hotel.habitacionActual = "habitacion11";
+            }
+            if (numeroHabitacion == 12)
+            {
+                hotel.habitacionActual = "habitacion12";
             }
         }
 

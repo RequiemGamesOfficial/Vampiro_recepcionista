@@ -5,8 +5,8 @@ using UnityEngine;
 public class GeneradorHuespeds : MonoBehaviour
 {
 
-    [SerializeField] GameObject hombre, mujer, payaso, drogo, padrecito, musico, mago,ciego,marciano,esquimal,astronauta;
-    [SerializeField] HuespedData hombreData, mujerData, payasoData, drogoData, padrecitoData, musicoData, magoData,ciegoData, marcianoData, esquimalData, astronautaData;
+    [SerializeField] GameObject hombre, mujer, payaso, drogo, padrecito, musico, mago,ciego,marciano,esquimal,astronauta,explorador,tesla,samurai,patineto,naufrago;
+    [SerializeField] HuespedData hombreData, mujerData, payasoData, drogoData, padrecitoData, musicoData, magoData,ciegoData, marcianoData, esquimalData, astronautaData,exploradorData, teslaData, samuraiData, patinetoData, naufragoData;
     GameObject huesped01,huesped02,huesped03,huesped04,huesped05,huesped06,huesped07,huesped08;
 
     int huespedNumber;
@@ -20,8 +20,8 @@ public class GeneradorHuespeds : MonoBehaviour
     {
         huesped01 = astronauta;
         huesped02 = hombre;
-        huesped03 = payaso;
-        huesped04 = musico;
+        huesped03 = patineto;
+        huesped04 = explorador;
         huesped05 = padrecito;
         huesped06 = esquimal;
         huesped07 = ciego;
@@ -31,8 +31,8 @@ public class GeneradorHuespeds : MonoBehaviour
     {
         huesped01 = hombre;
         huesped02 = astronauta;
-        huesped03 = payaso;
-        huesped04 = musico;
+        huesped03 = patineto;
+        huesped04 = explorador;
         huesped05 = padrecito;
         huesped06 = esquimal;
         huesped07 = ciego;
@@ -42,10 +42,12 @@ public class GeneradorHuespeds : MonoBehaviour
     {
         huesped01 = hombre;
         huesped02 = mujer;
-        huesped03 = payaso;
-        huesped04 = drogo;
+        //huesped03 = payaso;
+        huesped03 = samurai;
+        huesped04 = patineto;
         huesped05 = padrecito;
-        huesped06 = esquimal;
+        //huesped06 = esquimal;
+        huesped06 = tesla;
         huesped07 = ciego;
         huesped08 = astronauta;
     }
@@ -54,7 +56,8 @@ public class GeneradorHuespeds : MonoBehaviour
         huesped01 = hombre;
         huesped02 = mujer;
         huesped03 = payaso;
-        huesped04 = drogo;
+        //huesped04 = drogo;
+        huesped04 = naufrago;
         huesped05 = astronauta;
         huesped06 = mago;
         huesped07 = musico;

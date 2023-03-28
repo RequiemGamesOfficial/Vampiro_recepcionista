@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Skate : MonoBehaviour
 {
-    public GameObject player;
+    GameObject player;
+    ControllerManager controllerManager;
     public Transform posPlayer;
     [HideInInspector]
     public bool skateController;
@@ -21,7 +22,7 @@ public class Skate : MonoBehaviour
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();        
     }
     private void Update()
     {
@@ -95,7 +96,9 @@ public class Skate : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && !used)
         {
             player = collision.gameObject;
-            player.SendMessage("OnSkate");            
+            controllerManager = player.GetComponent<ControllerManager>();
+            controllerManager.skate = this;
+            controllerManager.OnSkate();
             player.transform.position = posPlayer.position;
             player.transform.parent = gameObject.transform;
             skateController = true;

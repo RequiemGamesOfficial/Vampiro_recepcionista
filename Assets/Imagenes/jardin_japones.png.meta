@@ -133,7 +133,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4
-        y: 4
+        y: 26
         width: 44
         height: 42
       alignment: 0
@@ -154,7 +154,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 50
-        y: 4
+        y: 26
         width: 43
         height: 40
       alignment: 0
@@ -174,12 +174,12 @@ TextureImporter:
       name: jardin_japones_2
       rect:
         serializedVersion: 2
-        x: 91
-        y: 4
+        x: 3
+        y: 0
         width: 23
         height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,6 +187,48 @@ TextureImporter:
       bones: []
       spriteID: 954ea51bef67d634bb01ddebc3bcabb2
       internalID: -1812771192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jardin_japones_3
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 23
+        height: 21
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2986a3941b72e714797861568e25f155
+      internalID: -898819712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jardin_japones_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 23
+        height: 21
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376e69fc78f0cff48834ef4f5e8a6e5c
+      internalID: 661109725
       vertices: []
       indices: 
       edges: []
@@ -205,6 +247,8 @@ TextureImporter:
       jardin_japones_0: -1013148171
       jardin_japones_1: 1365562758
       jardin_japones_2: -1812771192
+      jardin_japones_3: -898819712
+      jardin_japones_4: 661109725
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

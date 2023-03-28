@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     bool normalGravity = true;
 
     //habitaciones
-    public bool esquimal, marciano;
+    public bool esquimal, marciano,explorador;
 
     //Android Buttons
     bool isLeft = false;
@@ -49,22 +49,22 @@ public class PlayerController : MonoBehaviour
             if (Input.GetAxisRaw("Horizontal") == 1)
             {
                 isRight = true;
+                isLeft = false;
             }
             if (Input.GetAxisRaw("Horizontal") == -1)
             {
                 isLeft = true;
+                isRight = false;
             }
             if (Input.GetAxisRaw("Horizontal") == 0)
             {
                 isRight = false;
                 isLeft = false;
             }
-
             if (Input.GetKeyDown("space"))
             {
                 isJump = true;
             }
-
         }       
         //Android
         if (canMove)
@@ -92,19 +92,39 @@ public class PlayerController : MonoBehaviour
                 horizontal = 0;
                 anim.SetFloat("horizontal", horizontal);
             }
-            if (isJump && IsGrounded())
+            //Jump
+            if (!explorador)
             {
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-                anim.Play("PlayerJump");
-                isJump = false;
-                if (marciano)
+                if (isJump && IsGrounded())
                 {
-                    GravedadAlReves();
-                }             
+                    rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                    anim.Play("PlayerJump");
+                    isJump = false;
+                    if (marciano)
+                    {
+                        GravedadAlReves();
+                    }
+                }
             }
-        }
-        Flip();
-
+            else
+            {
+                if (isJump)
+                {
+                    rb.bodyType = RigidbodyType2D.Dynamic;
+                    if (isFacingRight)
+                    {
+                        Debug.Log("JumpRight!");
+                        rb.AddForce(new Vector2(500, 500));
+                    }
+                    else
+                    {
+                        Debug.Log("JumpLeft!");
+                        rb.AddForce(new Vector2(-500, 800));
+                    }
+                    isJump = false;
+                }
+            }           
+        }        
         //Esquimal
         if (esquimal)
         {
@@ -141,15 +161,25 @@ public class PlayerController : MonoBehaviour
                     iceSpeed = 0;
                 }
             }
-        }        
+        }
+
+        Flip();
     }
     private void FixedUpdate()
-    {
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-        if (esquimal)
+    {       
+        //Movimiento aplicado
+        if (!explorador)
         {
-            rb.AddForce(transform.right * iceSpeed, ForceMode2D.Impulse);
-        }       
+            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            if (esquimal)
+            {
+                rb.AddForce(transform.right * iceSpeed, ForceMode2D.Impulse);
+            }
+        }
+        else
+        {
+            rb.velocity = new Vector2(rb.velocity.x, horizontal * speed);
+        }              
     }
     private void Flip()
     {

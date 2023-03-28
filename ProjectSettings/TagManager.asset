@@ -7,6 +7,7 @@ TagManager:
   - Manager
   - Huesped
   - Wall
+  - HotelManager
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Player
   - Patineta
   - Volume
-  - 
+  - Liana
   - 
   - 
   - 

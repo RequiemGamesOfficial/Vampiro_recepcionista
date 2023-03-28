@@ -8,10 +8,12 @@ public class ActivadorHabitacion : MonoBehaviour
     public bool dead;
     VidasHabitacion vidasHabitacion;
     public GameObject obetoExtra;
+    public Canvas canvasWorld;
 
     private void Start()
     {
         vidasHabitacion = GameObject.FindGameObjectWithTag("Player").GetComponent<VidasHabitacion>();
+        canvasWorld.worldCamera = Camera.main;
     }
 
     //Recibir de hotel si el huesped esta muerto o vivo
