@@ -48,84 +48,84 @@ public class Manager : MonoBehaviour
 
     public void AgregarHuespedEnHabitacionEspecifica(HuespedData huespedData, int habitacion)
     {
-        if(habitacion == 1 && habitacion01 == null)
+        if(habitacion == 1)
         {
             habitacion01 = huespedData;
             h1Nights = huespedData.nights;
             h1ID = huespedData.id;
             return;
         }
-        if (habitacion == 2 && habitacion02 == null)
+        if (habitacion == 2)
         {
             habitacion02 = huespedData;
             h2Nights = huespedData.nights;
             h2ID = huespedData.id;
             return;
         }
-        if (habitacion == 3 && habitacion03 == null)
+        if (habitacion == 3)
         {
             habitacion03 = huespedData;
             h3Nights = huespedData.nights;
             h3ID = huespedData.id;
             return;
         }
-        if (habitacion == 4 && habitacion04 == null)
+        if (habitacion == 4)
         {
             habitacion04 = huespedData;
             h4Nights = huespedData.nights;
             h4ID = huespedData.id;
             return;
         }
-        if (habitacion == 5 && habitacion05 == null)
+        if (habitacion == 5)
         {
             habitacion05 = huespedData;
             h5Nights = huespedData.nights;
             h5ID = huespedData.id;
             return;
         }
-        if (habitacion == 6 && habitacion06 == null)
+        if (habitacion == 6)
         {
             habitacion06 = huespedData;
             h6Nights = huespedData.nights;
             h6ID = huespedData.id;
             return;
         }
-        if (habitacion == 7 && habitacion07 == null)
+        if (habitacion == 7)
         {
             habitacion07 = huespedData;
             h7Nights = huespedData.nights;
             h7ID = huespedData.id;
             return;
         }
-        if (habitacion == 8 && habitacion08 == null)
+        if (habitacion == 8)
         {
             habitacion08 = huespedData;
             h8Nights = huespedData.nights;
             h8ID = huespedData.id;
             return;
         }
-        if (habitacion == 9 && habitacion09 == null)
+        if (habitacion == 9)
         {
             habitacion09 = huespedData;
             h9Nights = huespedData.nights;
             h9ID = huespedData.id;
             return;
         }
-        if (habitacion == 10 && habitacion10 == null)
+        if (habitacion == 10)
         {
             habitacion10 = huespedData;
             h10Nights = huespedData.nights;
             h10ID = huespedData.id;
             return;
         }
-        if (habitacion == 11 && habitacion11 == null)
+        if (habitacion == 11)
         {
             habitacion11 = huespedData;
             h11Nights = huespedData.nights;
             h11ID = huespedData.id;
             return;
         }
-        if (habitacion == 12 && habitacion12 == null)
+        if (habitacion == 12)
         {
             habitacion12 = huespedData;
             h12Nights = huespedData.nights;

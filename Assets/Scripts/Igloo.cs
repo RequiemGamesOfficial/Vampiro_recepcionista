@@ -13,7 +13,7 @@ public class Igloo : MonoBehaviour
         timer += Time.deltaTime;
         if(timer >= castTime)
         {
-            Instantiate(penguin);
+            Instantiate(penguin,this.transform.position,Quaternion.identity);
             timer = 0;
         }
     }

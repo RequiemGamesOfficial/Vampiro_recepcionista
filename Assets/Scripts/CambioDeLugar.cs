@@ -85,6 +85,14 @@ public class CambioDeLugar : MonoBehaviour
             }
         }
 
+        if (nuevoLugar == "Sotano")
+        {
+            hotel.Sotano();
+            hotel.FadeToBlack();
+            audioSource.Play();
+            return;
+        }
+
         if (nuevoLugar == "Piso1")
         {
             hotel.Piso1();

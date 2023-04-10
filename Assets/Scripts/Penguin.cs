@@ -27,7 +27,7 @@ public class Penguin : MonoBehaviour
     public void ChangeDirection()
     {
         speed *= -1;
-        spriteRenderer.flipY = !spriteRenderer.flipY;
+        spriteRenderer.flipX = !spriteRenderer.flipX;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

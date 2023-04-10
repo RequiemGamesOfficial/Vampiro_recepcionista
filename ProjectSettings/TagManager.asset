@@ -8,6 +8,8 @@ TagManager:
   - Huesped
   - Wall
   - HotelManager
+  - GlobalLight
+  - Canvas
   layers:
   - Default
   - TransparentFX

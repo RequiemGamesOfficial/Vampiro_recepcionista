@@ -5,9 +5,8 @@ using UnityEngine.UI;
 
 public class Hotel : MonoBehaviour
 {
-    public Manager manager;
-
-    public GameObject player,cameraObject;
+    Manager manager;
+    GameObject player,cameraObject;
 
     public GameObject puerta101, puerta102, puerta103, puerta201, puerta202, puerta203;
     public GameObject puerta301, puerta302, puerta303, puerta401, puerta402, puerta403;
@@ -20,6 +19,9 @@ public class Hotel : MonoBehaviour
     public GameObject piso4Construccion, piso4Azotea, piso4, piso4Compra;
     public GameObject numeroHPiso3, numeroHPiso4;
     public GameObject basura1, basura2, basura3, basura4;
+    public GameObject letrero1;
+    public GameObject japones1;
+    public GameObject playa1;
 
     //Habitaciones
     public string habitacionActual;
@@ -38,6 +40,7 @@ public class Hotel : MonoBehaviour
     public Text textNoche;
 
     public GameObject posicionHabitacion;
+    public GameObject sotanoPrefab;
     public GameObject hHombrePrefab, hMujerPrefab,hPayasoPrefab, hMagoPrefab, hDrogoPrefab, hMusicoPrefab, hNaufragoPrefab, hSamuraiPrefab;
     public GameObject hPadrecitoPrefab, hEsquimalPrefab, hPatinetoPrefab, hCiegoPrefab, hMarcianoPrefab, hTeslaPrefab, hExploradoraPrefab, hAstronautaPrefab;
 
@@ -46,6 +49,8 @@ public class Hotel : MonoBehaviour
     private void Start()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        cameraObject = GameObject.FindGameObjectWithTag("MainCamera");
         textNoche.text = (":" + manager.noche);
 
         //ActivarPuertas/pisos/adornos y DesactivarBasura
@@ -112,6 +117,15 @@ public class Hotel : MonoBehaviour
         if (manager.basura4 >= 1)
         {
             basura4.SetActive(false);
+            if(manager.japones1<=0 && manager.playa1 <=0)
+            {
+                letrero1.SetActive(true);
+            }
+        }
+
+        if (manager.japones1 >= 1)
+        {
+            japones1.SetActive(true);
         }
 
         if (manager.piso3 >= 1)
@@ -209,6 +223,13 @@ public class Hotel : MonoBehaviour
     }
 
     //habitaciones Cambio de lugar del jugador y la camara A HABITACION CORRESPONDIENTE
+    public void Sotano()
+    {
+        habitacionActualGameObject = Instantiate(sotanoPrefab, posicionHabitacion.transform.position, Quaternion.identity);
+        habitacionActualGameObject.transform.parent = posicionHabitacion.transform;
+        player.transform.position = new Vector3(67.75f, 5.4f, 0);
+        cameraObject.transform.position = player.transform.position;
+    }
     public void Piso1()
     {
         player.transform.position = new Vector3(0, 0f, 0);
