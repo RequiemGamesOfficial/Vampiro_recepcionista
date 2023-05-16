@@ -1936,9 +1936,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb912039d433ca143a2811d223853d6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blood: 50
-  money: 0
-  reputation: 50
+  blood: 80
+  money: 200
+  reputation: 80
   noche: 0
   habitaciones: 3
   habitacionesDisponibles: 3
