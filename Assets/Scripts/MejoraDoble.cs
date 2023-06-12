@@ -11,6 +11,8 @@ public class MejoraDoble : MonoBehaviour
     public GameObject buttonCompra, buttonCambio;
     bool comprado;
 
+    public GameObject objetoCambio;
+
     void Start()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
@@ -61,5 +63,16 @@ public class MejoraDoble : MonoBehaviour
             buttonCambio.SetActive(false);
             buttonCompra.SetActive(false);
         }
+    }
+
+    public void Cambio()
+    {
+        objetoCambio.SetActive(true);
+        this.gameObject.SetActive(false);
+    }
+
+    public void Comprado(bool comprar)
+    {
+        comprado = comprar;
     }
 }

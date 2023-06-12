@@ -19,9 +19,9 @@ public class Hotel : MonoBehaviour
     public GameObject piso4Construccion, piso4Azotea, piso4, piso4Compra;
     public GameObject numeroHPiso3, numeroHPiso4;
     public GameObject basura1, basura2, basura3, basura4;
-    public GameObject letrero1;
-    public GameObject japones1;
-    public GameObject playa1;
+    public GameObject letrero1, letrero2,letrero3;
+    public GameObject japones1, japones2,japones3;
+    public GameObject playa1,playa2,playa3;
 
     //Habitaciones
     public string habitacionActual;
@@ -53,7 +53,7 @@ public class Hotel : MonoBehaviour
         cameraObject = GameObject.FindGameObjectWithTag("MainCamera");
         textNoche.text = (":" + manager.noche);
 
-        //ActivarPuertas/pisos/adornos y DesactivarBasura
+        //ActivarPuertas/pisos
         if (manager.h4 >= 1)
         {
             tablasH4.SetActive(false);
@@ -102,6 +102,7 @@ public class Hotel : MonoBehaviour
             puerta403.SetActive(true);
         }
 
+        //Desactivar Basura
         if (manager.basura1 >= 1)
         {
             basura1.SetActive(false);
@@ -109,10 +110,18 @@ public class Hotel : MonoBehaviour
         if (manager.basura2 >= 1)
         {
             basura2.SetActive(false);
+            if (manager.japones3 <= 0 && manager.playa3 <= 0)
+            {
+                letrero3.SetActive(true);
+            }
         }
         if (manager.basura3 >= 1)
         {
             basura3.SetActive(false);
+            if (manager.japones2 <= 0 && manager.playa2 <= 0)
+            {
+                letrero2.SetActive(true);
+            }
         }
         if (manager.basura4 >= 1)
         {
@@ -122,10 +131,30 @@ public class Hotel : MonoBehaviour
                 letrero1.SetActive(true);
             }
         }
-
+        //Activar Mejoras Hotel
         if (manager.japones1 >= 1)
         {
             japones1.SetActive(true);
+        }
+        if (manager.japones2 >= 1)
+        {
+            japones2.SetActive(true);
+        }
+        if (manager.japones3 >= 1)
+        {
+            japones3.SetActive(true);
+        }
+        if (manager.playa1 >= 1)
+        {
+            playa1.SetActive(true);
+        }
+        if (manager.playa2 >= 1)
+        {
+            playa2.SetActive(true);
+        }
+        if (manager.playa3 >= 1)
+        {
+            playa3.SetActive(true);
         }
 
         if (manager.piso3 >= 1)

@@ -9,6 +9,7 @@ public class CompraMejora : MonoBehaviour
 
     public int costo, reputacion,id;
     public GameObject precio;
+    public GameObject gameObject2;
 
     private void Update()
     {
@@ -25,6 +26,10 @@ public class CompraMejora : MonoBehaviour
             hotel.CompraMejora(costo, reputacion, id);
             Debug.Log("Compra");
             precio.SetActive(false);
+            if(gameObject2 != null)
+            {
+                gameObject2.SetActive(false);
+            }
             this.gameObject.SetActive(false);
         }
     }
