@@ -10,6 +10,7 @@ TagManager:
   - HotelManager
   - GlobalLight
   - Canvas
+  - Pet
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - Patineta
   - Volume
   - Liana
-  - 
+  - Pet
   - 
   - 
   - 

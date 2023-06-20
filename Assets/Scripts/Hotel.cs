@@ -7,6 +7,7 @@ public class Hotel : MonoBehaviour
 {
     Manager manager;
     GameObject player,cameraObject;
+    public GameObject pet;
 
     public GameObject puerta101, puerta102, puerta103, puerta201, puerta202, puerta203;
     public GameObject puerta301, puerta302, puerta303, puerta401, puerta402, puerta403;
@@ -50,6 +51,7 @@ public class Hotel : MonoBehaviour
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
         player = GameObject.FindGameObjectWithTag("Player");
+        pet = GameObject.FindGameObjectWithTag("Pet");
         cameraObject = GameObject.FindGameObjectWithTag("MainCamera");
         textNoche.text = (":" + manager.noche);
 
@@ -258,10 +260,19 @@ public class Hotel : MonoBehaviour
         habitacionActualGameObject.transform.parent = posicionHabitacion.transform;
         player.transform.position = new Vector3(67.75f, 5.4f, 0);
         cameraObject.transform.position = player.transform.position;
+        if (pet != null)
+        {
+            pet.transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 1);
+        }
     }
     public void Piso1()
     {
         player.transform.position = new Vector3(0, 0f, 0);
+        cameraObject.transform.position = player.transform.position;
+        if (pet != null)
+        {
+            pet.transform.position = player.transform.position;
+        }
         Debug.Log("BorrarHabitacionCreada");
         if(habitacionActualGameObject != null)
         {
@@ -271,19 +282,39 @@ public class Hotel : MonoBehaviour
     public void Piso2()
     {
         player.transform.position = new Vector3(0, 6.63f, 0);
+        cameraObject.transform.position = player.transform.position;
+        if (pet != null)
+        {
+            pet.transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 1);
+        }
     }
     public void Piso3()
     {
         player.transform.position = new Vector3(0, 13.292f, 0);
+        cameraObject.transform.position = player.transform.position;
+        if (pet != null)
+        {
+            pet.transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 1);
+        }
     }
     public void Piso4()
     {
         player.transform.position = new Vector3(0, 20.006f, 0);
+        cameraObject.transform.position = player.transform.position;
+        if (pet != null)
+        {
+            pet.transform.position = player.transform.position;
+        }
     }
 
     public void TeleportTo(Vector3 place)
     {
         player.transform.position = place;
+        cameraObject.transform.position = player.transform.position;
+        if (pet != null)
+        {
+            pet.transform.position = player.transform.position;
+        }
     }
     //Checar estado de habitacion Vivo/Muerto llamado desde las habitaciones de los huespedes
     void ChecarEstadoHabitacionYPosicionarJugador(int habitacion)
@@ -346,6 +377,10 @@ public class Hotel : MonoBehaviour
         habitacionActualGameObject.transform.parent = posicionHabitacion.transform;
         player.transform.position = new Vector3(67.75f, 5.4f, 0);
         cameraObject.transform.position = player.transform.position;
+        if (pet != null)
+        {
+            pet.transform.position = player.transform.position;
+        }
     }
     //
     public void HabitacionHombre(int habitacion)

@@ -7,6 +7,7 @@ public class Escena1Manager : MonoBehaviour
 {
     Manager manager;
     GameObject player, cameraObject;
+    public GameObject pet;
     public string habitacionActual;
     public Stats stats;
 
@@ -27,6 +28,7 @@ public class Escena1Manager : MonoBehaviour
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
         player = GameObject.FindGameObjectWithTag("Player");
         cameraObject = GameObject.FindGameObjectWithTag("MainCamera");
+        pet = GameObject.FindGameObjectWithTag("Pet");
 
         //Mejora Hotel
         presupuesto = manager.money;
@@ -40,7 +42,17 @@ public class Escena1Manager : MonoBehaviour
         {
             Destroy(habitacionActualGameObject, 0.5f);
         }
-    }   
+        if (pet != null)
+        {
+            pet.transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 1);
+        }
+    }
+
+    public void BeberSangre(int blood)
+    {
+        manager.blood += blood;
+        stats.SetValoresActuales();
+    }
 
     public void FadeToBlack()
     {

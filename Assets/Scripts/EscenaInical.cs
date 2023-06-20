@@ -7,6 +7,7 @@ public class EscenaInical : MonoBehaviour
 {
     Manager manager;
     GameObject player, cameraObject;
+    public GameObject pet;
     public string habitacionActual;
     ActivadorHabitacion activadorHabitacion;
     public Stats stats;
@@ -33,6 +34,7 @@ public class EscenaInical : MonoBehaviour
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
         player = GameObject.FindGameObjectWithTag("Player");
         cameraObject = GameObject.FindGameObjectWithTag("MainCamera");
+        pet = GameObject.FindGameObjectWithTag("Pet");
         textNoche.text = (":" + manager.noche);
 
         //Mejora Hotel
@@ -51,6 +53,10 @@ public class EscenaInical : MonoBehaviour
         habitacionActualGameObject.transform.parent = posicionHabitacion.transform;
         player.transform.position = new Vector3(67.75f, 5.4f, 0);
         cameraObject.transform.position = player.transform.position;
+        if (pet != null)
+        {
+            pet.transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 1);
+        }
     }
     public void Piso1()
     {
@@ -59,6 +65,10 @@ public class EscenaInical : MonoBehaviour
         if (habitacionActualGameObject != null)
         {
             Destroy(habitacionActualGameObject, 0.5f);
+        }
+        if (pet != null)
+        {
+            pet.transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 1);
         }
     }
     public void Piso2()

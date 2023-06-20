@@ -2,29 +2,44 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Teleport : MonoBehaviour
+public class Npc : MonoBehaviour
 {
-    bool detected;
+    public bool dead;
 
+    public GameObject hotel;
+    public Animator anim;
+    [SerializeField] HuespedData huespedData;
     public AudioSource audioSource;
-    public GameObject button, player;
 
-    public Animator animfadeOut;
+    public GameObject button;
+    bool detected;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && detected)
         {
-            ChangeFloor();
+            Attack();
         }
     }
 
-    public void ChangeFloor()
+    public void RestartDead()
     {
-        audioSource.Play();
-        player.transform.position = new Vector3(0, 0f, 0);
-        animfadeOut.Play("FadeIn");
+        Debug.Log("RestartDead");
+        dead = false;
+        anim.SetBool("dead", false);
+    }
 
+    public void Attack()
+    {
+        if (!dead)
+        {
+            print("Kill");
+            audioSource.Play();
+            hotel.SendMessage("BeberSangre", huespedData.Blood);
+            anim.SetBool("dead", true);
+            dead = true;
+
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -35,7 +50,6 @@ public class Teleport : MonoBehaviour
             button.SetActive(true);
         }
     }
-
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
