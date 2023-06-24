@@ -21,4 +21,5 @@ class DataSave
     public int h1ID, h2ID, h3ID, h4ID, h5ID, h6ID, h7ID, h8ID, h9ID, h10ID, h11ID, h12ID;
     public int piso3, piso4;
     public int basura1, basura2, basura3, basura4;
+    public int[] habitacionID = new int[12];
 }

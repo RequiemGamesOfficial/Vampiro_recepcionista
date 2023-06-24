@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Priest
   m_EditorClassIdentifier: 
   huespedName: Priest
-  id: 9
+  id: 8
   blood: 7
   reputation: -20
   money: 50

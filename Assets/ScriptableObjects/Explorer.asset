@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Explorer
   m_EditorClassIdentifier: 
   huespedName: Explorer
-  id: 15
+  id: 14
   blood: 15
   reputation: -25
   money: 250

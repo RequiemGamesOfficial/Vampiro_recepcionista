@@ -2249,7 +2249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f02e4c076cd024cab4267eb4631e35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelChange: EscenaInicial
+  levelChange: Recepcion
 --- !u!82 &2005351710
 AudioSource:
   m_ObjectHideFlags: 0

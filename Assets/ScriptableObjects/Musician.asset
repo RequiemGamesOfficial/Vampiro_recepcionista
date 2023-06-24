@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Musician
   m_EditorClassIdentifier: 
   huespedName: Musician
-  id: 6
+  id: 5
   blood: 5
   reputation: -10
   money: 50

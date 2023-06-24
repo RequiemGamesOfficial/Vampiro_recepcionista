@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Castaway
   m_EditorClassIdentifier: 
   huespedName: Castaway
-  id: 7
+  id: 6
   blood: 10
   reputation: -20
   money: 100

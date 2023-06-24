@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Samurai
   m_EditorClassIdentifier: 
   huespedName: Samurai
-  id: 8
+  id: 7
   blood: 10
   reputation: -20
   money: 150

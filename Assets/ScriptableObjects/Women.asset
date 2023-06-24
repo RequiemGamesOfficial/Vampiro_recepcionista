@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Women
   m_EditorClassIdentifier: 
   huespedName: Women
-  id: 2
+  id: 1
   blood: 15
   reputation: -30
   money: 200

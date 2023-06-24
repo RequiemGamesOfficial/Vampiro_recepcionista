@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Junkie
   m_EditorClassIdentifier: 
   huespedName: Junkie
-  id: 5
+  id: 4
   blood: 3
   reputation: 0
   money: 25

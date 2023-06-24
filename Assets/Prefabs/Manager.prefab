@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6189942462693397571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6189942462693397569}
+  - component: {fileID: 6189942462693397570}
+  - component: {fileID: 6189942462693397568}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Manager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6189942462693397569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6189942462693397571}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6189942462693397570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6189942462693397571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb912039d433ca143a2811d223853d6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blood: 50
+  money: 0
+  reputation: 70
+  noche: 0
+  habitaciones: 3
+  habitacionesDisponibles: 3
+  h4: 0
+  h5: 0
+  h6: 0
+  h7: 0
+  h8: 0
+  h9: 0
+  h10: 0
+  h11: 0
+  h12: 0
+  h: 010000000100000001000000000000000000000000000000000000000000000000000000000000000000000000000000
+  piso3: 0
+  piso4: 0
+  basura1: 0
+  basura2: 0
+  basura3: 0
+  basura4: 0
+  playa1: 0
+  playa2: 0
+  playa3: 0
+  japones1: 0
+  japones2: 0
+  japones3: 0
+  habitacion01: {fileID: 0}
+  habitacion02: {fileID: 0}
+  habitacion03: {fileID: 0}
+  habitacion04: {fileID: 0}
+  habitacion05: {fileID: 0}
+  habitacion06: {fileID: 0}
+  habitacion07: {fileID: 0}
+  habitacion08: {fileID: 0}
+  habitacion09: {fileID: 0}
+  habitacion10: {fileID: 0}
+  habitacion11: {fileID: 0}
+  habitacion12: {fileID: 0}
+  h2Nights: 0
+  h3Nights: 0
+  h4Nights: 0
+  h5Nights: 0
+  h6Nights: 0
+  h7Nights: 0
+  h8Nights: 0
+  h9Nights: 0
+  h10Nights: 0
+  h11Nights: 0
+  h12Nights: 0
+  habitacion01Dead: 0
+  habitacion02Dead: 0
+  habitacion03Dead: 0
+  habitacion04Dead: 0
+  habitacion05Dead: 0
+  habitacion06Dead: 0
+  habitacion07Dead: 0
+  habitacion08Dead: 0
+  habitacion09Dead: 0
+  habitacion10Dead: 0
+  habitacion11Dead: 0
+  habitacion12Dead: 0
+  numeroHabitacion:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  nightsInRoom: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  habitacionID: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  habitacionDead: 000000000000000000000000
+  huespedID:
+  - {fileID: 11400000, guid: 1eb1a98930f99204097e64e39d5f576a, type: 2}
+  - {fileID: 11400000, guid: b3fe3c12bc69d4543bbee4f860be4b56, type: 2}
+  - {fileID: 11400000, guid: d0941a92d9d92484580fa8049bf1cca9, type: 2}
+  - {fileID: 11400000, guid: 6e437643ff055064fb54f9ca32a9ddec, type: 2}
+  - {fileID: 11400000, guid: a747d07e5a5c9164ab52489f921b4827, type: 2}
+  - {fileID: 11400000, guid: fcbeedebb6e0c734c9a29549060dd483, type: 2}
+  - {fileID: 11400000, guid: 42a9747a66d25ea4386d32bb16dd6519, type: 2}
+  - {fileID: 11400000, guid: 156adcdf6edf94f4b8451d6326de5577, type: 2}
+  - {fileID: 11400000, guid: 570f2e853bd59c2409e77092bda748c3, type: 2}
+  - {fileID: 11400000, guid: 049567f8ffdfcd24ea38aaa6753b8b65, type: 2}
+  - {fileID: 11400000, guid: 899709c61201cf04688e10d41945455b, type: 2}
+  - {fileID: 11400000, guid: 16af3dda4fd1d0a43bb77009bf644863, type: 2}
+  - {fileID: 11400000, guid: 2465a33c003cdc54e8772478430e0d46, type: 2}
+  - {fileID: 11400000, guid: fc111e6ba451dde4d81781d2ac01558b, type: 2}
+  - {fileID: 11400000, guid: 464d585421a34004aa755e6780fb1cd9, type: 2}
+  - {fileID: 11400000, guid: eb4d9ff7582c65c48afa63d8f9110e17, type: 2}
+--- !u!114 &6189942462693397568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6189942462693397571}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb18e0d783791b348bb8cadff7ee57d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

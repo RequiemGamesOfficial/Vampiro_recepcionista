@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Eskimo
   m_EditorClassIdentifier: 
   huespedName: Eskimo
-  id: 10
+  id: 9
   blood: 8
   reputation: -20
   money: 100

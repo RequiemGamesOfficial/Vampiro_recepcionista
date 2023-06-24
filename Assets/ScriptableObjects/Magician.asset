@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Magician
   m_EditorClassIdentifier: 
   huespedName: Magician
-  id: 4
+  id: 3
   blood: 6
   reputation: -20
   money: 150

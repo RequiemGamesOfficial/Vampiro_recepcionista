@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Cinematicas/Cinematica.unity
     guid: 3bcc3b9601f584945b14d0a4dd46390c
   - enabled: 1
+    path: Assets/Scenes/EscenaInicialP1.unity
+    guid: 2cad7b636f91bbf4dac7ddffae8d585e
+  - enabled: 1
     path: Assets/Scenes/EscenaInicialP2.unity
     guid: a6f372993d410fd45ad402f10a41b23a
   - enabled: 1

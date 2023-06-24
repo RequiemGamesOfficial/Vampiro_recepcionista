@@ -1846,7 +1846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nuevoLugar: 
   habitacion: 1
-  numeroHabitacion: 3
+  numeroHabitacion: 2
   audioSource: {fileID: 75076214}
   button: {fileID: 1588485546}
 --- !u!61 &75076216
@@ -13463,7 +13463,7 @@ MonoBehaviour:
   hotel: {fileID: 1894714080}
   costo: 500
   reputacion: 10
-  id: 10
+  id: 9
   precio: {fileID: 1453500831}
   puerta: {fileID: 1421732116}
 --- !u!82 &481366096
@@ -16517,7 +16517,7 @@ MonoBehaviour:
   hotel: {fileID: 1894714080}
   costo: 500
   reputacion: 10
-  id: 8
+  id: 7
   precio: {fileID: 1716414334}
   puerta: {fileID: 1272208214}
 --- !u!82 &556277780
@@ -18339,7 +18339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nuevoLugar: 
   habitacion: 1
-  numeroHabitacion: 8
+  numeroHabitacion: 7
   audioSource: {fileID: 634993740}
   button: {fileID: 655465348}
 --- !u!61 &634993742
@@ -18992,7 +18992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nuevoLugar: 
   habitacion: 1
-  numeroHabitacion: 1
+  numeroHabitacion: 0
   audioSource: {fileID: 658948654}
   button: {fileID: 322076145}
 --- !u!61 &658948651
@@ -20708,7 +20708,7 @@ MonoBehaviour:
   hotel: {fileID: 1894714080}
   costo: 500
   reputacion: 10
-  id: 7
+  id: 6
   precio: {fileID: 1422498985}
   puerta: {fileID: 1421732116}
 --- !u!82 &767443422
@@ -21272,7 +21272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nuevoLugar: 
   habitacion: 1
-  numeroHabitacion: 7
+  numeroHabitacion: 6
   audioSource: {fileID: 779770729}
   button: {fileID: 2128147849}
 --- !u!61 &779770731
@@ -21487,7 +21487,7 @@ MonoBehaviour:
   hotel: {fileID: 1894714080}
   costo: 500
   reputacion: 10
-  id: 5
+  id: 4
   precio: {fileID: 1144030530}
   puerta: {fileID: 1272208214}
 --- !u!82 &794104779
@@ -24943,154 +24943,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953528717}
   m_CullTransparentMesh: 1
---- !u!1 &956245992
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 956245994}
-  - component: {fileID: 956245993}
-  - component: {fileID: 956245995}
-  m_Layer: 0
-  m_Name: Manager
-  m_TagString: Manager
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &956245993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956245992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb912039d433ca143a2811d223853d6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blood: 100
-  money: 100000
-  reputation: 100
-  noche: 0
-  habitaciones: 3
-  habitacionesDisponibles: 3
-  h4: 0
-  h5: 0
-  h6: 0
-  h7: 0
-  h8: 0
-  h9: 0
-  h10: 0
-  h11: 0
-  h12: 0
-  piso3: 0
-  piso4: 0
-  basura1: 0
-  basura2: 0
-  basura3: 0
-  basura4: 0
-  playa1: 0
-  playa2: 0
-  playa3: 0
-  japones1: 0
-  japones2: 0
-  japones3: 0
-  habitacion01: {fileID: 0}
-  habitacion02: {fileID: 0}
-  habitacion03: {fileID: 0}
-  habitacion04: {fileID: 0}
-  habitacion05: {fileID: 0}
-  habitacion06: {fileID: 0}
-  habitacion07: {fileID: 0}
-  habitacion08: {fileID: 0}
-  habitacion09: {fileID: 0}
-  habitacion10: {fileID: 0}
-  habitacion11: {fileID: 0}
-  habitacion12: {fileID: 0}
-  hombre: {fileID: 11400000, guid: 1eb1a98930f99204097e64e39d5f576a, type: 2}
-  mujer: {fileID: 11400000, guid: b3fe3c12bc69d4543bbee4f860be4b56, type: 2}
-  payaso: {fileID: 11400000, guid: d0941a92d9d92484580fa8049bf1cca9, type: 2}
-  mago: {fileID: 11400000, guid: 6e437643ff055064fb54f9ca32a9ddec, type: 2}
-  drogo: {fileID: 11400000, guid: a747d07e5a5c9164ab52489f921b4827, type: 2}
-  musico: {fileID: 11400000, guid: fcbeedebb6e0c734c9a29549060dd483, type: 2}
-  naufrago: {fileID: 11400000, guid: 42a9747a66d25ea4386d32bb16dd6519, type: 2}
-  samurai: {fileID: 11400000, guid: 156adcdf6edf94f4b8451d6326de5577, type: 2}
-  padrecito: {fileID: 11400000, guid: 570f2e853bd59c2409e77092bda748c3, type: 2}
-  esquimal: {fileID: 11400000, guid: 049567f8ffdfcd24ea38aaa6753b8b65, type: 2}
-  patineto: {fileID: 11400000, guid: 899709c61201cf04688e10d41945455b, type: 2}
-  ciego: {fileID: 11400000, guid: 16af3dda4fd1d0a43bb77009bf644863, type: 2}
-  marciano: {fileID: 11400000, guid: 2465a33c003cdc54e8772478430e0d46, type: 2}
-  tesla: {fileID: 11400000, guid: fc111e6ba451dde4d81781d2ac01558b, type: 2}
-  explorador: {fileID: 11400000, guid: 464d585421a34004aa755e6780fb1cd9, type: 2}
-  astronauta: {fileID: 11400000, guid: eb4d9ff7582c65c48afa63d8f9110e17, type: 2}
-  h1Nights: 0
-  h2Nights: 0
-  h3Nights: 0
-  h4Nights: 0
-  h5Nights: 0
-  h6Nights: 0
-  h7Nights: 0
-  h8Nights: 0
-  h9Nights: 0
-  h10Nights: 0
-  h11Nights: 0
-  h12Nights: 0
-  h1ID: 0
-  h2ID: 0
-  h3ID: 0
-  h4ID: 0
-  h5ID: 0
-  h6ID: 0
-  h7ID: 0
-  h8ID: 0
-  h9ID: 0
-  h10ID: 0
-  h11ID: 0
-  h12ID: 0
-  habitacion01Dead: 0
-  habitacion02Dead: 0
-  habitacion03Dead: 0
-  habitacion04Dead: 0
-  habitacion05Dead: 0
-  habitacion06Dead: 0
-  habitacion07Dead: 0
-  habitacion08Dead: 0
-  habitacion09Dead: 0
-  habitacion10Dead: 0
-  habitacion11Dead: 0
-  habitacion12Dead: 0
---- !u!4 &956245994
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956245992}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &956245995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956245992}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb18e0d783791b348bb8cadff7ee57d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &964426646
 GameObject:
   m_ObjectHideFlags: 0
@@ -26086,7 +25938,7 @@ MonoBehaviour:
   hotel: {fileID: 1894714080}
   costo: 500
   reputacion: 10
-  id: 11
+  id: 10
   precio: {fileID: 1946953662}
   puerta: {fileID: 1272208214}
 --- !u!82 &1004994451
@@ -27264,7 +27116,7 @@ MonoBehaviour:
   hotel: {fileID: 1894714080}
   costo: 500
   reputacion: 10
-  id: 9
+  id: 8
   precio: {fileID: 937165535}
   puerta: {fileID: 1755993430}
 --- !u!82 &1096646444
@@ -27719,7 +27571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nuevoLugar: 
   habitacion: 1
-  numeroHabitacion: 11
+  numeroHabitacion: 10
   audioSource: {fileID: 1108608442}
   button: {fileID: 2063876741}
 --- !u!61 &1108608444
@@ -28048,7 +27900,7 @@ MonoBehaviour:
   hotel: {fileID: 1894714080}
   costo: 500
   reputacion: 10
-  id: 4
+  id: 3
   precio: {fileID: 1446696649}
   puerta: {fileID: 1421732116}
 --- !u!82 &1124083864
@@ -30998,7 +30850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nuevoLugar: 
   habitacion: 1
-  numeroHabitacion: 2
+  numeroHabitacion: 1
   audioSource: {fileID: 1266718276}
   button: {fileID: 1150242444}
 --- !u!61 &1266718273
@@ -31335,7 +31187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nuevoLugar: 
   habitacion: 1
-  numeroHabitacion: 5
+  numeroHabitacion: 4
   audioSource: {fileID: 1272208216}
   button: {fileID: 2005404973}
 --- !u!61 &1272208218
@@ -33258,7 +33110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nuevoLugar: 
   habitacion: 1
-  numeroHabitacion: 10
+  numeroHabitacion: 9
   audioSource: {fileID: 1408418373}
   button: {fileID: 1367051452}
 --- !u!61 &1408418375
@@ -34124,7 +33976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nuevoLugar: 
   habitacion: 1
-  numeroHabitacion: 4
+  numeroHabitacion: 3
   audioSource: {fileID: 1421732118}
   button: {fileID: 1098409869}
 --- !u!61 &1421732120
@@ -38294,6 +38146,63 @@ Transform:
   m_Father: {fileID: 132803150}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1694260286
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397571, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_Name
+      value: Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
 --- !u!1 &1696650704
 GameObject:
   m_ObjectHideFlags: 0
@@ -39091,7 +39000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nuevoLugar: 
   habitacion: 1
-  numeroHabitacion: 6
+  numeroHabitacion: 5
   audioSource: {fileID: 1755993432}
   button: {fileID: 1238225334}
 --- !u!61 &1755993434
@@ -39811,7 +39720,7 @@ MonoBehaviour:
   hotel: {fileID: 1894714080}
   costo: 500
   reputacion: 10
-  id: 6
+  id: 5
   precio: {fileID: 2056373911}
   puerta: {fileID: 1755993430}
 --- !u!82 &1794811063
@@ -41347,39 +41256,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pet: {fileID: 0}
-  puerta101: {fileID: 658948649}
-  puerta102: {fileID: 1266718271}
-  puerta103: {fileID: 75076212}
-  puerta201: {fileID: 1421732116}
-  puerta202: {fileID: 1272208214}
-  puerta203: {fileID: 1755993430}
-  puerta301: {fileID: 779770727}
-  puerta302: {fileID: 634993738}
-  puerta303: {fileID: 2030132290}
-  puerta401: {fileID: 1408418371}
-  puerta402: {fileID: 1108608440}
-  puerta403: {fileID: 1907924100}
-  habitacion1UI: {fileID: 12781274}
-  habitacion2UI: {fileID: 1890325658}
-  habitacion3UI: {fileID: 1506390176}
-  habitacion4UI: {fileID: 889860532}
-  habitacion5UI: {fileID: 742028928}
-  habitacion6UI: {fileID: 1703711736}
-  habitacion7UI: {fileID: 658957179}
-  habitacion8UI: {fileID: 1696650704}
-  habitacion9UI: {fileID: 1413528164}
-  habitacion10UI: {fileID: 63320166}
-  habitacion11UI: {fileID: 323975438}
-  habitacion12UI: {fileID: 285080490}
-  tablasH4: {fileID: 1124083860}
-  tablasH5: {fileID: 794104776}
-  tablasH6: {fileID: 1794811061}
-  tablasH7: {fileID: 767443419}
-  tablasH8: {fileID: 556277777}
-  tablasH9: {fileID: 1096646441}
-  tablasH10: {fileID: 481366093}
-  tablasH11: {fileID: 1004994448}
-  tablasH12: {fileID: 2118376129}
+  puerta:
+  - {fileID: 658948649}
+  - {fileID: 1266718271}
+  - {fileID: 75076212}
+  - {fileID: 1421732116}
+  - {fileID: 1272208214}
+  - {fileID: 1755993430}
+  - {fileID: 779770727}
+  - {fileID: 634993738}
+  - {fileID: 2030132290}
+  - {fileID: 1408418371}
+  - {fileID: 1108608440}
+  - {fileID: 1907924100}
+  habitacionUI:
+  - {fileID: 12781274}
+  - {fileID: 1890325658}
+  - {fileID: 1506390176}
+  - {fileID: 889860532}
+  - {fileID: 742028928}
+  - {fileID: 1703711736}
+  - {fileID: 658957179}
+  - {fileID: 1696650704}
+  - {fileID: 1413528164}
+  - {fileID: 63320166}
+  - {fileID: 323975438}
+  - {fileID: 285080490}
+  tablasH:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 1124083860}
+  - {fileID: 794104776}
+  - {fileID: 1794811061}
+  - {fileID: 767443419}
+  - {fileID: 556277777}
+  - {fileID: 1096646441}
+  - {fileID: 481366093}
+  - {fileID: 1004994448}
+  - {fileID: 2118376129}
   piso3Construccion: {fileID: 479377947}
   piso3Azotea: {fileID: 1460231309}
   piso3: {fileID: 1686135034}
@@ -41403,7 +41318,7 @@ MonoBehaviour:
   playa1: {fileID: 981840965}
   playa2: {fileID: 827542765}
   playa3: {fileID: 1392817773}
-  habitacionActual: 
+  habitacionActual: 0
   stats: {fileID: 542572047}
   changeScene: {fileID: 1648656160}
   cinematicaPolicia: CinematicaPolicia
@@ -41413,22 +41328,23 @@ MonoBehaviour:
   textNoche: {fileID: 1867394972}
   posicionHabitacion: {fileID: 1395476228}
   sotanoPrefab: {fileID: 1548702088524836053, guid: 60e24a5d93cff974c9264360efeb2c8e, type: 3}
-  hHombrePrefab: {fileID: 6654902524814019902, guid: 124f5b80f3b941846b9004a99db23f5f, type: 3}
-  hMujerPrefab: {fileID: 5933093727847569326, guid: 5b2a83b3a25ccf04a834655cc1d6976a, type: 3}
-  hPayasoPrefab: {fileID: 6240941491189521369, guid: 1abef0cd574d8d14a978998f0731c8a2, type: 3}
-  hMagoPrefab: {fileID: 1417963853982499082, guid: 92694a4748ff48e47a05b971dfe4443a, type: 3}
-  hDrogoPrefab: {fileID: 4746622175799147227, guid: e0e58c34e1fcfcc4fa94a6d627cfafda, type: 3}
-  hMusicoPrefab: {fileID: 6577451178080120867, guid: f99c44e6755c8aa4cab76e3fc3747c4b, type: 3}
-  hNaufragoPrefab: {fileID: 6724232089735264117, guid: e9bbb50064936544998c790a8a7fee00, type: 3}
-  hSamuraiPrefab: {fileID: 4448508646449782053, guid: 7fec1a3a4dfed35439b36f509a4d7cd0, type: 3}
-  hPadrecitoPrefab: {fileID: 6023558641338948474, guid: a9c7d91a5207f7e4e90e63e5d5a4dfa4, type: 3}
-  hEsquimalPrefab: {fileID: 6578107784923906938, guid: 2fdc21746d7d07643b33cea43d69ee6d, type: 3}
-  hPatinetoPrefab: {fileID: 5383710190043431767, guid: 6285fba1e2ca8fa4ca8765b434be3779, type: 3}
-  hCiegoPrefab: {fileID: 5975049394294092233, guid: b01135a164788b5428a6cb8186fb0469, type: 3}
-  hMarcianoPrefab: {fileID: 6488322409013324564, guid: a4de41b2f97a39d4283f0864f41b03b0, type: 3}
-  hTeslaPrefab: {fileID: 7448869667868676682, guid: 396ece86131ce894aa284cad3f354210, type: 3}
-  hExploradoraPrefab: {fileID: 3144860547662415075, guid: fd30fe033c5311f4f994a3b8136bfa2e, type: 3}
-  hAstronautaPrefab: {fileID: 5991291119461578112, guid: 64369cf3892d92e4b8cad7a08893fbc0, type: 3}
+  habitacionPrefab:
+  - {fileID: 6654902524814019902, guid: 124f5b80f3b941846b9004a99db23f5f, type: 3}
+  - {fileID: 5933093727847569326, guid: 5b2a83b3a25ccf04a834655cc1d6976a, type: 3}
+  - {fileID: 6240941491189521369, guid: 1abef0cd574d8d14a978998f0731c8a2, type: 3}
+  - {fileID: 1417963853982499082, guid: 92694a4748ff48e47a05b971dfe4443a, type: 3}
+  - {fileID: 4746622175799147227, guid: e0e58c34e1fcfcc4fa94a6d627cfafda, type: 3}
+  - {fileID: 6577451178080120867, guid: f99c44e6755c8aa4cab76e3fc3747c4b, type: 3}
+  - {fileID: 6724232089735264117, guid: e9bbb50064936544998c790a8a7fee00, type: 3}
+  - {fileID: 4448508646449782053, guid: 7fec1a3a4dfed35439b36f509a4d7cd0, type: 3}
+  - {fileID: 6023558641338948474, guid: a9c7d91a5207f7e4e90e63e5d5a4dfa4, type: 3}
+  - {fileID: 6578107784923906938, guid: 2fdc21746d7d07643b33cea43d69ee6d, type: 3}
+  - {fileID: 5383710190043431767, guid: 6285fba1e2ca8fa4ca8765b434be3779, type: 3}
+  - {fileID: 5975049394294092233, guid: b01135a164788b5428a6cb8186fb0469, type: 3}
+  - {fileID: 6488322409013324564, guid: a4de41b2f97a39d4283f0864f41b03b0, type: 3}
+  - {fileID: 7448869667868676682, guid: 396ece86131ce894aa284cad3f354210, type: 3}
+  - {fileID: 3144860547662415075, guid: fd30fe033c5311f4f994a3b8136bfa2e, type: 3}
+  - {fileID: 5991291119461578112, guid: 64369cf3892d92e4b8cad7a08893fbc0, type: 3}
 --- !u!4 &1894714081
 Transform:
   m_ObjectHideFlags: 0
@@ -41866,7 +41782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nuevoLugar: 
   habitacion: 1
-  numeroHabitacion: 12
+  numeroHabitacion: 11
   audioSource: {fileID: 1907924102}
   button: {fileID: 446813593}
 --- !u!61 &1907924104
@@ -44010,7 +43926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nuevoLugar: 
   habitacion: 1
-  numeroHabitacion: 9
+  numeroHabitacion: 8
   audioSource: {fileID: 2030132292}
   button: {fileID: 856202593}
 --- !u!61 &2030132294
@@ -46614,7 +46530,7 @@ MonoBehaviour:
   hotel: {fileID: 1894714080}
   costo: 500
   reputacion: 10
-  id: 12
+  id: 11
   precio: {fileID: 492583074}
   puerta: {fileID: 1755993430}
 --- !u!82 &2118376132

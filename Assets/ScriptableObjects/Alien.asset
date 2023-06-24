@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Alien
   m_EditorClassIdentifier: 
   huespedName: Alien
-  id: 13
+  id: 12
   blood: 11
   reputation: -25
   money: 250

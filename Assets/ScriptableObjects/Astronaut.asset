@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Astronaut
   m_EditorClassIdentifier: 
   huespedName: Astronaut
-  id: 16
+  id: 15
   blood: 15
   reputation: -25
   money: 250

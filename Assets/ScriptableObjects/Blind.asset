@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Blind
   m_EditorClassIdentifier: 
   huespedName: Blind
-  id: 12
+  id: 11
   blood: 7
   reputation: -10
   money: 100

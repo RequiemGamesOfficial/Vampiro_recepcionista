@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     public Manager manager;
     public TextMeshProUGUI tMPro;
+    public string primeraEscena;
 
     void Start()
     {
@@ -20,7 +21,7 @@ public class MainMenu : MonoBehaviour
     {
         if(manager.noche == 0)
         {
-            SceneManager.LoadScene("Cinematica", LoadSceneMode.Single);
+            SceneManager.LoadScene(primeraEscena, LoadSceneMode.Single);
         }
         else
         {
@@ -31,6 +32,6 @@ public class MainMenu : MonoBehaviour
     public void NewGame()
     {
         manager.Restart();
-        SceneManager.LoadScene("Cinematica", LoadSceneMode.Single);
+        SceneManager.LoadScene(primeraEscena, LoadSceneMode.Single);
     }
 }

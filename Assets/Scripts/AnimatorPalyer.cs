@@ -17,6 +17,6 @@ public class AnimatorPalyer : MonoBehaviour
 
     public void CinematicaMuerte()
     {
-        //SceneManager.LoadScene(cinematicaMuerte, LoadSceneMode.Single);
+        SceneManager.LoadScene(cinematicaMuerte, LoadSceneMode.Single);
     }
 }

@@ -1146,12 +1146,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
-        m_MethodName: Habitacion2
-        m_Mode: 1
+        m_MethodName: LLaveHabitacion
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1806,12 +1806,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
-        m_MethodName: Habitacion4
-        m_Mode: 1
+        m_MethodName: LLaveHabitacion
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2418,12 +2418,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
-        m_MethodName: Habitacion8
-        m_Mode: 1
+        m_MethodName: LLaveHabitacion
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2752,8 +2752,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
-        m_MethodName: Habitacion1
-        m_Mode: 1
+        m_MethodName: LLaveHabitacion
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3037,12 +3037,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
-        m_MethodName: Habitacion5
-        m_Mode: 1
+        m_MethodName: LLaveHabitacion
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3383,12 +3383,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
-        m_MethodName: Habitacion10
-        m_Mode: 1
+        m_MethodName: LLaveHabitacion
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3696,154 +3696,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922425256}
   m_CullTransparentMesh: 1
---- !u!1 &956245992
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 956245994}
-  - component: {fileID: 956245993}
-  - component: {fileID: 956245995}
-  m_Layer: 0
-  m_Name: Manager
-  m_TagString: Manager
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &956245993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956245992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb912039d433ca143a2811d223853d6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blood: 50
-  money: 0
-  reputation: 70
-  noche: 0
-  habitaciones: 3
-  habitacionesDisponibles: 3
-  h4: 0
-  h5: 0
-  h6: 0
-  h7: 0
-  h8: 0
-  h9: 0
-  h10: 0
-  h11: 0
-  h12: 0
-  piso3: 0
-  piso4: 0
-  basura1: 0
-  basura2: 0
-  basura3: 0
-  basura4: 0
-  playa1: 0
-  playa2: 0
-  playa3: 0
-  japones1: 0
-  japones2: 0
-  japones3: 0
-  habitacion01: {fileID: 0}
-  habitacion02: {fileID: 0}
-  habitacion03: {fileID: 0}
-  habitacion04: {fileID: 0}
-  habitacion05: {fileID: 0}
-  habitacion06: {fileID: 0}
-  habitacion07: {fileID: 0}
-  habitacion08: {fileID: 0}
-  habitacion09: {fileID: 0}
-  habitacion10: {fileID: 0}
-  habitacion11: {fileID: 0}
-  habitacion12: {fileID: 0}
-  hombre: {fileID: 11400000, guid: 1eb1a98930f99204097e64e39d5f576a, type: 2}
-  mujer: {fileID: 11400000, guid: b3fe3c12bc69d4543bbee4f860be4b56, type: 2}
-  payaso: {fileID: 11400000, guid: d0941a92d9d92484580fa8049bf1cca9, type: 2}
-  mago: {fileID: 11400000, guid: 6e437643ff055064fb54f9ca32a9ddec, type: 2}
-  drogo: {fileID: 11400000, guid: a747d07e5a5c9164ab52489f921b4827, type: 2}
-  musico: {fileID: 11400000, guid: fcbeedebb6e0c734c9a29549060dd483, type: 2}
-  naufrago: {fileID: 11400000, guid: 42a9747a66d25ea4386d32bb16dd6519, type: 2}
-  samurai: {fileID: 11400000, guid: 156adcdf6edf94f4b8451d6326de5577, type: 2}
-  padrecito: {fileID: 11400000, guid: 570f2e853bd59c2409e77092bda748c3, type: 2}
-  esquimal: {fileID: 11400000, guid: 049567f8ffdfcd24ea38aaa6753b8b65, type: 2}
-  patineto: {fileID: 11400000, guid: 899709c61201cf04688e10d41945455b, type: 2}
-  ciego: {fileID: 11400000, guid: 16af3dda4fd1d0a43bb77009bf644863, type: 2}
-  marciano: {fileID: 11400000, guid: 2465a33c003cdc54e8772478430e0d46, type: 2}
-  tesla: {fileID: 11400000, guid: fc111e6ba451dde4d81781d2ac01558b, type: 2}
-  explorador: {fileID: 11400000, guid: 464d585421a34004aa755e6780fb1cd9, type: 2}
-  astronauta: {fileID: 11400000, guid: eb4d9ff7582c65c48afa63d8f9110e17, type: 2}
-  h1Nights: 0
-  h2Nights: 0
-  h3Nights: 0
-  h4Nights: 0
-  h5Nights: 0
-  h6Nights: 0
-  h7Nights: 0
-  h8Nights: 0
-  h9Nights: 0
-  h10Nights: 0
-  h11Nights: 0
-  h12Nights: 0
-  h1ID: 0
-  h2ID: 0
-  h3ID: 0
-  h4ID: 0
-  h5ID: 0
-  h6ID: 0
-  h7ID: 0
-  h8ID: 0
-  h9ID: 0
-  h10ID: 0
-  h11ID: 0
-  h12ID: 0
-  habitacion01Dead: 0
-  habitacion02Dead: 0
-  habitacion03Dead: 0
-  habitacion04Dead: 0
-  habitacion05Dead: 0
-  habitacion06Dead: 0
-  habitacion07Dead: 0
-  habitacion08Dead: 0
-  habitacion09Dead: 0
-  habitacion10Dead: 0
-  habitacion11Dead: 0
-  habitacion12Dead: 0
---- !u!4 &956245994
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956245992}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &956245995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956245992}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb18e0d783791b348bb8cadff7ee57d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1041152774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4163,12 +4015,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
-        m_MethodName: Habitacion12
-        m_Mode: 1
+        m_MethodName: LLaveHabitacion
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 11
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4514,7 +4366,7 @@ RectTransform:
   - {fileID: 922425257}
   - {fileID: 2005742826}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4702,7 +4554,7 @@ RectTransform:
   - {fileID: 315166082}
   - {fileID: 40002426}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5026,12 +4878,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
-        m_MethodName: Habitacion9
-        m_Mode: 1
+        m_MethodName: LLaveHabitacion
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5235,12 +5087,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
-        m_MethodName: Habitacion11
-        m_Mode: 1
+        m_MethodName: LLaveHabitacion
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5694,12 +5546,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
-        m_MethodName: Habitacion3
-        m_Mode: 1
+        m_MethodName: LLaveHabitacion
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6034,12 +5886,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
-        m_MethodName: Habitacion6
-        m_Mode: 1
+        m_MethodName: LLaveHabitacion
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6413,12 +6265,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
-        m_MethodName: Habitacion7
-        m_Mode: 1
+        m_MethodName: LLaveHabitacion
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6467,30 +6319,32 @@ MonoBehaviour:
   textNoche: {fileID: 1276051564}
   currentHuespedData: {fileID: 0}
   generadorHuespeds: {fileID: 178369478}
-  llave1: {fileID: 624614974}
-  llave2: {fileID: 149848495}
-  llave3: {fileID: 1425706728}
-  llave4: {fileID: 350100509}
-  llave5: {fileID: 704708395}
-  llave6: {fileID: 1533080837}
-  llave7: {fileID: 1707385882}
-  llave8: {fileID: 584287856}
-  llave9: {fileID: 1293390018}
-  llave10: {fileID: 874600304}
-  llave11: {fileID: 1373820502}
-  llave12: {fileID: 1066013732}
-  "telara\xF1a1": {fileID: 420451639}
-  "telara\xF1a2": {fileID: 672715728}
-  "telara\xF1a3": {fileID: 2013031184}
-  "telara\xF1a4": {fileID: 1949882353}
-  "telara\xF1a5": {fileID: 1649044865}
-  "telara\xF1a6": {fileID: 1800834466}
-  "telara\xF1a7": {fileID: 1479241107}
-  "telara\xF1a8": {fileID: 171150059}
-  "telara\xF1a9": {fileID: 177238193}
-  "telara\xF1a10": {fileID: 36060417}
-  "telara\xF1a11": {fileID: 657370242}
-  "telara\xF1a12": {fileID: 182536256}
+  llave:
+  - {fileID: 624614974}
+  - {fileID: 149848495}
+  - {fileID: 1425706728}
+  - {fileID: 350100509}
+  - {fileID: 704708395}
+  - {fileID: 1533080837}
+  - {fileID: 1707385882}
+  - {fileID: 584287856}
+  - {fileID: 1293390018}
+  - {fileID: 874600304}
+  - {fileID: 1373820502}
+  - {fileID: 1066013732}
+  "telara\xF1a":
+  - {fileID: 420451639}
+  - {fileID: 672715728}
+  - {fileID: 2013031184}
+  - {fileID: 1949882353}
+  - {fileID: 1649044865}
+  - {fileID: 1800834466}
+  - {fileID: 1479241107}
+  - {fileID: 171150059}
+  - {fileID: 177238193}
+  - {fileID: 36060417}
+  - {fileID: 657370242}
+  - {fileID: 182536256}
 --- !u!4 &1752158361
 Transform:
   m_ObjectHideFlags: 0
@@ -6504,7 +6358,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1752158362
 BoxCollider2D:
@@ -7713,3 +7567,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9be5b1d58a8dd446b0340825593e8e3, type: 3}
+--- !u!1001 &6189942463617921963
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397571, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_Name
+      value: Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}

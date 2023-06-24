@@ -20,20 +20,14 @@ public class Recepcion : MonoBehaviour
 
     int habitacionesDisponibles;
 
-    [Header("TablaHabitaciones")]
-    public GameObject llave1;
-    public GameObject llave2,llave3,llave4, llave5, llave6, llave7, llave8, llave9, llave10, llave11, llave12;
-    public GameObject telaraña1, telaraña2, telaraña3, telaraña4, telaraña5, telaraña6, telaraña7, telaraña8, telaraña9, telaraña10, telaraña11, telaraña12;
+    public GameObject[] llave = new GameObject[12];
+    public GameObject[] telaraña = new GameObject[12];
 
     void Start()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
         AdministracionLlaves();
         manager.noche += 1;
-        //opcional por ahora
-        /////
-        //manager.ResetearHabitaciones();
-        /////
         habitacionesDisponibles = manager.habitacionesDisponibles;
 
         textNoche.text = (":"+ manager.noche);
@@ -41,88 +35,25 @@ public class Recepcion : MonoBehaviour
         AsignarReputacion();
         generadorHuespeds.GenerateNewGuest();
         ResetearMuertes();
-        //Guardar Juego
-        //manager.Guardar();
     }
     public void ResetearMuertes()
     {
-        manager.habitacion01Dead = false;
-        manager.habitacion02Dead = false;
-        manager.habitacion03Dead = false;
-        manager.habitacion04Dead = false;
-        manager.habitacion05Dead = false;
-        manager.habitacion06Dead = false;
-        manager.habitacion07Dead = false;
-        manager.habitacion08Dead = false;
-        manager.habitacion09Dead = false;
-        manager.habitacion10Dead = false;
-        manager.habitacion11Dead = false;
-        manager.habitacion12Dead = false;
+        for (int i = 0; i < manager.habitacionDead.Length; i++)
+        {
+            manager.habitacionDead[i] = false;
+        }              
     }
 
     public void AdministracionLlaves()
     {
-        if(manager.h1Nights <= 0)
+        for (int i = 0; i < llave.Length; i++)
         {
-            llave1.SetActive(true);
-            telaraña1.SetActive(false);
-        }
-        if (manager.h2Nights <= 0)
-        {
-            llave2.SetActive(true);
-            telaraña2.SetActive(false);
-        }
-        if (manager.h3Nights <= 0)
-        {
-            llave3.SetActive(true);
-            telaraña3.SetActive(false);
-        }
-
-        if (manager.h4 >= 1 && manager.h4Nights <= 0)
-        {
-            llave4.SetActive(true);
-            telaraña4.SetActive(false);
-        }
-        if (manager.h5 >= 1 && manager.h5Nights <= 0)
-        {
-            llave5.SetActive(true);
-            telaraña5.SetActive(false);
-        }
-        if (manager.h6 >= 1 && manager.h6Nights <= 0)
-        {
-            llave6.SetActive(true);
-            telaraña6.SetActive(false);
-        }
-        if (manager.h7 >= 1 && manager.h7Nights <= 0)
-        {
-            llave7.SetActive(true);
-            telaraña7.SetActive(false);
-        }
-        if (manager.h8 >= 1 && manager.h8Nights <= 0)
-        {
-            llave8.SetActive(true);
-            telaraña8.SetActive(false);
-        }
-        if (manager.h9 >= 1 && manager.h9Nights <= 0)
-        {
-            llave9.SetActive(true);
-            telaraña9.SetActive(false);
-        }
-        if (manager.h10 >= 1 && manager.h10Nights <= 0)
-        {
-            llave10.SetActive(true);
-            telaraña10.SetActive(false);
-        }
-        if (manager.h11 >= 1 && manager.h11Nights <= 0)
-        {
-            llave11.SetActive(true);
-            telaraña11.SetActive(false);
-        }
-        if (manager.h12 >= 1 && manager.h12Nights <= 0)
-        {
-            llave12.SetActive(true);
-            telaraña12.SetActive(false);
-        }
+            if (manager.h[i] >= 1 && manager.nightsInRoom[i] <= 0)
+            {
+                llave[i].SetActive(true);
+                telaraña[i].SetActive(false);
+            }
+        }        
     }
     public void AsignarReputacion()
     {
@@ -197,6 +128,7 @@ public class Recepcion : MonoBehaviour
         //Borrar huespedname
         tablaHabitaciones.SetActive(true);
     }
+
     public void AsignarHabitacion(int habitacion)
     {
         manager.AgregarHuespedEnHabitacionEspecifica(currentHuespedData,habitacion);

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clown
   m_EditorClassIdentifier: 
   huespedName: Clown
-  id: 3
+  id: 2
   blood: 8
   reputation: -15
   money: 100
