@@ -5,7 +5,8 @@ using UnityEngine;
 public class TriggerMessage : MonoBehaviour
 {
     public GameObject objectToSendMessage;
-    public string messageEnter;
+    public string messageEnter, messageExit;
+    public bool exit;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,4 +16,11 @@ public class TriggerMessage : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player") && exit)
+        {
+            objectToSendMessage.SendMessage(messageExit);
+        }
+    }
 }

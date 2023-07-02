@@ -11,6 +11,7 @@ TagManager:
   - GlobalLight
   - Canvas
   - Pet
+  - Cinemachine
   layers:
   - Default
   - TransparentFX

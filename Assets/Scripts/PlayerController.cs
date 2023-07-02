@@ -37,6 +37,9 @@ public class PlayerController : MonoBehaviour
     bool isJump = false;
     public bool android;
 
+    //Modificar vista de camara
+    //public CinemachineCameraOffset
+
     private void Start()
     {
         currentGravity = rb.gravityScale;
@@ -238,6 +241,28 @@ public class PlayerController : MonoBehaviour
     public void Rebote(Vector2 puntoGolpe)
     {       
         rb.velocity = new Vector2(-velocidadRebote.x * puntoGolpe.x, velocidadRebote.y);
+    }
+
+    //Permitir y Negar movimiento del juagdor
+    public void TrueMove()
+    {
+        canMove = true;
+    }
+    public void FalseMove()
+    {
+        canMove = false;
+        horizontal = 0;
+        anim.SetFloat("horizontal", 0);
+    }
+    public void TrueMoveSamurai()
+    {
+        canMove = true;
+    }
+    public void FalseMoveSamurai()
+    {
+        canMove = false;
+        horizontal = 0;
+        anim.SetFloat("horizontal", 0);
     }
 
     //Android Buttons

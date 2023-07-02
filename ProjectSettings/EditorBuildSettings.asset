@@ -9,14 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 9550b62bcdab15945b2bb2c3fc1b6646
   - enabled: 1
+    path: Assets/Scenes/Intro/EscenaInicialP1.unity
+    guid: 2cad7b636f91bbf4dac7ddffae8d585e
+  - enabled: 1
+    path: Assets/Scenes/Intro/EscenaInicialP2.unity
+    guid: a6f372993d410fd45ad402f10a41b23a
+  - enabled: 1
     path: Assets/Scenes/Cinematicas/Cinematica.unity
     guid: 3bcc3b9601f584945b14d0a4dd46390c
   - enabled: 1
-    path: Assets/Scenes/EscenaInicialP1.unity
-    guid: 2cad7b636f91bbf4dac7ddffae8d585e
-  - enabled: 1
-    path: Assets/Scenes/EscenaInicialP2.unity
-    guid: a6f372993d410fd45ad402f10a41b23a
+    path: Assets/Scenes/Intro/EscenaInicialP3.unity
+    guid: a40d2d07d8294f94884f2f6b85e18486
   - enabled: 1
     path: Assets/Scenes/Recepcion.unity
     guid: 8caf8ced76f03b4458120aeb02580d04

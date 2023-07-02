@@ -13,7 +13,6 @@ public class Manager : MonoBehaviour
     //datos a Guardad
     public int blood, money, reputation;
     public int noche, habitaciones;
-    public int habitacionesDisponibles;
 
     //habitaciones
     public int[] h = new int[12];
@@ -166,7 +165,6 @@ public class Manager : MonoBehaviour
             reputation = reputation,
             dia = noche,
             habitaciones = habitaciones,
-            habitacionesDisponibles = habitacionesDisponibles,
             h4 = h[3],
             h5 = h[4],
             h6 = h[5],
@@ -225,7 +223,6 @@ public class Manager : MonoBehaviour
             reputation = 50,
             dia = 0,
             habitaciones = 3,
-            habitacionesDisponibles = 3,
             h4 = 0,
             h5 = 0,
             h6 = 0,
@@ -289,7 +286,6 @@ public class Manager : MonoBehaviour
             reputation = data.reputation;
             noche = data.dia;
             habitaciones = data.habitaciones;
-            habitacionesDisponibles = data.habitacionesDisponibles;
             h[3] = data.h4;
             h[4] = data.h5;
             h[5] = data.h6;

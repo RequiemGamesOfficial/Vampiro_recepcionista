@@ -54,7 +54,7 @@ public class Hotel : MonoBehaviour
         textNoche.text = (":" + manager.noche);
 
         //ActivarPuertas/DesactivarTablas
-        for (int i = 4; i < manager.h.Length; i++)
+        for (int i = 3; i < manager.h.Length; i++)
         {
             if (manager.h[i] >= 1)
             {
@@ -345,8 +345,6 @@ public class Hotel : MonoBehaviour
     //Checar Habitaciones Para los resultados-Llamado desde TimerHotel al terminar el tiempo
     public void ChecarHaibitaciones()
     {
-        manager.habitacionesDisponibles = manager.habitaciones;
-
         for (int i = 0; i < habitacionUI.Length; i++)
         {
             if (manager.numeroHabitacion[i] != null)
@@ -363,10 +361,6 @@ public class Hotel : MonoBehaviour
                         manager.nightsInRoom[i] = 0;
                     }
                     habitacionUI[i].transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.nightsInRoom[i];
-                    if (manager.nightsInRoom[i] >= 1)
-                    {
-                        manager.habitacionesDisponibles -= 1;
-                    }
                 }
                 else
                 {

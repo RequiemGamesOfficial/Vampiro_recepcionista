@@ -64,6 +64,18 @@ public class VidasHabitacion : MonoBehaviour
         }
     }
 
+    public void DueloLose()
+    {
+        anim.Play("PlayerDueloLose");
+        Invoke("DueloFinal", 2);
+    }
+
+    void DueloFinal()
+    {
+        cambioDeLugar.ChangeFloor();
+        hotel.FadeToBlack();
+    }
+
     IEnumerator DesactivarColision()
     {
         Physics2D.IgnoreLayerCollision(9,10, true);

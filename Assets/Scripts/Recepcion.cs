@@ -18,7 +18,7 @@ public class Recepcion : MonoBehaviour
     public HuespedData currentHuespedData;
     public GeneradorHuespeds generadorHuespeds;
 
-    int habitacionesDisponibles;
+    public int habitacionesDisponibles;
 
     public GameObject[] llave = new GameObject[12];
     public GameObject[] telaraña = new GameObject[12];
@@ -26,12 +26,11 @@ public class Recepcion : MonoBehaviour
     void Start()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
-        AdministracionLlaves();
+        habitacionesDisponibles = 0;
         manager.noche += 1;
-        habitacionesDisponibles = manager.habitacionesDisponibles;
 
         textNoche.text = (":"+ manager.noche);
-
+        AdministracionLlaves();
         AsignarReputacion();
         generadorHuespeds.GenerateNewGuest();
         ResetearMuertes();
@@ -48,10 +47,15 @@ public class Recepcion : MonoBehaviour
     {
         for (int i = 0; i < llave.Length; i++)
         {
-            if (manager.h[i] >= 1 && manager.nightsInRoom[i] <= 0)
-            {
-                llave[i].SetActive(true);
+            if (manager.h[i] >= 1)
+            {                
                 telaraña[i].SetActive(false);
+                if (manager.nightsInRoom[i] <= 0)
+                {
+                    Debug.Log("HabitacionDisponible");
+                    habitacionesDisponibles += 1;
+                    llave[i].SetActive(true);                   
+                }
             }
         }        
     }
