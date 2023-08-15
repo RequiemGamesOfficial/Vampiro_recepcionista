@@ -640,7 +640,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6488322408404762546
 Transform:
   m_ObjectHideFlags: 0
@@ -946,6 +946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d662ebb97f6454549ad1120a4d83f83e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  posAnterior: 1
   nuevoLugar: Piso1
   habitacion: 0
   numeroHabitacion: 0
@@ -1784,7 +1785,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 1760905019, guid: 8b90ad3f669751b44b84f5cc30092785, type: 3}
+  m_Sprite: {fileID: 1803480308, guid: 0db58da3fefad5d4e959c699aff1dc41, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

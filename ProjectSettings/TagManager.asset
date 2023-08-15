@@ -12,6 +12,8 @@ TagManager:
   - Canvas
   - Pet
   - Cinemachine
+  - TargetBlood
+  - TargetMoney
   layers:
   - Default
   - TransparentFX

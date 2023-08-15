@@ -51,7 +51,7 @@ public class Escena1Manager : MonoBehaviour
     public void BeberSangre(int blood)
     {
         manager.blood += blood;
-        stats.SetValoresActuales();
+        stats.SetBlood();
     }
 
     public void FadeToBlack()

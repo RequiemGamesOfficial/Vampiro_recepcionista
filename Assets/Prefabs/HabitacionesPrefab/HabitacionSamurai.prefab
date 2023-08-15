@@ -1039,6 +1039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d662ebb97f6454549ad1120a4d83f83e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  posAnterior: 1
   nuevoLugar: Piso1
   habitacion: 0
   numeroHabitacion: 0

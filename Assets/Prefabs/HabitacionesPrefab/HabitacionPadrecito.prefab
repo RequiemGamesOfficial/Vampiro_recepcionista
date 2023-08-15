@@ -223,7 +223,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6023558641593948802}
         m_TargetAssemblyTypeName: CambioDeLugar, Assembly-CSharp
         m_MethodName: ChangeFloor
         m_Mode: 1
@@ -484,7 +484,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6023558641548371545
 Transform:
   m_ObjectHideFlags: 0
@@ -894,6 +894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d662ebb97f6454549ad1120a4d83f83e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  posAnterior: 1
   nuevoLugar: Piso1
   habitacion: 0
   numeroHabitacion: 0

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CambioDeLugar : MonoBehaviour
 {
+    public bool posAnterior;
     bool detected;
     public string nuevoLugar;
 
@@ -35,11 +36,13 @@ public class CambioDeLugar : MonoBehaviour
     {
         if (habitacion)
         {
-            hotel.habitacionActual = numeroHabitacion;           
+            hotel.habitacionActual = numeroHabitacion;
+            hotel.AsignarPoscicionDeJugador();
         }
 
         if (nuevoLugar == "Sotano")
         {
+            hotel.AsignarPoscicionDeJugador();
             hotel.Sotano();
             hotel.FadeToBlack();
             audioSource.Play();
@@ -48,28 +51,28 @@ public class CambioDeLugar : MonoBehaviour
 
         if (nuevoLugar == "Piso1")
         {
-            hotel.Piso1();
+            hotel.Piso1(posAnterior);
             hotel.FadeToBlack();
             audioSource.Play();
             return;
         }
         if (nuevoLugar == "Piso2")
         {
-            hotel.Piso2();
+            hotel.Piso2(posAnterior);
             hotel.FadeToBlack();
             audioSource.Play();
             return;
         }
         if (nuevoLugar == "Piso3")
         {
-            hotel.Piso3();
+            hotel.Piso3(posAnterior);
             hotel.FadeToBlack();
             audioSource.Play();
             return;
         }
         if (nuevoLugar == "Piso4")
         {
-            hotel.Piso4();
+            hotel.Piso4(posAnterior);
             hotel.FadeToBlack();
             audioSource.Play();
             return;

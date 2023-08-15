@@ -23,7 +23,6 @@ public class Hotel : MonoBehaviour
 
     //public string habitacionActual;
     public int habitacionActual;
-
     ActivadorHabitacion activadorHabitacion;
     public Stats stats;
 
@@ -44,6 +43,7 @@ public class Hotel : MonoBehaviour
     public GameObject[] habitacionPrefab = new GameObject[16];
 
     GameObject habitacionActualGameObject;
+    Vector3 playerPosAnterior;
 
     private void Start()
     {
@@ -168,7 +168,13 @@ public class Hotel : MonoBehaviour
     public void BeberSangre(int blood)
     {
         manager.blood += blood;
-        stats.SetValoresActuales();
+        stats.SetBlood();
+    }
+
+    //Guardar Posicion de jugador para luego ponerlo donde estaba
+    public void AsignarPoscicionDeJugador()
+    {
+        playerPosAnterior = player.transform.position;
     }
 
     //habitaciones Cambio de lugar del jugador y la camara A HABITACION CORRESPONDIENTE
@@ -183,9 +189,17 @@ public class Hotel : MonoBehaviour
             pet.transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 1);
         }
     }
-    public void Piso1()
+
+    public void Piso1(bool posAnterior = false)
     {
-        player.transform.position = new Vector3(0, 0f, 0);
+        if (posAnterior)
+        {
+            player.transform.position = playerPosAnterior;
+        }
+        else
+        {
+            player.transform.position = new Vector3(0, 0f, 0);
+        }      
         cameraObject.transform.position = player.transform.position;
         if (pet != null)
         {
@@ -197,27 +211,48 @@ public class Hotel : MonoBehaviour
             Destroy(habitacionActualGameObject, 0.5f);
         }
     }
-    public void Piso2()
+    public void Piso2(bool posAnterior = false)
     {
-        player.transform.position = new Vector3(0, 6.63f, 0);
+        if (posAnterior)
+        {
+            player.transform.position = playerPosAnterior;
+        }
+        else
+        {
+            player.transform.position = new Vector3(0, 6.63f, 0);
+        }        
         cameraObject.transform.position = player.transform.position;
         if (pet != null)
         {
             pet.transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 1);
         }
     }
-    public void Piso3()
+    public void Piso3(bool posAnterior = false)
     {
-        player.transform.position = new Vector3(0, 13.292f, 0);
+        if (posAnterior)
+        {
+            player.transform.position = playerPosAnterior;
+        }
+        else
+        {
+            player.transform.position = new Vector3(0, 13.292f, 0);
+        }    
         cameraObject.transform.position = player.transform.position;
         if (pet != null)
         {
             pet.transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 1);
         }
     }
-    public void Piso4()
+    public void Piso4(bool posAnterior = false)
     {
-        player.transform.position = new Vector3(0, 20.006f, 0);
+        if (posAnterior)
+        {
+            player.transform.position = playerPosAnterior;
+        }
+        else
+        {
+            player.transform.position = new Vector3(0, 20.006f, 0);
+        }       
         cameraObject.transform.position = player.transform.position;
         if (pet != null)
         {
