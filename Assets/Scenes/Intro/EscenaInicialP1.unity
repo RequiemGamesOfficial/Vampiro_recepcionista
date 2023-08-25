@@ -16723,7 +16723,6 @@ GameObject:
   - component: {fileID: 2085065520}
   - component: {fileID: 2085065521}
   - component: {fileID: 2085065522}
-  - component: {fileID: 2085065523}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -16869,20 +16868,6 @@ MonoBehaviour:
   vidasHabitacion: {fileID: 2085065520}
   skating: 0
   tiempoPerdidaLiana: 2
---- !u!114 &2085065523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085065514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e5210c8ea1ca4449935372f57be7614, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 1617770893}
-  anim2: {fileID: 9100000, guid: 09266a88b74734a489dc14165bf73476, type: 2}
 --- !u!1 &2097425092
 GameObject:
   m_ObjectHideFlags: 0

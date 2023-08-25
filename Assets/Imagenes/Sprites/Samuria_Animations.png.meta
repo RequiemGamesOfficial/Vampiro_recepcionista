@@ -1,0 +1,431 @@
+fileFormatVersion: 2
+guid: bb659ffe450e67c4b93e4829b82f68a9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Samuria_Animations_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 44
+        width: 18
+        height: 23
+      alignment: 9
+      pivot: {x: 0.3968879, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80784e2e50072554eb97c037e705d2f4
+      internalID: -1579109195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuria_Animations_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 44
+        width: 18
+        height: 23
+      alignment: 9
+      pivot: {x: 0.40877914, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547a5f891cef9f94d81424a4ed761661
+      internalID: -847056713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuria_Animations_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 44
+        width: 21
+        height: 24
+      alignment: 9
+      pivot: {x: 0.71619016, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e6bf2535ec7bb4d9a5efa42d494b8b
+      internalID: 435136711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuria_Animations_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 44
+        width: 22
+        height: 24
+      alignment: 9
+      pivot: {x: 0.7063633, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fbe38bbbf5f48845a847c4e659e1080
+      internalID: -363859437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuria_Animations_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 44
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.2644444, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9737a2eccc36f4c8b5a3b6d7b879a2
+      internalID: -710512027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuria_Animations_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 42
+        width: 25
+        height: 25
+      alignment: 9
+      pivot: {x: 0.58154356, y: 0.04121597}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c295d50f5ef61834d908148d0a524fff
+      internalID: -530190696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuria_Animations_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 44
+        width: 26
+        height: 22
+      alignment: 9
+      pivot: {x: 0.73306566, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b80d70fcdb9446458bc80af5cb92c88
+      internalID: 992369625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuria_Animations_7
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 44
+        width: 26
+        height: 22
+      alignment: 9
+      pivot: {x: 0.7379843, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b6bc7f469b884448c061e28018cf3f
+      internalID: 1581930051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuria_Animations_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 14
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5033666, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce404ac8f6021e4c81fe49ce4dc291a
+      internalID: 1334495707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuria_Animations_9
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 17
+        width: 15
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5722672, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce18c898b9d2dd47a01e7aa2a33a242
+      internalID: -347312971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuria_Animations_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 17
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.57900286, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad7310e119f2fd45a93a401c3af2273
+      internalID: -200854559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuria_Animations_11
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 17
+        width: 20
+        height: 18
+      alignment: 9
+      pivot: {x: 0.7727684, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b438a97940f74043b9e84eb7afd9116
+      internalID: -628188167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuria_Animations_12
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 17
+        width: 34
+        height: 13
+      alignment: 9
+      pivot: {x: 0.88156307, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16576afffee4fbf489a32d217a730758
+      internalID: -1321615171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samuria_Animations_13
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 17
+        width: 36
+        height: 10
+      alignment: 9
+      pivot: {x: 0.86536324, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef796573d671dbd46ae119861eead6a8
+      internalID: 1033572724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Samuria_Animations_0: -1579109195
+      Samuria_Animations_1: -847056713
+      Samuria_Animations_10: -200854559
+      Samuria_Animations_11: -628188167
+      Samuria_Animations_12: -1321615171
+      Samuria_Animations_13: 1033572724
+      Samuria_Animations_2: 435136711
+      Samuria_Animations_3: -363859437
+      Samuria_Animations_4: -710512027
+      Samuria_Animations_5: -530190696
+      Samuria_Animations_6: 992369625
+      Samuria_Animations_7: 1581930051
+      Samuria_Animations_8: 1334495707
+      Samuria_Animations_9: -347312971
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

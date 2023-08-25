@@ -165,10 +165,11 @@ public class Hotel : MonoBehaviour
         //Mejora Hotel
         presupuesto = manager.money;
     }
-    public void BeberSangre(int blood)
+    public void BeberSangre(int blood, int id)
     {
         manager.blood += blood;
         stats.SetBlood();
+        manager.HuespedDead(id);
     }
 
     //Guardar Posicion de jugador para luego ponerlo donde estaba

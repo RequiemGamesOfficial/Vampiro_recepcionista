@@ -5,7 +5,7 @@ using UnityEngine;
 public class DueloScript : MonoBehaviour
 {
     public Canvas canvasWorld;
-    public GameObject buttonAttack;
+    public GameObject buttonSombra,buttonAttack;
 
     GameObject player;
     bool duelo;
@@ -21,6 +21,7 @@ public class DueloScript : MonoBehaviour
         canvasWorld.worldCamera = Camera.main;
         animDuelo = GetComponent<Animator>();
         eventsTriggers = GameObject.FindGameObjectWithTag("HotelManager").GetComponent<EventsTriggers>();
+        animSamurai.Play("PreAttack");
     }
 
     private void Update()
@@ -55,12 +56,13 @@ public class DueloScript : MonoBehaviour
         //Cambiar follow de camera
         eventsTriggers.TriggerDuelo();
         //Iniciar animacion duelo
+        buttonSombra.SetActive(true);
         animDuelo.Play("Duelo");
         yield return new WaitForSeconds(3);
         //Poner boton de duelo
         duelo = true;
-        buttonAttack.SetActive(true);
-        yield return new WaitForSeconds(4.5f);
+        buttonAttack.SetActive(true);        
+        yield return new WaitForSeconds(4f);
         //Terminar duelo si aun no presiona boton
         TerminarDuelo();        
     }
@@ -68,13 +70,16 @@ public class DueloScript : MonoBehaviour
     public void TerminarDuelo()
     {
         animDuelo.Play("TerminarDuelo");
+        animSamurai.Play("Attack");
         duelo = false;
         buttonAttack.SetActive(false);
+        buttonSombra.SetActive(false);
         Debug.Log(dueloTimer);
         PararCoroutine();
         if(dueloTimer < timeToWin)
         {
             animDuelo.SetBool("VampireWin", true);
+            animSamurai.SetBool("dead", true);
         }
         else
         {

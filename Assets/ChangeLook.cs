@@ -5,18 +5,22 @@ using UnityEngine;
 public class ChangeLook : MonoBehaviour
 {
     public Animator anim;
-    public RuntimeAnimatorController anim2;
+    Manager manager;
+
+    public RuntimeAnimatorController[] animatorPlayer = new RuntimeAnimatorController[17];
 
     // Start is called before the first frame update
     void Start()
     {
-       
-        anim.runtimeAnimatorController = anim2;
+        manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
+        if (manager.skin != 0)
+        {
+            ChangeAnimatorID(manager.skin);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeAnimatorID(int id)
     {
-        
+        anim.runtimeAnimatorController = animatorPlayer[id];
     }
 }

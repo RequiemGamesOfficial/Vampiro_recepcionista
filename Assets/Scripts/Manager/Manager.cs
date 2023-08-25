@@ -9,25 +9,24 @@ using UnityEngine.SceneManagement;
 public class Manager : MonoBehaviour
 {
     private static Manager instance;
+    public bool[] habitacionDead = new bool[12];
+    public HuespedData[] huespedID;
 
-    //datos a Guardad
+    //datos a Guardad Data
     public int blood, money, reputation;
     public int noche, habitaciones;
-
-    //habitaciones
+    //h00
     public int[] h = new int[12];
-
     public int piso3, piso4;
     public int basura1, basura2, basura3, basura4;
     public int playa1, playa2, playa3, japones1, japones2, japones3;
-
     public HuespedData[] numeroHabitacion = new HuespedData[12];
+    //h00Nights
     public int[] nightsInRoom = new int[12];
+    //h00ID
     public int[] habitacionID = new int[12];
-
-    public bool[] habitacionDead = new bool[12];
-
-    public HuespedData[] huespedID;
+    public int[] huespedDead = new int[16];
+    public int skin;
 
     private String filePath;
 
@@ -151,6 +150,11 @@ public class Manager : MonoBehaviour
             }
         }            
     }
+    //Contar muerte de huesped 
+    public void HuespedDead(int id)
+    {
+        huespedDead[id] += 1;
+    }
     
     //DataManager
     public void Guardar()
@@ -163,7 +167,7 @@ public class Manager : MonoBehaviour
             blood = blood,
             money = money,
             reputation = reputation,
-            dia = noche,
+            noche = noche,
             habitaciones = habitaciones,
             h4 = h[3],
             h5 = h[4],
@@ -203,7 +207,25 @@ public class Manager : MonoBehaviour
             basura1= basura1,
             basura2=basura2,
             basura3=basura3,
-            basura4=basura4
+            basura4=basura4,
+            //huespedes
+            huespedDead1 = huespedDead[0],
+            huespedDead2 = huespedDead[1],
+            huespedDead3 = huespedDead[2],
+            huespedDead4 = huespedDead[3],
+            huespedDead5 = huespedDead[4],
+            huespedDead6 = huespedDead[5],
+            huespedDead7 = huespedDead[6],
+            huespedDead8 = huespedDead[7],
+            huespedDead9 = huespedDead[8],
+            huespedDead10 = huespedDead[9],
+            huespedDead11 = huespedDead[10],
+            huespedDead12 = huespedDead[11],
+            huespedDead13 = huespedDead[12],
+            huespedDead14 = huespedDead[13],
+            huespedDead15 = huespedDead[14],
+            huespedDead16 = huespedDead[15],
+            skin = skin
         };
 
         bf.Serialize(file, data);
@@ -221,7 +243,7 @@ public class Manager : MonoBehaviour
             blood = 50,
             money = 0,
             reputation = 50,
-            dia = 0,
+            noche = 0,
             habitaciones = 3,
             h4 = 0,
             h5 = 0,
@@ -229,9 +251,9 @@ public class Manager : MonoBehaviour
             h7 = 0,
             h8 = 0,
             h9 = 0,
-            h10 =0,
-            h11=0,
-            h12=0,
+            h10 = 0,
+            h11 = 0,
+            h12 = 0,
             h1Nights = 0,
             h2Nights = 0,
             h3Nights = 0,
@@ -261,7 +283,25 @@ public class Manager : MonoBehaviour
             basura1 = 0,
             basura2 = 0,
             basura3 = 0,
-            basura4 = 0
+            basura4 = 0,
+            //huespedes
+            huespedDead1 = 0,
+            huespedDead2 = 0,
+            huespedDead3 = 0,
+            huespedDead4 = 0,
+            huespedDead5 = 0,
+            huespedDead6 = 0,
+            huespedDead7 = 0,
+            huespedDead8 = 0,
+            huespedDead9 = 0,
+            huespedDead10 = 0,
+            huespedDead11 = 0,
+            huespedDead12 = 0,
+            huespedDead13 = 0,
+            huespedDead14 = 0,
+            huespedDead15 = 0,
+            huespedDead16 = 0,
+            skin = 0
         };
 
         ResetearHabitaciones();
@@ -284,7 +324,7 @@ public class Manager : MonoBehaviour
             blood = data.blood;
             money = data.money;
             reputation = data.reputation;
-            noche = data.dia;
+            noche = data.noche;
             habitaciones = data.habitaciones;
             h[3] = data.h4;
             h[4] = data.h5;
@@ -325,6 +365,24 @@ public class Manager : MonoBehaviour
             basura2 = data.basura2;
             basura3 = data.basura3;
             basura4 = data.basura4;
+            //huespedes
+            huespedDead[0] = data.huespedDead1;
+            huespedDead[1] = data.huespedDead2;
+            huespedDead[2] = data.huespedDead3;
+            huespedDead[3] = data.huespedDead4;
+            huespedDead[4] = data.huespedDead5;
+            huespedDead[5] = data.huespedDead6;
+            huespedDead[6] = data.huespedDead7;
+            huespedDead[7] = data.huespedDead8;
+            huespedDead[8] = data.huespedDead9;
+            huespedDead[9] = data.huespedDead10;
+            huespedDead[10] = data.huespedDead11;
+            huespedDead[11] = data.huespedDead12;
+            huespedDead[12] = data.huespedDead13;
+            huespedDead[13] = data.huespedDead14;
+            huespedDead[14] = data.huespedDead15;
+            huespedDead[15] = data.huespedDead16;
+            skin = data.skin;           
 
             file.Close();
         }

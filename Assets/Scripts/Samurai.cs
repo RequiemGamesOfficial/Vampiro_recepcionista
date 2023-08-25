@@ -30,7 +30,7 @@ public class Samurai : MonoBehaviour
         {
             print("Kill");
             audioSource.Play();
-            hotel.BeberSangre(huespedData.Blood);
+            hotel.BeberSangre(huespedData.Blood,huespedData.id);
             anim.SetBool("dead", true);
             dead = true;
 
