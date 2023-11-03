@@ -18,13 +18,7 @@ public class ResetNewGame : MonoBehaviour
     public void ResetearValores()
     {
         Debug.Log("Resetear");
-        manager.blood = 50;
-        manager.money = 0;
-        manager.reputation = 50;
-
-        manager.noche = 0;
-        manager.habitaciones = 2;
-
+        manager.Restart();
     }
 
 

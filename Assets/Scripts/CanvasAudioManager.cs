@@ -5,21 +5,31 @@ using UnityEngine;
 public class CanvasAudioManager : MonoBehaviour
 {
     AudioSource audioSource;
-    public AudioClip audioclip1, audioclip2;
+    public AudioClip seleccion, audioSi,audioNo,audioLlave;
 
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
 
-    public void PlayAudio1()
+    public void PlayAudioSeleccion()
     {
-        audioSource.clip = audioclip1;
+        audioSource.clip = seleccion;
         audioSource.Play();
     }
-    public void PlayAudio2()
+    public void PlayAudioSi()
     {
-        audioSource.clip = audioclip2;
+        audioSource.clip = audioSi;
+        audioSource.Play();
+    }
+    public void PlayAudioNo()
+    {
+        audioSource.clip = audioNo;
+        audioSource.Play();
+    }
+    public void PlayAudioLlave()
+    {
+        audioSource.clip = audioLlave;
         audioSource.Play();
     }
 }

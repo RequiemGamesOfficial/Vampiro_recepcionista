@@ -5,7 +5,8 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     AudioSource audioSource;
-    public AudioClip paso1, paso2;
+    public AudioClip [] stepRight, stepLeft;
+    int randomSound;
 
     private void Awake()
     {
@@ -14,12 +15,20 @@ public class SoundManager : MonoBehaviour
 
     public void PlayPaso1()
     {
-        audioSource.clip = paso1;
-        audioSource.Play();
+        if(stepRight.Length > 0)
+        {
+            randomSound = Random.Range(0, stepRight.Length);
+            audioSource.clip = stepRight[randomSound];
+            audioSource.Play();
+        }
     }
     public void PlayPaso2()
     {
-        audioSource.clip = paso2;
-        audioSource.Play();
+        if (stepLeft.Length>0)
+        {
+            randomSound = Random.Range(0, stepLeft.Length);
+            audioSource.clip = stepLeft[randomSound];
+            audioSource.Play();
+        }
     }
 }

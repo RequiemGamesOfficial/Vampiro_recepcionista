@@ -66,14 +66,18 @@ public class VidasHabitacion : MonoBehaviour
 
     public void DueloLose()
     {
-        anim.Play("PlayerDueloLose");
+        anim.Play("P_Dying");
         Invoke("DueloFinal", 2);
     }
-
+    public void DueloWin()
+    {
+        anim.Play("P_WinPose");       
+    }
     void DueloFinal()
     {
         cambioDeLugar.ChangeFloor();
-        hotel.FadeToBlack();
+        anim.Play("P_Stan");
+        hotel.FadeToBlack();       
     }
 
     IEnumerator DesactivarColision()

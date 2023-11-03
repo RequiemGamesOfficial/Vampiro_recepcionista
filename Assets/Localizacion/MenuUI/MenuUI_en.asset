@@ -78,6 +78,18 @@ MonoBehaviour:
     m_Localized: Post processing
     m_Metadata:
       m_Items: []
+  - m_Id: 79103112807546880
+    m_Localized: to move
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79103293053566976
+    m_Localized: to jump
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79103486650056704
+    m_Localized: to interactuate
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

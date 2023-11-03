@@ -10,6 +10,7 @@ public class CompraMejora : MonoBehaviour
     public int costo, reputacion,id;
     public GameObject precio;
     public GameObject gameObject2;
+    public GameObject particlePrefat;
 
     private void Update()
     {
@@ -23,6 +24,7 @@ public class CompraMejora : MonoBehaviour
     {
         if (hotel.presupuesto >= costo)
         {
+            Instantiate(particlePrefat, this.transform.position, Quaternion.identity);
             hotel.CompraMejora(costo, reputacion, id);
             Debug.Log("Compra");
             precio.SetActive(false);
@@ -31,6 +33,10 @@ public class CompraMejora : MonoBehaviour
                 gameObject2.SetActive(false);
             }
             this.gameObject.SetActive(false);
+        }
+        else
+        {
+            hotel.NoCashSound();
         }
     }
 

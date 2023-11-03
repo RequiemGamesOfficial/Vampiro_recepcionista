@@ -594,8 +594,10 @@ GameObject:
   m_Component:
   - component: {fileID: 43373379}
   - component: {fileID: 43373378}
+  - component: {fileID: 43373380}
+  - component: {fileID: 43373381}
   m_Layer: 0
-  m_Name: vampiro_recepcionista_grande
+  m_Name: Vampiro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -668,6 +670,57 @@ Transform:
   m_Father: {fileID: 1958400578}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &43373380
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43373377}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 043b5def48201a443b36d7d815f0d277, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &43373381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43373377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5210c8ea1ca4449935372f57be7614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 43373380}
+  animatorPlayer:
+  - {fileID: 9100000, guid: 043b5def48201a443b36d7d815f0d277, type: 2}
+  - {fileID: 9100000, guid: 6606773f74ea93e4f97c4ed76db50831, type: 2}
+  - {fileID: 9100000, guid: 652b3f578a3c2ce4e95ae77ebf782e31, type: 2}
+  - {fileID: 9100000, guid: 4ba293c375c43074f9106ca97a996ba0, type: 2}
+  - {fileID: 9100000, guid: 68c9461680cefb24d8a2e86782b1365f, type: 2}
+  - {fileID: 9100000, guid: 6f4788ef0ef1e074b903babfc02ec815, type: 2}
+  - {fileID: 9100000, guid: 34a6daf2f83179b4eb38d2a30e918450, type: 2}
+  - {fileID: 9100000, guid: 497084cbd12f2c0489d7ca6becb460a3, type: 2}
+  - {fileID: 9100000, guid: 12e337849cc00d24eadd08862f5c0457, type: 2}
+  - {fileID: 9100000, guid: f19016569aabffb47863ffc973a8b819, type: 2}
+  - {fileID: 9100000, guid: 4464203eca23c664ea6a4f90b714562d, type: 2}
+  - {fileID: 9100000, guid: 60da833d0d3e94d42a9b0623659761ca, type: 2}
+  - {fileID: 9100000, guid: ef99e4d227addf448bd44e02b91a42e6, type: 2}
+  - {fileID: 9100000, guid: cf8a6833bcbeffa4b87a943dc6c19ad0, type: 2}
+  - {fileID: 9100000, guid: 4422802dfa5ffbc429cb8c7e7d6c1b6f, type: 2}
+  - {fileID: 9100000, guid: 213426b23d69d944596eab5171bb17c1, type: 2}
+  - {fileID: 9100000, guid: 2900d6b539ebf684f93639dda44d3ecd, type: 2}
 --- !u!1 &70728715
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,6 +931,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1752158360}
         m_TargetAssemblyTypeName: Recepcion, Assembly-CSharp
         m_MethodName: AnswerNo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1276622650}
+        m_TargetAssemblyTypeName: CanvasAudioManager, Assembly-CSharp
+        m_MethodName: PlayAudioNo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1144,6 +1209,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1276622650}
+        m_TargetAssemblyTypeName: CanvasAudioManager, Assembly-CSharp
+        m_MethodName: PlayAudioLlave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
         m_MethodName: LLaveHabitacion
@@ -1342,7 +1419,7 @@ MonoBehaviour:
   payaso: {fileID: 2416954468279513501, guid: a76790ef71281fb458f2ea7d56dabd27, type: 3}
   drogo: {fileID: 2416954468279513501, guid: 1dadf47837e4aae47b7e1466575b78be, type: 3}
   padrecito: {fileID: 2416954468279513501, guid: c78584a0346dcd141ad269398a963a9a, type: 3}
-  musico: {fileID: 2416954468279513501, guid: f372db5d35f61fb41bebc609276833f6, type: 3}
+  musico: {fileID: 2416954468279513501, guid: f0fa9d643d830fa48a917d680a726345, type: 3}
   mago: {fileID: 2416954468279513501, guid: 17a4ba49e948a0542aeb47415f838bca, type: 3}
   ciego: {fileID: 2416954468279513501, guid: 65c9adf97e45bc14a8b3b6d4fedf9030, type: 3}
   marciano: {fileID: 2416954468279513501, guid: e2e10104b76c3f64a896ae6ba62d1948, type: 3}
@@ -1359,7 +1436,7 @@ MonoBehaviour:
   drogoData: {fileID: 11400000, guid: a747d07e5a5c9164ab52489f921b4827, type: 2}
   padrecitoData: {fileID: 11400000, guid: 570f2e853bd59c2409e77092bda748c3, type: 2}
   musicoData: {fileID: 11400000, guid: fcbeedebb6e0c734c9a29549060dd483, type: 2}
-  magoData: {fileID: 11400000, guid: 1eb1a98930f99204097e64e39d5f576a, type: 2}
+  magoData: {fileID: 11400000, guid: 6e437643ff055064fb54f9ca32a9ddec, type: 2}
   ciegoData: {fileID: 11400000, guid: 16af3dda4fd1d0a43bb77009bf644863, type: 2}
   marcianoData: {fileID: 11400000, guid: 2465a33c003cdc54e8772478430e0d46, type: 2}
   esquimalData: {fileID: 11400000, guid: 049567f8ffdfcd24ea38aaa6753b8b65, type: 2}
@@ -1513,7 +1590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
+  m_sendNavigationEvents: 0
   m_DragThreshold: 10
 --- !u!4 &194617623
 Transform:
@@ -1804,6 +1881,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1276622650}
+        m_TargetAssemblyTypeName: CanvasAudioManager, Assembly-CSharp
+        m_MethodName: PlayAudioLlave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
         m_MethodName: LLaveHabitacion
@@ -2295,6 +2384,80 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1001 &533423007
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1958400578}
+    m_Modifications:
+    - target: {fileID: 864730365627819019, guid: 2d7f02d9279e91541a9993b47db0b98a, type: 3}
+      propertyPath: m_Name
+      value: Lampara
+      objectReference: {fileID: 0}
+    - target: {fileID: 864730365627819029, guid: 2d7f02d9279e91541a9993b47db0b98a, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 864730365627819029, guid: 2d7f02d9279e91541a9993b47db0b98a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.3741155
+      objectReference: {fileID: 0}
+    - target: {fileID: 864730365627819029, guid: 2d7f02d9279e91541a9993b47db0b98a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.4523182
+      objectReference: {fileID: 0}
+    - target: {fileID: 864730365627819029, guid: 2d7f02d9279e91541a9993b47db0b98a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.30653977
+      objectReference: {fileID: 0}
+    - target: {fileID: 864730365627819029, guid: 2d7f02d9279e91541a9993b47db0b98a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 864730365627819029, guid: 2d7f02d9279e91541a9993b47db0b98a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.478
+      objectReference: {fileID: 0}
+    - target: {fileID: 864730365627819029, guid: 2d7f02d9279e91541a9993b47db0b98a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 864730365627819029, guid: 2d7f02d9279e91541a9993b47db0b98a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 864730365627819029, guid: 2d7f02d9279e91541a9993b47db0b98a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 864730365627819029, guid: 2d7f02d9279e91541a9993b47db0b98a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 864730365627819029, guid: 2d7f02d9279e91541a9993b47db0b98a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 864730365627819029, guid: 2d7f02d9279e91541a9993b47db0b98a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 864730365627819029, guid: 2d7f02d9279e91541a9993b47db0b98a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 864730365627819029, guid: 2d7f02d9279e91541a9993b47db0b98a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2d7f02d9279e91541a9993b47db0b98a, type: 3}
+--- !u!4 &533423008 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 864730365627819029, guid: 2d7f02d9279e91541a9993b47db0b98a, type: 3}
+  m_PrefabInstance: {fileID: 533423007}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &584287856
 GameObject:
   m_ObjectHideFlags: 0
@@ -2416,6 +2579,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1276622650}
+        m_TargetAssemblyTypeName: CanvasAudioManager, Assembly-CSharp
+        m_MethodName: PlayAudioLlave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
         m_MethodName: LLaveHabitacion
@@ -2750,6 +2925,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1276622650}
+        m_TargetAssemblyTypeName: CanvasAudioManager, Assembly-CSharp
+        m_MethodName: PlayAudioLlave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
         m_MethodName: LLaveHabitacion
@@ -2838,6 +3025,117 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657370242}
   m_CullTransparentMesh: 1
+--- !u!1 &660244851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 660244853}
+  - component: {fileID: 660244852}
+  m_Layer: 0
+  m_Name: GlobalLight
+  m_TagString: GlobalLight
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &660244852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660244851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 1
+  m_LightType: 4
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_LightVolumeIntensity: 1
+  m_LightVolumeIntensityEnabled: 0
+  m_ApplyToSortingLayers: 7f80095d00000000ed756166df711cb3
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowIntensityEnabled: 0
+  m_ShadowIntensity: 0.75
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_Vertices:
+  - position: {x: 0.9985302, y: 0.9985302, z: 0}
+    color: {r: 0.70710677, g: 0.70710677, b: 0, a: 0}
+    uv: {x: 0, y: 0}
+  - position: {x: 0.9985302, y: 0.9985302, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  - position: {x: -0.9985302, y: 0.9985302, z: 0}
+    color: {r: -0.70710677, g: 0.70710677, b: 0, a: 0}
+    uv: {x: 0, y: 0}
+  - position: {x: -0.9985302, y: 0.9985302, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  - position: {x: -0.99853003, y: -0.9985304, z: 0}
+    color: {r: -0.70710665, g: -0.7071069, b: 0, a: 0}
+    uv: {x: 0, y: 0}
+  - position: {x: -0.99853003, y: -0.9985304, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  - position: {x: 0.99853003, y: -0.9985304, z: 0}
+    color: {r: 0.70710665, g: -0.7071069, b: 0, a: 0}
+    uv: {x: 0, y: 0}
+  - position: {x: 0.99853003, y: -0.9985304, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  - position: {x: 0, y: 0, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  m_Triangles: 030001000800020000000100030002000100050003000800040002000300050004000300070005000800060004000500070006000500010007000800000006000700010000000700
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
+--- !u!4 &660244853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660244851}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &672715728
 GameObject:
   m_ObjectHideFlags: 0
@@ -3035,6 +3333,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1276622650}
+        m_TargetAssemblyTypeName: CanvasAudioManager, Assembly-CSharp
+        m_MethodName: PlayAudioLlave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
         m_MethodName: LLaveHabitacion
@@ -3381,6 +3691,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1276622650}
+        m_TargetAssemblyTypeName: CanvasAudioManager, Assembly-CSharp
+        m_MethodName: PlayAudioLlave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
         m_MethodName: LLaveHabitacion
@@ -3482,6 +3804,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1752158360}
         m_TargetAssemblyTypeName: Recepcion, Assembly-CSharp
         m_MethodName: AnswerYes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1276622650}
+        m_TargetAssemblyTypeName: CanvasAudioManager, Assembly-CSharp
+        m_MethodName: PlayAudioSi
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4013,6 +4347,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1276622650}
+        m_TargetAssemblyTypeName: CanvasAudioManager, Assembly-CSharp
+        m_MethodName: PlayAudioLlave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
         m_MethodName: LLaveHabitacion
@@ -4570,7 +4916,7 @@ AudioSource:
   m_GameObject: {fileID: 1276622644}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -4669,8 +5015,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7f8f33b4f31d4a47b68c2873c9cef7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioclip1: {fileID: 8300000, guid: d47f9ce367129b34090b424ff8002521, type: 3}
-  audioclip2: {fileID: 8300000, guid: 58b2e5d72e773f24e9a22ef2d55723d2, type: 3}
+  seleccion: {fileID: 8300000, guid: f4d2d9ca40fb92d49a05b9dee5b5de79, type: 3}
+  audioSi: {fileID: 8300000, guid: fa36331b7207f894686053dfcb3733d1, type: 3}
+  audioNo: {fileID: 8300000, guid: aebb6edbf3da6fd43b76d97cc9a089f7, type: 3}
+  audioLlave: {fileID: 8300000, guid: 268fb1f642c7b4d47a9bb641381b1b75, type: 3}
 --- !u!1 &1279376825
 GameObject:
   m_ObjectHideFlags: 0
@@ -4876,6 +5224,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1276622650}
+        m_TargetAssemblyTypeName: CanvasAudioManager, Assembly-CSharp
+        m_MethodName: PlayAudioLlave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
         m_MethodName: LLaveHabitacion
@@ -5085,6 +5445,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1276622650}
+        m_TargetAssemblyTypeName: CanvasAudioManager, Assembly-CSharp
+        m_MethodName: PlayAudioLlave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
         m_MethodName: LLaveHabitacion
@@ -5288,8 +5660,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1560903807
+  m_SortingLayer: -1
   m_SortingOrder: -20
   m_Sprite: {fileID: 21300000, guid: 8e27f59f3d85c1e418c51bd7f31fca8b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5544,6 +5916,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1276622650}
+        m_TargetAssemblyTypeName: CanvasAudioManager, Assembly-CSharp
+        m_MethodName: PlayAudioLlave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
         m_MethodName: LLaveHabitacion
@@ -5884,6 +6268,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1276622650}
+        m_TargetAssemblyTypeName: CanvasAudioManager, Assembly-CSharp
+        m_MethodName: PlayAudioLlave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
         m_MethodName: LLaveHabitacion
@@ -6263,6 +6659,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1276622650}
+        m_TargetAssemblyTypeName: CanvasAudioManager, Assembly-CSharp
+        m_MethodName: PlayAudioLlave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1097681774}
         m_TargetAssemblyTypeName: TablaHabitaciones, Assembly-CSharp
         m_MethodName: LLaveHabitacion
@@ -6396,7 +6804,7 @@ AudioSource:
   m_GameObject: {fileID: 1752158359}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7922650211865687641, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
   m_audioClip: {fileID: 8300000, guid: c373daee5638f68468a6bd39f7979384, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -6755,6 +7163,7 @@ Transform:
   - {fileID: 1545330993}
   - {fileID: 1574773904}
   - {fileID: 1279376826}
+  - {fileID: 533423008}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7225,8 +7634,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1560903807
+  m_SortingLayer: -1
   m_SortingOrder: -20
   m_Sprite: {fileID: 21300000, guid: 8e27f59f3d85c1e418c51bd7f31fca8b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7466,6 +7875,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1276622648}
     m_Modifications:
+    - target: {fileID: 1618603472711935271, guid: b9be5b1d58a8dd446b0340825593e8e3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618603472711935271, guid: b9be5b1d58a8dd446b0340825593e8e3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3096216579130044664, guid: b9be5b1d58a8dd446b0340825593e8e3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3096216579130044664, guid: b9be5b1d58a8dd446b0340825593e8e3, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

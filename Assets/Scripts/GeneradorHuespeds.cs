@@ -15,64 +15,95 @@ public class GeneradorHuespeds : MonoBehaviour
     public GameObject gameObjectToEnable;
     [HideInInspector]
     public bool fullHotel;
+    bool setPlaya, setJapones;
+
+    public void SetPlaya()
+    {
+        setPlaya = true;
+    }
+    public void SetJapones()
+    {
+        setJapones = true;
+    }
     //Crea Huespedes depediendo de la reputacion
     public void VIPReputation()
     {
-        huesped01 = astronauta;
-        huesped02 = hombre;
+        huesped01 = hombre;
+        huesped02 = astronauta;
         huesped03 = patineto;
-        huesped04 = explorador;
+        huesped04 = tesla;
         huesped05 = padrecito;
         huesped06 = esquimal;
         huesped07 = ciego;
         huesped08 = marciano;
+        if (setJapones)
+        {
+            huesped01 = samurai;
+        }
     }
     public void HighReputation()
     {
         huesped01 = hombre;
         huesped02 = astronauta;
         huesped03 = patineto;
-        huesped04 = explorador;
+        huesped04 = tesla;
         huesped05 = padrecito;
         huesped06 = esquimal;
         huesped07 = ciego;
         huesped08 = marciano;
+        if (setJapones)
+        {
+            huesped01 = samurai;
+        }
     }
     public void NormalReputation()
     {
         huesped01 = hombre;
         huesped02 = mujer;
-        //huesped03 = payaso;
-        huesped03 = samurai;
-        huesped04 = patineto;
+        huesped03 = musico;
+        huesped04 = esquimal;
         huesped05 = padrecito;
-        //huesped06 = esquimal;
         huesped06 = tesla;
         huesped07 = ciego;
-        huesped08 = astronauta;
+        huesped08 = explorador;
+        if (setJapones)
+        {
+            huesped01 = samurai;
+        }
+        if (setPlaya)
+        {
+            huesped02 = naufrago;
+        }
     }
     public void LowReputation()
     {
-        huesped01 = hombre;
+        huesped01 = drogo;
         huesped02 = mujer;
         huesped03 = payaso;
-        //huesped04 = drogo;
-        huesped04 = naufrago;
-        huesped05 = astronauta;
+        huesped04 = patineto;
+        huesped05 = marciano;
         huesped06 = mago;
         huesped07 = musico;
-        huesped08 = drogo;
+        huesped08 = explorador;
+        if (setPlaya)
+        {
+            huesped01 = naufrago;
+        }
     }
     public void MediocreReputation()
     {
-        huesped01 = hombre;
+        huesped01 = drogo;
         huesped02 = mago;
         huesped03 = payaso;
-        huesped04 = drogo;
-        huesped05 = drogo;
-        huesped06 = mago;
+        huesped04 = patineto;
+        huesped05 = marciano;
+        huesped06 = explorador;
         huesped07 = musico;
         huesped08 = drogo;
+        if (setPlaya)
+        {
+            huesped01 = naufrago;
+        }
     }
 
     public void GenerateNewGuest()

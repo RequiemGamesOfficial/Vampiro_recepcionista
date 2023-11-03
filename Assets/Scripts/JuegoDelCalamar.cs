@@ -13,6 +13,7 @@ public class JuegoDelCalamar : MonoBehaviour
 
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(OpenDemon(3.0f));
         playerController = player.GetComponent<PlayerController>();
 
@@ -34,13 +35,14 @@ public class JuegoDelCalamar : MonoBehaviour
     {
         while (true)
         {
+            Debug.Log("JuegoDelCalamar");
             attack = false;
             attacking = false;
             demon.SetActive(false);
             luzVerde.Play();
             yield return new WaitWhile(() => luzVerde.isPlaying);
-            demon.SetActive(true);
             luzVerde.Stop();
+            demon.SetActive(true);
             attack = true;
             yield return new WaitForSeconds(waitTime);
         }

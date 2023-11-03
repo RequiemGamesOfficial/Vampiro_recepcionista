@@ -5,6 +5,16 @@ using UnityEngine;
 public class FpsScript : MonoBehaviour
 {
 	float deltaTime = 0.0f;
+	public bool limitFps;
+	public int fps = 60;
+
+	void Start()
+	{
+		if (limitFps)
+		{
+			Application.targetFrameRate = fps;
+		}
+	}
 
 	void Update()
 	{
@@ -17,10 +27,10 @@ public class FpsScript : MonoBehaviour
 
 		GUIStyle style = new GUIStyle();
 
-		Rect rect = new Rect(0, 0, w, h * 2 / 100);
-		style.alignment = TextAnchor.UpperLeft;
-		style.fontSize = h * 2 / 100;
-		style.normal.textColor = new Color(0.0f, 0.0f, 0.5f, 1.0f);
+		Rect rect = new Rect(0, 0, w, h * 3 / 100);
+		style.alignment = TextAnchor.UpperCenter;
+		style.fontSize = h * 3 / 100;
+		style.normal.textColor = Color.green;
 		float msec = deltaTime * 1000.0f;
 		float fps = 1.0f / deltaTime;
 		string text = string.Format("{0:0.0} ms ({1:0.} fps)", msec, fps);

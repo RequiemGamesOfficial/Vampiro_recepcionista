@@ -77,6 +77,18 @@ MonoBehaviour:
     m_Key: Postprocesamiento
     m_Metadata:
       m_Items: []
+  - m_Id: 79103112807546880
+    m_Key: Para moverte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79103293053566976
+    m_Key: Para saltar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79103486650056704
+    m_Key: Para interactuar
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -26,6 +26,14 @@ public class Recepcion : MonoBehaviour
     void Start()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
+        if (manager.playa1 >=1 && manager.playa2 >= 1 && manager.playa3 >= 1)
+        {
+            generadorHuespeds.SetPlaya();
+        }
+        if (manager.japones1 >= 1 && manager.japones2 >= 1 && manager.japones3 >= 1)
+        {
+            generadorHuespeds.SetJapones();
+        }
         habitacionesDisponibles = 0;
         manager.noche += 1;
 

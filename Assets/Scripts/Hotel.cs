@@ -34,7 +34,8 @@ public class Hotel : MonoBehaviour
     //Mejora de hotel
     public int presupuesto;
 
-    public AudioSource audioSource;
+    public AudioSource audioSourceCompra, musica,noCashSound;
+    public AudioClip [] musicaHabitacion = new AudioClip[17];
     public Text textNoche;
 
     public GameObject posicionHabitacion;
@@ -97,25 +98,34 @@ public class Hotel : MonoBehaviour
         {
             japones1.SetActive(true);
         }
+        else
+        {
+            if (manager.playa1 >= 1)
+            {
+                playa1.SetActive(true);
+            }
+        }
         if (manager.japones2 >= 1)
         {
             japones2.SetActive(true);
+        }
+        else
+        {
+            if (manager.playa2 >= 1)
+            {
+                playa2.SetActive(true);
+            }
         }
         if (manager.japones3 >= 1)
         {
             japones3.SetActive(true);
         }
-        if (manager.playa1 >= 1)
+        else
         {
-            playa1.SetActive(true);
-        }
-        if (manager.playa2 >= 1)
-        {
-            playa2.SetActive(true);
-        }
-        if (manager.playa3 >= 1)
-        {
-            playa3.SetActive(true);
+            if (manager.playa3 >= 1)
+            {
+                playa3.SetActive(true);
+            }
         }
         
         //Activar pisos
@@ -193,6 +203,11 @@ public class Hotel : MonoBehaviour
 
     public void Piso1(bool posAnterior = false)
     {
+        if(musica.clip != musicaHabitacion[16])
+        {
+            musica.clip = musicaHabitacion[16];
+            musica.Play();
+        }
         if (posAnterior)
         {
             player.transform.position = playerPosAnterior;
@@ -214,13 +229,18 @@ public class Hotel : MonoBehaviour
     }
     public void Piso2(bool posAnterior = false)
     {
+        if (musica.clip != musicaHabitacion[16])
+        {
+            musica.clip = musicaHabitacion[16];
+            musica.Play();
+        }
         if (posAnterior)
         {
             player.transform.position = playerPosAnterior;
         }
         else
         {
-            player.transform.position = new Vector3(0, 6.63f, 0);
+            player.transform.position = new Vector3(0, 7.86f, 0);
         }        
         cameraObject.transform.position = player.transform.position;
         if (pet != null)
@@ -230,6 +250,11 @@ public class Hotel : MonoBehaviour
     }
     public void Piso3(bool posAnterior = false)
     {
+        if (musica.clip != musicaHabitacion[16])
+        {
+            musica.clip = musicaHabitacion[16];
+            musica.Play();
+        }
         if (posAnterior)
         {
             player.transform.position = playerPosAnterior;
@@ -246,6 +271,11 @@ public class Hotel : MonoBehaviour
     }
     public void Piso4(bool posAnterior = false)
     {
+        if (musica.clip != musicaHabitacion[16])
+        {
+            musica.clip = musicaHabitacion[16];
+            musica.Play();
+        }
         if (posAnterior)
         {
             player.transform.position = playerPosAnterior;
@@ -292,82 +322,114 @@ public class Hotel : MonoBehaviour
     //
     public void HabitacionHombre(int habitacion)
     {
+        musica.clip = musicaHabitacion[habitacion];
+        musica.Play();
         habitacionActualGameObject = Instantiate(habitacionPrefab[0], posicionHabitacion.transform.position, Quaternion.identity);
         //Decirle al activadorHombre que esta muerto y posicionar jugador
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);       
     }
     public void HabitacionMujer(int habitacion)
     {
+        musica.clip = musicaHabitacion[habitacion];
+        musica.Play();
         habitacionActualGameObject = Instantiate(habitacionPrefab[1], posicionHabitacion.transform.position, Quaternion.identity);
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionPayaso(int habitacion)
     {
+        musica.clip = musicaHabitacion[habitacion];
+        musica.Play();
         habitacionActualGameObject = Instantiate(habitacionPrefab[2], posicionHabitacion.transform.position, Quaternion.identity);
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionMago(int habitacion)
     {
+        musica.clip = musicaHabitacion[habitacion];
+        musica.Play();
         habitacionActualGameObject = Instantiate(habitacionPrefab[3], posicionHabitacion.transform.position, Quaternion.identity);
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionDrogo(int habitacion)
     {
+        musica.clip = musicaHabitacion[habitacion];
+        musica.Play();
         habitacionActualGameObject = Instantiate(habitacionPrefab[4], posicionHabitacion.transform.position, Quaternion.identity);
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }  
     public void HabitacionMusico(int habitacion)
     {
+        musica.clip = musicaHabitacion[habitacion];
+        musica.Play();
         habitacionActualGameObject = Instantiate(habitacionPrefab[5], posicionHabitacion.transform.position, Quaternion.identity);
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }   
     public void HabitacionCastaway(int habitacion)
     {
+        musica.clip = musicaHabitacion[habitacion];
+        musica.Play();
         habitacionActualGameObject = Instantiate(habitacionPrefab[6], posicionHabitacion.transform.position, Quaternion.identity);
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionSamurai(int habitacion)
     {
+        musica.clip = musicaHabitacion[8];
+        musica.Play();
         habitacionActualGameObject = Instantiate(habitacionPrefab[7], posicionHabitacion.transform.position, Quaternion.identity); 
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionPadrecito(int habitacion)
     {
+        musica.clip = musicaHabitacion[habitacion];
+        musica.Play();
         habitacionActualGameObject = Instantiate(habitacionPrefab[8], posicionHabitacion.transform.position, Quaternion.identity);
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionEskimo(int habitacion)
     {
+        musica.clip = musicaHabitacion[habitacion];
+        musica.Play();
         habitacionActualGameObject = Instantiate(habitacionPrefab[9], posicionHabitacion.transform.position, Quaternion.identity);
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionSkater(int habitacion)
     {
+        musica.clip = musicaHabitacion[habitacion];
+        musica.Play();
         habitacionActualGameObject = Instantiate(habitacionPrefab[10], posicionHabitacion.transform.position, Quaternion.identity);
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionBlind(int habitacion)
     {
+        musica.clip = musicaHabitacion[habitacion];
+        musica.Play();
         habitacionActualGameObject = Instantiate(habitacionPrefab[11], posicionHabitacion.transform.position, Quaternion.identity);
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionAlien(int habitacion)
     {
+        musica.clip = musicaHabitacion[habitacion];
+        musica.Play();
         habitacionActualGameObject = Instantiate(habitacionPrefab[12], posicionHabitacion.transform.position, Quaternion.identity);
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionTesla(int habitacion)
     {
+        musica.clip = musicaHabitacion[habitacion];
+        musica.Play();
         habitacionActualGameObject = Instantiate(habitacionPrefab[13], posicionHabitacion.transform.position, Quaternion.identity);
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionExplorer(int habitacion)
     {
+        musica.clip = musicaHabitacion[habitacion];
+        musica.Play();
         habitacionActualGameObject = Instantiate(habitacionPrefab[14], posicionHabitacion.transform.position, Quaternion.identity);
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionAstronaut(int habitacion)
     {
+        musica.clip = musicaHabitacion[habitacion];
+        musica.Play();
         habitacionActualGameObject = Instantiate(habitacionPrefab[15], posicionHabitacion.transform.position, Quaternion.identity);
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
@@ -422,7 +484,7 @@ public class Hotel : MonoBehaviour
     //Mejora del hotel- LLamado desde: CompraMejora/CompraDeHabitacion/CompraPiso
     public void AgregarHabitacion(int costo, int reputacion, int id)
     {
-        audioSource.Play();
+        audioSourceCompra.Play();
         presupuesto -= costo;
         manager.money = presupuesto;
         manager.habitaciones += 1;
@@ -432,7 +494,7 @@ public class Hotel : MonoBehaviour
     }
     public void CompraMejora(int costo, int reputacion, int id)
     {
-        audioSource.Play();
+        audioSourceCompra.Play();
         presupuesto -= costo;
         manager.money = presupuesto;
         manager.MejoraHotel(id);
@@ -441,12 +503,17 @@ public class Hotel : MonoBehaviour
     }
     public void CompraPiso(int costo, int reputacion, int id)
     {
-        audioSource.Play();
+        audioSourceCompra.Play();
         presupuesto -= costo;
         manager.money = presupuesto;
         manager.AgregarPiso(id);
         manager.reputation += reputacion;
         stats.SetValoresActuales();
+    }
+    //Sonido cuando no puede comprar
+    public void NoCashSound()
+    {
+        noCashSound.Play();
     }
 
     public void FadeToBlack()

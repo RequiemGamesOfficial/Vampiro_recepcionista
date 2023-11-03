@@ -14,7 +14,10 @@ public class DueloScript : MonoBehaviour
 
     Animator animDuelo;
     public Animator animSamurai;
+    public Samurai samurai;
     public EventsTriggers eventsTriggers;
+    AudioSource audioSource;
+    public AudioClip vampireWin, vampireLose;
 
     private void Start()
     {        
@@ -22,6 +25,7 @@ public class DueloScript : MonoBehaviour
         animDuelo = GetComponent<Animator>();
         eventsTriggers = GameObject.FindGameObjectWithTag("HotelManager").GetComponent<EventsTriggers>();
         animSamurai.Play("PreAttack");
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -37,7 +41,7 @@ public class DueloScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             player = collision.gameObject;
-            player.SendMessage("FalseMove");
+            player.SendMessage("FalseMoveSamurai");
             StartCoroutine(DuetoStart());
         }
     }
@@ -69,6 +73,7 @@ public class DueloScript : MonoBehaviour
 
     public void TerminarDuelo()
     {
+        player.SendMessage("Attack");
         animDuelo.Play("TerminarDuelo");
         animSamurai.Play("Attack");
         duelo = false;
@@ -79,7 +84,6 @@ public class DueloScript : MonoBehaviour
         if(dueloTimer < timeToWin)
         {
             animDuelo.SetBool("VampireWin", true);
-            animSamurai.SetBool("dead", true);
         }
         else
         {
@@ -87,17 +91,26 @@ public class DueloScript : MonoBehaviour
         }
     }
 
+    //Llamados desde la animacion del duelo
     public void VampireWin()
     {
+        //Obtener sangre del Samurai
+        audioSource.clip = vampireWin;
+        audioSource.Play();
+        samurai.Attack();
         animSamurai.SetBool("dead", true);
-        player.SendMessage("TrueMove");
+        player.SendMessage("DueloWin");
         eventsTriggers.ResetFollowCameraToPlayer();
+        dueloTimer = 0;
     }
 
     public void VampireLose()
     {
+        audioSource.clip = vampireLose;
+        audioSource.Play();
         player.SendMessage("DueloLose");
         eventsTriggers.ResetFollowCameraToPlayer();
+        dueloTimer = 0;
     }
 
     void PararCoroutine()

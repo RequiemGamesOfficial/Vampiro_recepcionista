@@ -11,6 +11,8 @@ public class cartaSamurai : MonoBehaviour
     bool samuraiBool;
     public bool dead;
 
+    public AudioSource audioCarta;
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && detected)
@@ -45,6 +47,8 @@ public class cartaSamurai : MonoBehaviour
 
     public void LeerCarta()
     {
+        //Sonido carta
+        audioCarta.Play();
         if (!samuraiBool)
         {
             Instantiate(samurai);            

@@ -137,7 +137,7 @@ TextureImporter:
         width: 16
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -145,6 +145,132 @@ TextureImporter:
       bones: []
       spriteID: 00a17af4098aadf4a8b923b3c498e606
       internalID: -150905506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos Jardin_1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 56
+        width: 30
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7714e959290ac489d5cfd88b8641be
+      internalID: -1135976661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos Jardin_2
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 48
+        width: 30
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da064e1c997eb544bfc3b96c3144faa
+      internalID: 670076256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos Jardin_3
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 28
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8dc3d02bfd23e46b9732b251564668
+      internalID: -1947436872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos Jardin_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 28
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce59006899f0514ba41192dfc3bf83a
+      internalID: 1139766940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos Jardin_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 8
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8bf315086413ea458eaad0aa04bf516
+      internalID: 1619471853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos Jardin_6
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 8
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec240de281b11a4ebec1d8ea70e6312
+      internalID: -408082034
       vertices: []
       indices: 
       edges: []
@@ -161,6 +287,12 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Objetos Jardin_0: -150905506
+      Objetos Jardin_1: -1135976661
+      Objetos Jardin_2: 670076256
+      Objetos Jardin_3: -1947436872
+      Objetos Jardin_4: 1139766940
+      Objetos Jardin_5: 1619471853
+      Objetos Jardin_6: -408082034
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -7,6 +7,11 @@ public class Portal : MonoBehaviour
     public Hotel hotel;
     public Transform destination;
     public bool fade;
+
+    private void Start()
+    {
+        hotel = GameObject.FindGameObjectWithTag("HotelManager").GetComponent<Hotel>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))

@@ -44,13 +44,13 @@ public class Npc : MonoBehaviour
             Instantiate(bloodPrefab, this.transform.position, Quaternion.identity);
             anim.SetBool("dead", true);
             dead = true;
-
+            button.SetActive(false);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && !dead)
         {
             detected = true;
             button.SetActive(true);

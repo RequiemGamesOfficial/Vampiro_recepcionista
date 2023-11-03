@@ -137,7 +137,7 @@ TextureImporter:
         width: 20
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -158,7 +158,7 @@ TextureImporter:
         width: 9
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,7 +179,7 @@ TextureImporter:
         width: 31
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,6 +187,27 @@ TextureImporter:
       bones: []
       spriteID: 0e74881c84f9b5c4e8ff67bdc98be2ef
       internalID: -3017902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playa_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 6
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160348e2f907fb4488a9b85a5e8d7012
+      internalID: -1510019073
       vertices: []
       indices: 
       edges: []
@@ -202,11 +223,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      playa_2: 387160543
-      playa_4: -3017902
-      playa_1: -1510019073
-      playa_3: -1174181895
       playa_0: 247405602
+      playa_1: -1510019073
+      playa_2: 387160543
+      playa_3: -1174181895
+      playa_4: -3017902
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

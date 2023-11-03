@@ -208,6 +208,12 @@ public class Manager : MonoBehaviour
             basura2=basura2,
             basura3=basura3,
             basura4=basura4,
+            playa1 = playa1,
+            playa2 = playa2,
+            playa3 = playa3,
+            japones1 = japones1,
+            japones2 = japones2,
+            japones3 = japones3,
             //huespedes
             huespedDead1 = huespedDead[0],
             huespedDead2 = huespedDead[1],
@@ -284,6 +290,12 @@ public class Manager : MonoBehaviour
             basura2 = 0,
             basura3 = 0,
             basura4 = 0,
+            playa1 = 0,
+            playa2 = 0,
+            playa3 = 0,
+            japones1 = 0,
+            japones2 = 0,
+            japones3 = 0,
             //huespedes
             huespedDead1 = 0,
             huespedDead2 = 0,
@@ -365,6 +377,12 @@ public class Manager : MonoBehaviour
             basura2 = data.basura2;
             basura3 = data.basura3;
             basura4 = data.basura4;
+            playa1 = data.playa1;
+            playa2 = data.playa2;
+            playa3 = data.playa3;
+            japones1 = data.japones1;
+            japones2 = data.japones2;
+            japones3 = data.japones3;
             //huespedes
             huespedDead[0] = data.huespedDead1;
             huespedDead[1] = data.huespedDead2;

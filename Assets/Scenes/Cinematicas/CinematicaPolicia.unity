@@ -1329,6 +1329,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5380173915103133625, guid: 26e36775cff4da046a635328ab5093e8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26e36775cff4da046a635328ab5093e8, type: 3}
 --- !u!1 &1053651501
@@ -2086,21 +2090,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb912039d433ca143a2811d223853d6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  habitacionDead: 000000000000000000000000
+  huespedID: []
   blood: 0
   money: 0
   reputation: 0
   noche: 0
   habitaciones: 0
-  habitacionesDisponibles: 0
-  h4: 0
-  h5: 0
-  h6: 0
-  h7: 0
-  h8: 0
-  h9: 0
-  h10: 0
-  h11: 0
-  h12: 0
+  h: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   piso3: 0
   piso4: 0
   basura1: 0
@@ -2113,70 +2110,23 @@ MonoBehaviour:
   japones1: 0
   japones2: 0
   japones3: 0
-  habitacion01: {fileID: 0}
-  habitacion02: {fileID: 0}
-  habitacion03: {fileID: 0}
-  habitacion04: {fileID: 0}
-  habitacion05: {fileID: 0}
-  habitacion06: {fileID: 0}
-  habitacion07: {fileID: 0}
-  habitacion08: {fileID: 0}
-  habitacion09: {fileID: 0}
-  habitacion10: {fileID: 0}
-  habitacion11: {fileID: 0}
-  habitacion12: {fileID: 0}
-  hombre: {fileID: 0}
-  mujer: {fileID: 0}
-  payaso: {fileID: 0}
-  mago: {fileID: 0}
-  drogo: {fileID: 0}
-  musico: {fileID: 0}
-  naufrago: {fileID: 0}
-  samurai: {fileID: 0}
-  padrecito: {fileID: 0}
-  esquimal: {fileID: 0}
-  patineto: {fileID: 0}
-  ciego: {fileID: 0}
-  marciano: {fileID: 0}
-  tesla: {fileID: 0}
-  explorador: {fileID: 0}
-  astronauta: {fileID: 0}
-  h1Nights: 0
-  h2Nights: 0
-  h3Nights: 0
-  h4Nights: 0
-  h5Nights: 0
-  h6Nights: 0
-  h7Nights: 0
-  h8Nights: 0
-  h9Nights: 0
-  h10Nights: 0
-  h11Nights: 0
-  h12Nights: 0
-  h1ID: 0
-  h2ID: 0
-  h3ID: 0
-  h4ID: 0
-  h5ID: 0
-  h6ID: 0
-  h7ID: 0
-  h8ID: 0
-  h9ID: 0
-  h10ID: 0
-  h11ID: 0
-  h12ID: 0
-  habitacion01Dead: 0
-  habitacion02Dead: 0
-  habitacion03Dead: 0
-  habitacion04Dead: 0
-  habitacion05Dead: 0
-  habitacion06Dead: 0
-  habitacion07Dead: 0
-  habitacion08Dead: 0
-  habitacion09Dead: 0
-  habitacion10Dead: 0
-  habitacion11Dead: 0
-  habitacion12Dead: 0
+  numeroHabitacion:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  nightsInRoom: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  habitacionID: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  huespedDead: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  skin: 0
 --- !u!4 &2055452443
 Transform:
   m_ObjectHideFlags: 0
@@ -2389,7 +2339,7 @@ AudioSource:
   m_GameObject: {fileID: 2143213271}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -2488,8 +2438,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7f8f33b4f31d4a47b68c2873c9cef7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioclip1: {fileID: 8300000, guid: d47f9ce367129b34090b424ff8002521, type: 3}
-  audioclip2: {fileID: 8300000, guid: 58b2e5d72e773f24e9a22ef2d55723d2, type: 3}
+  seleccion: {fileID: 8300000, guid: f4d2d9ca40fb92d49a05b9dee5b5de79, type: 3}
+  audioSi: {fileID: 8300000, guid: fa36331b7207f894686053dfcb3733d1, type: 3}
+  audioNo: {fileID: 8300000, guid: aebb6edbf3da6fd43b76d97cc9a089f7, type: 3}
+  audioLlave: {fileID: 8300000, guid: 268fb1f642c7b4d47a9bb641381b1b75, type: 3}
 --- !u!1001 &386963749756005294
 PrefabInstance:
   m_ObjectHideFlags: 0

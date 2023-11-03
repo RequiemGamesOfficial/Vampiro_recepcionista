@@ -1,0 +1,453 @@
+fileFormatVersion: 2
+guid: b2e7cff25273ebd4092ca5ec9f98abe9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Combat_Samurai_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 42
+        width: 32
+        height: 23
+      alignment: 9
+      pivot: {x: 0.4368961, y: 0.5000146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afcf5d03147a74448286aec813070f3
+      internalID: -685033640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Samurai_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 42
+        width: 35
+        height: 23
+      alignment: 9
+      pivot: {x: 0.49235982, y: 0.49999982}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f8340612d10304eb6aab301dd0d343
+      internalID: 1374238658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Samurai_2
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 40
+        width: 26
+        height: 26
+      alignment: 9
+      pivot: {x: 0.573035, y: 0.55555385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9a144d36372b042be53d2dde521027
+      internalID: -1390822002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Samurai_3
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 42
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.8225606, y: 0.5121153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02dbb2de3258244faa269d71917e5bd
+      internalID: -2059447953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Samurai_4
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 42
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983df853ca3c2d24ba14c0d0e23b8906
+      internalID: 1875910520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Samurai_5
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 42
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12056423e1197fd44b4dd3e34d2dc39a
+      internalID: -684648685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Samurai_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 42
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e6d17946cb1d844b78d2ace31733bd
+      internalID: 712326386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Samurai_7
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 42
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e2c6b5c68fc4c458ae2bcf691f4c0e
+      internalID: -1424923399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Samurai_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 13
+        width: 32
+        height: 23
+      alignment: 9
+      pivot: {x: 0.39732242, y: 0.50352347}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3240b639b2d584998bd8a391775ed0
+      internalID: 108319906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Samurai_9
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 15
+        width: 39
+        height: 8
+      alignment: 9
+      pivot: {x: 0.20407711, y: 1.7980521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e6880fefb89d8499468b31eec18edc
+      internalID: 1197204505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Samurai_10
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 15
+        width: 37
+        height: 12
+      alignment: 9
+      pivot: {x: 0.18061623, y: 1.167534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9505a4c7fb17248b05bc577baeb457
+      internalID: 729085043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Samurai_11
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 15
+        width: 25
+        height: 19
+      alignment: 9
+      pivot: {x: 0.23811463, y: 0.706752}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd93cc5822ea14e41b9e7b10d423dbef
+      internalID: 1620151131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Samurai_12
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 15
+        width: 19
+        height: 22
+      alignment: 9
+      pivot: {x: 0.46829867, y: 0.561305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43c98b06946d7b488be4d5e7518ec85
+      internalID: 1904752671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Samurai_13
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 15
+        width: 20
+        height: 23
+      alignment: 9
+      pivot: {x: 0.4738121, y: 0.5227729}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41971f214bfa97649a59c586deaa5cd7
+      internalID: 419579624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Samurai_14
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 14
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7ee8fc91ffbb4499060a2b9dac1054
+      internalID: 1790756961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Combat_Samurai_0: -685033640
+      Combat_Samurai_1: 1374238658
+      Combat_Samurai_10: 729085043
+      Combat_Samurai_11: 1620151131
+      Combat_Samurai_12: 1904752671
+      Combat_Samurai_13: 419579624
+      Combat_Samurai_14: 1790756961
+      Combat_Samurai_2: -1390822002
+      Combat_Samurai_3: -2059447953
+      Combat_Samurai_4: 1875910520
+      Combat_Samurai_5: -684648685
+      Combat_Samurai_6: 712326386
+      Combat_Samurai_7: -1424923399
+      Combat_Samurai_8: 108319906
+      Combat_Samurai_9: 1197204505
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

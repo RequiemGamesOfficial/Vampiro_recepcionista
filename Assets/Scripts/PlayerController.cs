@@ -263,6 +263,11 @@ public class PlayerController : MonoBehaviour
         canMove = false;
         horizontal = 0;
         anim.SetFloat("horizontal", 0);
+        anim.Play("P_Guard");
+    }
+    public void Attack()
+    {
+        anim.Play("P_Attack");
     }
 
     //Android Buttons

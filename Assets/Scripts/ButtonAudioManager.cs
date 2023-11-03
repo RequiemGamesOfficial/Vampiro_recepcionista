@@ -13,10 +13,10 @@ public class ButtonAudioManager : MonoBehaviour
 
     public void PlayAudio1()
     {
-        canvasAudioManager.PlayAudio1();
+        canvasAudioManager.PlayAudioSeleccion();
     }
     public void PlayAudio2()
     {
-        canvasAudioManager.PlayAudio2();
+        canvasAudioManager.PlayAudioSi();
     }
 }

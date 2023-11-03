@@ -522,7 +522,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &519420028
@@ -1287,7 +1287,7 @@ AudioSource:
   m_GameObject: {fileID: 1276622644}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -1386,8 +1386,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7f8f33b4f31d4a47b68c2873c9cef7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioclip1: {fileID: 8300000, guid: d47f9ce367129b34090b424ff8002521, type: 3}
-  audioclip2: {fileID: 8300000, guid: 58b2e5d72e773f24e9a22ef2d55723d2, type: 3}
+  seleccion: {fileID: 8300000, guid: f4d2d9ca40fb92d49a05b9dee5b5de79, type: 3}
+  audioSi: {fileID: 8300000, guid: fa36331b7207f894686053dfcb3733d1, type: 3}
+  audioNo: {fileID: 8300000, guid: aebb6edbf3da6fd43b76d97cc9a089f7, type: 3}
+  audioLlave: {fileID: 8300000, guid: 268fb1f642c7b4d47a9bb641381b1b75, type: 3}
 --- !u!4 &1407509031 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3588929043052346653, guid: 8516befb282617e4fb50713fa38929d1, type: 3}

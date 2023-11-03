@@ -1,0 +1,475 @@
+fileFormatVersion: 2
+guid: a2073723df89def48905acf74cc4cc71
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Combat_Ciego_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 55
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd7d978c7d2643438d84d128713e919
+      internalID: -1832042384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Ciego_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 57
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fb8ba186a48ea42bc0a75416547e6a
+      internalID: -377050371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Ciego_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 55
+        width: 27
+        height: 25
+      alignment: 9
+      pivot: {x: 0.67968863, y: 0.49290007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8e048fe25fbe744bd1deb0fcfc8904
+      internalID: -492018169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Ciego_3
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 56
+        width: 23
+        height: 25
+      alignment: 9
+      pivot: {x: 0.6234761, y: 0.49526674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d612ec4585f965c4195cc8c2ee1e0f07
+      internalID: -1393525646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Ciego_4
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 55
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5262951, y: 0.49763337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ade7ccea9737fe458e08c463296cc4a
+      internalID: -2033071381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Ciego_5
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 68
+        width: 33
+        height: 10
+      alignment: 9
+      pivot: {x: 0.16129002, y: 1.3909935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbcec6efbc4ac79478f909028052e353
+      internalID: -217112860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Ciego_6
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 48
+        width: 40
+        height: 8
+      alignment: 9
+      pivot: {x: 0.27921906, y: 1.6459956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c223c78ad5b3e2b4dabec7db0e95e6a5
+      internalID: 1531575328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Ciego_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 24
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5265519, y: 0.48482776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fec6e8679e9721469a2ee89691a17c2
+      internalID: -1561746273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Ciego_8
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 15
+        width: 33
+        height: 24
+      alignment: 9
+      pivot: {x: 0.450345, y: 0.48862085}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c70a24f422c8a42a3c2f977515fa20
+      internalID: 311249608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Ciego_9
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 14
+        width: 34
+        height: 24
+      alignment: 9
+      pivot: {x: 0.4491281, y: 0.4886209}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374b4a8be2bfc5e4b898f2c19a2c1257
+      internalID: 26981119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Ciego_10
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 14
+        width: 31
+        height: 24
+      alignment: 9
+      pivot: {x: 0.4571757, y: 0.4960514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9897aa0a09dff1e4cae9dfe6d3e5f797
+      internalID: -2122575468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Ciego_11
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 14
+        width: 31
+        height: 24
+      alignment: 9
+      pivot: {x: 0.47650737, y: 0.4886209}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a68bc1837db7264b8bc4c6242e28217
+      internalID: -438515129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Ciego_12
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 14
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9df7f569a66d3489adce8a936767a4
+      internalID: -1942211689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Ciego_13
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 14
+        width: 29
+        height: 23
+      alignment: 9
+      pivot: {x: 0.43407887, y: 0.5079163}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0e9aa2d54393546b960ec5d17836be
+      internalID: 324430089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Ciego_14
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 14
+        width: 29
+        height: 21
+      alignment: 9
+      pivot: {x: 0.39327055, y: 0.5476849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1e06e34be65cc4583bf182d3370c95
+      internalID: 1247967165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Ciego_15
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 12
+        width: 30
+        height: 19
+      alignment: 9
+      pivot: {x: 0.31793213, y: 0.6916513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce72b71086b09b4da14efcc4dfc79e7
+      internalID: 815934301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Combat_Ciego_0: -1832042384
+      Combat_Ciego_1: -377050371
+      Combat_Ciego_10: -2122575468
+      Combat_Ciego_11: -438515129
+      Combat_Ciego_12: -1942211689
+      Combat_Ciego_13: 324430089
+      Combat_Ciego_14: 1247967165
+      Combat_Ciego_15: 815934301
+      Combat_Ciego_2: -492018169
+      Combat_Ciego_3: -1393525646
+      Combat_Ciego_4: -2033071381
+      Combat_Ciego_5: -217112860
+      Combat_Ciego_6: 1531575328
+      Combat_Ciego_7: -1561746273
+      Combat_Ciego_8: 311249608
+      Combat_Ciego_9: 26981119
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

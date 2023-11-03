@@ -15,6 +15,11 @@ public class AnimatorPalyer : MonoBehaviour
         playerController.canMove = false;
     }
 
+    public void MoveTrue()
+    {
+        playerController.canMove = true;
+    }
+
     public void CinematicaMuerte()
     {
         SceneManager.LoadScene(cinematicaMuerte, LoadSceneMode.Single);
