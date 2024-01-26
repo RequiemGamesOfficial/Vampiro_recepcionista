@@ -14,7 +14,7 @@ public class Npc : MonoBehaviour
     public GameObject button;
     bool detected;
 
-    public GameObject bloodPrefab;
+    public GameObject bloodUIPrefab, bloodPrefab;
 
     private void Update()
     {
@@ -38,9 +38,10 @@ public class Npc : MonoBehaviour
             print("Kill");
             audioSource.Play();
             hotel.SendMessage("BeberSangre", huespedData.Blood);
-            Instantiate(bloodPrefab, new Vector3(this.transform.position.x + .5f, this.transform.position.y - .5f, this.transform.position.z), Quaternion.identity);
-            Instantiate(bloodPrefab, new Vector3(this.transform.position.x + 1, this.transform.position.y + .5f, this.transform.position.z), Quaternion.identity);
-            Instantiate(bloodPrefab, new Vector3(this.transform.position.x - .5f, this.transform.position.y + 1, this.transform.position.z), Quaternion.identity);
+            Instantiate(bloodUIPrefab, new Vector3(this.transform.position.x + .5f, this.transform.position.y - .5f, this.transform.position.z), Quaternion.identity);
+            Instantiate(bloodUIPrefab, new Vector3(this.transform.position.x + 1, this.transform.position.y + .5f, this.transform.position.z), Quaternion.identity);
+            Instantiate(bloodUIPrefab, new Vector3(this.transform.position.x - .5f, this.transform.position.y + 1, this.transform.position.z), Quaternion.identity);
+            Instantiate(bloodUIPrefab, this.transform.position, Quaternion.identity);
             Instantiate(bloodPrefab, this.transform.position, Quaternion.identity);
             anim.SetBool("dead", true);
             dead = true;

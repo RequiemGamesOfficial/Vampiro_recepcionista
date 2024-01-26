@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   huespedName: Tesla
   id: 13
-  blood: 10
+  blood: 12
   reputation: -25
   money: 100
-  nights: 2
+  nights: 1
   sprite: {fileID: -2064610573, guid: 9769876b61a14c74f8bf6225343a8953, type: 3}

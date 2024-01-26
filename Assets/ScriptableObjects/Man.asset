@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   huespedName: Man
   id: 0
-  blood: 7
+  blood: 10
   reputation: -20
   money: 250
   nights: 3

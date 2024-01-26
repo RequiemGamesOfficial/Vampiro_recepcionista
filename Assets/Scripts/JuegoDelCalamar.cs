@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class JuegoDelCalamar : MonoBehaviour
 {
-
-    public AudioSource luzVerde;
+    public AudioSource audioSource;
+    public AudioClip startClip, stopClip;
     public GameObject demon,damageArea;
+    public GameObject fireDemon;
     public GameObject player;
     PlayerController playerController;
     public bool attack,attacking;
@@ -14,11 +15,8 @@ public class JuegoDelCalamar : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        StartCoroutine(OpenDemon(3.0f));
         playerController = player.GetComponent<PlayerController>();
-
     }
-
     public void Update()
     {
         if(attack && playerController.horizontal != 0)
@@ -27,24 +25,27 @@ public class JuegoDelCalamar : MonoBehaviour
             {
                 attacking = true;
                 Instantiate(damageArea, player.transform.position, Quaternion.identity);
+                var newFire = Instantiate(fireDemon, player.transform.position, Quaternion.identity);
+                newFire.transform.parent = player.transform;
             }
         }
     }
-
-    IEnumerator OpenDemon(float waitTime)
+    public void DiabloStop()
     {
-        while (true)
-        {
-            Debug.Log("JuegoDelCalamar");
-            attack = false;
-            attacking = false;
-            demon.SetActive(false);
-            luzVerde.Play();
-            yield return new WaitWhile(() => luzVerde.isPlaying);
-            luzVerde.Stop();
-            demon.SetActive(true);
-            attack = true;
-            yield return new WaitForSeconds(waitTime);
-        }
+        attack = false;
+        audioSource.clip = startClip;
+        audioSource.Play();
     }
+    public void DiabloPreAttack()
+    {
+        audioSource.clip = stopClip;
+        audioSource.Play();
+    }
+
+    public void DiabloAttack()
+    {
+        audioSource.Stop();
+        attack = true;
+    }
+
 }

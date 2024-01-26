@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   huespedName: Priest
   id: 8
-  blood: 7
+  blood: 10
   reputation: -20
   money: 50
   nights: 3

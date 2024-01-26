@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   huespedName: Junkie
   id: 4
-  blood: 3
+  blood: 6
   reputation: 0
   money: 25
   nights: 1

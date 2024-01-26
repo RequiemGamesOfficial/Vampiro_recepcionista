@@ -14,7 +14,7 @@ public class CambioDeLugar : MonoBehaviour
     public int numeroHabitacion;
 
     public AudioSource audioSource;
-    public GameObject button;
+    public GameObject button,iconGuest;
 
     ControllerManager controllerManager;
 
@@ -196,20 +196,28 @@ public class CambioDeLugar : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && nuevoLugar != "")
         {
             controllerManager = collision.GetComponent<ControllerManager>();
             detected = true;
             button.SetActive(true);
+            if (iconGuest != null)
+            {
+                iconGuest.SetActive(true);
+            }                
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && nuevoLugar != "")
         {
             detected = false;
             button.SetActive(false);
+            if(iconGuest != null)
+            {
+                iconGuest.SetActive(false);
+            }            
         }
     }
 }

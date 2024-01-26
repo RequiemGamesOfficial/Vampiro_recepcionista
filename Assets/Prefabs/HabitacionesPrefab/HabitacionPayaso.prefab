@@ -897,8 +897,8 @@ AudioSource:
   m_GameObject: {fileID: 6240941489787699353}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2430c10386a1f8f4783016c324df4de8, type: 3}
+  OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 2745f74fa57452d4ab5f16d59460580f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1024,6 +1024,9 @@ MonoBehaviour:
   audioSource: {fileID: 6240941489787699350}
   proyectil: {fileID: 1824429052134439215, guid: ee5673422702d37489cbea2265613e34, type: 3}
   button: {fileID: 4332126682514057725}
+  bloodUIPrefab: {fileID: 5067929206152730905, guid: 2e4d0d5500f5c4c4dae2f026e19df0ed, type: 3}
+  bloodPrefab: {fileID: 4133123485196577313, guid: 0f9714b7a126ec542a7d106b6668c890, type: 3}
+  cambioDeLugar: {fileID: 6240941490546877520}
 --- !u!1 &6240941489799060326
 GameObject:
   m_ObjectHideFlags: 0

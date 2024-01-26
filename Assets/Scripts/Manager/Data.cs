@@ -21,6 +21,6 @@ class DataSave
     public int piso3, piso4;
     public int basura1, basura2, basura3, basura4;
     public int playa1, playa2, playa3, japones1, japones2, japones3;
-    public int huespedDead1, huespedDead2, huespedDead3, huespedDead4, huespedDead5, huespedDead6, huespedDead7, huespedDead8, huespedDead9, huespedDead10, huespedDead11, huespedDead12, huespedDead13, huespedDead14, huespedDead15, huespedDead16;
+    public int huespedDead1, huespedDead2, huespedDead3, huespedDead4, huespedDead5, huespedDead6, huespedDead7, huespedDead8, huespedDead9, huespedDead10, huespedDead11, huespedDead12, huespedDead13, huespedDead14, huespedDead15, huespedDead16, huespedDead17, huespedDead18, huespedDead19, huespedDead20, huespedDead21;
     public int skin;
 }

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine.SceneManagement;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class Manager : MonoBehaviour
 {
@@ -25,7 +25,7 @@ public class Manager : MonoBehaviour
     public int[] nightsInRoom = new int[12];
     //h00ID
     public int[] habitacionID = new int[12];
-    public int[] huespedDead = new int[16];
+    public int[] huespedDead = new int[21];
     public int skin;
 
     private String filePath;
@@ -231,6 +231,11 @@ public class Manager : MonoBehaviour
             huespedDead14 = huespedDead[13],
             huespedDead15 = huespedDead[14],
             huespedDead16 = huespedDead[15],
+            huespedDead17 = huespedDead[16],
+            huespedDead18 = huespedDead[17],
+            huespedDead19 = huespedDead[18],
+            huespedDead20 = huespedDead[19],
+            huespedDead21 = huespedDead[20],
             skin = skin
         };
 
@@ -247,7 +252,7 @@ public class Manager : MonoBehaviour
         {
             //Datos a Guardar 
             blood = 50,
-            money = 0,
+            money = 300,
             reputation = 50,
             noche = 0,
             habitaciones = 3,
@@ -313,6 +318,11 @@ public class Manager : MonoBehaviour
             huespedDead14 = 0,
             huespedDead15 = 0,
             huespedDead16 = 0,
+            huespedDead17 = 0,
+            huespedDead18 = 0,
+            huespedDead19 = 0,
+            huespedDead20 = 0,
+            huespedDead21 = 0,
             skin = 0
         };
 
@@ -400,6 +410,11 @@ public class Manager : MonoBehaviour
             huespedDead[13] = data.huespedDead14;
             huespedDead[14] = data.huespedDead15;
             huespedDead[15] = data.huespedDead16;
+            huespedDead[16] = data.huespedDead17;
+            huespedDead[17] = data.huespedDead18;
+            huespedDead[18] = data.huespedDead19;
+            huespedDead[19] = data.huespedDead20;
+            huespedDead[20] = data.huespedDead21;
             skin = data.skin;           
 
             file.Close();

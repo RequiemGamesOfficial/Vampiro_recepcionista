@@ -7,9 +7,11 @@ public class TimerHotel : MonoBehaviour
 {
     //PlayerController playerController;
     public Hotel hotel;
+    public PlayerController playerController;
 
     public float timer;
     public float limitTime;
+    bool timeOut;
 
     public Slider slider;
 
@@ -27,7 +29,7 @@ public class TimerHotel : MonoBehaviour
 
     void Update()
     {
-        if(timer >= 0)
+        if(timer >= 0 && !timeOut)
         {
             timer -= Time.deltaTime;
             SetValue(timer);
@@ -48,8 +50,9 @@ public class TimerHotel : MonoBehaviour
         print("TimeOver");
         hotel.ChecarHaibitaciones();
         fade.SetActive(false);
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
         resultadosPanel.SetActive(true);
-        //playerController.canMove = false;      
+        playerController.FalseMove();
+        timeOut = true;
     }
 }

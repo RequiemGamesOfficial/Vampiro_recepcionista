@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   huespedName: Alien
   id: 12
-  blood: 11
+  blood: 15
   reputation: -25
   money: 250
   nights: 0

@@ -70,8 +70,8 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
+    textureCompression: 0
+    compressionQuality: 0
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -101,6 +101,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -111,7 +135,7 @@ TextureImporter:
         x: 37
         y: 80
         width: 6
-        height: 18
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,7 +156,7 @@ TextureImporter:
         x: 47
         y: 80
         width: 6
-        height: 18
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,7 +177,7 @@ TextureImporter:
         x: 59
         y: 87
         width: 11
-        height: 13
+        height: 3
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,7 +198,7 @@ TextureImporter:
         x: 73
         y: 80
         width: 11
-        height: 21
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,7 +282,7 @@ TextureImporter:
         x: 68
         y: 45
         width: 11
-        height: 13
+        height: 3
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,7 +303,7 @@ TextureImporter:
         x: 89
         y: 45
         width: 11
-        height: 13
+        height: 3
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -398,6 +422,132 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Mausoleo_Assets_11
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 91
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46154ad087b14b44391a0dc1a8bd1bb7
+      internalID: -937611323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mausoleo_Assets_15
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 90
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5b5dda21fe67b4db8102159db2b0f1
+      internalID: -1113289093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mausoleo_Assets_16
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 89
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d286865fec758b744820d6eaa21f2e62
+      internalID: 271313017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mausoleo_Assets_17
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 89
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc212c61b0c1364ba64bcdfd630d612
+      internalID: -174493042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mausoleo_Assets_18
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 48
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3262865be42a08c4f862d81b1b999a22
+      internalID: 1516343171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mausoleo_Assets_19
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 48
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7b7c20c62b20f4a902b67446eb200b
+      internalID: -863228790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -416,6 +566,11 @@ TextureImporter:
       Mausoleo_Assets_12: -1944990981
       Mausoleo_Assets_13: -910659465
       Mausoleo_Assets_14: -626752626
+      Mausoleo_Assets_15: -1113289093
+      Mausoleo_Assets_16: 271313017
+      Mausoleo_Assets_17: -174493042
+      Mausoleo_Assets_18: 1516343171
+      Mausoleo_Assets_19: -863228790
       Mausoleo_Assets_2: 217805815
       Mausoleo_Assets_3: -2094860859
       Mausoleo_Assets_4: 1451850552

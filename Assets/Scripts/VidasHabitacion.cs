@@ -63,6 +63,55 @@ public class VidasHabitacion : MonoBehaviour
             Desactivar();
         }
     }
+    public void DamageKill(Vector2 posicion)
+    {
+        vidas -= 2;
+        if (vidas == 1)
+        {
+            vida3.SetActive(false);
+            vida2.SetActive(false);
+            anim.Play("PlayerDamage");
+            if (!skating && posicion != null)
+            {
+                playerController.Rebote(posicion);
+            }
+            StartCoroutine(DesactivarColision());
+        }
+        if (vidas <= 0)
+        {
+            vida1.SetActive(false);
+            cambioDeLugar.ChangeFloor();
+            if (controllerManager.skating)
+            {
+                controllerManager.OffSkate(false);
+            }
+            hotel.FadeToBlack();
+            Desactivar();
+        }
+        Invoke("KillPlayerRoom", 2);
+    }
+    public void DamageInstaKill(Vector2 posicion)
+    {
+        vidas -= 3;
+        if (vidas <= 0)
+        {
+            vida1.SetActive(false);
+            cambioDeLugar.ChangeFloor();
+            if (controllerManager.skating)
+            {
+                controllerManager.OffSkate(false);
+            }
+            hotel.FadeToBlack();
+            Desactivar();
+        }
+        Invoke("KillPlayerRoom", 2);
+    }
+    public void KillPlayerRoom()
+    {
+        cambioDeLugar.ChangeFloor();
+        hotel.FadeToBlack();
+        Desactivar();
+    }
 
     public void DueloLose()
     {

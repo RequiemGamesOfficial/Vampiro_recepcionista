@@ -96,7 +96,8 @@ MonoBehaviour:
   down: {fileID: 3736710889276453511}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 2128
+    m_Bits: 34896
+  groundRadius: 0.17
   velocidadRebote: {x: 5, y: 5}
   canMove: 1
   esquimal: 0
@@ -161,7 +162,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.007342197, y: 0.12354117}
+  m_Offset: {x: 0, y: 0.1243173}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -172,7 +173,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.08223842, y: 0.2544412}
+  m_Size: {x: 0.050496265, y: 0.25288895}
   m_EdgeRadius: 0
 --- !u!114 &3736710888455107480
 MonoBehaviour:

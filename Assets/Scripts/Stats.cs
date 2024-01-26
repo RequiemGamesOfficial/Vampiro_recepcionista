@@ -7,15 +7,16 @@ public class Stats : MonoBehaviour
 {
     public Manager manager;
 
-    public Slider sliderReputacion, sliderSangre, sliderSangreNew;
+    public Slider sliderReputacion, sliderReputacionNew, sliderSangre, sliderSangreNew;
     public Text textMoney;
-    float newMoney, currentMoney;
+    float newMoney, currentMoney,currentReputation;
     float timer;
 
-    bool bloodDown, bloodUP;
-    public bool moneyDown, moneyUp;
+    bool bloodDown, bloodUP,newBloodDown,newBloodUP;
+    bool moneyDown, moneyUp;
+    bool reputationDown, reputationUP;
 
-    void Start()
+    private void Awake()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
         SetValoresActuales();
@@ -23,6 +24,7 @@ public class Stats : MonoBehaviour
 
     private void Update()
     {
+        //Cambio de Sangre Perdida y ganancia
         if (bloodUP)
         {
             sliderSangre.value += 5 * Time.deltaTime;
@@ -38,13 +40,30 @@ public class Stats : MonoBehaviour
             if (sliderSangre.value <= sliderSangreNew.value)
             {
                 sliderSangre.value = sliderSangreNew.value;
-                bloodUP = false;
+                bloodDown = false;
             }
         }
-    }
 
-    private void LateUpdate()
-    {
+        if (newBloodUP)
+        {
+            sliderSangreNew.value += 5 * Time.deltaTime;
+            if (sliderSangreNew.value >= sliderSangre.value)
+            {
+                sliderSangreNew.value = sliderSangre.value;
+                newBloodUP = false;
+            }
+        }
+        if (newBloodDown)
+        {
+            sliderSangreNew.value -= 5 * Time.deltaTime;
+            if (sliderSangreNew.value <= sliderSangre.value)
+            {
+                sliderSangreNew.value = sliderSangre.value;
+                newBloodDown = false;
+            }
+        }
+
+        //Cambio de dinero 
         if (moneyUp)
         {
             currentMoney += 1;
@@ -67,13 +86,40 @@ public class Stats : MonoBehaviour
                 moneyUp = false;
             }
         }
+
+        //Cambio de Reputación 
+        if (reputationDown)
+        {
+            sliderReputacionNew.value -= 5 * Time.deltaTime;
+            if (sliderReputacionNew.value <= sliderReputacion.value)
+            {
+                sliderReputacionNew.value = sliderReputacion.value;
+                reputationDown = false;
+            }
+        }
+        if (reputationUP)
+        {
+            sliderReputacion.value += 5 * Time.deltaTime;
+            if (sliderReputacion.value >= sliderReputacionNew.value)
+            {
+                sliderReputacion.value = sliderReputacionNew.value;
+                reputationUP = false;
+            }
+        }
+    }
+
+    private void LateUpdate()
+    {
+
     }
     public void SetValoresActuales()
     {
         sliderReputacion.value = manager.reputation;
+        sliderReputacionNew.value = manager.reputation;
         sliderSangre.value = manager.blood;
         sliderSangreNew.value = manager.blood;
         currentMoney = manager.money;
+        currentReputation = manager.reputation;
         textMoney.text = ("$" + currentMoney);
     }
 
@@ -106,5 +152,44 @@ public class Stats : MonoBehaviour
         {
             bloodDown = true;
         }
+    }
+    //Quitar Sangre
+    public void SetNewBlood()
+    {
+        sliderSangre.value = manager.blood;
+        Invoke("ChangeNewBlood", 1f);
+    }
+    public void ChangeNewBlood()
+    {
+        if (sliderSangreNew.value < sliderSangre.value)
+        {
+            newBloodUP = true;
+        }
+        if (sliderSangreNew.value > sliderSangre.value)
+        {
+            newBloodDown = true;
+        }
+    }
+    //Modificar Reputacion
+    public void SetReputation()
+    {
+        if(currentReputation < manager.reputation)
+        {
+            SetReputationUp();
+        }
+        else
+        {
+            SetReputationDown();
+        }
+    }
+    void SetReputationUp()
+    {
+        sliderReputacionNew.value = manager.reputation;
+        reputationUP = true;
+    }
+    void SetReputationDown()
+    {
+        sliderReputacion.value = manager.reputation;
+        reputationDown = true;       
     }
 }

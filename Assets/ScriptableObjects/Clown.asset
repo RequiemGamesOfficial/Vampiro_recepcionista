@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   huespedName: Clown
   id: 2
-  blood: 8
+  blood: 11
   reputation: -15
   money: 100
   nights: 3

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   huespedName: Magician
   id: 3
-  blood: 6
+  blood: 9
   reputation: -20
   money: 150
   nights: 2

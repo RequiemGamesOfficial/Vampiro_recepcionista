@@ -1310,14 +1310,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Global Volume
       objectReference: {fileID: 0}
-    - target: {fileID: 5380173915103133624, guid: 26e36775cff4da046a635328ab5093e8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5380173915103133625, guid: 26e36775cff4da046a635328ab5093e8, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26e36775cff4da046a635328ab5093e8, type: 3}
 --- !u!1 &534715494
@@ -1620,6 +1612,18 @@ PrefabInstance:
     - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: blood
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: reputation
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: huespedDead.Array.size
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: habitacionID.Array.size
@@ -2112,6 +2116,86 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!1 &1032619719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1032619720}
+  - component: {fileID: 1032619722}
+  - component: {fileID: 1032619721}
+  m_Layer: 5
+  m_Name: Version
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1032619720
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032619719}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.09459842, y: 0.09459842, z: 0.09459842}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1830679483}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 6.388, y: -0.8030014}
+  m_SizeDelta: {x: 671.575, y: 89.228}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &1032619721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032619719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: b68b2cfc330db7842b1b48ac5a817ed9, type: 3}
+    m_FontSize: 78
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 78
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Alpha 1.01
+--- !u!222 &1032619722
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032619719}
+  m_CullTransparentMesh: 1
 --- !u!1 &1217397309
 GameObject:
   m_ObjectHideFlags: 0
@@ -3070,6 +3154,7 @@ RectTransform:
   - {fileID: 1018914454}
   - {fileID: 1308647623}
   - {fileID: 5758180639679100858}
+  - {fileID: 1032619720}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

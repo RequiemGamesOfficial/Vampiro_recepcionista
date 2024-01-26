@@ -431,7 +431,7 @@ TextureImporter:
         width: 117
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -452,7 +452,7 @@ TextureImporter:
         width: 115
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -460,6 +460,90 @@ TextureImporter:
       bones: []
       spriteID: 5326eb7a445af3549a927b1c3d0111c4
       internalID: -479820501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIBotones_16
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 103
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d8a663c66bb5f46aa677a9baf3bc1b
+      internalID: -719494294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIBotones_17
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 78
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdfb7fff161fda438297baca3aab584
+      internalID: -609004246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIBotones_18
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 52
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1461e8c0e26c03945a453fa21705f061
+      internalID: -1617220789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIBotones_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 65
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe509fefbe6d2b4daafb5d83bdc8aaf
+      internalID: 1517425870
       vertices: []
       indices: 
       edges: []
@@ -483,6 +567,10 @@ TextureImporter:
       UIBotones_13: -1274585724
       UIBotones_14: 662025665
       UIBotones_15: -479820501
+      UIBotones_16: -719494294
+      UIBotones_17: -609004246
+      UIBotones_18: -1617220789
+      UIBotones_19: 1517425870
       UIBotones_2: -1448062203
       UIBotones_3: 1192447965
       UIBotones_4: -1495149548

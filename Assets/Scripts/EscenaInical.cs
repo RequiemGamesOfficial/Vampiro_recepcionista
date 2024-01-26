@@ -27,6 +27,10 @@ public class EscenaInical : MonoBehaviour
     public BoxCollider2D doorCollider;
     public BoxCollider2D triggerContinuar;
 
+    public AudioSource audioSourceCompra, noCashSound;
+    public int habitaciones;
+    public GameObject continuarObject,tutorialDiablo;
+
     private void Start()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
@@ -95,5 +99,24 @@ public class EscenaInical : MonoBehaviour
     public void FadeToBlack()
     {
         animfadeOut.Play("FadeIn");
+    }
+
+    public void AgregarHabitacion(int costo)
+    {
+        audioSourceCompra.Play();
+        presupuesto -= costo;
+        manager.money = presupuesto;
+        stats.SetMoney();
+        habitaciones += 1;
+        if(habitaciones >= 3)
+        {
+            continuarObject.SetActive(true);
+            tutorialDiablo.SetActive(false);
+        }
+    }
+
+    public void NoCashSound()
+    {
+        noCashSound.Play();
     }
 }

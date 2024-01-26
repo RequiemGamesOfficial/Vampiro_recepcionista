@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   huespedName: Skater
   id: 10
-  blood: 7
+  blood: 11
   reputation: -15
   money: 50
   nights: 3

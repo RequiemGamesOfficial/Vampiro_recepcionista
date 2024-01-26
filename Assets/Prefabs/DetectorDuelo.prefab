@@ -355,6 +355,8 @@ MonoBehaviour:
   anim: {fileID: 968150496303271628}
   huespedData: {fileID: 11400000, guid: 156adcdf6edf94f4b8451d6326de5577, type: 2}
   audioSource: {fileID: 2356459519748741553}
+  bloodUIPrefab: {fileID: 5067929206152730905, guid: 2e4d0d5500f5c4c4dae2f026e19df0ed, type: 3}
+  bloodPrefab: {fileID: 4133123485196577313, guid: 0f9714b7a126ec542a7d106b6668c890, type: 3}
 --- !u!1 &3098051831756729103
 GameObject:
   m_ObjectHideFlags: 0

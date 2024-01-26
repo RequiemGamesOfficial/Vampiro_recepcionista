@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2877890458183072516
 RectTransform:
   m_ObjectHideFlags: 0
@@ -151,7 +151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6102449208555052387
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1473,8 +1473,8 @@ AudioSource:
   m_GameObject: {fileID: 5991291120733733873}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2430c10386a1f8f4783016c324df4de8, type: 3}
+  OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 2745f74fa57452d4ab5f16d59460580f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1580,6 +1580,9 @@ MonoBehaviour:
   audioSource: {fileID: 5991291120733733837}
   proyectil: {fileID: 1824429052134439215, guid: ee5673422702d37489cbea2265613e34, type: 3}
   button: {fileID: 2833635284302505616}
+  bloodUIPrefab: {fileID: 5067929206152730905, guid: 2e4d0d5500f5c4c4dae2f026e19df0ed, type: 3}
+  bloodPrefab: {fileID: 4133123485196577313, guid: 0f9714b7a126ec542a7d106b6668c890, type: 3}
+  cambioDeLugar: {fileID: 5991291119297052570}
 --- !u!1 &5991291120768007703
 GameObject:
   m_ObjectHideFlags: 0
@@ -2433,11 +2436,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4004415611433303219, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 1572011576770542559}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}
 --- !u!4 &1572011575762189924 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4004415611433303218, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}
+  m_PrefabInstance: {fileID: 2468644377012585174}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1572011576770542559 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4004415610295187721, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}
   m_PrefabInstance: {fileID: 2468644377012585174}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3202404000538625982
@@ -2969,12 +2981,21 @@ PrefabInstance:
       propertyPath: velocity
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4004415611433303219, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 6793413171134861167}
     - target: {fileID: 4004415611923680911, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.442
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}
+--- !u!212 &6793413171134861167 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4004415610295187721, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}
+  m_PrefabInstance: {fileID: 7626150533171541606}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6793413172139838164 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4004415611433303218, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}

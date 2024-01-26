@@ -5,6 +5,21 @@ using UnityEngine;
 public class Damage : MonoBehaviour
 {
     public bool destroyObject = true;
+    public bool destroyTimer = false;
+    public float destroyTime;
+    float timer;
+
+    private void Update()
+    {
+        if (destroyTimer)
+        {
+            timer += Time.deltaTime;
+            if(timer >= destroyTime)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

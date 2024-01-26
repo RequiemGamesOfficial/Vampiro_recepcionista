@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject groundCheck, up, down;
     public LayerMask groundLayer;
+    public float groundRadius = 0.1f;
 
     public Vector2 velocidadRebote;
     public bool canMove;
@@ -72,6 +73,8 @@ public class PlayerController : MonoBehaviour
         //Android
         if (canMove)
         {
+            anim.SetBool("ground",IsGrounded());
+            Flip();
             if (isJump && marciano)
             {
                 Debug.Log("Cambio");
@@ -165,8 +168,6 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-
-        Flip();
     }
     private void FixedUpdate()
     {       
@@ -196,7 +197,7 @@ public class PlayerController : MonoBehaviour
     }
     private bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.transform.position, 0.1f, groundLayer);
+        return Physics2D.OverlapCircle(groundCheck.transform.position, groundRadius, groundLayer);
     }
 
     public void GravedadAlReves()

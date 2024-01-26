@@ -17,9 +17,13 @@ public class HuespedHotel : MonoBehaviour
     public GameObject proyectil;
     public GameObject button;
 
+    public GameObject bloodUIPrefab, bloodPrefab;
+    Animator contadorUI;
+    public CambioDeLugar cambioDeLugar;
     private void Start()
     {
         hotel = GameObject.FindGameObjectWithTag("HotelManager").GetComponent<Hotel>();
+        contadorUI = GameObject.FindGameObjectWithTag("Contador").GetComponent<Animator>();
     }
     public void RestartDead()
     {
@@ -45,8 +49,15 @@ public class HuespedHotel : MonoBehaviour
         if (!dead)
         {
             print("Kill");
+            contadorUI.Play("Play");
+            Invoke("ChangePlace", 3f);
             audioSource.Play();
             hotel.BeberSangre(huespedData.Blood, huespedData.id);
+            Instantiate(bloodUIPrefab, new Vector3(this.transform.position.x + .5f, this.transform.position.y - .5f, this.transform.position.z), Quaternion.identity);
+            Instantiate(bloodUIPrefab, new Vector3(this.transform.position.x + 1, this.transform.position.y + .5f, this.transform.position.z), Quaternion.identity);
+            Instantiate(bloodUIPrefab, new Vector3(this.transform.position.x - .5f, this.transform.position.y + 1, this.transform.position.z), Quaternion.identity);
+            Instantiate(bloodUIPrefab, this.transform.position, Quaternion.identity);
+            Instantiate(bloodPrefab, this.transform.position, Quaternion.identity);
             anim.SetBool("dead", true);
             if (anim2 != null)
             {
@@ -62,6 +73,11 @@ public class HuespedHotel : MonoBehaviour
                 detector.SetActive(false);
             }
         }
+    }
+
+    void ChangePlace()
+    {
+        cambioDeLugar.ChangeFloor();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

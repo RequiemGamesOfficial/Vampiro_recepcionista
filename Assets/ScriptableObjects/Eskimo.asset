@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   huespedName: Eskimo
   id: 9
-  blood: 8
+  blood: 11
   reputation: -20
   money: 100
   nights: 1

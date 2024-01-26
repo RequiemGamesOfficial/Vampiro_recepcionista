@@ -6,12 +6,17 @@ using UnityEngine.UI;
 public class Hotel : MonoBehaviour
 {
     Manager manager;
+
     GameObject player,cameraObject;
     public GameObject pet;
 
     public GameObject[] puerta = new GameObject[12];
     public GameObject[] habitacionUI = new GameObject[12];
     public GameObject[] tablasH = new GameObject[12];
+    public GameObject[] moneyIcon = new GameObject[12];
+    public GameObject[] reputationIcon = new GameObject[12];
+    public Image[] iconGuest = new Image[12];
+    public GameObject moneyParticle;
 
     public GameObject piso3Construccion, piso3Azotea, piso3, piso3Compra;
     public GameObject piso4Construccion, piso4Azotea, piso4, piso4Compra;
@@ -25,9 +30,6 @@ public class Hotel : MonoBehaviour
     public int habitacionActual;
     ActivadorHabitacion activadorHabitacion;
     public Stats stats;
-
-    public ChangeScene changeScene;
-    public string cinematicaPolicia;
 
     public Animator animfadeOut;
 
@@ -45,13 +47,29 @@ public class Hotel : MonoBehaviour
 
     GameObject habitacionActualGameObject;
     Vector3 playerPosAnterior;
-
-    private void Start()
+    public GameObject patrulla;
+    public GameObject tutorialReputacion,tutorialDiablo,tutorialResultados;
+    public GameObject tutorialActual, tutorialReputacionActual;
+    public TimerHotel timerHotel;
+    private void Awake()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
+        if (manager.noche == 1)
+        {
+            tutorialReputacionActual = Instantiate(tutorialReputacion);
+            //timerHotel.limitTime = 30;
+        }
+        else
+        {
+            Destroy(tutorialResultados);
+        }
         player = GameObject.FindGameObjectWithTag("Player");
         pet = GameObject.FindGameObjectWithTag("Pet");
         cameraObject = GameObject.FindGameObjectWithTag("MainCamera");
+    }
+
+    private void Start()
+    {
         textNoche.text = (":" + manager.noche);
 
         //ActivarPuertas/DesactivarTablas
@@ -174,6 +192,21 @@ public class Hotel : MonoBehaviour
 
         //Mejora Hotel
         presupuesto = manager.money;
+
+        //Iconos de Huespedes
+        for (int i = 0; i < iconGuest.Length; i++)
+        {
+            if (manager.numeroHabitacion[i] != null)
+            {
+                iconGuest[i].sprite = manager.numeroHabitacion[i].sprite;
+            }
+        }
+
+        //Activar Patrulla
+        if(manager.reputation <= 20)
+        {
+            Instantiate(patrulla);
+        }
     }
     public void BeberSangre(int blood, int id)
     {
@@ -226,6 +259,14 @@ public class Hotel : MonoBehaviour
         {
             Destroy(habitacionActualGameObject, 0.5f);
         }
+
+        //Tutorial
+        if (manager.noche == 1 && tutorialActual == null)
+        {
+            Debug.Log("Reputacion Diablo");
+            tutorialActual = Instantiate(tutorialDiablo);
+            Destroy(tutorialReputacionActual);
+        }
     }
     public void Piso2(bool posAnterior = false)
     {
@@ -261,7 +302,7 @@ public class Hotel : MonoBehaviour
         }
         else
         {
-            player.transform.position = new Vector3(0, 13.292f, 0);
+            player.transform.position = new Vector3(0, 14.63f, 0);
         }    
         cameraObject.transform.position = player.transform.position;
         if (pet != null)
@@ -282,7 +323,7 @@ public class Hotel : MonoBehaviour
         }
         else
         {
-            player.transform.position = new Vector3(0, 20.006f, 0);
+            player.transform.position = new Vector3(0, 21.33f, 0);
         }       
         cameraObject.transform.position = player.transform.position;
         if (pet != null)
@@ -449,7 +490,11 @@ public class Hotel : MonoBehaviour
             {
                 if (!manager.habitacionDead[i])
                 {
+                    //Activar icono de moneda
+                    moneyIcon[i].SetActive(true);
+                    Instantiate(moneyParticle, moneyIcon[i].transform.position, Quaternion.identity);
                     habitacionUI[i].transform.GetChild(0).GetComponent<Text>().text = manager.numeroHabitacion[i].huespedName;
+                    //Mandar info a otro script para animarlo
                     habitacionUI[i].transform.GetChild(1).GetComponent<Text>().text = "+$" + manager.numeroHabitacion[i].money;
                     habitacionUI[i].transform.GetChild(2).GetComponent<Image>().sprite = manager.numeroHabitacion[i].sprite;
                     manager.money += manager.numeroHabitacion[i].money;
@@ -462,23 +507,20 @@ public class Hotel : MonoBehaviour
                 }
                 else
                 {
+                    reputationIcon[i].SetActive(true);
                     habitacionUI[i].transform.GetChild(0).GetComponent<Text>().text = manager.numeroHabitacion[i].huespedName;
-                    habitacionUI[i].transform.GetChild(1).GetComponent<Text>().text = "Reputation " + manager.numeroHabitacion[i].reputation;
+                    habitacionUI[i].transform.GetChild(1).GetComponent<Text>().text = "R" + manager.numeroHabitacion[i].reputation;
                     habitacionUI[i].transform.GetChild(2).GetComponent<Image>().sprite = manager.numeroHabitacion[i].sprite;
                     manager.reputation += manager.numeroHabitacion[i].reputation;
                     manager.nightsInRoom[i] = 0;
                     habitacionUI[i].transform.GetChild(3).GetComponent<Text>().text = "N:" + manager.nightsInRoom[i];
                 }
             }
+            stats.SetMoney();
+            stats.SetReputation();
         }                            
 
         manager.Guardar();
-
-        //GAME OVER por la reputacion
-        if (manager.reputation <= 0)
-        {
-            changeScene.levelChange = cinematicaPolicia;
-        }
     }
 
     //Mejora del hotel- LLamado desde: CompraMejora/CompraDeHabitacion/CompraPiso
@@ -490,7 +532,8 @@ public class Hotel : MonoBehaviour
         manager.habitaciones += 1;
         manager.AgregarHabitacion(id);
         manager.reputation += reputacion;
-        stats.SetValoresActuales();
+        stats.SetMoney();
+        stats.SetReputation();
     }
     public void CompraMejora(int costo, int reputacion, int id)
     {
@@ -499,7 +542,8 @@ public class Hotel : MonoBehaviour
         manager.money = presupuesto;
         manager.MejoraHotel(id);
         manager.reputation += reputacion;
-        stats.SetValoresActuales();
+        stats.SetMoney();
+        stats.SetReputation();
     }
     public void CompraPiso(int costo, int reputacion, int id)
     {
@@ -508,7 +552,17 @@ public class Hotel : MonoBehaviour
         manager.money = presupuesto;
         manager.AgregarPiso(id);
         manager.reputation += reputacion;
-        stats.SetValoresActuales();
+        stats.SetMoney();
+        stats.SetReputation();
+    }
+    public void CompraGeneral(int costo, int reputacion)
+    {
+        audioSourceCompra.Play();
+        presupuesto -= costo;
+        manager.money = presupuesto;
+        manager.reputation += reputacion;
+        stats.SetMoney();
+        stats.SetReputation();
     }
     //Sonido cuando no puede comprar
     public void NoCashSound()

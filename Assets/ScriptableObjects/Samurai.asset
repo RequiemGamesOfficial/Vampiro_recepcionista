@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   huespedName: Samurai
   id: 7
-  blood: 10
+  blood: 13
   reputation: -20
   money: 150
   nights: 1
