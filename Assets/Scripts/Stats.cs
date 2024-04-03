@@ -11,6 +11,8 @@ public class Stats : MonoBehaviour
     public Text textMoney;
     float newMoney, currentMoney,currentReputation;
     float timer;
+    float limitTimer;
+    public float timerLimit = 20;
 
     bool bloodDown, bloodUP,newBloodDown,newBloodUP;
     bool moneyDown, moneyUp;
@@ -67,23 +69,28 @@ public class Stats : MonoBehaviour
         if (moneyUp)
         {
             currentMoney += 1;
+            limitTimer += 1;
             textMoney.text = ("$" + currentMoney);
-            if (currentMoney >= newMoney)
+
+            if (currentMoney >= newMoney || limitTimer >= timerLimit)
             {
                 currentMoney = newMoney;
                 textMoney.text = ("$" + currentMoney);
+                limitTimer = 0;
                 moneyUp = false;
             }
         }
         if (moneyDown)
         {
             currentMoney -= 1;
+            limitTimer += 1;
             textMoney.text = ("$" + currentMoney);
-            if (currentMoney <= newMoney)
+            if (currentMoney <= newMoney || limitTimer >= timerLimit)
             {
                 currentMoney = newMoney;
                 textMoney.text = ("$" + currentMoney);
-                moneyUp = false;
+                limitTimer = 0;
+                moneyDown = false;
             }
         }
 
@@ -93,7 +100,8 @@ public class Stats : MonoBehaviour
             sliderReputacionNew.value -= 5 * Time.deltaTime;
             if (sliderReputacionNew.value <= sliderReputacion.value)
             {
-                sliderReputacionNew.value = sliderReputacion.value;
+                sliderReputacion.value = manager.reputation;
+                sliderReputacionNew.value = manager.reputation;
                 reputationDown = false;
             }
         }
@@ -102,7 +110,8 @@ public class Stats : MonoBehaviour
             sliderReputacion.value += 5 * Time.deltaTime;
             if (sliderReputacion.value >= sliderReputacionNew.value)
             {
-                sliderReputacion.value = sliderReputacionNew.value;
+                sliderReputacion.value = manager.reputation;
+                sliderReputacionNew.value = manager.reputation;
                 reputationUP = false;
             }
         }
@@ -181,6 +190,7 @@ public class Stats : MonoBehaviour
         {
             SetReputationDown();
         }
+        currentReputation = manager.reputation;
     }
     void SetReputationUp()
     {

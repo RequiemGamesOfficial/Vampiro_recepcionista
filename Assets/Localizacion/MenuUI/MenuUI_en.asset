@@ -90,6 +90,10 @@ MonoBehaviour:
     m_Localized: to interactuate
     m_Metadata:
       m_Items: []
+  - m_Id: 126097676743049216
+    m_Localized: Main menu
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

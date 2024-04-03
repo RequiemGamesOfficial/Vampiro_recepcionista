@@ -9,8 +9,9 @@ public class EventsTriggers : MonoBehaviour
     public GameObject gObject;
     public CinemachineVirtualCamera vcam;
 
-    public void TriggerDuelo()
+    public void TriggerDuelo(GameObject targetObject)
     {
+        gObject = targetObject;
         vcam.Follow = gObject.transform;
     }
 

@@ -33,10 +33,11 @@ public class PlayerController : MonoBehaviour
     public bool esquimal, marciano,explorador;
 
     //Android Buttons
-    bool isLeft = false;
+    public bool isLeft = false;
     bool isRight = false;
     bool isJump = false;
-    public bool android;
+    //public bool android;
+    bool useButtonsTouchs;
 
     //Modificar vista de camara
     //public CinemachineCameraOffset
@@ -48,7 +49,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (canMove && !android)
+        if (canMove && !useButtonsTouchs)
         {
             if (Input.GetAxisRaw("Horizontal") == 1)
             {
@@ -275,18 +276,22 @@ public class PlayerController : MonoBehaviour
     public void ClickLeft()
     {
         isLeft = true;
+        useButtonsTouchs = true;
     }
     public void ReleaseLeft()
     {
         isLeft = false;
+        useButtonsTouchs = false;
     }
     public void ClickRight()
     {
         isRight = true;
+        useButtonsTouchs = true;
     }
     public void ReleaseRight()
     {
         isRight = false;
+        useButtonsTouchs = false;
     }
     public void ClickJump()
     {

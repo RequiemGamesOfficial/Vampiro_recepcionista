@@ -65,15 +65,13 @@ public class FollowPlayer : MonoBehaviour
     public void JumpStateEnter()
     {
         rgb2D.AddForce(new Vector2(0, jumpForce));
-        //rgb2D.bodyType = RigidbodyType2D.Kinematic;
-        capsuleCollider.isTrigger = true;
+        //capsuleCollider.isTrigger = true;
         speed *= 2;
     }
     public void JumpStateExit()
     {
         Debug.Log("Jump Exit");
-        //rgb2D.bodyType = RigidbodyType2D.Dynamic;
-        capsuleCollider.isTrigger = false;
+        //capsuleCollider.isTrigger = false;
         speed = normalSpeed;
     }
 

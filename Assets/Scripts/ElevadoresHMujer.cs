@@ -28,6 +28,9 @@ public class ElevadoresHMujer : MonoBehaviour
     {
         Instantiate(elevatorUp, point1.position, Quaternion.identity);       
         Instantiate(elevatorDown, point2.position, Quaternion.identity);
-        Instantiate(elevatorUp, point3.position, Quaternion.identity);
+        if(point3 != null)
+        {
+            Instantiate(elevatorUp, point3.position, Quaternion.identity);
+        }
     }
 }

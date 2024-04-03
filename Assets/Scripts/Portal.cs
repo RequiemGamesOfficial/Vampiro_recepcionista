@@ -5,6 +5,7 @@ using UnityEngine;
 public class Portal : MonoBehaviour
 {
     public Hotel hotel;
+    public GameObject teleportEffect;
     public Transform destination;
     public bool fade;
 
@@ -21,6 +22,10 @@ public class Portal : MonoBehaviour
                 hotel.FadeToBlack();
             }            
             hotel.TeleportTo(destination.position);
+            if(teleportEffect != null)
+            {
+                Instantiate(teleportEffect, destination.position, Quaternion.identity);
+            }
         }
     }
 }

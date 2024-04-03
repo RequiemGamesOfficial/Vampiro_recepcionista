@@ -35,6 +35,7 @@ public class ControllerManager : MonoBehaviour
     {
         skating = false;
         transform.parent = null;
+        transform.rotation = new Quaternion(0, 0, 0,1);
         anim.SetBool("Skate", false);
         playerController.enabled = true;
         rgb2D.bodyType = RigidbodyType2D.Dynamic;

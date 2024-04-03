@@ -9,6 +9,8 @@ public class MainMenu : MonoBehaviour
     public Manager manager;
     public TextMeshProUGUI tMPro;
     public string primeraEscena;
+    public GameObject trancisionEfect;
+    public GameObject buttonContainer;
 
     void Start()
     {
@@ -19,7 +21,13 @@ public class MainMenu : MonoBehaviour
 
     public void ChangeScene()
     {
-        if(manager.noche == 0)
+        trancisionEfect.SetActive(true);
+        buttonContainer.SetActive(false);
+        Invoke("LoadScene", 1.5f);
+    }
+    void LoadScene()
+    {
+        if (manager.noche == 0)
         {
             SceneManager.LoadScene(primeraEscena, LoadSceneMode.Single);
         }
@@ -32,6 +40,12 @@ public class MainMenu : MonoBehaviour
     public void NewGame()
     {
         manager.Restart();
+        trancisionEfect.SetActive(true);
+        buttonContainer.SetActive(false);
+        Invoke("LoadNewGame", 1.5f);
+    }
+    void LoadNewGame()
+    {
         SceneManager.LoadScene(primeraEscena, LoadSceneMode.Single);
     }
 }

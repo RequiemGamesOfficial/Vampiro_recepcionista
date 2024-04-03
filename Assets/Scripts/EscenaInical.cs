@@ -30,6 +30,7 @@ public class EscenaInical : MonoBehaviour
     public AudioSource audioSourceCompra, noCashSound;
     public int habitaciones;
     public GameObject continuarObject,tutorialDiablo;
+    public Vector3 sotanoPosPlayer = new Vector3(67.75f, 5.4f, 0);
 
     private void Start()
     {
@@ -51,7 +52,7 @@ public class EscenaInical : MonoBehaviour
     //habitaciones Cambio de lugar del jugador y la camara A HABITACION CORRESPONDIENTE
     public void Sotano()
     {
-        player.transform.position = new Vector3(67.75f, 5.4f, 0);
+        player.transform.position = sotanoPosPlayer;
         cameraObject.transform.position = player.transform.position;
         if (pet != null)
         {

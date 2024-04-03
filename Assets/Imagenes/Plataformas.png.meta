@@ -221,7 +221,7 @@ TextureImporter:
         width: 14
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -229,6 +229,27 @@ TextureImporter:
       bones: []
       spriteID: b76a2802247efac4e9cc2d8b234e2d8a
       internalID: 1043101609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plataformas_5
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 32
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c20864393dcc64d866e244ea8fb94a
+      internalID: 483356368
       vertices: []
       indices: 
       edges: []
@@ -249,6 +270,7 @@ TextureImporter:
       Plataformas_2: 2018930990
       Plataformas_3: 1541971256
       Plataformas_4: 1043101609
+      Plataformas_5: 483356368
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

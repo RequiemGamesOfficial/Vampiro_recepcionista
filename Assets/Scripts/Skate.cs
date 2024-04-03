@@ -18,7 +18,8 @@ public class Skate : MonoBehaviour
     public LayerMask groundLayer;
     public float jumpForce;
     bool used;
-    public bool android;
+    //public bool android;
+    bool useButtonsTouchs;
 
     private void Start()
     {
@@ -28,30 +29,41 @@ public class Skate : MonoBehaviour
     {
         if (skateController)
         {
-            if (!android)
+            if (!useButtonsTouchs)
             {
-                horizontal = Input.GetAxisRaw("Horizontal");
-
+                if (Input.GetAxisRaw("Horizontal") == 1)
+                {
+                    isRight = true;
+                    isLeft = false;
+                }
+                if (Input.GetAxisRaw("Horizontal") == -1)
+                {
+                    isLeft = true;
+                    isRight = false;
+                }
+                if (Input.GetAxisRaw("Horizontal") == 0)
+                {
+                    isRight = false;
+                    isLeft = false;
+                }
                 if (Input.GetKeyDown("space"))
                 {
                     isJump = true;
                 }
             }
 
-            if (android)
+            //movimiento
+            if (isRight)
             {
-                if (isRight)
-                {
-                    horizontal = 1;
-                }
-                if (isLeft)
-                {
-                    horizontal = -1;
-                }
-                if (!isRight && !isLeft)
-                {
-                    horizontal = 0;
-                }
+                horizontal = 1;
+            }
+            if (isLeft)
+            {
+                horizontal = -1;
+            }
+            if (!isRight && !isLeft)
+            {
+                horizontal = 0;
             }
 
             rb.velocity = new Vector2((horizontal + 0.5f) * speed, rb.velocity.y);
@@ -72,19 +84,23 @@ public class Skate : MonoBehaviour
     public void ClickRight()
     {
         isRight = true;
+        useButtonsTouchs = true;
     }
     public void ReleaseRight()
     {
         isRight = false;
+        useButtonsTouchs = false;
     }
 
     public void ClickLeft()
     {
         isLeft = true;
+        useButtonsTouchs = true;
     }
     public void ReleaseLeft()
     {
         isLeft = false;
+        useButtonsTouchs = false;
     }
     public void ClickJump()
     {

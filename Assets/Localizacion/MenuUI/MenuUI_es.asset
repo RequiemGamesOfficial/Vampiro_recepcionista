@@ -90,6 +90,10 @@ MonoBehaviour:
     m_Localized: 'para interactuar '
     m_Metadata:
       m_Items: []
+  - m_Id: 126097676743049216
+    m_Localized: "Men\xFA principal"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

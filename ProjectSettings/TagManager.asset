@@ -16,6 +16,8 @@ TagManager:
   - TargetMoney
   - Contador
   - Button
+  - Brush
+  - ButtonsAndroid
   layers:
   - Default
   - TransparentFX

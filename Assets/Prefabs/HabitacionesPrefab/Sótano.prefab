@@ -903,6 +903,7 @@ MonoBehaviour:
   numeroHabitacion: 0
   audioSource: {fileID: 7713835342653919725}
   button: {fileID: 6252555646547013197}
+  iconGuest: {fileID: 0}
 --- !u!82 &7713835342653919725
 AudioSource:
   m_ObjectHideFlags: 0
@@ -912,7 +913,7 @@ AudioSource:
   m_GameObject: {fileID: 1126173317910371514}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
   m_audioClip: {fileID: 8300000, guid: 58b2e5d72e773f24e9a22ef2d55723d2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

@@ -103,7 +103,8 @@ MonoBehaviour:
   esquimal: 0
   marciano: 0
   explorador: 0
-  android: 0
+  isLeft: 0
+  android: 1
 --- !u!50 &3736710888455107461
 Rigidbody2D:
   serializedVersion: 4
@@ -115,11 +116,11 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
+  m_UseAutoMass: 1
+  m_Mass: 0.6619941
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 1.6
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -207,22 +208,22 @@ MonoBehaviour:
   anim: {fileID: 3736710888520538407}
   animatorPlayer:
   - {fileID: 9100000, guid: 043b5def48201a443b36d7d815f0d277, type: 2}
-  - {fileID: 9100000, guid: 6606773f74ea93e4f97c4ed76db50831, type: 2}
-  - {fileID: 9100000, guid: 652b3f578a3c2ce4e95ae77ebf782e31, type: 2}
-  - {fileID: 9100000, guid: 4ba293c375c43074f9106ca97a996ba0, type: 2}
-  - {fileID: 9100000, guid: 68c9461680cefb24d8a2e86782b1365f, type: 2}
-  - {fileID: 9100000, guid: 6f4788ef0ef1e074b903babfc02ec815, type: 2}
-  - {fileID: 9100000, guid: 34a6daf2f83179b4eb38d2a30e918450, type: 2}
-  - {fileID: 9100000, guid: 497084cbd12f2c0489d7ca6becb460a3, type: 2}
-  - {fileID: 9100000, guid: 12e337849cc00d24eadd08862f5c0457, type: 2}
-  - {fileID: 9100000, guid: f19016569aabffb47863ffc973a8b819, type: 2}
-  - {fileID: 9100000, guid: 4464203eca23c664ea6a4f90b714562d, type: 2}
-  - {fileID: 9100000, guid: 60da833d0d3e94d42a9b0623659761ca, type: 2}
-  - {fileID: 9100000, guid: ef99e4d227addf448bd44e02b91a42e6, type: 2}
-  - {fileID: 9100000, guid: cf8a6833bcbeffa4b87a943dc6c19ad0, type: 2}
-  - {fileID: 9100000, guid: 4422802dfa5ffbc429cb8c7e7d6c1b6f, type: 2}
-  - {fileID: 9100000, guid: 213426b23d69d944596eab5171bb17c1, type: 2}
-  - {fileID: 9100000, guid: 2900d6b539ebf684f93639dda44d3ecd, type: 2}
+  - {fileID: 9100000, guid: fcd1d08111469c04ca62afa1cb296631, type: 2}
+  - {fileID: 9100000, guid: cffa1afcb24571b4ebb048bcecbb9c56, type: 2}
+  - {fileID: 9100000, guid: 2b368c95b261e214f8bb8391fd456d72, type: 2}
+  - {fileID: 9100000, guid: d01a09dbcad925c4fbcef523ca548b76, type: 2}
+  - {fileID: 9100000, guid: 7e2e7c0cec5932846a8f33240822adea, type: 2}
+  - {fileID: 9100000, guid: 874ce2eb15871e248b083eb8e21a63d3, type: 2}
+  - {fileID: 9100000, guid: 74dda964ae80be74ab8cd9c28d4c34f3, type: 2}
+  - {fileID: 9100000, guid: b674cd2545bc9eb41a20d3011e70a09d, type: 2}
+  - {fileID: 9100000, guid: d24a09b4c83ae394d8bb707453b39ea5, type: 2}
+  - {fileID: 9100000, guid: cf92deb8a2972154e86f591d6801e487, type: 2}
+  - {fileID: 9100000, guid: 954cf6a5cb7e155429e6509abeb380ce, type: 2}
+  - {fileID: 9100000, guid: 4a49cb40497d1ed4da0dd79a1c591599, type: 2}
+  - {fileID: 9100000, guid: c86987622d69e6f409ec3d840257ec34, type: 2}
+  - {fileID: 9100000, guid: 924a61415f6fa3643ae7791004f5345b, type: 2}
+  - {fileID: 9100000, guid: 8c14ab9f9adfc8944ad380d34d7fffdf, type: 2}
+  - {fileID: 9100000, guid: bb5b85b40bf33004dbfedb8bbbd580e9, type: 2}
 --- !u!1 &3736710888520538401
 GameObject:
   m_ObjectHideFlags: 0

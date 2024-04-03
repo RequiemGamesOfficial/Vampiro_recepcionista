@@ -6,6 +6,8 @@ public class DueloScript : MonoBehaviour
 {
     public Canvas canvasWorld;
     public GameObject buttonSombra,buttonAttack;
+    public bool android;
+    public GameObject buttonsAndroid;
 
     GameObject player;
     bool duelo;
@@ -18,6 +20,7 @@ public class DueloScript : MonoBehaviour
     public EventsTriggers eventsTriggers;
     AudioSource audioSource;
     public AudioClip vampireWin, vampireLose;
+    public GameObject newTarget;
 
     private void Start()
     {        
@@ -26,6 +29,10 @@ public class DueloScript : MonoBehaviour
         eventsTriggers = GameObject.FindGameObjectWithTag("HotelManager").GetComponent<EventsTriggers>();
         animSamurai.Play("PreAttack");
         audioSource = GetComponent<AudioSource>();
+        if (android)
+        {
+            buttonsAndroid = GameObject.FindGameObjectWithTag("ButtonsAndroid");
+        }
     }
 
     private void Update()
@@ -58,8 +65,12 @@ public class DueloScript : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         //Cambiar follow de camera
-        eventsTriggers.TriggerDuelo();
+        eventsTriggers.TriggerDuelo(newTarget);
         //Iniciar animacion duelo
+        if (android)
+        {
+            buttonsAndroid.SetActive(false);
+        }
         buttonSombra.SetActive(true);
         animDuelo.Play("Duelo");
         yield return new WaitForSeconds(3);
@@ -77,6 +88,10 @@ public class DueloScript : MonoBehaviour
         animDuelo.Play("TerminarDuelo");
         animSamurai.Play("Attack");
         duelo = false;
+        if (android)
+        {
+            buttonsAndroid.SetActive(true);
+        }
         buttonAttack.SetActive(false);
         buttonSombra.SetActive(false);
         Debug.Log(dueloTimer);

@@ -26,6 +26,54 @@ MonoBehaviour:
     m_Localized: Resultados
     m_Metadata:
       m_Items: []
+  - m_Id: 136082953242771456
+    m_Localized: "Amo ha despertado, me alegra mucho, r\xE1pido demos un paseo nocturno
+      \xBFrecuerda c\xF3mo moverse y abrir las puertas verdad?\r\n\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136082986491019264
+    m_Localized: "Amo durmi\xF3 demasiado esta vez, debe estar hambriento, seguro
+      encontramos algo rico de comer.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136083028308230144
+    m_Localized: "Recuerde cuidarse a s\xED mismo amo, dirigir un hotel hace que
+      le de hambre, deber\xEDas visitar a alguno de los hu\xE9spedes para invitarlo
+      a cenar, *gui\xF1o*gui\xF1o*."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136083044779261952
+    m_Localized: "La tabla de resultados te dar\xE1 pistas para ver qu\xE9 hu\xE9spedes
+      son mejores clientes o mejores v\xEDctimas. \xA1Suerte amo! Guau Guau."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136083086231568384
+    m_Localized: "\xA1A Trabajar! Si quieres volver a ver a tu mascota m\xE1s te
+      vale que este lugar quede como nuevo y mejor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136083130666024960
+    m_Localized: "No podemos recibir hu\xE9spedes sin habitaciones, con el dinero
+      que tienes debe ser suficiente para construir un par, cuando termines regresa
+      aqu\xED a recepci\xF3n, \xA1r\xE1pido!\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136083154850381824
+    m_Localized: "Para seguir mejorando el hotel necesitas m\xE1s dinero, mucho m\xE1s
+      dinero, dale a los visitantes habitaciones, llena el hotel y recuerda bien
+      donde los pones."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136083180448219136
+    m_Localized: "\xA1Ey! recuerda dejar algunos hu\xE9spedes vivos para obtener
+      su dinero. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136083219585269760
+    m_Localized: "Los hu\xE9spedes que dejes vivos nos dar\xE1n dinero, mejora el
+      hotel y vendr\xE1n m\xE1s y nuevos hu\xE9spedes de distintas partes del mundo.\r"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

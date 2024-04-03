@@ -6,7 +6,7 @@ public class VidasHabitacion : MonoBehaviour
 {
     public int vidas = 3;   
     public GameObject vidasHabitacionUI,vida1,vida2,vida3;
-    public CambioDeLugar cambioDeLugar;
+    //public CambioDeLugar cambioDeLugar;
     public Hotel hotel;
     public bool skating;
 
@@ -54,13 +54,11 @@ public class VidasHabitacion : MonoBehaviour
         if( vidas == 0)
         {
             vida1.SetActive(false);
-            cambioDeLugar.ChangeFloor();
             if (controllerManager.skating)
             {
                 controllerManager.OffSkate(false);
-            }           
-            hotel.FadeToBlack();
-            Desactivar();
+            }
+            KillPlayerRoom();
         }
     }
     public void DamageKill(Vector2 posicion)
@@ -80,7 +78,7 @@ public class VidasHabitacion : MonoBehaviour
         if (vidas <= 0)
         {
             vida1.SetActive(false);
-            cambioDeLugar.ChangeFloor();
+            //cambioDeLugar.ChangeFloor();
             if (controllerManager.skating)
             {
                 controllerManager.OffSkate(false);
@@ -96,7 +94,7 @@ public class VidasHabitacion : MonoBehaviour
         if (vidas <= 0)
         {
             vida1.SetActive(false);
-            cambioDeLugar.ChangeFloor();
+            //cambioDeLugar.ChangeFloor();
             if (controllerManager.skating)
             {
                 controllerManager.OffSkate(false);
@@ -108,7 +106,7 @@ public class VidasHabitacion : MonoBehaviour
     }
     public void KillPlayerRoom()
     {
-        cambioDeLugar.ChangeFloor();
+        hotel.Piso1(true);
         hotel.FadeToBlack();
         Desactivar();
     }
@@ -124,7 +122,7 @@ public class VidasHabitacion : MonoBehaviour
     }
     void DueloFinal()
     {
-        cambioDeLugar.ChangeFloor();
+        hotel.Piso1(false);
         anim.Play("P_Stan");
         hotel.FadeToBlack();       
     }

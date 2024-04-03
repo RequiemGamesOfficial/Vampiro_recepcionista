@@ -889,6 +889,7 @@ MonoBehaviour:
   sliderSangre: {fileID: 3096216581068398820}
   sliderSangreNew: {fileID: 7838990799795508323}
   textMoney: {fileID: 3096216581005723404}
+  timerLimit: 40
 --- !u!1 &3096216580689067867
 GameObject:
   m_ObjectHideFlags: 0

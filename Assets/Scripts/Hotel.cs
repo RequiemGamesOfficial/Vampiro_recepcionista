@@ -70,7 +70,7 @@ public class Hotel : MonoBehaviour
 
     private void Start()
     {
-        textNoche.text = (":" + manager.noche);
+        textNoche.text = ("" + manager.noche);
 
         //ActivarPuertas/DesactivarTablas
         for (int i = 3; i < manager.h.Length; i++)
@@ -335,6 +335,7 @@ public class Hotel : MonoBehaviour
     public void TeleportTo(Vector3 place)
     {
         player.transform.position = place;
+        player.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
         cameraObject.transform.position = player.transform.position;
         if (pet != null)
         {
@@ -363,115 +364,265 @@ public class Hotel : MonoBehaviour
     //
     public void HabitacionHombre(int habitacion)
     {
-        musica.clip = musicaHabitacion[habitacion];
+        musica.clip = musicaHabitacion[0];
         musica.Play();
-        habitacionActualGameObject = Instantiate(habitacionPrefab[0], posicionHabitacion.transform.position, Quaternion.identity);
+        //Detectar nivel de habitacion
+        if (manager.huespedDead[0] >= 1)
+        {
+            Debug.Log("Nivel 2");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[16], posicionHabitacion.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("Nivel 1");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[0], posicionHabitacion.transform.position, Quaternion.identity);
+        }     
         //Decirle al activadorHombre que esta muerto y posicionar jugador
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);       
     }
     public void HabitacionMujer(int habitacion)
     {
-        musica.clip = musicaHabitacion[habitacion];
+        musica.clip = musicaHabitacion[1];
         musica.Play();
-        habitacionActualGameObject = Instantiate(habitacionPrefab[1], posicionHabitacion.transform.position, Quaternion.identity);
+        //Detectar nivel de habitacion
+        if (manager.huespedDead[1] >= 1)
+        {
+            Debug.Log("Nivel 2");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[17], posicionHabitacion.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("Nivel 1");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[1], posicionHabitacion.transform.position, Quaternion.identity);
+        }        
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionPayaso(int habitacion)
     {
-        musica.clip = musicaHabitacion[habitacion];
+        musica.clip = musicaHabitacion[2];
         musica.Play();
-        habitacionActualGameObject = Instantiate(habitacionPrefab[2], posicionHabitacion.transform.position, Quaternion.identity);
+        //Detectar nivel de habitacion
+        if (manager.huespedDead[2] >= 1)
+        {
+            Debug.Log("Nivel 2");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[18], posicionHabitacion.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("Nivel 1");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[2], posicionHabitacion.transform.position, Quaternion.identity);
+        }
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionMago(int habitacion)
     {
-        musica.clip = musicaHabitacion[habitacion];
+        musica.clip = musicaHabitacion[3];
         musica.Play();
-        habitacionActualGameObject = Instantiate(habitacionPrefab[3], posicionHabitacion.transform.position, Quaternion.identity);
+        //Detectar nivel de habitacion
+        if (manager.huespedDead[3] >= 1)
+        {
+            Debug.Log("Nivel 2");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[19], posicionHabitacion.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("Nivel 1");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[3], posicionHabitacion.transform.position, Quaternion.identity);
+        }
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionDrogo(int habitacion)
     {
-        musica.clip = musicaHabitacion[habitacion];
+        musica.clip = musicaHabitacion[4];
         musica.Play();
-        habitacionActualGameObject = Instantiate(habitacionPrefab[4], posicionHabitacion.transform.position, Quaternion.identity);
+        //Detectar nivel de habitacion
+        if (manager.huespedDead[4] >= 1)
+        {
+            Debug.Log("Nivel 2");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[20], posicionHabitacion.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("Nivel 1");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[4], posicionHabitacion.transform.position, Quaternion.identity);
+        }      
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }  
     public void HabitacionMusico(int habitacion)
     {
-        musica.clip = musicaHabitacion[habitacion];
+        musica.clip = musicaHabitacion[5];
         musica.Play();
-        habitacionActualGameObject = Instantiate(habitacionPrefab[5], posicionHabitacion.transform.position, Quaternion.identity);
+        //Detectar nivel de habitacion
+        if (manager.huespedDead[5] >= 1)
+        {
+            Debug.Log("Nivel 2");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[21], posicionHabitacion.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("Nivel 1");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[5], posicionHabitacion.transform.position, Quaternion.identity);
+        }
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }   
     public void HabitacionCastaway(int habitacion)
     {
-        musica.clip = musicaHabitacion[habitacion];
+        musica.clip = musicaHabitacion[6];
         musica.Play();
-        habitacionActualGameObject = Instantiate(habitacionPrefab[6], posicionHabitacion.transform.position, Quaternion.identity);
+        if (manager.huespedDead[6] >= 1)
+        {
+            Debug.Log("Nivel 2");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[22], posicionHabitacion.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("Nivel 1");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[6], posicionHabitacion.transform.position, Quaternion.identity);
+        }
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionSamurai(int habitacion)
     {
-        musica.clip = musicaHabitacion[8];
+        musica.clip = musicaHabitacion[7];
         musica.Play();
-        habitacionActualGameObject = Instantiate(habitacionPrefab[7], posicionHabitacion.transform.position, Quaternion.identity); 
+        if (manager.huespedDead[7] >= 1)
+        {
+            Debug.Log("Nivel 2");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[23], posicionHabitacion.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("Nivel 1");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[7], posicionHabitacion.transform.position, Quaternion.identity);
+        }
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionPadrecito(int habitacion)
     {
-        musica.clip = musicaHabitacion[habitacion];
+        musica.clip = musicaHabitacion[8];
         musica.Play();
-        habitacionActualGameObject = Instantiate(habitacionPrefab[8], posicionHabitacion.transform.position, Quaternion.identity);
+        if (manager.huespedDead[8] >= 1)
+        {
+            Debug.Log("Nivel 2");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[24], posicionHabitacion.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("Nivel 1");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[8], posicionHabitacion.transform.position, Quaternion.identity);
+        }
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionEskimo(int habitacion)
     {
-        musica.clip = musicaHabitacion[habitacion];
+        musica.clip = musicaHabitacion[9];
         musica.Play();
-        habitacionActualGameObject = Instantiate(habitacionPrefab[9], posicionHabitacion.transform.position, Quaternion.identity);
+        if (manager.huespedDead[9] >= 1)
+        {
+            Debug.Log("Nivel 2");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[25], posicionHabitacion.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("Nivel 1");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[9], posicionHabitacion.transform.position, Quaternion.identity);
+        }       
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionSkater(int habitacion)
     {
-        musica.clip = musicaHabitacion[habitacion];
+        musica.clip = musicaHabitacion[10];
         musica.Play();
-        habitacionActualGameObject = Instantiate(habitacionPrefab[10], posicionHabitacion.transform.position, Quaternion.identity);
+        if (manager.huespedDead[10] >= 1)
+        {
+            Debug.Log("Nivel 2");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[26], posicionHabitacion.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("Nivel 1");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[10], posicionHabitacion.transform.position, Quaternion.identity);
+        }
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionBlind(int habitacion)
     {
-        musica.clip = musicaHabitacion[habitacion];
+        musica.clip = musicaHabitacion[11];
         musica.Play();
-        habitacionActualGameObject = Instantiate(habitacionPrefab[11], posicionHabitacion.transform.position, Quaternion.identity);
+        if (manager.huespedDead[11] >= 1)
+        {
+            Debug.Log("Nivel 2");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[27], posicionHabitacion.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("Nivel 1");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[11], posicionHabitacion.transform.position, Quaternion.identity);
+        }
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionAlien(int habitacion)
     {
-        musica.clip = musicaHabitacion[habitacion];
+        musica.clip = musicaHabitacion[12];
         musica.Play();
-        habitacionActualGameObject = Instantiate(habitacionPrefab[12], posicionHabitacion.transform.position, Quaternion.identity);
+        if (manager.huespedDead[12] >= 1)
+        {
+            Debug.Log("Nivel 2");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[28], posicionHabitacion.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("Nivel 1");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[12], posicionHabitacion.transform.position, Quaternion.identity);
+        }
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionTesla(int habitacion)
     {
-        musica.clip = musicaHabitacion[habitacion];
+        musica.clip = musicaHabitacion[13];
         musica.Play();
-        habitacionActualGameObject = Instantiate(habitacionPrefab[13], posicionHabitacion.transform.position, Quaternion.identity);
+        if (manager.huespedDead[13] >= 1)
+        {
+            Debug.Log("Nivel 2");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[29], posicionHabitacion.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("Nivel 1");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[13], posicionHabitacion.transform.position, Quaternion.identity);
+        }
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionExplorer(int habitacion)
     {
-        musica.clip = musicaHabitacion[habitacion];
+        musica.clip = musicaHabitacion[14];
         musica.Play();
-        habitacionActualGameObject = Instantiate(habitacionPrefab[14], posicionHabitacion.transform.position, Quaternion.identity);
+        if (manager.huespedDead[14] >= 1)
+        {
+            Debug.Log("Nivel 2");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[30], posicionHabitacion.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("Nivel 1");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[14], posicionHabitacion.transform.position, Quaternion.identity);
+        }
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
     public void HabitacionAstronaut(int habitacion)
     {
-        musica.clip = musicaHabitacion[habitacion];
+        musica.clip = musicaHabitacion[15];
         musica.Play();
-        habitacionActualGameObject = Instantiate(habitacionPrefab[15], posicionHabitacion.transform.position, Quaternion.identity);
+        if (manager.huespedDead[15] >= 1)
+        {
+            Debug.Log("Nivel 2");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[31], posicionHabitacion.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("Nivel 1");
+            habitacionActualGameObject = Instantiate(habitacionPrefab[15], posicionHabitacion.transform.position, Quaternion.identity);
+        }
         ChecarEstadoHabitacionYPosicionarJugador(habitacion);
     }
 
