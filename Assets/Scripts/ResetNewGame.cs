@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class ResetNewGame : MonoBehaviour
 {
     public Manager manager;
-    public Text textDia;
+    public Text textNoche;
 
 
     void Start()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
-        textDia.text = ("Dia: " + manager.noche);
+        textNoche.text = (""+manager.noche);
     }
 
     public void ResetearValores()

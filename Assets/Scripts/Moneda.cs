@@ -23,7 +23,10 @@ public class Moneda : MonoBehaviour
         {
             sound.Play();
             manager.money += money;
-            stats.SetMoney();
+            if(stats != null)
+            {
+                stats.SetMoney();
+            }
             Instantiate(moneyPrefab, new Vector3(this.transform.position.x + .5f, this.transform.position.y - .5f, this.transform.position.z), Quaternion.identity);
             Instantiate(moneyPrefab, new Vector3(this.transform.position.x + 1, this.transform.position.y + .5f, this.transform.position.z), Quaternion.identity);
             Instantiate(moneyPrefab, new Vector3(this.transform.position.x - .5f, this.transform.position.y + 1, this.transform.position.z), Quaternion.identity);

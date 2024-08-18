@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SkinManager : MonoBehaviour
 {
@@ -9,21 +10,44 @@ public class SkinManager : MonoBehaviour
     public GameObject skinSelect;
     public GameObject[] skinButton = new GameObject[16];
     public SoundAnimator soundAnimator;
-    public int huespedNumber;
+    public int portalNumber;
+    public int numberToPortal;
+    public GameObject portal,miniportal;
+    public Slider portalSlider;
+    public GameObject sliderObject;
 
     void Start()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
         changeLook = GameObject.FindGameObjectWithTag("Player").GetComponent<ChangeLook>();
-        for (int i = 0; i < manager.huespedDead.Length; i++)
+        for (int i = 0; i < manager.globalDead.Length; i++)
         {
-            if (manager.huespedDead[i] >= 1)
+            if (manager.globalDead[i] >= 5)
             {
                 skinButton[i].SetActive(true);
-                huespedNumber += 1;
+                portalNumber += 1;
+            }
+            if (manager.huespedDead[i] >= 1)
+            {
+                portalNumber += 1;
             }
         }
-        Debug.Log("Huesped Number" + huespedNumber);
+        Debug.Log("Huesped Number" + portalNumber);
+        if(portal != null)
+        {
+            portalSlider.value = portalNumber;
+            if (portalNumber >= 2)
+            {
+                miniportal.SetActive(true);
+                sliderObject.SetActive(true);
+            }
+            if (portalNumber >= numberToPortal)
+            {
+                portal.SetActive(true);
+                miniportal.SetActive(false);
+                sliderObject.SetActive(false);
+            }
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

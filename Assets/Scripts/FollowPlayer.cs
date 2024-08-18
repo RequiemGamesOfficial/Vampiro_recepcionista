@@ -19,6 +19,9 @@ public class FollowPlayer : MonoBehaviour
     public LayerMask groundLayer;
     public float groundRadius = 0.1f;
 
+    public AudioSource audioSource;
+    public bool waterState;
+
     void Start()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
@@ -64,6 +67,8 @@ public class FollowPlayer : MonoBehaviour
     }
     public void JumpStateEnter()
     {
+        //SonidoSalto
+        audioSource.Play();
         rgb2D.AddForce(new Vector2(0, jumpForce));
         //capsuleCollider.isTrigger = true;
         speed *= 2;
@@ -73,6 +78,24 @@ public class FollowPlayer : MonoBehaviour
         Debug.Log("Jump Exit");
         //capsuleCollider.isTrigger = false;
         speed = normalSpeed;
+    }
+
+    public void CambioDeGravedad(float newGravity,bool water)
+    {
+        rgb2D.gravityScale = newGravity;
+        if (water)
+        {
+            waterState = true;
+        }
+    }
+
+    public void RestablecerGravedad(bool water)
+    {
+        rgb2D.gravityScale = 1;
+        if (water)
+        {
+            waterState = false;
+        }
     }
 
     public void PlayTargetAnimation(string targetAnim, bool isInteracting = false)

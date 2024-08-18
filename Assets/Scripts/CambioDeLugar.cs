@@ -48,6 +48,14 @@ public class CambioDeLugar : MonoBehaviour
             audioSource.Play();
             return;
         }
+        if (nuevoLugar == "Cocina")
+        {
+            hotel.AsignarPoscicionDeJugador();
+            hotel.Cocina();
+            hotel.FadeToBlack();
+            audioSource.Play();
+            return;
+        }
 
         if (nuevoLugar == "Piso1")
         {

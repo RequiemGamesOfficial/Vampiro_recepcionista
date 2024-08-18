@@ -15,7 +15,7 @@ public class SoundManager : MonoBehaviour
 
     public void PlayPaso1()
     {
-        if(stepRight.Length > 0)
+        if (stepRight.Length > 0)
         {
             randomSound = Random.Range(0, stepRight.Length);
             audioSource.clip = stepRight[randomSound];
@@ -24,7 +24,7 @@ public class SoundManager : MonoBehaviour
     }
     public void PlayPaso2()
     {
-        if (stepLeft.Length>0)
+        if (stepLeft.Length > 0)
         {
             randomSound = Random.Range(0, stepLeft.Length);
             audioSource.clip = stepLeft[randomSound];

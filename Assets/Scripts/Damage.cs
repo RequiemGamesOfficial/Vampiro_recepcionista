@@ -8,6 +8,8 @@ public class Damage : MonoBehaviour
     public bool destroyTimer = false;
     public float destroyTime;
     float timer;
+    public bool instaKill;
+    public bool boss;
 
     private void Update()
     {
@@ -28,7 +30,21 @@ public class Damage : MonoBehaviour
             ContactPoint2D[] contacts = new ContactPoint2D[1];
             collision.GetContacts(contacts);
             var contactPoint = contacts[0].point;
-            collision.gameObject.GetComponent<VidasHabitacion>().Damage(contactPoint);
+            if (boss)
+            {
+                collision.gameObject.GetComponent<VidasBoss>().Damage(contactPoint);
+            }
+            else
+            {
+                if (instaKill)
+                {
+                    collision.gameObject.GetComponent<VidasHabitacion>().DamageKill(contactPoint);
+                }
+                else
+                {
+                    collision.gameObject.GetComponent<VidasHabitacion>().Damage(contactPoint);
+                }                
+            }           
             //collision.SendMessage("Damage");
             if (destroyObject)
             {

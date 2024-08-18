@@ -39,7 +39,8 @@ public class BloodLoss : MonoBehaviour
         }
         if (manager.blood <= 0)
         {
-            anim.SetBool("dead", true);
+            //anim.SetBool("dead", true);
+            anim.Play("Dead");
         }
         stats.SetNewBlood();
     }

@@ -24,7 +24,6 @@ public class cartaSamurai : MonoBehaviour
     {
         Debug.Log("RestartDead");
         dead = false;
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

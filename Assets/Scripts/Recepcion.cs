@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Recepcion : MonoBehaviour
 {
@@ -9,11 +10,10 @@ public class Recepcion : MonoBehaviour
 
     public GameObject panelHuesped, yesButton, nextButton, tablaHabitaciones;
     public GameObject huesped;
-    public Text huespedText;
-    public Text moneyText;
-    public Text nightsText;
+    public TMP_Text moneyText;
+    public TMP_Text nightsText;
     public Image huespedImage;
-    public Text textNoche;
+    public TMP_Text textNoche;
 
     public HuespedData currentHuespedData;
     public GeneradorHuespeds generadorHuespeds;
@@ -26,16 +26,25 @@ public class Recepcion : MonoBehaviour
     void Start()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
-        if (manager.playa1 >=1 && manager.playa2 >= 1 && manager.playa3 >= 1)
+        manager.SearchIconSave();
+        manager.Guardar();
+        if(!manager.demo)
         {
-            generadorHuespeds.SetPlaya();
-        }
-        if (manager.japones1 >= 1 && manager.japones2 >= 1 && manager.japones3 >= 1)
-        {
-            generadorHuespeds.SetJapones();
-        }
+            if (manager.playa1 >= 1 && manager.playa2 >= 1 && manager.playa3 >= 1)
+            {
+                generadorHuespeds.SetPlaya();
+            }
+            if (manager.japones1 >= 1 && manager.japones2 >= 1 && manager.japones3 >= 1)
+            {
+                generadorHuespeds.SetJapones();
+            }
+        }     
         habitacionesDisponibles = 0;
         manager.noche += 1;
+        if(manager.noche >= manager.nocheScore)
+        {
+            manager.nocheScore = manager.noche;
+        }
 
         textNoche.text = (""+ manager.noche);
         AdministracionLlaves();
@@ -93,7 +102,7 @@ public class Recepcion : MonoBehaviour
                     generadorHuespeds.HighReputation();
                     return;
                 }
-                if (manager.reputation > 90)
+                if (manager.reputation >= 90)
                 {
                     generadorHuespeds.VIPReputation();
                     return;
@@ -121,7 +130,6 @@ public class Recepcion : MonoBehaviour
     {
         currentHuespedData = huespedData;
         huesped = huespedObject;
-        huespedText.text = huespedData.huespedName;
         moneyText.text = ("$" + huespedData.money);
         int randomNumber = Random.Range(1, 4);
         huespedData.nights = randomNumber;

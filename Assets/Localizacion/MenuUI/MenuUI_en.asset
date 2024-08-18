@@ -94,6 +94,10 @@ MonoBehaviour:
     m_Localized: Main menu
     m_Metadata:
       m_Items: []
+  - m_Id: 153986451196182528
+    m_Localized: "I know what you really are. duel me in the backyard\r."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

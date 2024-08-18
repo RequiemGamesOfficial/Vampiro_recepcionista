@@ -1,0 +1,436 @@
+fileFormatVersion: 2
+guid: c0ffe8ba92d5f554a91495f0e2d09875
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Portales_animados_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 106
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1993143eae65d341ba7d65f93872b90
+      internalID: 502731441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portales_animados_4
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 93
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bdbdc252690474b9ac7ec80eab3991
+      internalID: 2015395209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portales_animados_6
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 93
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99dfe4892f218f43a2641747ca6a5ca
+      internalID: 2009913598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portales_animados_10
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 95
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf143c0fc8f6f94dafdf86e122f2e1e
+      internalID: -1172340510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portales_animados_12
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 94
+        width: 30
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5159902, y: 0.49684405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f463de6ca978774384a3a8f0482ef36
+      internalID: -1255433154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portales_animados_14
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 109
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdbc2ae29c72b2c44ae7ee1a5fd30cc4
+      internalID: 1125224372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portales_animados_15
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 103
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b22ad3211f3dd344b2909c9d1c86870
+      internalID: 198455693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portales_animados_30
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 26
+        width: 30
+        height: 38
+      alignment: 9
+      pivot: {x: 0.51998746, y: 0.4905323}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9336acb9e9f93674ba72cf4263af1ed8
+      internalID: -1518426702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portales_animados_31
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 27
+        width: 30
+        height: 37
+      alignment: 9
+      pivot: {x: 0.52798235, y: 0.48055288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb64667a1d13df7489985f58e00dffc2
+      internalID: 1465720185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portales_animados_32
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 27
+        width: 30
+        height: 39
+      alignment: 9
+      pivot: {x: 0.4920049, y: 0.48155007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b4e002261fa76428dc5467c59b5a26
+      internalID: 685781613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portales_animados_33
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 24
+        width: 33
+        height: 46
+      alignment: 9
+      pivot: {x: 0.50726825, y: 0.44264486}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b886fde12ba93ee448c802e0aa7cd9a5
+      internalID: -1469815725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portales_animados_34
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 23
+        width: 35
+        height: 49
+      alignment: 9
+      pivot: {x: 0.4931475, y: 0.48531535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad6fe73a72440947ad3e529267da465
+      internalID: -847480411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Portales_animados_0: 502731441
+      Portales_animados_1: -656518642
+      Portales_animados_10: -1172340510
+      Portales_animados_11: -1115294716
+      Portales_animados_12: -1255433154
+      Portales_animados_13: -1603276202
+      Portales_animados_14: 1125224372
+      Portales_animados_15: 198455693
+      Portales_animados_16: -1239816059
+      Portales_animados_17: 369935441
+      Portales_animados_18: 1868626856
+      Portales_animados_19: -377327877
+      Portales_animados_2: -150699614
+      Portales_animados_20: -1551739891
+      Portales_animados_21: -1706767715
+      Portales_animados_22: 86867023
+      Portales_animados_23: -1075175024
+      Portales_animados_24: -653363564
+      Portales_animados_25: 2126264259
+      Portales_animados_26: 659320118
+      Portales_animados_27: 1737494823
+      Portales_animados_28: -596333671
+      Portales_animados_29: -60763741
+      Portales_animados_3: 383486653
+      Portales_animados_30: -1518426702
+      Portales_animados_31: 1465720185
+      Portales_animados_32: 685781613
+      Portales_animados_33: -1469815725
+      Portales_animados_34: -847480411
+      Portales_animados_35: -228297886
+      Portales_animados_36: -1218888587
+      Portales_animados_4: 2015395209
+      Portales_animados_5: 835244029
+      Portales_animados_6: 2009913598
+      Portales_animados_7: 714650618
+      Portales_animados_8: -2133192246
+      Portales_animados_9: 1725619029
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

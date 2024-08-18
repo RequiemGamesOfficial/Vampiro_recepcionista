@@ -18,6 +18,18 @@ TagManager:
   - Button
   - Brush
   - ButtonsAndroid
+  - Concrete
+  - IconSave
+  - Pan1
+  - Lechuga
+  - Jitomate
+  - Pan2
+  - Carne
+  - Stats
+  - Grind
+  - Grass
+  - PlatformMove
+  - Water
   layers:
   - Default
   - TransparentFX
@@ -36,8 +48,8 @@ TagManager:
   - Pet
   - Obstacle
   - Cruz
-  - 
-  - 
+  - Back
+  - PlatformMove
   - 
   - 
   - 
@@ -52,6 +64,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: HideUI
+    uniqueID: 1191384521
+    locked: 0
   - name: Fondo
     uniqueID: 1560903807
     locked: 0

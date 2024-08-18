@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class SoundAnimator : MonoBehaviour
 {
+    public PlayerController playerController;
+    
     public AudioSource audioSource;
     public AudioClip audio1, audio2, audio3, audio4;
+    public AudioClip swimming;
 
     public void PlayAudioClip01()
     {
@@ -32,8 +35,13 @@ public class SoundAnimator : MonoBehaviour
         }
     }
     public void PlayAudioClip04()
-    {
-        if (audio4 != null)
+    {        
+        if (playerController.waterState)
+        {
+            audioSource.clip = swimming;
+            audioSource.Play();
+        }
+        else
         {
             audioSource.clip = audio4;
             audioSource.Play();

@@ -5,10 +5,11 @@ using UnityEngine;
 public class TriggerCollider : MonoBehaviour
 {
     public GameObject gameObjectToSetActive;
+    public bool exit = true;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && gameObjectToSetActive != null)
         {
             gameObjectToSetActive.SetActive(true);
         }
@@ -16,7 +17,7 @@ public class TriggerCollider : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && exit && gameObjectToSetActive !=null)
         {
             gameObjectToSetActive.SetActive(false);
         }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 763861835}
   - component: {fileID: 763861837}
   - component: {fileID: 763861836}
+  - component: {fileID: 2423599601290450063}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -35,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.298, y: -0.01}
-  m_SizeDelta: {x: 514.395, y: 158.12}
+  m_AnchoredPosition: {x: 0.576, y: 3.2}
+  m_SizeDelta: {x: 574.756, y: 218.48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &763861837
 CanvasRenderer:
@@ -68,8 +69,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Conozco tu secreto, vampiro. Te estar\xE9 esperando en el jard\xEDn."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f81409885dbcf914b9a03690f8856ce5, type: 2}
-  m_sharedMaterial: {fileID: -7762260334685680603, guid: f81409885dbcf914b9a03690f8856ce5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 210357e2ee1d54144964b25abb430c67, type: 2}
+  m_sharedMaterial: {fileID: -2771943765579827652, guid: 210357e2ee1d54144964b25abb430c67, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -93,15 +94,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32.9
-  m_fontSizeBase: 32.9
+  m_fontSize: 28.4
+  m_fontSizeBase: 28.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -135,6 +136,46 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &2423599601290450063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763861834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:e293c0269d5637d4b8b04d507d207db8
+    m_TableEntryReference:
+      m_KeyId: 153986451196182528
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 763861836}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1223040620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,6 +1195,7 @@ MonoBehaviour:
   numeroHabitacion: 0
   audioSource: {fileID: 4448508645446667746}
   button: {fileID: 3667432560991231292}
+  iconGuest: {fileID: 0}
 --- !u!82 &4448508645446667746
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1164,7 +1206,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
-  m_audioClip: {fileID: 8300000, guid: cc192f80b78d7754ba09e9f1bcbae3b6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8488ee175488a5e49af9eed9aaaa03eb, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1478,7 +1520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &231265877414875732
 Transform:
   m_ObjectHideFlags: 0
@@ -1649,7 +1691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3704406788281314407
 Transform:
   m_ObjectHideFlags: 0

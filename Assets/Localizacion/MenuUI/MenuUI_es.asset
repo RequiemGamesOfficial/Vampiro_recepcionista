@@ -94,6 +94,10 @@ MonoBehaviour:
     m_Localized: "Men\xFA principal"
     m_Metadata:
       m_Items: []
+  - m_Id: 153986451196182528
+    m_Localized: "Conozco tu secreto, vampiro. Te estar\xE9 esperando en el jard\xEDn."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

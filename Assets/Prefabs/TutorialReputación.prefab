@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.8299866, y: -6.1399994}
-  m_SizeDelta: {x: -44.5, y: -66.65}
+  m_AnchoredPosition: {x: 3.8299866, y: 15.14}
+  m_SizeDelta: {x: -44.5, y: -73.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7236859146072978182
 CanvasRenderer:
@@ -68,7 +68,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: b68b2cfc330db7842b1b48ac5a817ed9, type: 3}
+    m_Font: {fileID: 12800000, guid: 525468e970d30d84e9eeec6babd09379, type: 3}
     m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
@@ -79,7 +79,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 2.42
+    m_LineSpacing: 1.67
   m_Text: "Recuerde cuidarse a s\xED mismo amo, dirigir un hotel hace que te de hambre,
     deber\xEDas visitar a alguno de los hu\xE9spedes para invitarlo a cenar *gui\xF1o*gui\xF1o*"
 --- !u!114 &7236859146072978180
@@ -502,7 +502,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7236859147790011113
 RectTransform:
   m_ObjectHideFlags: 0

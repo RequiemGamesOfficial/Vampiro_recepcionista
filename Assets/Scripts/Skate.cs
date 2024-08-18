@@ -5,11 +5,14 @@ using UnityEngine;
 public class Skate : MonoBehaviour
 {
     GameObject player;
+    public SkateAudio skateAudio;
     ControllerManager controllerManager;
     public Transform posPlayer;
     [HideInInspector]
-    public bool skateController;
+    public bool skateController,grid;
+    public bool playerSkating;
     //Movimeinto
+    public bool eventBool;
     bool isRight, isLeft, isJump;
     public float horizontal;
     public float speed;
@@ -17,7 +20,7 @@ public class Skate : MonoBehaviour
     public GameObject groundCheck;
     public LayerMask groundLayer;
     public float jumpForce;
-    bool used;
+    bool used,entrada;
     //public bool android;
     bool useButtonsTouchs;
 
@@ -48,7 +51,10 @@ public class Skate : MonoBehaviour
                 }
                 if (Input.GetKeyDown("space"))
                 {
-                    isJump = true;
+                    if (!eventBool)
+                    {
+                        isJump = true;
+                    }
                 }
             }
 
@@ -72,11 +78,13 @@ public class Skate : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                 isJump = false;
+                //Sonido Salto
+                skateAudio.JumpSound();
             }
         }
     }
 
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.transform.position, 0.5f, groundLayer);
     }
@@ -85,11 +93,13 @@ public class Skate : MonoBehaviour
     {
         isRight = true;
         useButtonsTouchs = true;
+        //Playy sonido loop
     }
     public void ReleaseRight()
     {
         isRight = false;
         useButtonsTouchs = false;
+        //Stop Sonido loop
     }
 
     public void ClickLeft()
@@ -109,8 +119,10 @@ public class Skate : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") && !used)
+        if (collision.gameObject.CompareTag("Player") && !used && !entrada)
         {
+            entrada = true;
+            playerSkating = true;
             player = collision.gameObject;
             controllerManager = player.GetComponent<ControllerManager>();
             controllerManager.skate = this;
@@ -118,15 +130,50 @@ public class Skate : MonoBehaviour
             player.transform.position = posPlayer.position;
             player.transform.parent = gameObject.transform;
             skateController = true;
+            //Empeiza sonido loop
+            Debug.Log("Player empeiza a patinar");
+            skateAudio.PlayRollingLoopSound();
         }
 
         if (collision.gameObject.CompareTag("Wall"))
         {
             skateController = false;
-            player.SendMessage("OffSkate", true);
+            if (playerSkating)
+            {
+                player.SendMessage("OffSkate", true);
+            }
             used = true;
+            //Stop sonido parado
+            skateAudio.StopRollingLoopSound();
         }
+        if (collision.gameObject.CompareTag("Grind"))
+        {
+            grid = true;
+            //Play sonido Grind
+            Debug.Log("GRIDDD");
+            skateAudio.GrindSound();
+        }
+
     }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Grind"))
+        {         
+            grid = false;          
+        }
 
+        if (collision.gameObject.CompareTag("Player"))
+        {           
+            if (eventBool)
+            {
+                Debug.Log("Player exit Skate");
+                used = true;
+                playerSkating = false;
+                skateController = false;
+                //Stop sonido Grind
+                skateAudio.StopRollingLoopSound();
+            }
+        }
+    }
 }

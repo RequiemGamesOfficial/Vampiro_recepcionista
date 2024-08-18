@@ -594,8 +594,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5933093728045944852}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.7684, y: 0.0725, z: 0}
-  m_LocalScale: {x: 0.6508251, y: 1.69769, z: 1}
+  m_LocalPosition: {x: 1.85074, y: 0.07453, z: 0}
+  m_LocalScale: {x: 0.65031093, y: 1.7048253, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5933093729153628555}
@@ -813,7 +813,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -745834193, guid: 8874a584cab9ab14d97a06491b2c451f, type: 3}
+  m_Sprite: {fileID: -536650044, guid: 8874a584cab9ab14d97a06491b2c451f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -879,7 +879,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 58b2e5d72e773f24e9a22ef2d55723d2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8488ee175488a5e49af9eed9aaaa03eb, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1459,7 +1459,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5933093729164580179}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6529254, y: -0.681, z: 0}
+  m_LocalPosition: {x: 1.936, y: -0.599, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1507,7 +1507,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1455030042, guid: a0f48ad479c3e5440b2e93c6165da9d8, type: 3}
+  m_Sprite: {fileID: -610686156, guid: e23106b931c212443919dd328a63ace9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1698,7 +1698,7 @@ SpriteRenderer:
   m_SortingLayerID: 1560903807
   m_SortingLayer: -1
   m_SortingOrder: -15
-  m_Sprite: {fileID: 933717145, guid: 23b27ae1fe695764b851797a2ece2955, type: 3}
+  m_Sprite: {fileID: 1843292566, guid: 23b27ae1fe695764b851797a2ece2955, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

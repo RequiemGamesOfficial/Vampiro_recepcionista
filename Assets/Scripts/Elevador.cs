@@ -7,11 +7,12 @@ public class Elevador : MonoBehaviour
     public float velY;
     Rigidbody2D rb;
     Transform cameraPos;
+    public float timeToDestroy = 7.5f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        Destroy(gameObject, 7.5f);
+        Destroy(gameObject, timeToDestroy);
         cameraPos = Camera.main.transform;
     }
 

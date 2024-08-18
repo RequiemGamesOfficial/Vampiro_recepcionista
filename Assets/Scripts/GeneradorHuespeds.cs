@@ -32,7 +32,7 @@ public class GeneradorHuespeds : MonoBehaviour
         huesped02 = astronauta;
         huesped03 = patineto;
         huesped04 = tesla;
-        huesped05 = padrecito;
+        huesped05 = astronauta;
         huesped06 = esquimal;
         huesped07 = ciego;
         huesped08 = marciano;
@@ -72,7 +72,7 @@ public class GeneradorHuespeds : MonoBehaviour
         }
         if (setPlaya)
         {
-            huesped02 = naufrago;
+            huesped03 = naufrago;
         }
     }
     public void LowReputation()

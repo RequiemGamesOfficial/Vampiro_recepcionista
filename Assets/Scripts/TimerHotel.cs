@@ -48,6 +48,7 @@ public class TimerHotel : MonoBehaviour
     public void TimeOver()
     {
         print("TimeOver");
+        //Mostrar accidentes
         hotel.ChecarHaibitaciones();
         fade.SetActive(false);
         //Time.timeScale = 0;

@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Events_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: dee4f6972f90e3a4b8363b1c4f1f6a3d, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 57672040448
+    m_Localized: 0 Event in english
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91822063616
+    m_Localized: 1 Event in english
+    m_Metadata:
+      m_Items: []
+  - m_Id: 104581136384
+    m_Localized: My performance got out of control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 149623767040
+    m_Localized: Event in english
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193991114752
+    m_Localized: Event in english
+    m_Metadata:
+      m_Items: []
+  - m_Id: 158654103552
+    m_Localized: I made a mess in the hallway
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206968291328
+    m_Localized: There is a water leak coming from my room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 218540376064
+    m_Localized: Event in english
+    m_Metadata:
+      m_Items: []
+  - m_Id: 229957271552
+    m_Localized: "Where is your offering, heretic?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2145374273536
+    m_Localized: The thermostat in my room is broken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2166547120128
+    m_Localized: I broke my skateboard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2191666806784
+    m_Localized: " I think I broke something made of glass, I\u2019m sorry"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2219441487872
+    m_Localized: " I have a lot of scrap metal\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2205960994816
+    m_Localized: I throwed up in the hallway
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2232494161920
+    m_Localized: We need pest control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2256913399808
+    m_Localized: my spaceship is broken
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

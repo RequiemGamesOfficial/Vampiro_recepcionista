@@ -109,6 +109,7 @@ public class VidasHabitacion : MonoBehaviour
         hotel.Piso1(true);
         hotel.FadeToBlack();
         Desactivar();
+        vidas = 3;
     }
 
     public void DueloLose()

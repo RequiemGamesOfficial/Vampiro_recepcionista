@@ -446,6 +446,8 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  instaKill: 0
+  boss: 0
 --- !u!1 &4746622174564944564
 GameObject:
   m_ObjectHideFlags: 0
@@ -1445,6 +1447,8 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  instaKill: 0
+  boss: 0
 --- !u!1 &4746622175641763904
 GameObject:
   m_ObjectHideFlags: 0
@@ -1812,7 +1816,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 58b2e5d72e773f24e9a22ef2d55723d2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8488ee175488a5e49af9eed9aaaa03eb, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2146,6 +2150,8 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  instaKill: 0
+  boss: 0
 --- !u!1 &4746622176094243380
 GameObject:
   m_ObjectHideFlags: 0
@@ -2415,6 +2421,8 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  instaKill: 0
+  boss: 0
 --- !u!1 &4746622176253634488
 GameObject:
   m_ObjectHideFlags: 0

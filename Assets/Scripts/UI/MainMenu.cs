@@ -7,16 +7,33 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public Manager manager;
-    public TextMeshProUGUI tMPro;
+    public ChangeLook changeLook;
+    public TextMeshProUGUI nightText,scoreText;
     public string primeraEscena;
     public GameObject trancisionEfect;
     public GameObject buttonContainer;
+    public GameObject tutorialSave;
+    public GameObject buttonPlay,demoText;
 
     void Start()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
         manager.Cargar();
-        tMPro.text = ":" + manager.noche;
+        changeLook.SetPlayerSkin();
+        nightText.text = ":" + manager.noche;
+        scoreText.text = ":" + manager.nocheScore;
+        if (manager.demo)
+        {
+            demoText.SetActive(true);
+        }
+        if (manager.tutoSave <= 0)
+        {
+            tutorialSave.SetActive(true);
+        }
+        if(manager.noche <= 0)
+        {
+            //buttonPlay.SetActive(false);
+        }
     }
 
     public void ChangeScene()
@@ -25,11 +42,11 @@ public class MainMenu : MonoBehaviour
         buttonContainer.SetActive(false);
         Invoke("LoadScene", 1.5f);
     }
-    void LoadScene()
+    public void LoadScene()
     {
-        if (manager.noche == 0)
+        if (manager.noche <= 0)
         {
-            SceneManager.LoadScene(primeraEscena, LoadSceneMode.Single);
+            NewGame();
         }
         else
         {
@@ -40,12 +57,35 @@ public class MainMenu : MonoBehaviour
     public void NewGame()
     {
         manager.Restart();
-        trancisionEfect.SetActive(true);
-        buttonContainer.SetActive(false);
         Invoke("LoadNewGame", 1.5f);
+        if (trancisionEfect != null)
+        {
+            trancisionEfect.SetActive(true);
+        }
+        if (buttonContainer != null)
+        {
+            buttonContainer.SetActive(false);
+        }
     }
-    void LoadNewGame()
+    public void LoadNewGame()
     {
-        SceneManager.LoadScene(primeraEscena, LoadSceneMode.Single);
+        SceneManager.LoadScene(primeraEscena);
+    }
+    public void ResetGame()
+    {
+        manager.RestartGame();
+        Invoke("LoadMenu", 1.5f);
+        if(trancisionEfect != null)
+        {
+            trancisionEfect.SetActive(true);
+        }
+        if(buttonContainer != null)
+        {
+            buttonContainer.SetActive(false);
+        }
+    }
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

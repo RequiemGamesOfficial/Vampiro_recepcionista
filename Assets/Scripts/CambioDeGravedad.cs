@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class CambioDeGravedad : MonoBehaviour
 {
+    public bool water;
     public float gravedad;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            collision.SendMessage("CambioDeGravedad", gravedad);
+            collision.GetComponent<PlayerController>().CambioDeGravedad(gravedad, water);
+        }
+
+        if (collision.CompareTag("Pet"))
+        {
+            collision.GetComponent<FollowPlayer>().CambioDeGravedad(gravedad, water);
         }
     }
 
@@ -18,7 +24,12 @@ public class CambioDeGravedad : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.SendMessage("RestablecerGravedad");
+            collision.SendMessage("RestablecerGravedad",water);
+        }
+
+        if (collision.CompareTag("Pet"))
+        {
+            collision.SendMessage("RestablecerGravedad", water);
         }
     }
 }

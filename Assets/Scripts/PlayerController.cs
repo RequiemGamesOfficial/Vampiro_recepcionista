@@ -24,7 +24,8 @@ public class PlayerController : MonoBehaviour
     public float groundRadius = 0.1f;
 
     public Vector2 velocidadRebote;
-    public bool canMove;
+    public bool canMove, waterState;
+    public GameObject waterParticle;
 
     float currentGravity;
     bool normalGravity = true;
@@ -38,6 +39,8 @@ public class PlayerController : MonoBehaviour
     bool isJump = false;
     //public bool android;
     bool useButtonsTouchs;
+
+    public bool footConcrete,footGrass;
 
     //Modificar vista de camara
     //public CinemachineCameraOffset
@@ -102,7 +105,7 @@ public class PlayerController : MonoBehaviour
             //Jump
             if (!explorador)
             {
-                if (isJump && IsGrounded())
+                if (isJump && IsGrounded() || isJump && waterState)
                 {
                     rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                     anim.Play("PlayerJump");
@@ -183,7 +186,16 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            rb.velocity = new Vector2(rb.velocity.x, horizontal * speed);
+            if(Input.GetAxisRaw("Vertical") != 0)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, Input.GetAxisRaw("Vertical") * speed);
+                anim.SetFloat("vertical", Input.GetAxisRaw("Vertical"));
+            }
+            else
+            {
+                rb.velocity = new Vector2(rb.velocity.x, horizontal * speed);
+                anim.SetFloat("vertical", 0);
+            }                    
         }              
     }
     private void Flip()
@@ -229,15 +241,28 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void CambioDeGravedad(float gravedad)
+    public void CambioDeGravedad(float gravedad,bool water)
     {
+        Debug.Log("Cambio de gravedad" + gravedad + water);
         rb.gravityScale = gravedad;
         jumpForce = 3;
+        if (water)
+        {
+            anim.SetBool("Water", true);
+            waterState = water;
+            Instantiate(waterParticle, down.transform.position, Quaternion.identity);
+        }
     }
-    public void RestablecerGravedad()
+    public void RestablecerGravedad(bool water)
     {
         rb.gravityScale = currentGravity;
-        jumpForce = 6;
+        jumpForce = 6;        
+        if (water)
+        {
+            anim.SetBool("Water", false);
+            waterState = false;
+            Instantiate(waterParticle, down.transform.position, Quaternion.identity);
+        }
     }
 
     public void Rebote(Vector2 puntoGolpe)
@@ -296,6 +321,29 @@ public class PlayerController : MonoBehaviour
     public void ClickJump()
     {
         isJump = true;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Concrete"))
+        {
+            footConcrete = true;
+        }
+        if (collision.gameObject.CompareTag("Grass"))
+        {
+            footGrass = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Concrete"))
+        {
+            footConcrete = false;
+        }
+        if (collision.gameObject.CompareTag("Grass"))
+        {
+            footGrass = false;
+        }
     }
 
 }

@@ -108,6 +108,26 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6701873190496405123, guid: 5283588b6d9614149b8380b7e52963eb, type: 3}
+      propertyPath: m_Color.b
+      value: 0.12264143
+      objectReference: {fileID: 0}
+    - target: {fileID: 6701873190496405123, guid: 5283588b6d9614149b8380b7e52963eb, type: 3}
+      propertyPath: m_Color.g
+      value: 0.60297966
+      objectReference: {fileID: 0}
+    - target: {fileID: 6701873190496405123, guid: 5283588b6d9614149b8380b7e52963eb, type: 3}
+      propertyPath: m_Color.r
+      value: 0.735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 6701873190496405123, guid: 5283588b6d9614149b8380b7e52963eb, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6701873190496405123, guid: 5283588b6d9614149b8380b7e52963eb, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[1]
+      value: 1560903807
+      objectReference: {fileID: 0}
     - target: {fileID: 7512978088888103730, guid: 5283588b6d9614149b8380b7e52963eb, type: 3}
       propertyPath: m_RootOrder
       value: 0

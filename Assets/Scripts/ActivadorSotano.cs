@@ -7,6 +7,7 @@ public class ActivadorSotano : MonoBehaviour
 
     public GameObject obetoExtra;
     public Canvas canvasWorld;
+    public AudioSource audioSource;
 
     private void Start()
     {
@@ -16,7 +17,12 @@ public class ActivadorSotano : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
-        {           
+        {
+            if(audioSource != null)
+            {
+                audioSource.Play();
+            }
+            
             if (obetoExtra != null)
             {
                 obetoExtra.SetActive(true);
