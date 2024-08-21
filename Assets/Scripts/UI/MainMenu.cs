@@ -32,7 +32,7 @@ public class MainMenu : MonoBehaviour
         }
         if(manager.noche <= 0)
         {
-            //buttonPlay.SetActive(false);
+            buttonPlay.SetActive(false);
         }
     }
 

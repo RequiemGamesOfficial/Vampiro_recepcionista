@@ -39,7 +39,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 139236058923008
-    m_Localized: Noche
+    m_Localized: "Noche n.\xBA"
     m_Metadata:
       m_Items: []
   - m_Id: 139680793559040
@@ -79,15 +79,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 79103112807546880
-    m_Localized: para moverte
+    m_Localized: Para moverte
     m_Metadata:
       m_Items: []
   - m_Id: 79103293053566976
-    m_Localized: para saltar
+    m_Localized: Para saltar
     m_Metadata:
       m_Items: []
   - m_Id: 79103486650056704
-    m_Localized: 'para interactuar '
+    m_Localized: 'Para interactuar '
     m_Metadata:
       m_Items: []
   - m_Id: 126097676743049216
@@ -96,6 +96,18 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 153986451196182528
     m_Localized: "Conozco tu secreto, vampiro. Te estar\xE9 esperando en el jard\xEDn."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 199396129614692352
+    m_Localized: Puntaje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 199399913199861760
+    m_Localized: Muertes locales
+    m_Metadata:
+      m_Items: []
+  - m_Id: 199399879561543680
+    m_Localized: Muertes globales
     m_Metadata:
       m_Items: []
   references:

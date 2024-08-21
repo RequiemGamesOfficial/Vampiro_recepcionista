@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour
     bool isFacingRight = true;
     public SpriteRenderer spriteRenderer;
 
+    public float coyoteTime = 0.2f;
+    float coyoteTimeCounter;
+
     public GameObject groundCheck, up, down;
     public LayerMask groundLayer;
     public float groundRadius = 0.1f;
@@ -52,6 +55,16 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        //Coyote time
+        if (IsGrounded())
+        {
+            coyoteTimeCounter = coyoteTime;
+        }
+        else
+        {
+            coyoteTimeCounter -= Time.deltaTime;
+        }
+        //PC buttons
         if (canMove && !useButtonsTouchs)
         {
             if (Input.GetAxisRaw("Horizontal") == 1)
@@ -72,6 +85,10 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown("space"))
             {
                 isJump = true;
+            }
+            if (Input.GetKeyUp("space"))
+            {
+                coyoteTimeCounter = 0f;
             }
         }       
         //Android
@@ -105,7 +122,7 @@ public class PlayerController : MonoBehaviour
             //Jump
             if (!explorador)
             {
-                if (isJump && IsGrounded() || isJump && waterState)
+                if (isJump && coyoteTimeCounter>0f || isJump && waterState)
                 {
                     rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                     anim.Play("PlayerJump");
@@ -321,6 +338,10 @@ public class PlayerController : MonoBehaviour
     public void ClickJump()
     {
         isJump = true;
+    }
+    public void ReleaseJump()
+    {
+        coyoteTimeCounter = 0f;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

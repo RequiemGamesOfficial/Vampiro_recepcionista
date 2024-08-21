@@ -1339,9 +1339,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5776aeab813279e458064de177d86ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiObject:
-  - {fileID: 542572047}
-  - {fileID: 1623162645}
   buttonAndroid:
   - {fileID: 1648327202}
 --- !u!1 &66219735
@@ -7361,11 +7358,6 @@ PrefabInstance:
 --- !u!224 &542572046 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3096216580478659303, guid: b9be5b1d58a8dd446b0340825593e8e3, type: 3}
-  m_PrefabInstance: {fileID: 542572045}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &542572047 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3096216580478659300, guid: b9be5b1d58a8dd446b0340825593e8e3, type: 3}
   m_PrefabInstance: {fileID: 542572045}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &549518206
@@ -24418,7 +24410,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -18.033203, y: -26.900024}
-  m_SizeDelta: {x: 157.387, y: 159.114}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1623162648
 MonoBehaviour:
@@ -25142,6 +25134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelChange: Recepcion
   cinematicaPolicia: CinematicaPolicia
+  cinematicaDemo: CinematicaDemo
   trancision: {fileID: 0}
   pressE: 1
   accidentPanel: {fileID: 0}
@@ -29688,6 +29681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelChange: CinematicaPerro
   cinematicaPolicia: CinematicaPolicia
+  cinematicaDemo: CinematicaDemo
   trancision: {fileID: 0}
   pressE: 1
   accidentPanel: {fileID: 0}
@@ -32855,6 +32849,7 @@ MonoBehaviour:
   iceSpeed: 0
   jumpForce: 6
   spriteRenderer: {fileID: 1617770894}
+  coyoteTime: 0.2
   groundCheck: {fileID: 220876299}
   up: {fileID: 1089554425}
   down: {fileID: 1297928749}
@@ -32864,11 +32859,14 @@ MonoBehaviour:
   groundRadius: 0.17
   velocidadRebote: {x: 5, y: 5}
   canMove: 1
+  waterState: 0
+  waterParticle: {fileID: 0}
   esquimal: 0
   marciano: 0
   explorador: 0
   isLeft: 0
   footConcrete: 0
+  footGrass: 0
 --- !u!4 &2085065517
 Transform:
   m_ObjectHideFlags: 0
@@ -34130,11 +34128,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed15b53028fecb6429fe09ccdb7310e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
   audioSource: {fileID: 1617770897}
   audio1: {fileID: 8300000, guid: 07142d1a830b9fa4587c298f996db38f, type: 3}
   audio2: {fileID: 8300000, guid: 485b6ac58de0b814fa6bd2a826b0ff3c, type: 3}
   audio3: {fileID: 8300000, guid: f91b8543c5779654da42eb4d5055e028, type: 3}
   audio4: {fileID: 8300000, guid: ab16e736237f7774cbe0990eec986459, type: 3}
+  swimming: {fileID: 0}
 --- !u!114 &4463652330494728128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34147,6 +34147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95e990eeb6ca55e449dc1155a583efde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  water1: {fileID: 0}
+  water2: {fileID: 0}
   stepRight:
   - {fileID: 8300000, guid: 9be1ff24506a04b4d83d98b4c7b3b68f, type: 3}
   - {fileID: 8300000, guid: dce7033f1d68f1a4e99d7facf372ea17, type: 3}
@@ -34169,6 +34171,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9f6a2f7ba52ee054aa57dab8d6f1bdf3, type: 3}
   - {fileID: 8300000, guid: 3152f9d88822ad846b5e80f87951618f, type: 3}
   - {fileID: 8300000, guid: dd08a5db74aee474083e44d410dbef0d, type: 3}
+  stepRightGrass: []
+  stepLeftGrass: []
   playerController: {fileID: 2085065515}
 --- !u!1001 &4701834340971305433
 PrefabInstance:

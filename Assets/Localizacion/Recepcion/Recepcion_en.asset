@@ -19,11 +19,11 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 200585576448
-    m_Localized: no
+    m_Localized: No
     m_Metadata:
       m_Items: []
   - m_Id: 140183404544
-    m_Localized: yes
+    m_Localized: Yes
     m_Metadata:
       m_Items: []
   - m_Id: 337147920384

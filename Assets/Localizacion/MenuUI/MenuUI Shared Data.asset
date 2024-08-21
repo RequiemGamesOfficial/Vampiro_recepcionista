@@ -99,6 +99,20 @@ MonoBehaviour:
 '
     m_Metadata:
       m_Items: []
+  - m_Id: 199396129614692352
+    m_Key: Puntaje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 199399879561543680
+    m_Key: 'Muertes Globales
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 199399913199861760
+    m_Key: Muertes Locales
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

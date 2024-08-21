@@ -977,7 +977,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -12.999939, y: -14}
-  m_SizeDelta: {x: 157.387, y: 159.114}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 1, y: 1}
 --- !u!82 &1153335377
 AudioSource:
@@ -1789,7 +1789,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelChange: EscenaInicialP3
   cinematicaPolicia: CinematicaPolicia
+  cinematicaDemo: CinematicaDemo
   trancision: {fileID: 177383727}
+  pressE: 1
+  accidentPanel: {fileID: 0}
 --- !u!82 &2005351710
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1994,11 +1997,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed15b53028fecb6429fe09ccdb7310e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
   audioSource: {fileID: 2005351711}
   audio1: {fileID: 8300000, guid: 01f086e72e118ec44a3b3be97bbb25bb, type: 3}
   audio2: {fileID: 8300000, guid: fb28ec65e9767fa45892977df58ee356, type: 3}
   audio3: {fileID: 8300000, guid: ee6dbc063405da74ca87fd9614f634c1, type: 3}
   audio4: {fileID: 8300000, guid: f1fc3e0916c51f2419bd76051f8c40c8, type: 3}
+  swimming: {fileID: 0}
 --- !u!1001 &386963749756005294
 PrefabInstance:
   m_ObjectHideFlags: 0

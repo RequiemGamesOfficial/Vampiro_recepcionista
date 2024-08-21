@@ -39,7 +39,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 139236058923008
-    m_Localized: Night
+    m_Localized: Night No.
     m_Metadata:
       m_Items: []
   - m_Id: 139548320661504
@@ -79,15 +79,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 79103112807546880
-    m_Localized: to move
+    m_Localized: To move
     m_Metadata:
       m_Items: []
   - m_Id: 79103293053566976
-    m_Localized: to jump
+    m_Localized: To jump
     m_Metadata:
       m_Items: []
   - m_Id: 79103486650056704
-    m_Localized: to interactuate
+    m_Localized: To interactuate
     m_Metadata:
       m_Items: []
   - m_Id: 126097676743049216
@@ -96,6 +96,18 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 153986451196182528
     m_Localized: "I know what you really are. duel me in the backyard\r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 199396129614692352
+    m_Localized: Score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 199399879561543680
+    m_Localized: Global deaths
+    m_Metadata:
+      m_Items: []
+  - m_Id: 199399913199861760
+    m_Localized: Local deaths
     m_Metadata:
       m_Items: []
   references:

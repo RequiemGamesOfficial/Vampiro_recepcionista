@@ -123,6 +123,7 @@ MonoBehaviour:
   iceSpeed: 0
   jumpForce: 6
   spriteRenderer: {fileID: 3736710888520538404}
+  coyoteTime: 0.2
   groundCheck: {fileID: 3736710888206282401}
   up: {fileID: 3736710889047697235}
   down: {fileID: 3736710889276453511}
@@ -159,7 +160,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &3736710888455107482
 MonoBehaviour:

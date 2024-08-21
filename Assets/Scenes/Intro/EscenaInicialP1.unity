@@ -1679,9 +1679,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5776aeab813279e458064de177d86ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiObject:
-  - {fileID: 542572047}
-  - {fileID: 1114811215}
   buttonAndroid:
   - {fileID: 543317747}
 --- !u!1 &67961445
@@ -9728,11 +9725,6 @@ PrefabInstance:
 --- !u!224 &542572046 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3096216580478659303, guid: b9be5b1d58a8dd446b0340825593e8e3, type: 3}
-  m_PrefabInstance: {fileID: 542572045}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &542572047 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3096216580478659300, guid: b9be5b1d58a8dd446b0340825593e8e3, type: 3}
   m_PrefabInstance: {fileID: 542572045}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &543317747
@@ -22511,7 +22503,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -18.033203, y: -50.083984}
-  m_SizeDelta: {x: 157.387, y: 159.114}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1114811217
 MonoBehaviour:
@@ -35898,7 +35890,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1598280415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36628,7 +36620,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8091146363384397355, guid: b9be5b1d58a8dd446b0340825593e8e3, type: 3}
   m_PrefabInstance: {fileID: 542572045}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 542572047}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c11cbdc6570a0a40ae035686eff297b, type: 3}
@@ -41828,7 +41820,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.33, y: 0.22}
+    oldSize: {x: 0.32, y: 0.32}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
