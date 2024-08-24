@@ -5230,7 +5230,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -739, y: -0.38061523}
+  m_AnchoredPosition: {x: -739.00006, y: -0.38061523}
   m_SizeDelta: {x: 2273.52, y: 1785.38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &280579567
@@ -14846,11 +14846,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 559375804864425435, guid: fea790ea02f56fe4cb4bda0a999d6376, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.0015681494
+      value: 0.0015678094
       objectReference: {fileID: 0}
     - target: {fileID: 559375804864425435, guid: fea790ea02f56fe4cb4bda0a999d6376, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.056664143
+      value: -0.05666414
       objectReference: {fileID: 0}
     - target: {fileID: 559375805149854460, guid: fea790ea02f56fe4cb4bda0a999d6376, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -14858,15 +14858,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 559375805149854460, guid: fea790ea02f56fe4cb4bda0a999d6376, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.057591163
+      value: -0.057591498
       objectReference: {fileID: 0}
     - target: {fileID: 559375805450096042, guid: fea790ea02f56fe4cb4bda0a999d6376, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.0014974416
+      value: 0.0014977814
       objectReference: {fileID: 0}
     - target: {fileID: 559375805450096042, guid: fea790ea02f56fe4cb4bda0a999d6376, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.0548118
+      value: -0.054811455
       objectReference: {fileID: 0}
     - target: {fileID: 559375805788997172, guid: fea790ea02f56fe4cb4bda0a999d6376, type: 3}
       propertyPath: m_RootOrder
@@ -14926,11 +14926,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3320923821480186793, guid: fea790ea02f56fe4cb4bda0a999d6376, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.004990339
+      value: 0.0049903383
       objectReference: {fileID: 0}
     - target: {fileID: 3320923821480186793, guid: fea790ea02f56fe4cb4bda0a999d6376, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.06614613
+      value: -0.06614612
       objectReference: {fileID: 0}
     - target: {fileID: 4433095643282776786, guid: fea790ea02f56fe4cb4bda0a999d6376, type: 3}
       propertyPath: m_ConnectedAnchor.x
