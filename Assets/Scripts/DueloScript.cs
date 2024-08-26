@@ -67,7 +67,7 @@ public class DueloScript : MonoBehaviour
         //Cambiar follow de camera
         eventsTriggers.TriggerDuelo(newTarget);
         //Iniciar animacion duelo
-        if (android)
+        if (android && buttonsAndroid !=null)
         {
             buttonsAndroid.SetActive(false);
         }
@@ -88,7 +88,7 @@ public class DueloScript : MonoBehaviour
         animDuelo.Play("TerminarDuelo");
         animSamurai.Play("Attack");
         duelo = false;
-        if (android)
+        if (android && buttonsAndroid != null)
         {
             buttonsAndroid.SetActive(true);
         }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Hotel : MonoBehaviour
 {
@@ -38,7 +39,7 @@ public class Hotel : MonoBehaviour
     public int presupuesto;
 
     public AudioSource audioSourceCompra,noCashSound;
-    public Text textNoche;
+    public TextMeshProUGUI textNoche;
 
     public GameObject posicionHabitacion;
     public GameObject sotanoPrefab,cocinaPrefab;
@@ -241,17 +242,26 @@ public class Hotel : MonoBehaviour
     {
         if(manager.accident1 != 0)
         {
+            manager.accident1 = 0;
             Instantiate(accidentPrefab[manager.accident1],accidentPoints[0]);
         }
 
-        if (manager.accident2 != 0 && manager.piso3 >= 2)
+        if (manager.accident2 != 0)
         {
-            Instantiate(accidentPrefab[manager.accident2], accidentPoints[1]);
+            manager.accident2 = 0;
+            if(manager.piso3 >= 2)
+            {
+                Instantiate(accidentPrefab[manager.accident2], accidentPoints[1]);
+            }
         }
 
-        if (manager.accident3 != 0 && manager.piso4 >= 2)
-        {
-            Instantiate(accidentPrefab[manager.accident3], accidentPoints[2]);
+        if (manager.accident3 != 0)
+        {           
+            manager.accident3 = 0;
+            if (manager.piso4 >= 2)
+            {
+                Instantiate(accidentPrefab[manager.accident3], accidentPoints[2]);
+            }
         }
     }
 

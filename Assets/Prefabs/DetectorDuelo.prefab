@@ -763,7 +763,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -7922650211865687641, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 03ea2b2b22fd62440b0881f27a03eb00, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -968,11 +968,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed15b53028fecb6429fe09ccdb7310e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
   audioSource: {fileID: 6165845210049752955}
   audio1: {fileID: 8300000, guid: ee6dbc063405da74ca87fd9614f634c1, type: 3}
   audio2: {fileID: 8300000, guid: 01f086e72e118ec44a3b3be97bbb25bb, type: 3}
   audio3: {fileID: 0}
   audio4: {fileID: 0}
+  swimming: {fileID: 0}
 --- !u!82 &6165845210049752955
 AudioSource:
   m_ObjectHideFlags: 0

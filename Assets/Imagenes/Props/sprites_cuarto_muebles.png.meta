@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 94b96b1346c17c14d8caf23906aef1fa
+guid: a0f48ad479c3e5440b2e93c6165da9d8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,12 +129,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: basura_0
+      name: sprites_cuarto_muebles_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 29
-        width: 13
+        x: 3
+        y: 36
+        width: 21
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -143,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc005aac74cb5b24286e2f05426422ec
-      internalID: 1969493850
+      spriteID: 4cbee344921421b41b92a6df7ef445a0
+      internalID: -2024914033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: basura_1
+      name: sprites_cuarto_muebles_1
       rect:
         serializedVersion: 2
-        x: 23
-        y: 29
-        width: 30
-        height: 18
+        x: 26
+        y: 36
+        width: 21
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,82 +164,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 505cb6027c601184c8047fa3faf0e82f
-      internalID: 194121845
+      spriteID: d6711be0520dc6947b0808fc7480c998
+      internalID: -1887967288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: basura_2
+      name: sprites_cuarto_muebles_2
       rect:
         serializedVersion: 2
-        x: 5
-        y: 4
-        width: 13
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e04b2606835b5548a93d59ade5aacc9
-      internalID: -744805798
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: basura_3
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 15
-        width: 13
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a457edd91df26741851a132f5b6f2a9
-      internalID: -1737861478
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: basura_4
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 4
-        width: 13
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2df581428abdaf94f86ab4b7c5716306
-      internalID: 1044042829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: basura_5
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 4
-        width: 22
+        x: 3
+        y: 24
+        width: 21
         height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -248,19 +185,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40dbf2263d994204ea17fb860687dc87
-      internalID: 163090545
+      spriteID: 6fa7a845780aaff4bb5fc75fc1a90fba
+      internalID: 1455030042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: basura_6
+      name: sprites_cuarto_muebles_3
       rect:
         serializedVersion: 2
-        x: 7
-        y: 44
-        width: 9
+        x: 30
+        y: 24
+        width: 7
         height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -269,8 +206,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7267291db42a94e499c21d54608bf458
-      internalID: -1725561005
+      spriteID: 4df120b19895b6e4698121bbe51ed3e4
+      internalID: 1064231213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_cuarto_muebles_4
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 4
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742876760bdaa494597355e6454ad7db
+      internalID: 1573420326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_cuarto_muebles_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4
+        width: 41
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fe0e7cde9be684290c070a4ecaf760
+      internalID: 1089068751
       vertices: []
       indices: 
       edges: []
@@ -286,13 +265,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      basura_4: 1044042829
-      basura_0: 1969493850
-      basura_3: -1737861478
-      basura_5: 163090545
-      basura_1: 194121845
-      basura_2: -744805798
-      basura_6: -1725561005
+      sprites_cuarto_muebles_0: -2024914033
+      sprites_cuarto_muebles_1: -1887967288
+      sprites_cuarto_muebles_2: 1455030042
+      sprites_cuarto_muebles_3: 1064231213
+      sprites_cuarto_muebles_4: 1573420326
+      sprites_cuarto_muebles_5: 1089068751
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
