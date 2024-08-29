@@ -27,12 +27,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 136082953242771456
-    m_Localized: "Amo ha despertado, me alegra mucho, r\xE1pido demos un paseo nocturno
-      \xBFrecuerda c\xF3mo moverse y abrir las puertas verdad?\r\n\n"
+    m_Localized: "Amo, ha despertado, me alegra mucho. \xA1R\xE1pido! Demos un paseo
+      nocturno. \xBFRecuerda c\xF3mo moverse y abrir las puertas verdad?\r\n\n"
     m_Metadata:
       m_Items: []
   - m_Id: 136082986491019264
-    m_Localized: "Amo durmi\xF3 demasiado esta vez, debe estar hambriento, seguro
+    m_Localized: "Amo, durmi\xF3 demasiado esta vez, debe estar hambriento, seguro
       encontramos algo rico de comer.\r"
     m_Metadata:
       m_Items: []
@@ -55,12 +55,12 @@ MonoBehaviour:
   - m_Id: 136083130666024960
     m_Localized: "No podemos recibir hu\xE9spedes sin habitaciones, con el dinero
       que tienes debe ser suficiente para construir un par, cuando termines regresa
-      aqu\xED a recepci\xF3n, \xA1r\xE1pido!\r"
+      aqu\xED a recepci\xF3n \xA1R\xE1pido!\r"
     m_Metadata:
       m_Items: []
   - m_Id: 136083154850381824
     m_Localized: "Para seguir mejorando el hotel necesitas m\xE1s dinero, mucho m\xE1s
-      dinero, dale a los visitantes habitaciones, llena el hotel y recuerda bien
+      dinero. Dale a los visitantes habitaciones, llena el hotel y recuerda bien
       donde los pones."
     m_Metadata:
       m_Items: []

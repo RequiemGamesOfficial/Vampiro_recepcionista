@@ -99,6 +99,9 @@ public class HuespedHotel : MonoBehaviour
 
     public void LanzarProyectil()
     {
-        Instantiate(proyectil, this.transform.position, Quaternion.identity);
+        if (!dead)
+        {
+            Instantiate(proyectil, this.transform.position, Quaternion.identity);
+        }           
     }
 }

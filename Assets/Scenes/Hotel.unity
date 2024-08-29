@@ -9648,7 +9648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accidentPanel: {fileID: 1679808632}
-  cost: 200
+  cost: 800
   accidentId: 6
   reputation: 15
   costText: {fileID: 1336500310}
@@ -10635,9 +10635,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accidentPanel: {fileID: 1679808632}
-  cost: 200
+  cost: 900
   accidentId: 12
-  reputation: 15
+  reputation: 25
   costText: {fileID: 1940161910}
 --- !u!114 &328213419
 MonoBehaviour:
@@ -16517,9 +16517,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accidentPanel: {fileID: 1679808632}
-  cost: 200
+  cost: 100
   accidentId: 10
-  reputation: 15
+  reputation: 30
   costText: {fileID: 257749835}
 --- !u!114 &406702061
 MonoBehaviour:
@@ -19568,6 +19568,7 @@ RectTransform:
   - {fileID: 2133059280}
   - {fileID: 392872390}
   - {fileID: 2070825698}
+  - {fileID: 1694935598}
   m_Father: {fileID: 63491589}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20555,9 +20556,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accidentPanel: {fileID: 1679808632}
-  cost: 200
+  cost: 750
   accidentId: 9
-  reputation: 15
+  reputation: 25
   costText: {fileID: 1807366416}
 --- !u!114 &500086724
 MonoBehaviour:
@@ -22766,6 +22767,10 @@ PrefabInstance:
     - target: {fileID: 3096216580478659300, guid: b9be5b1d58a8dd446b0340825593e8e3, type: 3}
       propertyPath: m_Name
       value: Stats
+      objectReference: {fileID: 0}
+    - target: {fileID: 3096216580478659300, guid: b9be5b1d58a8dd446b0340825593e8e3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3096216580478659300, guid: b9be5b1d58a8dd446b0340825593e8e3, type: 3}
       propertyPath: m_TagString
@@ -29348,7 +29353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accidentPanel: {fileID: 1679808632}
-  cost: 200
+  cost: 300
   accidentId: 2
   reputation: 15
   costText: {fileID: 192802085}
@@ -35380,9 +35385,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accidentPanel: {fileID: 1679808632}
-  cost: 200
+  cost: 800
   accidentId: 14
-  reputation: 15
+  reputation: 20
   costText: {fileID: 961547116}
 --- !u!114 &929357623
 MonoBehaviour:
@@ -40514,9 +40519,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accidentPanel: {fileID: 1679808632}
-  cost: 200
+  cost: 500
   accidentId: 4
-  reputation: 15
+  reputation: 10
   costText: {fileID: 224619446}
 --- !u!114 &1073106623
 MonoBehaviour:
@@ -52910,9 +52915,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accidentPanel: {fileID: 1679808632}
-  cost: 200
+  cost: 1000
   accidentId: 13
-  reputation: 15
+  reputation: 25
   costText: {fileID: 1163550871}
 --- !u!114 &1423347792
 MonoBehaviour:
@@ -54404,9 +54409,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accidentPanel: {fileID: 1679808632}
-  cost: 200
+  cost: 400
   accidentId: 11
-  reputation: 15
+  reputation: 20
   costText: {fileID: 1252398131}
 --- !u!114 &1480190457
 MonoBehaviour:
@@ -59589,7 +59594,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.13999939, y: 0.17000008}
+  m_AnchoredPosition: {x: -0.13999939, y: 0.16999817}
   m_SizeDelta: {x: 5.06, y: -0.62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1669404556
@@ -60377,7 +60382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[4]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[5]
@@ -60534,11 +60539,11 @@ PrefabInstance:
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: b3fe3c12bc69d4543bbee4f860be4b56, type: 2}
+      objectReference: {fileID: 11400000, guid: 6e437643ff055064fb54f9ca32a9ddec, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 156adcdf6edf94f4b8451d6326de5577, type: 2}
+      objectReference: {fileID: 11400000, guid: a747d07e5a5c9164ab52489f921b4827, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[2]
       value: 
@@ -60589,6 +60594,82 @@ PrefabInstance:
       objectReference: {fileID: 2037152623}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+--- !u!1 &1694935597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1694935598}
+  - component: {fileID: 1694935600}
+  - component: {fileID: 1694935599}
+  m_Layer: 5
+  m_Name: Icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1694935598
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694935597}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 480838012}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 235, y: 111}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1694935599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694935597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 733057924, guid: e5cb5ad158bc1d64780fd0c3f789b70d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1694935600
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694935597}
+  m_CullTransparentMesh: 1
 --- !u!1 &1696650704
 GameObject:
   m_ObjectHideFlags: 0
@@ -66277,7 +66358,7 @@ MonoBehaviour:
   - {fileID: 6654902524814019902, guid: 124f5b80f3b941846b9004a99db23f5f, type: 3}
   - {fileID: 5933093727847569326, guid: 5b2a83b3a25ccf04a834655cc1d6976a, type: 3}
   - {fileID: 6240941491189521369, guid: 1abef0cd574d8d14a978998f0731c8a2, type: 3}
-  - {fileID: 1417963853982499082, guid: 92694a4748ff48e47a05b971dfe4443a, type: 3}
+  - {fileID: 1417963853982499082, guid: 8ad7a96437736bf4f8a2cc3fddbafe0b, type: 3}
   - {fileID: 4746622175799147227, guid: e0e58c34e1fcfcc4fa94a6d627cfafda, type: 3}
   - {fileID: 6577451178080120867, guid: f99c44e6755c8aa4cab76e3fc3747c4b, type: 3}
   - {fileID: 6724232089735264117, guid: e9bbb50064936544998c790a8a7fee00, type: 3}
@@ -68335,7 +68416,7 @@ RectTransform:
   m_GameObject: {fileID: 1945096348}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.196252, y: 2.196252, z: 2.196252}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1669404555}
@@ -68346,8 +68427,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -382, y: 217}
-  m_SizeDelta: {x: 104.12, y: 34.61}
+  m_AnchoredPosition: {x: -382, y: 211.98}
+  m_SizeDelta: {x: 105, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1945096351
 MonoBehaviour:
@@ -72895,8 +72976,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.4599915, y: 109.97}
-  m_SizeDelta: {x: 539.46, y: 105.77}
+  m_AnchoredPosition: {x: -43, y: 109.97}
+  m_SizeDelta: {x: 461.7, y: 105.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2070825699
 MonoBehaviour:
@@ -74266,9 +74347,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accidentPanel: {fileID: 1679808632}
-  cost: 200
+  cost: 500
   accidentId: 8
-  reputation: 15
+  reputation: 5
   costText: {fileID: 358345185}
 --- !u!114 &2109940031
 MonoBehaviour:

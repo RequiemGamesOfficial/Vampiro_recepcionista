@@ -11,7 +11,6 @@ public class AccidentPanel : MonoBehaviour
     public List<int> excludedNumbers = new List<int> { 0, 1, 3, 5, 7, 16 };
     public GameObject[] accidentBlock;
     public int random1, random2, random3;
-    //public bool accidentActive1, accidentActive2, accidentActive3;
     public AudioSource audioSource;
 
     private void Start()
@@ -19,46 +18,6 @@ public class AccidentPanel : MonoBehaviour
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
         SetAccidentsByGuest();
     }
-
-    //Old
-    //public void SetAccidentsBlocks()
-    //{
-    //    //Block1
-    //    random1 = Random.Range(0, accidentBlock.Length);
-    //    if(!excludedNumbers.Contains(random1))
-    //    {           
-    //        if (accidentBlock[random1] != null)
-    //        {
-    //            accidentBlock[random1].transform.position = block1.transform.position;
-    //            accidentBlock[random1].SetActive(true);
-    //        }
-    //        //Block2
-    //        random2 = Random.Range(0, accidentBlock.Length);
-    //        if (!excludedNumbers.Contains(random2) && random2 != random1)
-    //        {
-    //            if (accidentBlock[random2] != null)
-    //            {
-    //                accidentBlock[random2].transform.position = block2.transform.position;
-    //                accidentBlock[random2].SetActive(true);
-    //            }
-    //            //Block3
-    //            random3 = Random.Range(0, accidentBlock.Length);
-    //            if (!excludedNumbers.Contains(random3) && random3 != random2 && random3!= random1)
-    //            {
-    //                if (accidentBlock[random3] != null)
-    //                {
-    //                    accidentBlock[random3].transform.position = block3.transform.position;
-    //                    accidentBlock[random3].SetActive(true);
-    //                }
-    //            }
-    //        }
-    //    }
-    //    else
-    //    {
-    //        Debug.Log("No hay accidentes");
-    //    }
-    //}
-
 
     public void SetAccidentsByGuest()
     {
@@ -109,6 +68,10 @@ public class AccidentPanel : MonoBehaviour
                 accidentBlock[id3].transform.position = block3.transform.position;
                 manager.accident3 = id3;
             }
+        }
+        if (manager.accident1 == 0 && manager.accident2 == 0 && manager.accident3 == 0)
+        {
+            this.gameObject.SetActive(false);
         }
     }
 

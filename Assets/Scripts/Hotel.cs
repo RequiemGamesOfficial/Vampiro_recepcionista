@@ -242,26 +242,26 @@ public class Hotel : MonoBehaviour
     {
         if(manager.accident1 != 0)
         {
-            manager.accident1 = 0;
             Instantiate(accidentPrefab[manager.accident1],accidentPoints[0]);
+            manager.accident1 = 0;
         }
 
         if (manager.accident2 != 0)
         {
-            manager.accident2 = 0;
             if(manager.piso3 >= 2)
             {
                 Instantiate(accidentPrefab[manager.accident2], accidentPoints[1]);
             }
+            manager.accident2 = 0;
         }
 
         if (manager.accident3 != 0)
         {           
-            manager.accident3 = 0;
             if (manager.piso4 >= 2)
             {
                 Instantiate(accidentPrefab[manager.accident3], accidentPoints[2]);
             }
+            manager.accident3 = 0;
         }
     }
 
