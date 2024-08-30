@@ -71,6 +71,7 @@ public class AccidentPanel : MonoBehaviour
         }
         if (manager.accident1 == 0 && manager.accident2 == 0 && manager.accident3 == 0)
         {
+            Debug.Log("No hay eventos!!");
             this.gameObject.SetActive(false);
         }
     }
