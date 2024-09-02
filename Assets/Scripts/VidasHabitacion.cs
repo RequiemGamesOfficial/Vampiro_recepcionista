@@ -58,7 +58,9 @@ public class VidasHabitacion : MonoBehaviour
             {
                 controllerManager.OffSkate(false);
             }
-            KillPlayerRoom();
+            playerController.CantNotMove();
+            anim.Play("P_Dying");
+            Invoke("KillPlayerRoom", 2);
         }
     }
     public void DamageKill(Vector2 posicion)
@@ -83,6 +85,8 @@ public class VidasHabitacion : MonoBehaviour
             {
                 controllerManager.OffSkate(false);
             }
+            playerController.CantNotMove();
+            anim.Play("P_Dying");
             hotel.FadeToBlack();
             Desactivar();
         }
@@ -99,6 +103,7 @@ public class VidasHabitacion : MonoBehaviour
             {
                 controllerManager.OffSkate(false);
             }
+
             hotel.FadeToBlack();
             Desactivar();
         }
@@ -111,6 +116,7 @@ public class VidasHabitacion : MonoBehaviour
         hotel.FadeToBlack();
         Desactivar();
         vidas = 3;
+        playerController.CanMove();
     }
 
     public void DueloLose()

@@ -343,6 +343,20 @@ public class PlayerController : MonoBehaviour
     {
         coyoteTimeCounter = 0f;
     }
+
+    //Movimiento falso y verdadero
+    public void CantNotMove()
+    {
+        canMove = false;
+        rb.velocity = new Vector2(0, 0);
+        horizontal = 0;
+    }
+
+    public void CanMove()
+    {
+        canMove = true;
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Concrete"))
