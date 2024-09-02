@@ -107,6 +107,7 @@ public class VidasHabitacion : MonoBehaviour
     public void KillPlayerRoom()
     {
         hotel.Piso1(true);
+        anim.Play("P_Stan");
         hotel.FadeToBlack();
         Desactivar();
         vidas = 3;

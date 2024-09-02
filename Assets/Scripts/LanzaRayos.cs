@@ -5,7 +5,7 @@ using UnityEngine;
 public class LanzaRayos : MonoBehaviour
 {
     public Animator rayoAnimator;
-    [Range (3,6)]
+    [Range (2,6)]
     public float timeToSpend = 3f;
     float timer;
     public bool random;

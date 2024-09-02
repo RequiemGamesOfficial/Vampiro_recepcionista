@@ -5745,6 +5745,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.25490198
       objectReference: {fileID: 0}
+    - target: {fileID: 8793942880330727777, guid: f8ca2eb9eefb035469774dc13866466d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8793942880330727780, guid: f8ca2eb9eefb035469774dc13866466d, type: 3}
       propertyPath: m_SurfaceLevel
       value: 1.75

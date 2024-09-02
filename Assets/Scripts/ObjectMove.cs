@@ -22,13 +22,19 @@ public class ObjectMove : MonoBehaviour
         {
             moveTo = startPoint.position;
             //Cambiar Yflip
-            spriteRenderer.flipY = true;
+            if(spriteRenderer != null)
+            {
+                spriteRenderer.flipY = true;
+            }            
         }
 
         if (objetcToMove.transform.position == startPoint.position)
         {
             moveTo = endPoint.position;
-            spriteRenderer.flipY = false;
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.flipY = false;
+            }                
         }
 
         objetcToMove.transform.position = Vector3.MoveTowards(objetcToMove.transform.position, moveTo, velocity * Time.deltaTime);
