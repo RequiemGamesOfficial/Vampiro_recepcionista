@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TriggerEToButton : MonoBehaviour
 {
-    public DemonBoss demonBoss;
+    public GameObject objectToTrigger;
     public GameObject button;
     bool detected;
     public string message;
@@ -13,7 +13,7 @@ public class TriggerEToButton : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && detected)
         {
-            demonBoss.SendMessage(message);
+            objectToTrigger.SendMessage(message);
         }
     }
 
@@ -21,6 +21,7 @@ public class TriggerEToButton : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            Debug.Log("Player enter");
             detected = true;
             button.SetActive(true);
         }

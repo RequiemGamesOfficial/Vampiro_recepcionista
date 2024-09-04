@@ -101,6 +101,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -174,7 +198,7 @@ TextureImporter:
         x: 96
         y: 49
         width: 18
-        height: 24
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,9 +219,9 @@ TextureImporter:
         x: 128
         y: 49
         width: 18
-        height: 24
+        height: 25
       alignment: 9
-      pivot: {x: 0.52080196, y: 0.5936082}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -216,9 +240,9 @@ TextureImporter:
         x: 6
         y: 9
         width: 22
-        height: 24
+        height: 25
       alignment: 9
-      pivot: {x: 0.42057467, y: 0.59360844}
+      pivot: {x: 0.41, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -237,9 +261,9 @@ TextureImporter:
         x: 34
         y: 9
         width: 22
-        height: 24
+        height: 25
       alignment: 9
-      pivot: {x: 0.43759432, y: 0.59880894}
+      pivot: {x: 0.41, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -255,12 +279,12 @@ TextureImporter:
       name: Vampiro_Acariciando_7
       rect:
         serializedVersion: 2
-        x: 64
+        x: 65
         y: 9
         width: 22
-        height: 24
+        height: 25
       alignment: 9
-      pivot: {x: 0.43192118, y: 0.588408}
+      pivot: {x: 0.41, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -276,12 +300,12 @@ TextureImporter:
       name: Vampiro_Acariciando_8
       rect:
         serializedVersion: 2
-        x: 93
+        x: 95
         y: 9
-        width: 23
-        height: 24
+        width: 22
+        height: 25
       alignment: 9
-      pivot: {x: 0.40232152, y: 0.588408}
+      pivot: {x: 0.41, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -297,12 +321,12 @@ TextureImporter:
       name: Vampiro_Acariciando_9
       rect:
         serializedVersion: 2
-        x: 125
+        x: 123
         y: 9
-        width: 24
-        height: 24
+        width: 22
+        height: 25
       alignment: 9
-      pivot: {x: 0.39599037, y: 0.57800704}
+      pivot: {x: 0.41, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

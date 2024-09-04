@@ -17,7 +17,7 @@ public class AnimatorPalyer : MonoBehaviour
 
     public void MoveTrue()
     {
-        playerController.canMove = true;
+        playerController.CanMove();
     }
 
     public void CinematicaMuerte()

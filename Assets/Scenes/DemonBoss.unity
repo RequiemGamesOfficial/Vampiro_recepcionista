@@ -17318,7 +17318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c40d877decaa8847a6845f7e3565be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  demonBoss: {fileID: 1894714086}
+  objectToTrigger: {fileID: 1894714079}
   button: {fileID: 1092962214}
   message: ButtonBoss1
 --- !u!61 &1229356917
@@ -25320,7 +25320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c40d877decaa8847a6845f7e3565be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  demonBoss: {fileID: 1894714086}
+  objectToTrigger: {fileID: 1894714079}
   button: {fileID: 652793983}
   message: ButtonBoss2
 --- !u!61 &1650854288
@@ -31591,7 +31591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c40d877decaa8847a6845f7e3565be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  demonBoss: {fileID: 1894714086}
+  objectToTrigger: {fileID: 1894714079}
   button: {fileID: 771580919}
   message: ButtonBoss3
 --- !u!61 &2033585762

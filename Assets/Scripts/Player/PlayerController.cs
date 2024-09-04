@@ -345,6 +345,12 @@ public class PlayerController : MonoBehaviour
     }
 
     //Movimiento falso y verdadero
+
+    public void PlayerPet()
+    {
+        CantNotMove();
+        anim.Play("Pet");
+    }
     public void CantNotMove()
     {
         canMove = false;

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
+    GameObject player;
     Transform playerTransform;
     public SpriteRenderer spriteRenderer;
     public Rigidbody2D rgb2D;
@@ -24,7 +25,8 @@ public class FollowPlayer : MonoBehaviour
 
     void Start()
     {
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerTransform = player.transform;
         normalSpeed = speed;
     }
 
@@ -96,6 +98,17 @@ public class FollowPlayer : MonoBehaviour
         {
             waterState = false;
         }
+    }
+
+    public void StayInPlace()
+    {
+        rgb2D.velocity = new Vector2(0, 0);
+    }
+
+    public void PetDog()
+    {
+        player.SendMessage("PlayerPet");
+        PlayTargetAnimation("Pet", true);
     }
 
     public void PlayTargetAnimation(string targetAnim, bool isInteracting = false)
