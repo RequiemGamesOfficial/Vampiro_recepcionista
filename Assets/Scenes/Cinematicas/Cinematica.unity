@@ -2000,7 +2000,7 @@ MonoBehaviour:
   playerController: {fileID: 0}
   audioSource: {fileID: 2005351711}
   audio1: {fileID: 8300000, guid: 01f086e72e118ec44a3b3be97bbb25bb, type: 3}
-  audio2: {fileID: 8300000, guid: fb28ec65e9767fa45892977df58ee356, type: 3}
+  audio2: {fileID: 8300000, guid: 6386b0fc07248e342bc8c1362cdc0771, type: 3}
   audio3: {fileID: 8300000, guid: ee6dbc063405da74ca87fd9614f634c1, type: 3}
   audio4: {fileID: 8300000, guid: f1fc3e0916c51f2419bd76051f8c40c8, type: 3}
   swimming: {fileID: 0}
