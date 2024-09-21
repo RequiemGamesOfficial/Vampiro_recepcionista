@@ -10,6 +10,9 @@ public class SoundAnimator : MonoBehaviour
     public AudioClip audio1, audio2, audio3, audio4;
     public AudioClip swimming;
 
+    int randomSound;
+    public AudioClip[] climbing;
+
     public void PlayAudioClip01()
     {
         if(audio1 != null)
@@ -44,6 +47,16 @@ public class SoundAnimator : MonoBehaviour
         else
         {
             audioSource.clip = audio4;
+            audioSource.Play();
+        }
+    }
+
+    public void PlayClimbingAudio()
+    {
+        if (climbing.Length > 0)
+        {
+            randomSound = Random.Range(0, climbing.Length);
+            audioSource.clip = climbing[randomSound];
             audioSource.Play();
         }
     }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerStepSound : MonoBehaviour
 {
     AudioSource audioSource;
-    public AudioClip water1, water2;
+    public AudioClip[] water1, water2;
     public AudioClip[] stepRight, stepLeft;
     public AudioClip[] stepRightConcre, stepLeftConcre;
     public AudioClip[] stepRightGrass, stepLeftGrass;
@@ -21,8 +21,12 @@ public class PlayerStepSound : MonoBehaviour
     {
         if (playerController.waterState)
         {
-            audioSource.clip = water1;
-            audioSource.Play();
+            if (water1.Length > 0)
+            {
+                randomSound = Random.Range(0, water1.Length);
+                audioSource.clip = water1[randomSound];
+                audioSource.Play();
+            }
         }
         else
         {
@@ -59,8 +63,12 @@ public class PlayerStepSound : MonoBehaviour
     {
         if (playerController.waterState)
         {
-            audioSource.clip = water2;
-            audioSource.Play();
+            if (water2.Length > 0)
+            {
+                randomSound = Random.Range(0, water2.Length);
+                audioSource.clip = water2[randomSound];
+                audioSource.Play();
+            }
         }
         else
         {
