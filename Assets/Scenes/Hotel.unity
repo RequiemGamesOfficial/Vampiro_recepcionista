@@ -22279,8 +22279,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522143965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 2.72, z: 0}
-  m_LocalScale: {x: 9.722301, y: 9.722301, z: 9.722301}
+  m_LocalPosition: {x: 0.069, y: 0.331, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1948448027}
@@ -22324,12 +22324,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1717663213
+  m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 369986419619049598, guid: 9816d3f587c72cc4384d58a63216aa4a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_Sprite: {fileID: 1248084607, guid: 39d84cac2aad771408ed6ca86f35f514, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6862745}
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.08, y: 0.08}
@@ -22382,24 +22382,24 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522143965}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0013888739, y: 0.06808336}
+  m_Offset: {x: 0.0021493323, y: 0.13033377}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5173609, y: -0.35104203}
-    oldSize: {x: 0.08, y: 0.08}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.15, y: 0.26}
     newSize: {x: 0.08, y: 0.08}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.08, y: 0.08}
+  m_Size: {x: 0.18898961, y: 0.2631059}
   m_EdgeRadius: 0
 --- !u!1 &524507529
 GameObject:
@@ -50698,6 +50698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Notas Musical
       objectReference: {fileID: 0}
+    - target: {fileID: 3374184102479812227, guid: 6b2ad672398664543913c558c57e3ac2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5740617114119602826, guid: 6b2ad672398664543913c558c57e3ac2, type: 3}
       propertyPath: ShapeModule.angle
       value: 0
@@ -68887,6 +68891,7 @@ MonoBehaviour:
   anim: {fileID: 1948448028}
   speed: 10
   ghost: {fileID: 522143966}
+  ghostSprite: {fileID: 522143967}
   active: 1
   timer: 0
   timeToStop: 6

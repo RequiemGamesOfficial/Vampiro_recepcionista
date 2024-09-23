@@ -10,6 +10,7 @@ public class CajaMusical : MonoBehaviour
     public float speed = 3;
     GameObject player;
     public Transform ghost;
+    public SpriteRenderer ghostSprite;
     Vector3 gInitialPosition;
     PlayerController playerController;
 
@@ -46,10 +47,24 @@ public class CajaMusical : MonoBehaviour
 
             //Accion de ghost cuando el jugador se mueve
             if (playerController.horizontal != 0)
-            {
+            {               
                 Vector2 direction = (player.transform.position - ghost.position).normalized;
                 ghost.position = Vector2.MoveTowards(ghost.position, player.transform.position, speed * Time.deltaTime);
+                if(ghost.position.x > player.transform.position.x)
+                {
+                    ghostSprite.flipX = true;
+                }
+                else
+                {
+                    ghostSprite.flipX = false;
+                }
+                ghostAnim.SetBool("Attacking", true);
             }
+            else
+            {
+                ghostAnim.SetBool("Attacking", false);
+            }
+
             if (timer<= timeToRestart)
             {
                 timer = 0;
@@ -63,12 +78,14 @@ public class CajaMusical : MonoBehaviour
     {
         audioSource.Play();
         ghostAnim.Play("Stop");
+        anim.Play("Open");
     }
 
     void StopMusicalBox()
     {
         audioSource.Stop();
         ghostAnim.Play("Attack");
+        anim.Play("Close");
     }
 
 }

@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GhostAttack
+  m_Name: GhostAttacking
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -29,6 +29,24 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0
         outWeight: 0
+      - serializedVersion: 3
+        time: 0.38333333
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.9166667
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -42,11 +60,13 @@ AnimationClip:
       value: {fileID: -992007217, guid: 39d84cac2aad771408ed6ca86f35f514, type: 3}
     - time: 0.18333334
       value: {fileID: -87009580, guid: 39d84cac2aad771408ed6ca86f35f514, type: 3}
-    - time: 0.31666666
+    - time: 0.38333333
+      value: {fileID: 46899474, guid: 39d84cac2aad771408ed6ca86f35f514, type: 3}
+    - time: 0.76666665
       value: {fileID: -992007217, guid: 39d84cac2aad771408ed6ca86f35f514, type: 3}
-    - time: 0.48333332
+    - time: 0.93333334
       value: {fileID: -87009580, guid: 39d84cac2aad771408ed6ca86f35f514, type: 3}
-    - time: 0.6333333
+    - time: 1.1166667
       value: {fileID: -992007217, guid: 39d84cac2aad771408ed6ca86f35f514, type: 3}
     attribute: m_Sprite
     path: 
@@ -76,6 +96,7 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: -992007217, guid: 39d84cac2aad771408ed6ca86f35f514, type: 3}
     - {fileID: -87009580, guid: 39d84cac2aad771408ed6ca86f35f514, type: 3}
+    - {fileID: 46899474, guid: 39d84cac2aad771408ed6ca86f35f514, type: 3}
     - {fileID: -992007217, guid: 39d84cac2aad771408ed6ca86f35f514, type: 3}
     - {fileID: -87009580, guid: 39d84cac2aad771408ed6ca86f35f514, type: 3}
     - {fileID: -992007217, guid: 39d84cac2aad771408ed6ca86f35f514, type: 3}
@@ -84,7 +105,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.65
+    m_StopTime: 1.1333333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -105,6 +126,24 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.38333333
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.9166667
         value: 0
         inSlope: Infinity
         outSlope: Infinity
