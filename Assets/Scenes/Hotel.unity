@@ -60799,7 +60799,7 @@ PrefabInstance:
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: fc111e6ba451dde4d81781d2ac01558b, type: 2}
+      objectReference: {fileID: 11400000, guid: 464d585421a34004aa755e6780fb1cd9, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[3]
       value: 

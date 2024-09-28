@@ -502,6 +502,12 @@ MonoBehaviour:
   audio3: {fileID: 8300000, guid: f91b8543c5779654da42eb4d5055e028, type: 3}
   audio4: {fileID: 8300000, guid: ab16e736237f7774cbe0990eec986459, type: 3}
   swimming: {fileID: 8300000, guid: a4ee8ea519fe34949b0deb15dfcd4bf4, type: 3}
+  climbing:
+  - {fileID: 8300000, guid: e0e22ecadbcc17542901fdf6706acb7e, type: 3}
+  - {fileID: 8300000, guid: 060bcc124b649be4a8c56317ec9b2c98, type: 3}
+  - {fileID: 8300000, guid: fca1c5c9f9b52bd4d9c1b1768e620259, type: 3}
+  - {fileID: 8300000, guid: 31256b2fdfc22af439ab0bab2e94d25b, type: 3}
+  - {fileID: 8300000, guid: 7742979e8650fff4bbee636f40a666ce, type: 3}
 --- !u!114 &7259946277801728955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,8 +520,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95e990eeb6ca55e449dc1155a583efde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  water1: {fileID: 8300000, guid: f28553559333aef4dab40d3e439580d6, type: 3}
-  water2: {fileID: 8300000, guid: a4ee8ea519fe34949b0deb15dfcd4bf4, type: 3}
+  water1:
+  - {fileID: 8300000, guid: f28553559333aef4dab40d3e439580d6, type: 3}
+  water2:
+  - {fileID: 8300000, guid: a4ee8ea519fe34949b0deb15dfcd4bf4, type: 3}
   stepRight:
   - {fileID: 8300000, guid: 9be1ff24506a04b4d83d98b4c7b3b68f, type: 3}
   - {fileID: 8300000, guid: dce7033f1d68f1a4e99d7facf372ea17, type: 3}
