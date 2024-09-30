@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
                 isRight = false;
                 isLeft = false;
             }
-            if (Input.GetKeyDown("space"))
+            if (Input.GetKeyDown("space") && !anim.GetBool("isInteracting"))
             {
                 isJump = true;
             }
@@ -92,7 +92,7 @@ public class PlayerController : MonoBehaviour
             }
         }       
         //Android
-        if (canMove)
+        if (canMove && !anim.GetBool("isInteracting"))
         {
             anim.SetBool("ground",IsGrounded());
             Flip();
@@ -122,7 +122,7 @@ public class PlayerController : MonoBehaviour
             //Jump
             if (!explorador)
             {
-                if (isJump && coyoteTimeCounter>0f || isJump && waterState)
+                if (isJump && coyoteTimeCounter > 0f || isJump && waterState)
                 {
                     rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                     anim.Play("PlayerJump");
@@ -337,7 +337,10 @@ public class PlayerController : MonoBehaviour
     }
     public void ClickJump()
     {
-        isJump = true;
+        if (!anim.GetBool("isInteracting"))
+        {
+            isJump = true;
+        }
     }
     public void ReleaseJump()
     {
@@ -361,6 +364,12 @@ public class PlayerController : MonoBehaviour
     public void CanMove()
     {
         canMove = true;
+    }
+
+    public void NotMove()
+    {
+        rb.velocity = new Vector2(0, 0);
+        horizontal = 0;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

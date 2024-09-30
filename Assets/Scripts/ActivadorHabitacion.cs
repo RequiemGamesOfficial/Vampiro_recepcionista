@@ -9,12 +9,17 @@ public class ActivadorHabitacion : MonoBehaviour
     VidasHabitacion vidasHabitacion;
     public GameObject obetoExtra;
     public Canvas canvasWorld;
+    public Vector3 newOffsetCamera;
+    public CinemachineCameraOffset cameraOffset;
+
 
     private void Start()
     {
         vidasHabitacion = GameObject.FindGameObjectWithTag("Player").GetComponent<VidasHabitacion>();
+        //Asigna la camara al CanvasWorld de la habitación
         canvasWorld.worldCamera = Camera.main;
-
+        cameraOffset = GameObject.FindGameObjectWithTag("Cinemachine").GetComponent<CinemachineCameraOffset>();
+        
     }
 
     //Recibir de hotel si el huesped esta muerto o vivo
@@ -48,6 +53,7 @@ public class ActivadorHabitacion : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            cameraOffset.m_Offset = new Vector3(0, 0, 0);
             vidasHabitacion.Desactivar();
             huespedVivo.SetActive(false);
             huespedMuerto.SetActive(false);

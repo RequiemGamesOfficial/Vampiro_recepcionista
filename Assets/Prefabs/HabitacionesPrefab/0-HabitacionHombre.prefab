@@ -395,6 +395,7 @@ MonoBehaviour:
   dead: 0
   obetoExtra: {fileID: 0}
   canvasWorld: {fileID: 7111284513174555855}
+  newOffsetCamera: {x: 0, y: 0, z: 0}
 --- !u!1 &6654902523955152795
 GameObject:
   m_ObjectHideFlags: 0

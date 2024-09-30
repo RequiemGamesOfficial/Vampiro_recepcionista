@@ -34,7 +34,7 @@ public class VidasHabitacion : MonoBehaviour
         if(vidas == 2)
         {
             vida3.SetActive(false);
-            anim.Play("PlayerDamage");
+            PlayTargetAnimation("PlayerDamage",true);
             if (!skating && posicion != null)
             {
                 playerController.Rebote(posicion);                
@@ -44,7 +44,7 @@ public class VidasHabitacion : MonoBehaviour
         if(vidas == 1)
         {
             vida2.SetActive(false);
-            anim.Play("PlayerDamage");
+            PlayTargetAnimation("PlayerDamage", true);
             if (!skating && posicion != null)
             {
                 playerController.Rebote(posicion);              
@@ -70,7 +70,7 @@ public class VidasHabitacion : MonoBehaviour
         {
             vida3.SetActive(false);
             vida2.SetActive(false);
-            anim.Play("PlayerDamage");
+            PlayTargetAnimation("PlayerDamage", true);
             if (!skating && posicion != null)
             {
                 playerController.Rebote(posicion);
@@ -140,5 +140,11 @@ public class VidasHabitacion : MonoBehaviour
         Physics2D.IgnoreLayerCollision(9,10, true);
         yield return new WaitForSeconds(tiempoPerdidaControl);
         Physics2D.IgnoreLayerCollision(9, 10, false);
+    }
+
+    public void PlayTargetAnimation(string targetAnim, bool isInteracting = false)
+    {
+        anim.CrossFade(targetAnim, 0.2f);
+        anim.SetBool("isInteracting", isInteracting);
     }
 }

@@ -30,6 +30,7 @@ TagManager:
   - Grass
   - PlatformMove
   - Water
+  - Volume
   layers:
   - Default
   - TransparentFX

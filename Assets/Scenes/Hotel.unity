@@ -22040,7 +22040,7 @@ Transform:
   - {fileID: 311738721}
   - {fileID: 1366230395}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
 MonoBehaviour:
@@ -60539,11 +60539,11 @@ PrefabInstance:
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: fcbeedebb6e0c734c9a29549060dd483, type: 2}
+      objectReference: {fileID: 11400000, guid: a747d07e5a5c9164ab52489f921b4827, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 899709c61201cf04688e10d41945455b, type: 2}
+      objectReference: {fileID: 11400000, guid: 570f2e853bd59c2409e77092bda748c3, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[2]
       value: 
@@ -66218,6 +66218,7 @@ GameObject:
   - component: {fileID: 1894714083}
   - component: {fileID: 1894714084}
   - component: {fileID: 1894714085}
+  - component: {fileID: 1894714086}
   m_Layer: 0
   m_Name: HotelManager
   m_TagString: HotelManager
@@ -66640,6 +66641,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1894714086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894714079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272790a8e683a2241b8642984eb1a8e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drogoEffect: 0
+  cameraOffset: {fileID: 1018256065}
+  speed: 4
+  timeToReset: 20
 --- !u!1 &1901429526
 GameObject:
   m_ObjectHideFlags: 0
@@ -78586,7 +78603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3736710888455107463, guid: 44f6c093762c9b64a9b96cff737fb78e, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3736710888455107463, guid: 44f6c093762c9b64a9b96cff737fb78e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -78831,5 +78848,9 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5380173915103133625, guid: 26e36775cff4da046a635328ab5093e8, type: 3}
+      propertyPath: sharedProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: 3912bac7564ded447b31f7800cf33a4a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26e36775cff4da046a635328ab5093e8, type: 3}
