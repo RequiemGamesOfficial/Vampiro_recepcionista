@@ -94,7 +94,6 @@ public class ControllerManager : MonoBehaviour
     {
         OffLiana();
         rgb2D.AddForce(new Vector2(-100, -500));
-        anim.Play("PlayerDamage");
         StartCoroutine(DesactivarColisionLiana());
     }
 
