@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     float impulsoMax = 2;
     float impulsoMin = -2;
     public float jumpForce;
+    public float boucing;
 
     bool isFacingRight = true;
     public SpriteRenderer spriteRenderer;
@@ -370,6 +371,11 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = new Vector2(0, 0);
         horizontal = 0;
+    }
+    public void Bouncing()
+    {
+        Debug.Log("ReboteArriba");
+        rb.velocity = new Vector2(rb.velocity.x, boucing);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

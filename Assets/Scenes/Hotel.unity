@@ -19630,7 +19630,7 @@ MonoBehaviour:
   hotel: {fileID: 1894714080}
   playerController: {fileID: 2085065515}
   timer: 0
-  limitTime: 80
+  limitTime: 100
   slider: {fileID: 392872391}
   resultadosPanel: {fileID: 889448072}
   fade: {fileID: 768885977}
@@ -60543,7 +60543,7 @@ PrefabInstance:
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 570f2e853bd59c2409e77092bda748c3, type: 2}
+      objectReference: {fileID: 11400000, guid: d0941a92d9d92484580fa8049bf1cca9, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[2]
       value: 
@@ -66374,7 +66374,7 @@ MonoBehaviour:
   - {fileID: 5991291119461578112, guid: 64369cf3892d92e4b8cad7a08893fbc0, type: 3}
   - {fileID: 6654902524814019902, guid: c92fca9d2c139ef49ac2ddcd5d7d1415, type: 3}
   - {fileID: 5933093727847569326, guid: db752c09fc88db747bf7f284e18d5678, type: 3}
-  - {fileID: 6240941491189521369, guid: 7b6080e32af551346a957e9195c1355b, type: 3}
+  - {fileID: 6240941491189521369, guid: fc2e1e869d3172a40835362804627c7d, type: 3}
   - {fileID: 1417963853982499082, guid: 92694a4748ff48e47a05b971dfe4443a, type: 3}
   - {fileID: 4746622175799147227, guid: e9a73805965781e4087cacbd9f2e750a, type: 3}
   - {fileID: 6577451178080120867, guid: 75590974c4c0e964484b49460a3ebf47, type: 3}
@@ -78592,6 +78592,10 @@ PrefabInstance:
     - target: {fileID: 3736710888455107456, guid: 44f6c093762c9b64a9b96cff737fb78e, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3736710888455107457, guid: 44f6c093762c9b64a9b96cff737fb78e, type: 3}
+      propertyPath: boucing
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3736710888455107457, guid: 44f6c093762c9b64a9b96cff737fb78e, type: 3}
       propertyPath: waterParticle

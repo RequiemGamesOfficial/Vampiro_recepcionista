@@ -12,7 +12,7 @@ public class ControllerManager : MonoBehaviour
     public VidasHabitacion vidasHabitacion;
     public VidasBoss vidasBoss;
     [HideInInspector]
-    public bool skating;
+    public bool skating,liana;
     public bool boss;
     [SerializeField] private float tiempoPerdidaLiana;
     public ButtonsAndroid buttonsAndroid;
@@ -75,6 +75,7 @@ public class ControllerManager : MonoBehaviour
     public void OnLiana(float lianaPosx)
     {
         Debug.Log("on liana");
+        liana = true;
         buttonsAndroid.LaderButtons();
         playerController.explorador = true;
         anim.SetBool("Lader", true);
@@ -85,6 +86,7 @@ public class ControllerManager : MonoBehaviour
     public void OffLiana()
     {
         Debug.Log("off liana");
+        liana = false;
         buttonsAndroid.NormalButtons();
         playerController.explorador = false;
         anim.SetBool("Lader", false);
@@ -92,9 +94,12 @@ public class ControllerManager : MonoBehaviour
     }
     public void AttackInLiana()
     {
-        OffLiana();
-        rgb2D.AddForce(new Vector2(-100, -500));
-        StartCoroutine(DesactivarColisionLiana());
+        if (liana)
+        {
+            OffLiana();
+            rgb2D.AddForce(new Vector2(-100, -300));
+            StartCoroutine(DesactivarColisionLiana());
+        }
     }
 
     IEnumerator DesactivarColisionLiana()
