@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -56,6 +56,9 @@ public class Hotel : MonoBehaviour
     //Accidents
     public Transform[] accidentPoints;
     public GameObject[] accidentPrefab;
+
+    string estrella = "★";
+
     private void Awake()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
@@ -675,9 +678,9 @@ public class Hotel : MonoBehaviour
                 }
                 else
                 {
-                    reputationIcon[i].SetActive(true);
+                    //reputationIcon[i].SetActive(true);
                     habitacionUI[i].transform.GetChild(0).GetComponent<Text>().text = manager.numeroHabitacion[i].huespedName;
-                    habitacionUI[i].transform.GetChild(1).GetComponent<Text>().text = "R" + manager.numeroHabitacion[i].reputation;
+                    habitacionUI[i].transform.GetChild(1).GetComponent<Text>().text = estrella + manager.numeroHabitacion[i].reputation * 5 / 100f;
                     habitacionUI[i].transform.GetChild(2).GetComponent<Image>().sprite = manager.numeroHabitacion[i].sprite;
                     manager.reputation += manager.numeroHabitacion[i].reputation;
                     manager.nightsInRoom[i] = 0;
