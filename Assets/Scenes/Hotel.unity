@@ -60539,7 +60539,7 @@ PrefabInstance:
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: a747d07e5a5c9164ab52489f921b4827, type: 2}
+      objectReference: {fileID: 11400000, guid: fcbeedebb6e0c734c9a29549060dd483, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[1]
       value: 
@@ -66377,7 +66377,7 @@ MonoBehaviour:
   - {fileID: 6240941491189521369, guid: fc2e1e869d3172a40835362804627c7d, type: 3}
   - {fileID: 1417963853982499082, guid: 92694a4748ff48e47a05b971dfe4443a, type: 3}
   - {fileID: 4746622175799147227, guid: e9a73805965781e4087cacbd9f2e750a, type: 3}
-  - {fileID: 6577451178080120867, guid: 75590974c4c0e964484b49460a3ebf47, type: 3}
+  - {fileID: 6577451178080120867, guid: d4a2676ab12e9984188d0645362b4b61, type: 3}
   - {fileID: 6724232089735264117, guid: a683c800950e9c14d80f9a517ab913b3, type: 3}
   - {fileID: 4448508646449782053, guid: 1249c8767140cc44dbfe3d255606e774, type: 3}
   - {fileID: 6023558641338948474, guid: f7b27ad39b5f4f149b2619721718879c, type: 3}
