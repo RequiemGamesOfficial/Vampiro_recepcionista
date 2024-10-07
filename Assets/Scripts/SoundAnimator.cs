@@ -6,7 +6,9 @@ public class SoundAnimator : MonoBehaviour
 {
     public PlayerController playerController;
     
-    public AudioSource audioSource;
+    public AudioSource audioSource1,audioSource2;
+    private bool useFirstSource = true; // Variable para alternar entre los AudioSources
+
     public AudioClip audio1, audio2, audio3, audio4;
     public AudioClip swimming;
 
@@ -17,37 +19,37 @@ public class SoundAnimator : MonoBehaviour
     {
         if(audio1 != null)
         {
-            audioSource.clip = audio1;
-            audioSource.Play();
+            audioSource1.clip = audio1;
+            audioSource1.Play();
         }
     }
     public void PlayAudioClip02()
     {
         if (audio2 != null)
         {
-            audioSource.clip = audio2;
-            audioSource.Play();
+            audioSource1.clip = audio2;
+            audioSource1.Play();
         }
     }
     public void PlayAudioClip03()
     {
         if (audio3 != null)
         {
-            audioSource.clip = audio3;
-            audioSource.Play();
+            audioSource1.clip = audio3;
+            audioSource1.Play();
         }
     }
     public void PlayAudioClip04()
     {        
         if (playerController.waterState)
         {
-            audioSource.clip = swimming;
-            audioSource.Play();
+            audioSource1.clip = swimming;
+            audioSource1.Play();
         }
         else
         {
-            audioSource.clip = audio4;
-            audioSource.Play();
+            audioSource1.clip = audio4;
+            audioSource1.Play();
         }
     }
 
@@ -56,8 +58,18 @@ public class SoundAnimator : MonoBehaviour
         if (climbing.Length > 0)
         {
             randomSound = Random.Range(0, climbing.Length);
-            audioSource.clip = climbing[randomSound];
-            audioSource.Play();
+            if (useFirstSource)
+            {
+                audioSource1.clip = climbing[randomSound];
+                audioSource1.Play();
+            }
+            else
+            {
+                audioSource2.clip = climbing[randomSound];
+                audioSource2.Play();
+            }
+
+            useFirstSource = !useFirstSource; // Cambia el valor para la próxima vez
         }
     }
 }

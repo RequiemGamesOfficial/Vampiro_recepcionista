@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerStepSound : MonoBehaviour
 {
-    AudioSource audioSource;
+    public AudioSource audioRight,audioLeft;
     public AudioClip[] water1, water2;
     public AudioClip[] stepRight, stepLeft;
     public AudioClip[] stepRightConcre, stepLeftConcre;
@@ -12,10 +12,6 @@ public class PlayerStepSound : MonoBehaviour
     int randomSound;
     public PlayerController playerController;
 
-    private void Awake()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
 
     public void PlayPaso1()
     {
@@ -24,8 +20,8 @@ public class PlayerStepSound : MonoBehaviour
             if (water1.Length > 0)
             {
                 randomSound = Random.Range(0, water1.Length);
-                audioSource.clip = water1[randomSound];
-                audioSource.Play();
+                audioRight.clip = water1[randomSound];
+                audioRight.Play();
             }
         }
         else
@@ -35,8 +31,8 @@ public class PlayerStepSound : MonoBehaviour
                 if (stepRightConcre.Length > 0)
                 {
                     randomSound = Random.Range(0, stepRightConcre.Length);
-                    audioSource.clip = stepRightConcre[randomSound];
-                    audioSource.Play();
+                    audioRight.clip = stepRightConcre[randomSound];
+                    audioRight.Play();
                 }
             }
             if (playerController.footGrass)
@@ -44,8 +40,8 @@ public class PlayerStepSound : MonoBehaviour
                 if (stepRightGrass.Length > 0)
                 {
                     randomSound = Random.Range(0, stepRightGrass.Length);
-                    audioSource.clip = stepRightGrass[randomSound];
-                    audioSource.Play();
+                    audioRight.clip = stepRightGrass[randomSound];
+                    audioRight.Play();
                 }
             }
             if (!playerController.footConcrete && !playerController.footGrass)
@@ -53,8 +49,8 @@ public class PlayerStepSound : MonoBehaviour
                 if (stepRight.Length > 0)
                 {
                     randomSound = Random.Range(0, stepRight.Length);
-                    audioSource.clip = stepRight[randomSound];
-                    audioSource.Play();
+                    audioRight.clip = stepRight[randomSound];
+                    audioRight.Play();
                 }
             }
         }        
@@ -66,8 +62,8 @@ public class PlayerStepSound : MonoBehaviour
             if (water2.Length > 0)
             {
                 randomSound = Random.Range(0, water2.Length);
-                audioSource.clip = water2[randomSound];
-                audioSource.Play();
+                audioLeft.clip = water2[randomSound];
+                audioLeft.Play();
             }
         }
         else
@@ -77,8 +73,8 @@ public class PlayerStepSound : MonoBehaviour
                 if (stepLeftConcre.Length > 0)
                 {
                     randomSound = Random.Range(0, stepLeftConcre.Length);
-                    audioSource.clip = stepLeftConcre[randomSound];
-                    audioSource.Play();
+                    audioLeft.clip = stepLeftConcre[randomSound];
+                    audioLeft.Play();
                 }
             }
             if (playerController.footGrass)
@@ -86,8 +82,8 @@ public class PlayerStepSound : MonoBehaviour
                 if (stepLeftGrass.Length > 0)
                 {
                     randomSound = Random.Range(0, stepLeftGrass.Length);
-                    audioSource.clip = stepLeftGrass[randomSound];
-                    audioSource.Play();
+                    audioLeft.clip = stepLeftGrass[randomSound];
+                    audioLeft.Play();
                 }
             }
             if (!playerController.footConcrete && !playerController.footGrass)
@@ -95,8 +91,8 @@ public class PlayerStepSound : MonoBehaviour
                 if (stepLeft.Length > 0)
                 {
                     randomSound = Random.Range(0, stepLeft.Length);
-                    audioSource.clip = stepLeft[randomSound];
-                    audioSource.Play();
+                    audioLeft.clip = stepLeft[randomSound];
+                    audioLeft.Play();
                 }
             }
         }       

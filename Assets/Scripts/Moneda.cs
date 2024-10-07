@@ -15,6 +15,10 @@ public class Moneda : MonoBehaviour
     void Start()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
+        if(stats == null)
+        {
+            stats = GameObject.FindGameObjectWithTag("Stats").GetComponent<Stats>();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
