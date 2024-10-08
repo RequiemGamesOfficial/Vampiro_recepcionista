@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Elevador : MonoBehaviour
 {
-    public float velY;
+    public float velY,velX;
     Rigidbody2D rb;
     Transform cameraPos;
     public float timeToDestroy = 7.5f;
@@ -18,7 +18,7 @@ public class Elevador : MonoBehaviour
 
     void Update()
     {
-        rb.velocity = new Vector2(0, velY);
+        rb.velocity = new Vector2(velX, velY);
         float dist = Vector3.Distance(this.transform.position, cameraPos.position);
         if(dist >= 25)
         {
