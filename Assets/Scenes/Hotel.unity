@@ -60539,15 +60539,15 @@ PrefabInstance:
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: fcbeedebb6e0c734c9a29549060dd483, type: 2}
+      objectReference: {fileID: 11400000, guid: 156adcdf6edf94f4b8451d6326de5577, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: d0941a92d9d92484580fa8049bf1cca9, type: 2}
+      objectReference: {fileID: 11400000, guid: 42a9747a66d25ea4386d32bb16dd6519, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 464d585421a34004aa755e6780fb1cd9, type: 2}
+      objectReference: {fileID: 11400000, guid: 049567f8ffdfcd24ea38aaa6753b8b65, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[3]
       value: 
@@ -66359,7 +66359,7 @@ MonoBehaviour:
   - {fileID: 6654902524814019902, guid: 124f5b80f3b941846b9004a99db23f5f, type: 3}
   - {fileID: 5933093727847569326, guid: 5b2a83b3a25ccf04a834655cc1d6976a, type: 3}
   - {fileID: 6240941491189521369, guid: 1abef0cd574d8d14a978998f0731c8a2, type: 3}
-  - {fileID: 1417963853982499082, guid: 8ad7a96437736bf4f8a2cc3fddbafe0b, type: 3}
+  - {fileID: 1417963853982499082, guid: 1477fcd8fa89da94db54776620f81bd4, type: 3}
   - {fileID: 4746622175799147227, guid: e0e58c34e1fcfcc4fa94a6d627cfafda, type: 3}
   - {fileID: 6577451178080120867, guid: f99c44e6755c8aa4cab76e3fc3747c4b, type: 3}
   - {fileID: 6724232089735264117, guid: e9bbb50064936544998c790a8a7fee00, type: 3}

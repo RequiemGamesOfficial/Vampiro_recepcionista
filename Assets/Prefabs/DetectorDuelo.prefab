@@ -969,12 +969,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
-  audioSource: {fileID: 6165845210049752955}
+  audioSource1: {fileID: 6165845210049752955}
+  audioSource2: {fileID: 6165845210049752955}
   audio1: {fileID: 8300000, guid: ee6dbc063405da74ca87fd9614f634c1, type: 3}
   audio2: {fileID: 8300000, guid: 01f086e72e118ec44a3b3be97bbb25bb, type: 3}
   audio3: {fileID: 0}
   audio4: {fileID: 0}
   swimming: {fileID: 0}
+  climbing: []
 --- !u!82 &6165845210049752955
 AudioSource:
   m_ObjectHideFlags: 0
@@ -984,7 +986,7 @@ AudioSource:
   m_GameObject: {fileID: 6289821912041349354}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
