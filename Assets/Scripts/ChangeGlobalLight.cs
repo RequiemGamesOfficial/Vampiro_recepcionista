@@ -7,6 +7,7 @@ using UnityEngine.Rendering.Universal;
 public class ChangeGlobalLight : MonoBehaviour
 {
     Light2D globalLight;
+    SpriteRenderer spritePlayer;
 
     private void Start()
     {
@@ -26,6 +27,8 @@ public class ChangeGlobalLight : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             globalLight.color = Color.white;
+            spritePlayer = collision.gameObject.GetComponentInChildren<SpriteRenderer>();
+            spritePlayer.sortingLayerName = "Default";
         }
     }
 

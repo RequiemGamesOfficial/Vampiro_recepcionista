@@ -1121,6 +1121,8 @@ MonoBehaviour:
   dead: 0
   obetoExtra: {fileID: 0}
   canvasWorld: {fileID: 3344455440750490261}
+  newOffsetCamera: {x: 0, y: 0, z: 0}
+  cameraOffset: {fileID: 0}
 --- !u!1 &4448508645063958061
 GameObject:
   m_ObjectHideFlags: 0
@@ -2139,7 +2141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 2002904988839686627}
   cartaUI: {fileID: 1703543577}
-  samurai: {fileID: 5219496874731205944, guid: 0b17b10006eb76046ac23c8305e4f846, type: 3}
+  samurai: {fileID: 5219496874731205944, guid: f2ac1526319cc024e8a08a05fc792ffb, type: 3}
   dead: 0
   audioCarta: {fileID: 4947322368411964788}
 --- !u!82 &4947322368411964788
