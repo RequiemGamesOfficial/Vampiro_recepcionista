@@ -52,9 +52,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 136083130666024960
-    m_Localized: "We can't receive guests without rooms, with the money you have
-      it should be enough to build a couple of rooms. When you're done, come back
-      here to reception, quickly!\r"
+    m_Localized: We can't receive guests without rooms. With the money you have,
+      it should be enough to build three rooms. When you're done, come back here
+      to reception, quickly!
     m_Metadata:
       m_Items: []
   - m_Id: 136083154850381824

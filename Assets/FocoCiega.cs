@@ -15,17 +15,13 @@ public class FocoCiega : MonoBehaviour
 
     public void SetOffState()
     {
-        int randomNumber = Random.Range(1, 4);
+        int randomNumber = Random.Range(1, 3);
 
         if (randomNumber == 1)
         {
-            anim.Play("Off1");
-        }
-        else if (randomNumber == 2)
-        {
             anim.Play("Off2");
         }
-        else if (randomNumber == 3)
+        else if (randomNumber == 2)
         {
             anim.Play("Off3");
         }

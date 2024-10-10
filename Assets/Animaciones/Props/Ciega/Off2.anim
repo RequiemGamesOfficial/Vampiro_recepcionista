@@ -211,7 +211,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 5.25
+  - time: 4.9333334
     functionName: OffReset
     data: 
     objectReferenceParameter: {fileID: 0}

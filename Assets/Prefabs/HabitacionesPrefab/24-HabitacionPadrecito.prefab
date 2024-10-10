@@ -6504,6 +6504,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.6392157
       objectReference: {fileID: 0}
+    - target: {fileID: 4004415610535627835, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.32
+      objectReference: {fileID: 0}
     - target: {fileID: 4004415611433303216, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}
       propertyPath: m_Name
       value: PlataformMove
@@ -6563,6 +6567,10 @@ PrefabInstance:
     - target: {fileID: 4004415611433303218, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004415611923680911, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 4004415611923680911, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}
       propertyPath: m_LocalPosition.x

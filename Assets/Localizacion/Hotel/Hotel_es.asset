@@ -53,9 +53,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 136083130666024960
-    m_Localized: "No podemos recibir hu\xE9spedes sin habitaciones, con el dinero
-      que tienes debe ser suficiente para construir un par, cuando termines regresa
-      aqu\xED a recepci\xF3n \xA1R\xE1pido!\r"
+    m_Localized: "No podemos recibir hu\xE9spedes sin habitaciones. Con el dinero
+      que tienes, deber\xEDa ser suficiente para reparar tres puertas. Cuando termines,
+      regresa aqu\xED a la recepci\xF3n. \xA1R\xE1pido!"
     m_Metadata:
       m_Items: []
   - m_Id: 136083154850381824
