@@ -693,12 +693,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
-  audioSource: {fileID: 6475059738065155386}
+  audioSource1: {fileID: 6475059738065155386}
+  audioSource2: {fileID: 0}
   audio1: {fileID: 8300000, guid: d2c0cd9d1a8e78d41aa87d6adf96b20f, type: 3}
   audio2: {fileID: 0}
   audio3: {fileID: 0}
   audio4: {fileID: 0}
   swimming: {fileID: 0}
+  climbing: []
 --- !u!82 &6475059738065155386
 AudioSource:
   m_ObjectHideFlags: 0
@@ -709,7 +711,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 212dc6df58a47fd41aed11b407864b20, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1319,12 +1321,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
-  audioSource: {fileID: 6012956121599332285}
+  audioSource1: {fileID: 6012956121599332285}
+  audioSource2: {fileID: 0}
   audio1: {fileID: 8300000, guid: d2c0cd9d1a8e78d41aa87d6adf96b20f, type: 3}
   audio2: {fileID: 0}
   audio3: {fileID: 0}
   audio4: {fileID: 0}
   swimming: {fileID: 0}
+  climbing: []
 --- !u!82 &6012956121599332285
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1335,7 +1339,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 212dc6df58a47fd41aed11b407864b20, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2901,12 +2905,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
-  audioSource: {fileID: 8914011371126943639}
+  audioSource1: {fileID: 8914011371126943639}
+  audioSource2: {fileID: 0}
   audio1: {fileID: 8300000, guid: d2c0cd9d1a8e78d41aa87d6adf96b20f, type: 3}
   audio2: {fileID: 0}
   audio3: {fileID: 0}
   audio4: {fileID: 0}
   swimming: {fileID: 0}
+  climbing: []
 --- !u!82 &8914011371126943639
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2917,7 +2923,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 212dc6df58a47fd41aed11b407864b20, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3125,12 +3131,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
-  audioSource: {fileID: 5621327212436593411}
+  audioSource1: {fileID: 5621327212436593411}
+  audioSource2: {fileID: 0}
   audio1: {fileID: 8300000, guid: d2c0cd9d1a8e78d41aa87d6adf96b20f, type: 3}
   audio2: {fileID: 0}
   audio3: {fileID: 0}
   audio4: {fileID: 0}
   swimming: {fileID: 0}
+  climbing: []
 --- !u!82 &5621327212436593411
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3141,7 +3149,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 212dc6df58a47fd41aed11b407864b20, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3681,12 +3689,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
-  audioSource: {fileID: 7774569046676906622}
+  audioSource1: {fileID: 7774569046676906622}
+  audioSource2: {fileID: 0}
   audio1: {fileID: 8300000, guid: d2c0cd9d1a8e78d41aa87d6adf96b20f, type: 3}
   audio2: {fileID: 0}
   audio3: {fileID: 0}
   audio4: {fileID: 0}
   swimming: {fileID: 0}
+  climbing: []
 --- !u!82 &7774569046676906622
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3697,7 +3707,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 212dc6df58a47fd41aed11b407864b20, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6375,6 +6385,8 @@ MonoBehaviour:
   dead: 0
   obetoExtra: {fileID: 0}
   canvasWorld: {fileID: 8114342742437729409}
+  newOffsetCamera: {x: 0, y: 0, z: 0}
+  cameraOffset: {fileID: 0}
 --- !u!82 &4533792261657021928
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6485,7 +6497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 4533792261657021928}
   clipLoop: {fileID: 8300000, guid: c37b0a6584da1bb48bb20ad8bb00d772, type: 3}
-  timeToLoop: 16.2
+  timeToLoop: 14
 --- !u!1 &7448869667649816840
 GameObject:
   m_ObjectHideFlags: 0
@@ -7823,12 +7835,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
-  audioSource: {fileID: 40055672109481147}
+  audioSource1: {fileID: 40055672109481147}
+  audioSource2: {fileID: 0}
   audio1: {fileID: 8300000, guid: d2c0cd9d1a8e78d41aa87d6adf96b20f, type: 3}
   audio2: {fileID: 0}
   audio3: {fileID: 0}
   audio4: {fileID: 0}
   swimming: {fileID: 0}
+  climbing: []
 --- !u!82 &40055672109481147
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7839,7 +7853,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 212dc6df58a47fd41aed11b407864b20, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8047,12 +8061,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
-  audioSource: {fileID: 6187878607934817586}
+  audioSource1: {fileID: 6187878607934817586}
+  audioSource2: {fileID: 0}
   audio1: {fileID: 8300000, guid: d2c0cd9d1a8e78d41aa87d6adf96b20f, type: 3}
   audio2: {fileID: 0}
   audio3: {fileID: 0}
   audio4: {fileID: 0}
   swimming: {fileID: 0}
+  climbing: []
 --- !u!82 &6187878607934817586
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8063,7 +8079,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 212dc6df58a47fd41aed11b407864b20, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

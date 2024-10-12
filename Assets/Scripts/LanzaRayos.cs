@@ -31,13 +31,11 @@ public class LanzaRayos : MonoBehaviour
                 if(randonNumber == 2)
                 {
                     rayoAnimator.Play("Rayo");
-                    timer = 0;
-                    print("YES"+ randonNumber);
+                    timer = 0;              
                 }
                 else
                 {
                     timer = 0;
-                    print("NO" + randonNumber);
                 }
             }           
         }

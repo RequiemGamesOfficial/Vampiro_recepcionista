@@ -72,6 +72,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyObject: 0
+  destroyTimer: 0
+  destroyTime: 0
+  instaKill: 0
+  boss: 0
 --- !u!1 &1307024867621979575
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +296,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 4259390269569860534, guid: 83e9d9c3a47890e4c98707b219803f11, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 212dc6df58a47fd41aed11b407864b20, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -390,11 +394,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed15b53028fecb6429fe09ccdb7310e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 4501989655213359701}
+  playerController: {fileID: 0}
+  audioSource1: {fileID: 4501989655213359701}
+  audioSource2: {fileID: 0}
   audio1: {fileID: 8300000, guid: d2c0cd9d1a8e78d41aa87d6adf96b20f, type: 3}
   audio2: {fileID: 0}
   audio3: {fileID: 0}
   audio4: {fileID: 0}
+  swimming: {fileID: 0}
+  climbing: []
 --- !u!1 &4862294548494984007
 GameObject:
   m_ObjectHideFlags: 0
