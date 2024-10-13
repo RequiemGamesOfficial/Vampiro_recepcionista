@@ -34,6 +34,7 @@ public class VidasHabitacion : MonoBehaviour
         if(vidas == 2)
         {
             vida3.SetActive(false);
+
             PlayTargetAnimation("PlayerDamage",true);
             if (!skating && posicion != null)
             {
@@ -70,7 +71,10 @@ public class VidasHabitacion : MonoBehaviour
         {
             vida3.SetActive(false);
             vida2.SetActive(false);
-            PlayTargetAnimation("PlayerDamage", true);
+            if (!anim.GetBool("isInteracting"))
+            {
+                PlayTargetAnimation("PlayerDamage", true);
+            }
             if (!skating && posicion != null)
             {
                 playerController.Rebote(posicion);
@@ -144,7 +148,7 @@ public class VidasHabitacion : MonoBehaviour
 
     public void PlayTargetAnimation(string targetAnim, bool isInteracting = false)
     {
-        anim.CrossFade(targetAnim, 0.2f);
+        anim.CrossFade(targetAnim, 0.01f);
         anim.SetBool("isInteracting", isInteracting);
     }
 }
