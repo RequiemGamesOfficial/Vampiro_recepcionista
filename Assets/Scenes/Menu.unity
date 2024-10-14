@@ -1968,12 +1968,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
-  audioSource: {fileID: 156862095}
+  audioSource1: {fileID: 156862095}
+  audioSource2: {fileID: 0}
   audio1: {fileID: 8300000, guid: aa8e5a37e96336942a16a837bee36aaf, type: 3}
   audio2: {fileID: 8300000, guid: 84382aa4d4d8d9c4ab85c66342b96af0, type: 3}
   audio3: {fileID: 8300000, guid: aebb6edbf3da6fd43b76d97cc9a089f7, type: 3}
   audio4: {fileID: 8300000, guid: aebb6edbf3da6fd43b76d97cc9a089f7, type: 3}
   swimming: {fileID: 0}
+  climbing: []
 --- !u!82 &156862095
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7374,6 +7376,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830627697}
   m_CullTransparentMesh: 1
+--- !u!114 &836512148 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3271247775540335173, guid: ffd1c8cc57b068c47ac749af700c4b08, type: 3}
+  m_PrefabInstance: {fileID: 5758180639679100857}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &836919476
 GameObject:
   m_ObjectHideFlags: 0
@@ -21119,6 +21132,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3308022310036974805, guid: ffd1c8cc57b068c47ac749af700c4b08, type: 3}
+      propertyPath: resolutionDropdown
+      value: 
+      objectReference: {fileID: 836512148}
     - target: {fileID: 4119094017539114593, guid: ffd1c8cc57b068c47ac749af700c4b08, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
