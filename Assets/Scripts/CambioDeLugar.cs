@@ -87,132 +87,156 @@ public class CambioDeLugar : MonoBehaviour
         }
 
         //Habitaciones
-        if (nuevoLugar == "Man")
+        if(habitacion && !hotel.manager.habitacionDead[numeroHabitacion])
         {
-            hotel.HabitacionHombre(numeroHabitacion);
-            hotel.FadeToBlack();
-            audioSource.Play();
-            return;
+            if (nuevoLugar == "Man")
+            {
+                hotel.HabitacionHombre(numeroHabitacion);
+                hotel.FadeToBlack();
+                audioSource.Play();
+                return;
+            }
+            if (nuevoLugar == "Women")
+            {
+                hotel.HabitacionMujer(numeroHabitacion);
+                hotel.FadeToBlack();
+                audioSource.Play();
+                return;
+            }
+            if (nuevoLugar == "Clown")
+            {
+                hotel.HabitacionPayaso(numeroHabitacion);
+                hotel.FadeToBlack();
+                audioSource.Play();
+                return;
+            }
+            if (nuevoLugar == "Priest")
+            {
+                hotel.HabitacionPadrecito(numeroHabitacion);
+                hotel.FadeToBlack();
+                audioSource.Play();
+                return;
+            }
+            if (nuevoLugar == "Junkie")
+            {
+                hotel.HabitacionDrogo(numeroHabitacion);
+                hotel.FadeToBlack();
+                audioSource.Play();
+                return;
+            }
+            if (nuevoLugar == "Magician")
+            {
+                hotel.HabitacionMago(numeroHabitacion);
+                hotel.FadeToBlack();
+                audioSource.Play();
+                return;
+            }
+            if (nuevoLugar == "Musician")
+            {
+                hotel.HabitacionMusico(numeroHabitacion);
+                hotel.FadeToBlack();
+                audioSource.Play();
+                return;
+            }
+            //
+            if (nuevoLugar == "Astronaut")
+            {
+                hotel.HabitacionAstronaut(numeroHabitacion);
+                hotel.FadeToBlack();
+                audioSource.Play();
+                return;
+            }
+            if (nuevoLugar == "Blind")
+            {
+                hotel.HabitacionBlind(numeroHabitacion);
+                hotel.FadeToBlack();
+                audioSource.Play();
+                return;
+            }
+            if (nuevoLugar == "Eskimo")
+            {
+                hotel.HabitacionEskimo(numeroHabitacion);
+                hotel.FadeToBlack();
+                audioSource.Play();
+                return;
+            }
+            if (nuevoLugar == "Explorer")
+            {
+                hotel.HabitacionExplorer(numeroHabitacion);
+                hotel.FadeToBlack();
+                audioSource.Play();
+                return;
+            }
+            if (nuevoLugar == "Alien")
+            {
+                hotel.HabitacionAlien(numeroHabitacion);
+                hotel.FadeToBlack();
+                audioSource.Play();
+                return;
+            }
+            if (nuevoLugar == "Castaway")
+            {
+                hotel.HabitacionCastaway(numeroHabitacion);
+                hotel.FadeToBlack();
+                audioSource.Play();
+                return;
+            }
+            if (nuevoLugar == "Skater")
+            {
+                hotel.HabitacionSkater(numeroHabitacion);
+                hotel.FadeToBlack();
+                audioSource.Play();
+                return;
+            }
+            if (nuevoLugar == "Samurai")
+            {
+                hotel.HabitacionSamurai(numeroHabitacion);
+                hotel.FadeToBlack();
+                audioSource.Play();
+                return;
+            }
+            if (nuevoLugar == "Tesla")
+            {
+                hotel.HabitacionTesla(numeroHabitacion);
+                hotel.FadeToBlack();
+                audioSource.Play();
+                return;
+            }
         }
-        if (nuevoLugar == "Women")
+        else
         {
-            hotel.HabitacionMujer(numeroHabitacion);
-            hotel.FadeToBlack();
-            audioSource.Play();
-            return;
-        }
-        if (nuevoLugar == "Clown")
-        {
-            hotel.HabitacionPayaso(numeroHabitacion);
-            hotel.FadeToBlack();
-            audioSource.Play();
-            return;
-        }
-        if (nuevoLugar == "Priest")
-        {
-            hotel.HabitacionPadrecito(numeroHabitacion);
-            hotel.FadeToBlack();
-            audioSource.Play();
-            return;
-        }
-        if (nuevoLugar == "Junkie")
-        {
-            hotel.HabitacionDrogo(numeroHabitacion);
-            hotel.FadeToBlack();
-            audioSource.Play();
-            return;
-        }
-        if (nuevoLugar == "Magician")
-        {
-            hotel.HabitacionMago(numeroHabitacion);
-            hotel.FadeToBlack();
-            audioSource.Play();
-            return;
-        }
-        if (nuevoLugar == "Musician")
-        {
-            hotel.HabitacionMusico(numeroHabitacion);
-            hotel.FadeToBlack();
-            audioSource.Play();
-            return;
-        }
-        //
-        if (nuevoLugar == "Astronaut")
-        {
-            hotel.HabitacionAstronaut(numeroHabitacion);
-            hotel.FadeToBlack();
-            audioSource.Play();
-            return;
-        }
-        if (nuevoLugar == "Blind")
-        {
-            hotel.HabitacionBlind(numeroHabitacion);
-            hotel.FadeToBlack();
-            audioSource.Play();
-            return;
-        }
-        if (nuevoLugar == "Eskimo")
-        {
-            hotel.HabitacionEskimo(numeroHabitacion);
-            hotel.FadeToBlack();
-            audioSource.Play();
-            return;
-        }
-        if (nuevoLugar == "Explorer")
-        {
-            hotel.HabitacionExplorer(numeroHabitacion);
-            hotel.FadeToBlack();
-            audioSource.Play();
-            return;
-        }
-        if (nuevoLugar == "Alien")
-        {
-            hotel.HabitacionAlien(numeroHabitacion);
-            hotel.FadeToBlack();
-            audioSource.Play();
-            return;
-        }
-        if (nuevoLugar == "Castaway")
-        {
-            hotel.HabitacionCastaway(numeroHabitacion);
-            hotel.FadeToBlack();
-            audioSource.Play();
-            return;
-        }
-        if (nuevoLugar == "Skater")
-        {
-            hotel.HabitacionSkater(numeroHabitacion);
-            hotel.FadeToBlack();
-            audioSource.Play();
-            return;
-        }
-        if (nuevoLugar == "Samurai")
-        {
-            hotel.HabitacionSamurai(numeroHabitacion);
-            hotel.FadeToBlack();
-            audioSource.Play();
-            return;
-        }
-        if (nuevoLugar == "Tesla")
-        {
-            hotel.HabitacionTesla(numeroHabitacion);
-            hotel.FadeToBlack();
-            audioSource.Play();
-            return;
-        }     
+            Debug.Log("HuespedMuerto");
+        }         
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.gameObject.CompareTag("Player") && nuevoLugar != "")
         {
-            controllerManager = collision.GetComponent<ControllerManager>();
-            detected = true;
-            button.SetActive(true);
-            if (iconGuest != null)
+            if (habitacion && !hotel.manager.habitacionDead[numeroHabitacion])
             {
-                iconGuest.SetActive(true);
-            }                
+                //Habitaciones donde no han muerto
+                controllerManager = collision.GetComponent<ControllerManager>();
+                detected = true;
+                button.SetActive(true);
+                if (iconGuest != null)
+                {
+                    iconGuest.SetActive(true);
+                }
+            }
+            
+            if(!habitacion)
+            {
+                //Escaleras y puerta sotano
+                controllerManager = collision.GetComponent<ControllerManager>();
+                detected = true;
+                button.SetActive(true);
+                if (iconGuest != null)
+                {
+                    iconGuest.SetActive(true);
+                }
+            }                        
         }
     }
 

@@ -6,7 +6,7 @@ using TMPro;
 
 public class Hotel : MonoBehaviour
 {
-    Manager manager;
+    public Manager manager;
 
     GameObject player,cameraObject;
     public GameObject pet;
