@@ -5,6 +5,7 @@ using UnityEngine;
 public class HumoDroggo : MonoBehaviour
 {
     public EffectManager effectManager;
+    public BackgroundWobble[] background;
 
     void Start()
     {
@@ -16,6 +17,10 @@ public class HumoDroggo : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             effectManager.DrogoEffect();
+            for (int i = 0; i < background.Length; i++)
+            {
+                background[i].enabled = true;
+            }
         }
     }
 

@@ -50,6 +50,7 @@ public class EffectManager : MonoBehaviour
 
     public void DrogoEffect()
     {
+        Time.timeScale = 0.5f;
         changeVolumeProfile.EffectProfile();
         drogoEffect = true;
         timer = 0;
@@ -57,6 +58,7 @@ public class EffectManager : MonoBehaviour
 
     public void ResetEffects()
     {
+        Time.timeScale = 1f;
         changeVolumeProfile.ResetNormalProfile();
         drogoEffect = false;
         cameraOffset.m_Offset = new Vector3(0, 0, 0);
