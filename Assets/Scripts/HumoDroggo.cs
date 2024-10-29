@@ -17,12 +17,15 @@ public class HumoDroggo : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             effectManager.DrogoEffect();
-            for (int i = 0; i < background.Length; i++)
-            {
-                background[i].enabled = true;
-            }
+            //BackGroundEffect();
         }
     }
 
-
+    void BackGroundEffect()
+    {
+        for (int i = 0; i < background.Length; i++)
+        {
+            background[i].enabled = true;
+        }
+    }
 }
