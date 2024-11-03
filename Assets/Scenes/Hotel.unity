@@ -24540,8 +24540,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &574979406
 GameObject:
   m_ObjectHideFlags: 0
@@ -46353,8 +46355,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &1261160307
 GameObject:
   m_ObjectHideFlags: 0
@@ -59444,7 +59448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[3]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[4]
@@ -59452,7 +59456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[5]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[6]
@@ -59468,7 +59472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[9]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: habitacionID.Array.data[0]
@@ -59605,15 +59609,15 @@ PrefabInstance:
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: a747d07e5a5c9164ab52489f921b4827, type: 2}
+      objectReference: {fileID: 11400000, guid: 049567f8ffdfcd24ea38aaa6753b8b65, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 049567f8ffdfcd24ea38aaa6753b8b65, type: 2}
+      objectReference: {fileID: 11400000, guid: 6e437643ff055064fb54f9ca32a9ddec, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 1eb1a98930f99204097e64e39d5f576a, type: 2}
+      objectReference: {fileID: 11400000, guid: fcbeedebb6e0c734c9a29549060dd483, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[3]
       value: 

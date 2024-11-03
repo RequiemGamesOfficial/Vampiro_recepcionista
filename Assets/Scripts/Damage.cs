@@ -7,9 +7,11 @@ public class Damage : MonoBehaviour
     public bool destroyObject = true;
     public bool destroyTimer = false;
     public float destroyTime;
+    public bool destroyInFloor;
     float timer;
     public bool instaKill;
     public bool boss;
+    public GameObject particle;
 
     private void Update()
     {
@@ -42,6 +44,10 @@ public class Damage : MonoBehaviour
                 }
                 else
                 {
+                    if(particle != null)
+                    {
+                        Instantiate(particle, this.transform.position, Quaternion.identity);
+                    }                    
                     collision.gameObject.GetComponent<VidasHabitacion>().Damage(contactPoint);
                 }                
             }           
@@ -50,6 +56,15 @@ public class Damage : MonoBehaviour
             {
                 Destroy(gameObject);
             }           
+        }
+
+        if (collision.gameObject.CompareTag("Floor") && destroyInFloor)
+        {
+            if (particle != null)
+            {
+                Instantiate(particle, this.transform.position, Quaternion.identity);
+            }
+            Destroy(gameObject);
         }
     }
 

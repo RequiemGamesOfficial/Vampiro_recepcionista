@@ -29,12 +29,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3372116017230921}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.002, y: 1.91, z: 0}
-  m_LocalScale: {x: 1.36, y: 1.04, z: 1}
+  m_LocalPosition: {x: 0.0020001386, y: 1.91, z: 0}
+  m_LocalScale: {x: 1.3600003, y: 1.04, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6578107784923906939}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &919108380000436894
 SpriteRenderer:
@@ -122,7 +122,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0022572353, y: 0.025674757}
+  m_Offset: {x: -0.0022572353, y: 0.00828471}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -133,7 +133,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09742515, y: 0.24865049}
+  m_Size: {x: 0.09742515, y: 0.21387039}
   m_EdgeRadius: 0
 --- !u!114 &8121751224807821899
 MonoBehaviour:
@@ -150,8 +150,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 1
   instaKill: 0
   boss: 0
+  particle: {fileID: 4133123485196577313, guid: 324e74593164dc24d9766e7684a2248e, type: 3}
 --- !u!114 &4873197713475412083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,12 +201,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145084325078349264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.028, y: -0.14, z: 0}
-  m_LocalScale: {x: 1, y: 0.92, z: 1}
+  m_LocalPosition: {x: 0.02799988, y: -0.14000005, z: 0}
+  m_LocalScale: {x: 1, y: 0.92000014, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6578107784923906939}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5662317407928631449
 SpriteRenderer:
@@ -292,7 +294,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0022572353, y: 0.025674757}
+  m_Offset: {x: -0.0022572353, y: 0.0092928745}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -303,7 +305,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09742515, y: 0.24865049}
+  m_Size: {x: 0.09742515, y: 0.21588671}
   m_EdgeRadius: 0
 --- !u!114 &4511759941261962579
 MonoBehaviour:
@@ -320,8 +322,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 1
   instaKill: 0
   boss: 0
+  particle: {fileID: 4133123485196577313, guid: 324e74593164dc24d9766e7684a2248e, type: 3}
 --- !u!114 &5357286920051944798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1439,7 +1443,7 @@ GameObject:
   - component: {fileID: 4372087864971595589}
   m_Layer: 6
   m_Name: Ground (4)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1659,7 +1663,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0022572353, y: 0.025674757}
+  m_Offset: {x: -0.0022572353, y: 0.014081322}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1670,7 +1674,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09742515, y: 0.24865049}
+  m_Size: {x: 0.09742515, y: 0.22546361}
   m_EdgeRadius: 0
 --- !u!114 &3485943010494410047
 MonoBehaviour:
@@ -1687,8 +1691,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 1
   instaKill: 0
   boss: 0
+  particle: {fileID: 4133123485196577313, guid: 324e74593164dc24d9766e7684a2248e, type: 3}
 --- !u!114 &845891256677607874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1913,7 +1919,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0022572353, y: 0.025674757}
+  m_Offset: {x: -0.0022572353, y: 0.0026706941}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1924,7 +1930,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09742515, y: 0.24865049}
+  m_Size: {x: 0.09742515, y: 0.20264235}
   m_EdgeRadius: 0
 --- !u!114 &3554471744532439102
 MonoBehaviour:
@@ -1941,8 +1947,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 1
   instaKill: 0
   boss: 0
+  particle: {fileID: 4133123485196577313, guid: 324e74593164dc24d9766e7684a2248e, type: 3}
 --- !u!114 &3419973647369530382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1990,12 +1998,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3586438981904314126}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.282, y: 1.9159998, z: 0}
-  m_LocalScale: {x: 1, y: 0.92, z: 1}
+  m_LocalPosition: {x: 1.2820002, y: 1.9159999, z: 0}
+  m_LocalScale: {x: 1, y: 0.92000014, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6578107784923906939}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5658438302068892710
 SpriteRenderer:
@@ -2083,7 +2091,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0022572353, y: 0.025674757}
+  m_Offset: {x: -0.0022572353, y: 0.009292688}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2094,7 +2102,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09742515, y: 0.24865049}
+  m_Size: {x: 0.09742515, y: 0.21588635}
   m_EdgeRadius: 0
 --- !u!114 &1772685772164311950
 MonoBehaviour:
@@ -2111,8 +2119,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 1
   instaKill: 0
   boss: 0
+  particle: {fileID: 4133123485196577313, guid: 324e74593164dc24d9766e7684a2248e, type: 3}
 --- !u!114 &8717194042477890187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2691,12 +2701,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5003973304332597778}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.657, y: 0.616, z: 0}
-  m_LocalScale: {x: 1.6, y: 1.2, z: 1}
+  m_LocalPosition: {x: 1.6569995, y: 0.61599994, z: 0}
+  m_LocalScale: {x: 1.6000003, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6578107784923906939}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1368742503488024809
 SpriteRenderer:
@@ -2784,7 +2794,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0022572353, y: 0.025674757}
+  m_Offset: {x: -0.0022572353, y: 0.016054891}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2795,7 +2805,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09742515, y: 0.24865049}
+  m_Size: {x: 0.09742515, y: 0.22941075}
   m_EdgeRadius: 0
 --- !u!114 &2669411481321132103
 MonoBehaviour:
@@ -2812,8 +2822,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 1
   instaKill: 0
   boss: 0
+  particle: {fileID: 4133123485196577313, guid: 324e74593164dc24d9766e7684a2248e, type: 3}
 --- !u!114 &1392545609829697743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3266,7 +3278,7 @@ GameObject:
   - component: {fileID: 3100004292688286461}
   m_Layer: 6
   m_Name: Ground (3)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4035,7 +4047,7 @@ GameObject:
   - component: {fileID: 6578107784658595763}
   m_Layer: 6
   m_Name: Ground (2)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4534,13 +4546,13 @@ Transform:
   - {fileID: 6578107784606482887}
   - {fileID: 6578107785766947776}
   - {fileID: 1089058251059299798}
+  - {fileID: 4101652815443699355}
+  - {fileID: 7785843328988628858}
   - {fileID: 2270766330753053646}
   - {fileID: 1916612978103427074}
   - {fileID: 4869612955721022748}
   - {fileID: 1258997880354837539}
   - {fileID: 6281955540297766011}
-  - {fileID: 4101652815443699355}
-  - {fileID: 7785843328988628858}
   - {fileID: 2950733083447285489}
   - {fileID: 4147255669745678167}
   - {fileID: 7156353359698876558}
@@ -5103,7 +5115,7 @@ GameObject:
   - component: {fileID: 6578107785245391176}
   m_Layer: 0
   m_Name: Fondo
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6271,7 +6283,7 @@ GameObject:
   - component: {fileID: 6578107786344276203}
   m_Layer: 6
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6382,7 +6394,7 @@ GameObject:
   - component: {fileID: 6578107786360313893}
   m_Layer: 6
   m_Name: Ground (1)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6854,7 +6866,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0022572353, y: 0.025674757}
+  m_Offset: {x: -0.0022572353, y: 0.016424872}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6865,7 +6877,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09742515, y: 0.24865049}
+  m_Size: {x: 0.09742515, y: 0.23015071}
   m_EdgeRadius: 0
 --- !u!114 &8955160071247413161
 MonoBehaviour:
@@ -6882,8 +6894,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 1
   instaKill: 0
   boss: 0
+  particle: {fileID: 4133123485196577313, guid: 324e74593164dc24d9766e7684a2248e, type: 3}
 --- !u!114 &2045551603767325458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7168,7 +7182,7 @@ GameObject:
   - component: {fileID: 8396620218186863842}
   m_Layer: 6
   m_Name: Ground (5)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7463,12 +7477,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8073401716241387674}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.553, y: 1.865, z: 0}
-  m_LocalScale: {x: 1.6, y: 1.2, z: 1}
+  m_LocalPosition: {x: -0.5529992, y: 1.8650005, z: 0}
+  m_LocalScale: {x: 1.6000003, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6578107784923906939}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4844423055234162151
 SpriteRenderer:
@@ -7556,7 +7570,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0022572353, y: 0.025674757}
+  m_Offset: {x: -0.0022572353, y: 0.010603458}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7567,7 +7581,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09742515, y: 0.24865049}
+  m_Size: {x: 0.09742515, y: 0.21850789}
   m_EdgeRadius: 0
 --- !u!114 &483778029383212224
 MonoBehaviour:
@@ -7584,8 +7598,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 1
   instaKill: 0
   boss: 0
+  particle: {fileID: 4133123485196577313, guid: 324e74593164dc24d9766e7684a2248e, type: 3}
 --- !u!114 &895242979877889938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7930,7 +7946,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4004415611433303218, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4004415611433303218, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8029,7 +8045,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4004415611433303218, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4004415611433303218, guid: 621c2e830a112e14b934780bfc99c9f1, type: 3}
       propertyPath: m_LocalPosition.x

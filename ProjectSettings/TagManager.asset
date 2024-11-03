@@ -31,6 +31,7 @@ TagManager:
   - PlatformMove
   - Water
   - Volume
+  - Floor
   layers:
   - Default
   - TransparentFX

@@ -122,7 +122,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0022572353, y: 0.025674757}
+  m_Offset: {x: -0.0022572353, y: 0.008117802}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -133,7 +133,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09742515, y: 0.24865049}
+  m_Size: {x: 0.09742515, y: 0.21353658}
   m_EdgeRadius: 0
 --- !u!114 &8121751224807821899
 MonoBehaviour:
@@ -150,8 +150,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 1
   instaKill: 0
   boss: 0
+  particle: {fileID: 4133123485196577313, guid: 324e74593164dc24d9766e7684a2248e, type: 3}
 --- !u!114 &4873197713475412083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1246,7 +1248,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0022572353, y: 0.025674757}
+  m_Offset: {x: -0.0022572353, y: 0.010789599}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1257,7 +1259,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09742515, y: 0.24865049}
+  m_Size: {x: 0.09742515, y: 0.21888018}
   m_EdgeRadius: 0
 --- !u!114 &1772685772164311950
 MonoBehaviour:
@@ -1274,8 +1276,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 1
   instaKill: 0
   boss: 0
+  particle: {fileID: 4133123485196577313, guid: 324e74593164dc24d9766e7684a2248e, type: 3}
 --- !u!114 &8717194042477890187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2007,7 +2011,7 @@ GameObject:
   - component: {fileID: 3100004292688286461}
   m_Layer: 6
   m_Name: Ground (3)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2692,7 +2696,7 @@ GameObject:
   - component: {fileID: 6578107784658595763}
   m_Layer: 6
   m_Name: Ground (2)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4917,7 +4921,7 @@ GameObject:
   - component: {fileID: 6578107786344276203}
   m_Layer: 6
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5028,7 +5032,7 @@ GameObject:
   - component: {fileID: 6578107786360313893}
   m_Layer: 6
   m_Name: Ground (1)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5585,7 +5589,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0022572353, y: 0.025674757}
+  m_Offset: {x: -0.0022572353, y: 0.003394071}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5596,7 +5600,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09742515, y: 0.24865049}
+  m_Size: {x: 0.09742515, y: 0.2040891}
   m_EdgeRadius: 0
 --- !u!114 &1383410095756234448
 MonoBehaviour:
@@ -5613,8 +5617,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 1
   instaKill: 0
   boss: 0
+  particle: {fileID: 4133123485196577313, guid: 324e74593164dc24d9766e7684a2248e, type: 3}
 --- !u!114 &8581136080723071153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5755,7 +5761,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0022572353, y: 0.025674757}
+  m_Offset: {x: -0.0022572353, y: 0.006654676}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5766,7 +5772,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09742515, y: 0.24865049}
+  m_Size: {x: 0.09742515, y: 0.21061033}
   m_EdgeRadius: 0
 --- !u!114 &483778029383212224
 MonoBehaviour:
@@ -5783,8 +5789,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 1
   instaKill: 0
   boss: 0
+  particle: {fileID: 4133123485196577313, guid: 324e74593164dc24d9766e7684a2248e, type: 3}
 --- !u!114 &895242979877889938
 MonoBehaviour:
   m_ObjectHideFlags: 0
