@@ -58221,7 +58221,7 @@ MonoBehaviour:
   cinematicaPolicia: CinematicaPolicia
   cinematicaDemo: CinematicaDemo
   trancision: {fileID: 0}
-  pressE: 1
+  pressE: 0
   accidentPanel: {fileID: 1679808630}
 --- !u!114 &1648656161
 MonoBehaviour:
@@ -59436,11 +59436,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[0]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[1]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[2]
@@ -59609,11 +59609,11 @@ PrefabInstance:
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 049567f8ffdfcd24ea38aaa6753b8b65, type: 2}
+      objectReference: {fileID: 11400000, guid: 1eb1a98930f99204097e64e39d5f576a, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 6e437643ff055064fb54f9ca32a9ddec, type: 2}
+      objectReference: {fileID: 11400000, guid: b3fe3c12bc69d4543bbee4f860be4b56, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[2]
       value: 

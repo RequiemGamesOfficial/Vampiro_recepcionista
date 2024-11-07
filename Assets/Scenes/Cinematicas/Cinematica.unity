@@ -1998,12 +1998,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
-  audioSource: {fileID: 2005351711}
+  audioSource1: {fileID: 2005351710}
+  audioSource2: {fileID: 0}
   audio1: {fileID: 8300000, guid: 01f086e72e118ec44a3b3be97bbb25bb, type: 3}
   audio2: {fileID: 8300000, guid: 6386b0fc07248e342bc8c1362cdc0771, type: 3}
   audio3: {fileID: 8300000, guid: ee6dbc063405da74ca87fd9614f634c1, type: 3}
   audio4: {fileID: 8300000, guid: f1fc3e0916c51f2419bd76051f8c40c8, type: 3}
   swimming: {fileID: 0}
+  climbing: []
 --- !u!1001 &386963749756005294
 PrefabInstance:
   m_ObjectHideFlags: 0
