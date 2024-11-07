@@ -234,8 +234,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &4839236540081701041
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5656,8 +5658,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &7917906238228662475
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5869,8 +5873,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &2104489492288096126
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6388,8 +6394,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &5271582810950225402
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11850,8 +11858,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &7161211892086981174
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11979,8 +11989,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &1263307732170496656
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12276,8 +12288,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &6212352658382697212
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12405,8 +12419,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &6787536995757503807
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12618,8 +12634,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &8390686531443568628
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12747,8 +12765,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &7519621385880376568
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12964,6 +12984,8 @@ MonoBehaviour:
   dead: 0
   obetoExtra: {fileID: 0}
   canvasWorld: {fileID: 8867261902274949889}
+  newOffsetCamera: {x: 0, y: 0, z: 0}
+  cameraOffset: {fileID: 0}
 --- !u!82 &2666100161787552726
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14286,8 +14308,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &6488322409948699352
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14499,8 +14523,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &5787068266384646345
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14628,8 +14654,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &5918753124515672367
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15254,8 +15282,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &312827572693534487
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15551,8 +15581,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &8238143005563307208
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15680,8 +15712,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &154149641363095737
 BoxCollider2D:
   m_ObjectHideFlags: 0
