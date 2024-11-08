@@ -1445,7 +1445,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 94917950, guid: fab478bfca9f33b4fa4d7d01d1ce38f6, type: 3}
+  m_Sprite: {fileID: -952125974, guid: fab478bfca9f33b4fa4d7d01d1ce38f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1644,8 +1644,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &4090669375485636837
 GameObject:
   m_ObjectHideFlags: 0
@@ -2598,7 +2600,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -500213762, guid: fab478bfca9f33b4fa4d7d01d1ce38f6, type: 3}
+  m_Sprite: {fileID: 1041402847, guid: fab478bfca9f33b4fa4d7d01d1ce38f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3246,6 +3248,8 @@ MonoBehaviour:
   dead: 0
   obetoExtra: {fileID: 0}
   canvasWorld: {fileID: 2179554993908697450}
+  newOffsetCamera: {x: 0, y: 0, z: 0}
+  cameraOffset: {fileID: 0}
 --- !u!1 &6724232090084821909
 GameObject:
   m_ObjectHideFlags: 0
@@ -4489,7 +4493,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7056173871149473323}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.82, y: 3.08, z: 0}
+  m_LocalPosition: {x: 2.748, y: 3.199, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4537,7 +4541,7 @@ SpriteRenderer:
   m_SortingLayerID: 1717663213
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 292189560, guid: fab478bfca9f33b4fa4d7d01d1ce38f6, type: 3}
+  m_Sprite: {fileID: -500213762, guid: fab478bfca9f33b4fa4d7d01d1ce38f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4709,8 +4713,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &7506491396588874573
 GameObject:
   m_ObjectHideFlags: 0
@@ -5151,8 +5157,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &8196814174982723011
 GameObject:
   m_ObjectHideFlags: 0

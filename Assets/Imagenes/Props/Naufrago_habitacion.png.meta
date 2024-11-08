@@ -137,7 +137,7 @@ TextureImporter:
         width: 131
         height: 4
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -158,7 +158,7 @@ TextureImporter:
         width: 23
         height: 4
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,8 +178,8 @@ TextureImporter:
         y: 97
         width: 16
         height: 10
-      alignment: 9
-      pivot: {x: 0.6591039, y: 0.51240766}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,8 +199,8 @@ TextureImporter:
         y: 96
         width: 18
         height: 13
-      alignment: 9
-      pivot: {x: 0.6959881, y: 0.39516565}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -221,7 +221,7 @@ TextureImporter:
         width: 46
         height: 57
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,7 +242,7 @@ TextureImporter:
         width: 16
         height: 5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -259,11 +259,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 60
-        y: 77
+        y: 84
         width: 67
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,11 +280,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 60
-        y: 56
+        y: 71
         width: 68
         height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -300,12 +300,12 @@ TextureImporter:
       name: Naufrago_habitacion_8
       rect:
         serializedVersion: 2
-        x: 5
-        y: 28
-        width: 8
-        height: 7
+        x: 60
+        y: 52
+        width: 67
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -321,12 +321,12 @@ TextureImporter:
       name: Naufrago_habitacion_9
       rect:
         serializedVersion: 2
-        x: 23
-        y: 26
-        width: 9
-        height: 9
+        x: 5
+        y: 28
+        width: 8
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -342,12 +342,12 @@ TextureImporter:
       name: Naufrago_habitacion_10
       rect:
         serializedVersion: 2
-        x: 41
+        x: 23
         y: 26
-        width: 11
-        height: 7
+        width: 9
+        height: 9
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -363,12 +363,12 @@ TextureImporter:
       name: Naufrago_habitacion_11
       rect:
         serializedVersion: 2
-        x: 60
-        y: 29
-        width: 67
-        height: 17
+        x: 41
+        y: 26
+        width: 11
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -384,12 +384,12 @@ TextureImporter:
       name: Naufrago_habitacion_12
       rect:
         serializedVersion: 2
-        x: 1
-        y: 3
-        width: 129
-        height: 19
+        x: 79
+        y: 32
+        width: 20
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -397,6 +397,27 @@ TextureImporter:
       bones: []
       spriteID: 28ac01fe281960442b1e5d95c31add50
       internalID: 94917950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Naufrago_habitacion_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3
+        width: 129
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5549c2267eb331d419d18b4a9071fdfa
+      internalID: -952125974
       vertices: []
       indices: 
       edges: []
@@ -417,6 +438,7 @@ TextureImporter:
       Naufrago_habitacion_10: -500213762
       Naufrago_habitacion_11: 1041402847
       Naufrago_habitacion_12: 94917950
+      Naufrago_habitacion_13: -952125974
       Naufrago_habitacion_2: -1596683453
       Naufrago_habitacion_3: 1934142090
       Naufrago_habitacion_4: 663652789
