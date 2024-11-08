@@ -3659,8 +3659,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &5116235083047920957
 GameObject:
   m_ObjectHideFlags: 0
@@ -5175,30 +5177,62 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2.21
       objectReference: {fileID: 0}
+    - target: {fileID: 99573825478224693, guid: 6a11e115b00395e489f62c9948248926, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 99573825478224693, guid: 6a11e115b00395e489f62c9948248926, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 99573825478224695, guid: 6a11e115b00395e489f62c9948248926, type: 3}
       propertyPath: m_LocalScale.x
-      value: 23.576715
+      value: 20.61
       objectReference: {fileID: 0}
     - target: {fileID: 99573825478224695, guid: 6a11e115b00395e489f62c9948248926, type: 3}
       propertyPath: m_LocalScale.y
-      value: 20.72678
+      value: 18.11868
       objectReference: {fileID: 0}
     - target: {fileID: 99573825478224695, guid: 6a11e115b00395e489f62c9948248926, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.5908475
+      value: 2.264835
       objectReference: {fileID: 0}
     - target: {fileID: 99573825478224695, guid: 6a11e115b00395e489f62c9948248926, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.02
+      value: 0.019999446
       objectReference: {fileID: 0}
     - target: {fileID: 99573825478224695, guid: 6a11e115b00395e489f62c9948248926, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.21
+      value: 2.2100017
+      objectReference: {fileID: 0}
+    - target: {fileID: 99573825478224695, guid: 6a11e115b00395e489f62c9948248926, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70640224
+      objectReference: {fileID: 0}
+    - target: {fileID: 99573825478224695, guid: 6a11e115b00395e489f62c9948248926, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7078107
+      objectReference: {fileID: 0}
+    - target: {fileID: 99573825478224695, guid: 6a11e115b00395e489f62c9948248926, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90.114
+      objectReference: {fileID: 0}
+    - target: {fileID: 99573825478224695, guid: 6a11e115b00395e489f62c9948248926, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 99573825478224698, guid: 6a11e115b00395e489f62c9948248926, type: 3}
+      propertyPath: m_FlipX
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 99573825478224698, guid: 6a11e115b00395e489f62c9948248926, type: 3}
       propertyPath: m_FlipY
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 99573825478224698, guid: 6a11e115b00395e489f62c9948248926, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1127586110, guid: 77e8e5913b0067d4298d3743640a4910, type: 3}
     - target: {fileID: 99573825478224698, guid: 6a11e115b00395e489f62c9948248926, type: 3}
       propertyPath: m_Color.b
       value: 0.3155927
@@ -5294,6 +5328,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 99573825599199781, guid: 6a11e115b00395e489f62c9948248926, type: 3}
   m_PrefabInstance: {fileID: 3363172859886419572}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3444587652740666690 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 99573825478224694, guid: 6a11e115b00395e489f62c9948248926, type: 3}
+  m_PrefabInstance: {fileID: 3363172859886419572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5207226585451847456
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3444587652740666690}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &4701952804781797216
 PrefabInstance:
   m_ObjectHideFlags: 0

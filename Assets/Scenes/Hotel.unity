@@ -59609,7 +59609,7 @@ PrefabInstance:
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 1eb1a98930f99204097e64e39d5f576a, type: 2}
+      objectReference: {fileID: 11400000, guid: 464d585421a34004aa755e6780fb1cd9, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[1]
       value: 
