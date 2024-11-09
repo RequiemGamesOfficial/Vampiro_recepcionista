@@ -59617,7 +59617,7 @@ PrefabInstance:
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: fcbeedebb6e0c734c9a29549060dd483, type: 2}
+      objectReference: {fileID: 11400000, guid: 1eb1a98930f99204097e64e39d5f576a, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[3]
       value: 
@@ -76903,7 +76903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2673434891408950441, guid: 7f0edeff3bf51aa40b6830421f8218af, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 488
+      value: 488.00003
       objectReference: {fileID: 0}
     - target: {fileID: 2673434891408950441, guid: 7f0edeff3bf51aa40b6830421f8218af, type: 3}
       propertyPath: m_AnchoredPosition.y
