@@ -127,8 +127,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &1152327390855616339
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,8 +677,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &3433623831847085015
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,8 +907,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &3452791947837330543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,8 +1038,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &4283830344664076725
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,7 +1170,7 @@ Transform:
   m_GameObject: {fileID: 4308179976938332556}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8, y: 8, z: 1}
+  m_LocalScale: {x: 5.73728, y: 5.73728, z: 0.71716}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2769668698556938012}
@@ -1209,8 +1217,8 @@ SpriteRenderer:
   m_SortingLayerID: 1717663213
   m_SortingLayer: 1
   m_SortingOrder: 10
-  m_Sprite: {fileID: 1810063098, guid: ef6ae51c6710f574f8295baf8053bab1, type: 3}
-  m_Color: {r: 0.8679245, g: 0.33161268, b: 0.33161268, a: 1}
+  m_Sprite: {fileID: -2014385216, guid: 77e8e5913b0067d4298d3743640a4910, type: 3}
+  m_Color: {r: 0.9339623, g: 0.52572083, b: 0.52572083, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1233,18 +1241,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.011144979}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.06, y: 0.09}
+    oldSize: {x: 0.13, y: 0.15}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.04, y: 0.05}
+  m_Size: {x: 0.04, y: 0.07228994}
   m_EdgeRadius: 0
 --- !u!114 &2788803622370876476
 MonoBehaviour:
@@ -1273,8 +1281,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &4746622174564944564
 GameObject:
   m_ObjectHideFlags: 0
@@ -2018,8 +2028,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &4746622175720973368
 GameObject:
   m_ObjectHideFlags: 0
@@ -2514,8 +2526,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &4746622176094243380
 GameObject:
   m_ObjectHideFlags: 0
@@ -2781,8 +2795,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &4746622176253634488
 GameObject:
   m_ObjectHideFlags: 0
@@ -3057,8 +3073,10 @@ MonoBehaviour:
   destroyObject: 1
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &6997964869318185639
 GameObject:
   m_ObjectHideFlags: 0

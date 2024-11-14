@@ -2799,7 +2799,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -56.619995, y: -145.94}
+  m_AnchoredPosition: {x: -56.620117, y: -145.93994}
   m_SizeDelta: {x: 107.57, y: 55.9}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &191159358
@@ -6159,6 +6159,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1392116773559016201, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1392116773559016201, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: textMeshProText
       value: 
@@ -20439,7 +20443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2016504971
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20461,7 +20465,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -37.422974, y: -472.32}
+  m_AnchoredPosition: {x: -37.42285, y: -472.32007}
   m_SizeDelta: {x: -1336, y: -944.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2016504972
