@@ -4302,7 +4302,6 @@ Transform:
   - {fileID: 1259790435}
   - {fileID: 1324651311}
   - {fileID: 1439856766}
-  - {fileID: 134605538}
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4335,8 +4334,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 132803150}
-  m_RootOrder: 21
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &134605539
 AudioSource:
@@ -4357,9 +4356,9 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 0.050584793
-  MaxDistance: 23.817688
+  MaxDistance: 20.827896
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -59613,7 +59612,7 @@ PrefabInstance:
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: a747d07e5a5c9164ab52489f921b4827, type: 2}
+      objectReference: {fileID: 11400000, guid: 42a9747a66d25ea4386d32bb16dd6519, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[2]
       value: 

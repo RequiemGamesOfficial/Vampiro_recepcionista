@@ -6,6 +6,8 @@ public class ObjectMove : MonoBehaviour
 {
     public GameObject objetcToMove;
     public SpriteRenderer spriteRenderer;
+    public bool flipY = true;
+    
     public Transform startPoint;
     public Transform endPoint;
     public float velocity;
@@ -24,7 +26,14 @@ public class ObjectMove : MonoBehaviour
             //Cambiar Yflip
             if(spriteRenderer != null)
             {
-                spriteRenderer.flipY = true;
+                if (flipY)
+                {
+                    spriteRenderer.flipY = true;
+                }
+                else
+                {
+                    spriteRenderer.flipX = false;
+                }                
             }            
         }
 
@@ -33,7 +42,14 @@ public class ObjectMove : MonoBehaviour
             moveTo = endPoint.position;
             if (spriteRenderer != null)
             {
-                spriteRenderer.flipY = false;
+                if (flipY)
+                {
+                    spriteRenderer.flipY = false;
+                }
+                else
+                {
+                    spriteRenderer.flipX = true;
+                }               
             }                
         }
 
