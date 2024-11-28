@@ -44363,6 +44363,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7696720487207415972, guid: 2f55f4e93a3edb74184f872e123200b5, type: 3}
+      propertyPath: resolutionDropdown
+      value: 
+      objectReference: {fileID: 1966664862}
     - target: {fileID: 9084249103922174480, guid: 2f55f4e93a3edb74184f872e123200b5, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -44387,6 +44391,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fa5ecde59607ed428e9628f0adfccdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1966664862 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7664428133318413876, guid: 2f55f4e93a3edb74184f872e123200b5, type: 3}
+  m_PrefabInstance: {fileID: 1966664859}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1967464469

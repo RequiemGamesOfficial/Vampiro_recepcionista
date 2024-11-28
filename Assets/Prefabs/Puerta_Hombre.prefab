@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8568014790653287739}
   - component: {fileID: 627741480811242247}
   - component: {fileID: 5549736683789630402}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Puerta_Hombre
   m_TagString: Untagged
   m_Icon: {fileID: 0}

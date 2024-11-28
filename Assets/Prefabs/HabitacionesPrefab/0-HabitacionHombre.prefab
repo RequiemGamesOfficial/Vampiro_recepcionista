@@ -2198,9 +2198,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6654902524814019903}
     m_Modifications:
+    - target: {fileID: 627741480811242247, guid: c3e8b363d2186104ea1dcd3a39629038, type: 3}
+      propertyPath: m_Size.x
+      value: 0.48384959
+      objectReference: {fileID: 0}
+    - target: {fileID: 627741480811242247, guid: c3e8b363d2186104ea1dcd3a39629038, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5183431
+      objectReference: {fileID: 0}
+    - target: {fileID: 627741480811242247, guid: c3e8b363d2186104ea1dcd3a39629038, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.10807523
+      objectReference: {fileID: 0}
+    - target: {fileID: 627741480811242247, guid: c3e8b363d2186104ea1dcd3a39629038, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.07082843
+      objectReference: {fileID: 0}
     - target: {fileID: 892305830021128116, guid: c3e8b363d2186104ea1dcd3a39629038, type: 3}
       propertyPath: m_Name
       value: Puerta_Hombre
+      objectReference: {fileID: 0}
+    - target: {fileID: 892305830021128116, guid: c3e8b363d2186104ea1dcd3a39629038, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 912395808974531506, guid: c3e8b363d2186104ea1dcd3a39629038, type: 3}
       propertyPath: m_RootOrder
@@ -2208,11 +2228,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 912395808974531506, guid: c3e8b363d2186104ea1dcd3a39629038, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.354
+      value: 1.849
       objectReference: {fileID: 0}
     - target: {fileID: 912395808974531506, guid: c3e8b363d2186104ea1dcd3a39629038, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.443
+      value: -0.458
       objectReference: {fileID: 0}
     - target: {fileID: 912395808974531506, guid: c3e8b363d2186104ea1dcd3a39629038, type: 3}
       propertyPath: m_LocalPosition.z
