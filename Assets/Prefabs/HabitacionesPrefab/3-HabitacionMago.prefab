@@ -1305,8 +1305,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &1417963854206431542
 GameObject:
   m_ObjectHideFlags: 0
@@ -2777,8 +2779,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &7623842686638605642
 GameObject:
   m_ObjectHideFlags: 0
@@ -3200,6 +3204,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1481890233835880488, guid: 9fd2453497ac1604aa650493da053c80, type: 3}
   m_PrefabInstance: {fileID: 2671644871670713050}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3567745408623299327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1481890233835880485, guid: 9fd2453497ac1604aa650493da053c80, type: 3}
+  m_PrefabInstance: {fileID: 2671644871670713050}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6738616184255971985
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3567745408623299327}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d5db135d3978caf4fa73f4260bce5a7f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &2721101560277015820
 PrefabInstance:
   m_ObjectHideFlags: 0
