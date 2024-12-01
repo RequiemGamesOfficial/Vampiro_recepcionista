@@ -4756,6 +4756,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SnailContainer
       objectReference: {fileID: 0}
+    - target: {fileID: 7786203560184979988, guid: e9c2deefe8018734687adfc373648a3b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 06c0545a263904d41ae5cdc6ec80b51b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9c2deefe8018734687adfc373648a3b, type: 3}
 --- !u!4 &3444587652618642513 stripped
