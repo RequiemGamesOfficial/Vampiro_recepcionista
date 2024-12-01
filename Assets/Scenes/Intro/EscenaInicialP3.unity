@@ -9003,8 +9003,8 @@ MonoBehaviour:
   japones2: 0
   japones3: 0
   numeroHabitacion:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 464d585421a34004aa755e6780fb1cd9, type: 2}
+  - {fileID: 11400000, guid: 464d585421a34004aa755e6780fb1cd9, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

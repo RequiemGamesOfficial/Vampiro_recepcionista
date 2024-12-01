@@ -3532,6 +3532,7 @@ GameObject:
   - component: {fileID: 5116235082898577148}
   - component: {fileID: 5116235082898577149}
   - component: {fileID: 1717548367889735922}
+  - component: {fileID: 6629156583905057825}
   m_Layer: 0
   m_Name: Insect
   m_TagString: Untagged
@@ -3595,10 +3596,10 @@ SpriteRenderer:
   m_SortingLayerID: 1717663213
   m_SortingLayer: 1
   m_SortingOrder: 10
-  m_Sprite: {fileID: 1810063098, guid: ef6ae51c6710f574f8295baf8053bab1, type: 3}
+  m_Sprite: {fileID: -2014385216, guid: 77e8e5913b0067d4298d3743640a4910, type: 3}
   m_Color: {r: 0.8679245, g: 0.33161268, b: 0.33161268, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
@@ -3623,7 +3624,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.06, y: 0.09}
+    oldSize: {x: 0.13, y: 0.15}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3663,6 +3664,26 @@ MonoBehaviour:
   instaKill: 0
   boss: 0
   particle: {fileID: 0}
+--- !u!95 &6629156583905057825
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5116235082898577151}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 29289971a3f04f240872e6a499186844, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &5116235083047920957
 GameObject:
   m_ObjectHideFlags: 0
