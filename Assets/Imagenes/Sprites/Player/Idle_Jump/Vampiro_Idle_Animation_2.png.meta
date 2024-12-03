@@ -1,0 +1,541 @@
+fileFormatVersion: 2
+guid: 7a9f19ca980f4cc469a56f967fe51598
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 43
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792b690a467a2fd4da7c5b1b40f481a4
+      internalID: -1451652526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 43
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c54069fc20ee9428424b86427615ed
+      internalID: 1447983585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 43
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816c8aac5dacc8644822878dd8bab29c
+      internalID: 1400109476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_3
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 43
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2511ca280e7f5841826574aba3c7f04
+      internalID: -850554471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_4
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 43
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea259b44902d934fa29ad53551993ef
+      internalID: -1033813567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_5
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 43
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd0c4a56bc3c4a4eb2918c9b9ecb97f
+      internalID: 1410600584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 43
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c9f1ae760a64674abab29147c4a7737
+      internalID: 1070576426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_7
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 43
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8812e9b571134f54b8ceb9c952def910
+      internalID: 1383195837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_8
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 43
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01984d883d8965a4c8e8aa8553abbf2b
+      internalID: 2043517850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_9
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 12
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2fa50c0086cca469de3eeb1bdaac78
+      internalID: 1099528896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_10
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 12
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482d3c8350e3c804ba1e073dc96542d7
+      internalID: -1808581566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_11
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 12
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a966552df0a8912488b5e962f2ff3b9d
+      internalID: 1310478802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_12
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 12
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66b226aa493b544ea80a651b205b0dc
+      internalID: 965342203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_13
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 12
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5be0562c22dc0468c011ca7dcbc036
+      internalID: 973790448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_14
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 12
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021cd895262a49945b629b36b65545d9
+      internalID: 116606792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 12
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06fa2c32e745efe41bd1004e90fcea18
+      internalID: -835975230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_16
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 12
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c75e5ef11143df4b81254f80f1d4f5d
+      internalID: -2103238830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_17
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 12
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514a94cf271c0ce41abfc4470b9ea91b
+      internalID: -300021026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampiro_Idle_Animation_2_18
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 12
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c25fc68fb0df646b5099b2d6f6683a
+      internalID: 1616690100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Vampiro_Idle_Animation_2_0: -1451652526
+      Vampiro_Idle_Animation_2_1: 1447983585
+      Vampiro_Idle_Animation_2_10: -1808581566
+      Vampiro_Idle_Animation_2_11: 1310478802
+      Vampiro_Idle_Animation_2_12: 965342203
+      Vampiro_Idle_Animation_2_13: 973790448
+      Vampiro_Idle_Animation_2_14: 116606792
+      Vampiro_Idle_Animation_2_15: -835975230
+      Vampiro_Idle_Animation_2_16: -2103238830
+      Vampiro_Idle_Animation_2_17: -300021026
+      Vampiro_Idle_Animation_2_18: 1616690100
+      Vampiro_Idle_Animation_2_2: 1400109476
+      Vampiro_Idle_Animation_2_3: -850554471
+      Vampiro_Idle_Animation_2_4: -1033813567
+      Vampiro_Idle_Animation_2_5: 1410600584
+      Vampiro_Idle_Animation_2_6: 1070576426
+      Vampiro_Idle_Animation_2_7: 1383195837
+      Vampiro_Idle_Animation_2_8: 2043517850
+      Vampiro_Idle_Animation_2_9: 1099528896
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
