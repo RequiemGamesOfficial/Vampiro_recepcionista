@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,7 +103,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Perro_Idle_Durmiendo_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 46
+        width: 17
+        height: 15
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15caf0a39a7c7e343aa78ea89f9466a3
+      internalID: -848908510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perro_Idle_Durmiendo_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 46
+        width: 21
+        height: 14
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3901b3566a98b264da8ceeec27cc675f
+      internalID: -1822390014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perro_Idle_Durmiendo_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 46
+        width: 23
+        height: 13
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3dc32eb41eb3b46b633f731f1c8bdd
+      internalID: -450204362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perro_Idle_Durmiendo_3
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 46
+        width: 25
+        height: 12
+      alignment: 9
+      pivot: {x: 0.34460694, y: 0.009616852}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c132ac9839b73489d012c44516fade
+      internalID: -573169161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perro_Idle_Durmiendo_4
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 46
+        width: 23
+        height: 12
+      alignment: 9
+      pivot: {x: 0.37491244, y: 0.004808426}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eafcfcd26333f444aadc3e4316e2a0e
+      internalID: 1095679400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perro_Idle_Durmiendo_5
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 46
+        width: 21
+        height: 12
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2ad135bce615d41ac11189db7cd30b
+      internalID: -784562483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perro_Idle_Durmiendo_6
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 46
+        width: 23
+        height: 12
+      alignment: 9
+      pivot: {x: 0.37491244, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489dfbf176f614645b5089f807ef3f3a
+      internalID: 438824938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perro_Idle_Durmiendo_7
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 46
+        width: 25
+        height: 12
+      alignment: 9
+      pivot: {x: 0.3422986, y: 0.009616852}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae8e233367fafb40a4f90be298a05c0
+      internalID: -609817504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perro_Idle_Durmiendo_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 23
+        width: 25
+        height: 12
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386599fd3287f9d4db665d9f333173ea
+      internalID: 1677805126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perro_Idle_Durmiendo_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 23
+        width: 25
+        height: 12
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81701d34f257b4c47acb31cabea19e84
+      internalID: 650641527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perro_Idle_Durmiendo_10
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 23
+        width: 25
+        height: 12
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18489c62256a2884bb1b083463801ae5
+      internalID: 1466655742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perro_Idle_Durmiendo_11
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 23
+        width: 25
+        height: 12
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ef6402871903c40af1e4f9f74a42a4
+      internalID: -54344279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perro_Idle_Durmiendo_12
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 23
+        width: 25
+        height: 12
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80073eb25eb3d64db1b17f447443e8f
+      internalID: 24131220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perro_Idle_Durmiendo_13
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 23
+        width: 25
+        height: 10
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8432855c96f15a349985c25ed5158b8c
+      internalID: -1616850535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perro_Idle_Durmiendo_14
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 23
+        width: 25
+        height: 7
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3246f452aa55b44942396684500d91
+      internalID: -345245677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perro_Idle_Durmiendo_15
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 6
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c0506a428c1e2419b852ff218e78e8
+      internalID: 1750359321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +450,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Perro_Idle_Durmiendo_0: -848908510
+      Perro_Idle_Durmiendo_1: -1822390014
+      Perro_Idle_Durmiendo_10: 1466655742
+      Perro_Idle_Durmiendo_11: -54344279
+      Perro_Idle_Durmiendo_12: 24131220
+      Perro_Idle_Durmiendo_13: -1616850535
+      Perro_Idle_Durmiendo_14: -345245677
+      Perro_Idle_Durmiendo_15: 1750359321
+      Perro_Idle_Durmiendo_2: -450204362
+      Perro_Idle_Durmiendo_3: -573169161
+      Perro_Idle_Durmiendo_4: 1095679400
+      Perro_Idle_Durmiendo_5: -784562483
+      Perro_Idle_Durmiendo_6: 438824938
+      Perro_Idle_Durmiendo_7: -609817504
+      Perro_Idle_Durmiendo_8: 1677805126
+      Perro_Idle_Durmiendo_9: 650641527
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
