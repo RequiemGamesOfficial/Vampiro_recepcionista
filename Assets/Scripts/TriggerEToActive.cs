@@ -8,17 +8,20 @@ public class TriggerEToActive : MonoBehaviour
     public GameObject button;
     bool detected;
     public bool hotel;
+    bool timeOver;
     public TimerHotel timerHotel;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && detected)
         {
-            if (hotel)
+            if (hotel && !timeOver)
             {
+                timeOver = true;
                 timerHotel.TimeOver();
             }
-            else
+            
+            if(!hotel)
             {
                 Continuar();
             }            

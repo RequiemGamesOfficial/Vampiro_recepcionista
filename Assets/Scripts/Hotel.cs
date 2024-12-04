@@ -654,7 +654,7 @@ public class Hotel : MonoBehaviour
 
     //Checar Habitaciones Para los resultados-Llamado desde TimerHotel al terminar el tiempo
     public void ChecarHaibitaciones()
-    {
+    {      
         for (int i = 0; i < habitacionUI.Length; i++)
         {
             if (manager.numeroHabitacion[i] != null)
