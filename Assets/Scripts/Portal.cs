@@ -6,8 +6,11 @@ public class Portal : MonoBehaviour
 {
     public Hotel hotel;
     public GameObject teleportEffect;
+    public bool animDestination;
     public Transform destination;
     public bool fade;
+    public Animator anim;
+    public string animEffect;
 
     private void Start()
     {
@@ -22,9 +25,17 @@ public class Portal : MonoBehaviour
                 hotel.FadeToBlack();
             }            
             hotel.TeleportTo(destination.position);
+            if (animDestination)
+            {
+                destination.SendMessage("PlayAnimation");
+            }
             if(teleportEffect != null)
             {
                 Instantiate(teleportEffect, destination.position, Quaternion.identity);
+                if(anim != null)
+                {
+                    anim.Play(animEffect);
+                }
             }
         }
     }

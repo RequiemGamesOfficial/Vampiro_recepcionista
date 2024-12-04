@@ -658,8 +658,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947472626584944268}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.74, y: 1.8464, z: 0}
-  m_LocalScale: {x: 0.9824716, y: 0.17771667, z: 0.26533455}
+  m_LocalPosition: {x: 3.7606, y: 1.7833, z: 0}
+  m_LocalScale: {x: 1.0237354, y: 0.1403784, z: 0.26533455}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3144860549730984037}
@@ -2058,7 +2058,7 @@ MonoBehaviour:
   dead: 0
   obetoExtra: {fileID: 0}
   canvasWorld: {fileID: 8988134410023254677}
-  newOffsetCamera: {x: 0, y: 0, z: 0}
+  newOffsetCamera: {x: 0, y: 4, z: 0}
   cameraOffset: {fileID: 0}
 --- !u!1 &3144860549119497807
 GameObject:

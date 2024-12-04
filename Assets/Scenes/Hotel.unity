@@ -59443,7 +59443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[2]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[3]
@@ -59459,15 +59459,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[6]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[7]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[8]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[9]
@@ -59479,47 +59479,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[10]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[11]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[12]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[13]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[14]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[15]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[16]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[17]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[18]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[19]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: huespedDead.Array.data[20]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: nightsInRoom.Array.data[0]
@@ -59612,7 +59612,7 @@ PrefabInstance:
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 42a9747a66d25ea4386d32bb16dd6519, type: 2}
+      objectReference: {fileID: 11400000, guid: 6e437643ff055064fb54f9ca32a9ddec, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[2]
       value: 

@@ -1768,8 +1768,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &2565624188617648550
 GameObject:
   m_ObjectHideFlags: 0
@@ -2366,8 +2368,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &3734396152368088860
 GameObject:
   m_ObjectHideFlags: 0
@@ -2691,8 +2695,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hotel: {fileID: 0}
   teleportEffect: {fileID: 0}
+  animDestination: 0
   destination: {fileID: 1417963852823652557}
   fade: 1
+  anim: {fileID: 0}
+  animEffect: 
 --- !u!114 &4994972365117512003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2708,8 +2715,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &4781594395776768951
 GameObject:
   m_ObjectHideFlags: 0
@@ -3156,8 +3165,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &5967855101562153046
 GameObject:
   m_ObjectHideFlags: 0
@@ -3790,8 +3801,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hotel: {fileID: 0}
   teleportEffect: {fileID: 0}
+  animDestination: 0
   destination: {fileID: 1417963852823652557}
   fade: 1
+  anim: {fileID: 0}
+  animEffect: 
 --- !u!114 &6956419274667595018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3807,8 +3821,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &7623842686638605642
 GameObject:
   m_ObjectHideFlags: 0
@@ -4107,8 +4123,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hotel: {fileID: 0}
   teleportEffect: {fileID: 0}
+  animDestination: 0
   destination: {fileID: 1417963852823652557}
   fade: 1
+  anim: {fileID: 0}
+  animEffect: 
 --- !u!114 &139168770015627512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4124,8 +4143,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &8159124526838680962
 GameObject:
   m_ObjectHideFlags: 0
@@ -4253,8 +4274,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1 &8400432582702634732
 GameObject:
   m_ObjectHideFlags: 0
@@ -4488,8 +4511,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hotel: {fileID: 0}
   teleportEffect: {fileID: 0}
+  animDestination: 0
   destination: {fileID: 1417963852823652557}
   fade: 1
+  anim: {fileID: 0}
+  animEffect: 
 --- !u!114 &4818262373162996314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4505,8 +4531,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!1001 &15144593097311772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4610,7 +4638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 474911721446711032, guid: 8c26edcb5df12ef4bbe35b764dd79e5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.25
+      value: 13.43
       objectReference: {fileID: 0}
     - target: {fileID: 474911721446711032, guid: 8c26edcb5df12ef4bbe35b764dd79e5f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4676,7 +4704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 474911721446711032, guid: 8c26edcb5df12ef4bbe35b764dd79e5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.03
+      value: 15.22
       objectReference: {fileID: 0}
     - target: {fileID: 474911721446711032, guid: 8c26edcb5df12ef4bbe35b764dd79e5f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4750,7 +4778,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1481890233835880488, guid: 9fd2453497ac1604aa650493da053c80, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.19
+      value: -5.02
       objectReference: {fileID: 0}
     - target: {fileID: 1481890233835880488, guid: 9fd2453497ac1604aa650493da053c80, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4812,7 +4840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1481890233835880488, guid: 9fd2453497ac1604aa650493da053c80, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 47.77
+      value: 47.17
       objectReference: {fileID: 0}
     - target: {fileID: 1481890233835880488, guid: 9fd2453497ac1604aa650493da053c80, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4944,7 +4972,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1481890233835880488, guid: 9fd2453497ac1604aa650493da053c80, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.54
+      value: 13.36
       objectReference: {fileID: 0}
     - target: {fileID: 1481890233835880488, guid: 9fd2453497ac1604aa650493da053c80, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5068,7 +5096,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 474911721446711032, guid: 8c26edcb5df12ef4bbe35b764dd79e5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.23
+      value: 13.41
       objectReference: {fileID: 0}
     - target: {fileID: 474911721446711032, guid: 8c26edcb5df12ef4bbe35b764dd79e5f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5686,11 +5714,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1481890233835880488, guid: 9fd2453497ac1604aa650493da053c80, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 49.97
+      value: 50.12
       objectReference: {fileID: 0}
     - target: {fileID: 1481890233835880488, guid: 9fd2453497ac1604aa650493da053c80, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.58
+      value: 17.34
       objectReference: {fileID: 0}
     - target: {fileID: 1481890233835880488, guid: 9fd2453497ac1604aa650493da053c80, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5748,7 +5776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 474911721446711032, guid: 8c26edcb5df12ef4bbe35b764dd79e5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.103
+      value: 11.2
       objectReference: {fileID: 0}
     - target: {fileID: 474911721446711032, guid: 8c26edcb5df12ef4bbe35b764dd79e5f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5818,11 +5846,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1481890233835880488, guid: 9fd2453497ac1604aa650493da053c80, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 48.18
+      value: 47.16
       objectReference: {fileID: 0}
     - target: {fileID: 1481890233835880488, guid: 9fd2453497ac1604aa650493da053c80, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.78
+      value: 17.6
       objectReference: {fileID: 0}
     - target: {fileID: 1481890233835880488, guid: 9fd2453497ac1604aa650493da053c80, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5880,7 +5908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 474911721446711032, guid: 8c26edcb5df12ef4bbe35b764dd79e5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.09
+      value: 11.25
       objectReference: {fileID: 0}
     - target: {fileID: 474911721446711032, guid: 8c26edcb5df12ef4bbe35b764dd79e5f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6032,7 +6060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1481890233835880488, guid: 9fd2453497ac1604aa650493da053c80, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.46
+      value: 13.34
       objectReference: {fileID: 0}
     - target: {fileID: 1481890233835880488, guid: 9fd2453497ac1604aa650493da053c80, type: 3}
       propertyPath: m_LocalPosition.z
