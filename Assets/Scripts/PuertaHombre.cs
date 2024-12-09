@@ -14,7 +14,7 @@ public class PuertaHombre : MonoBehaviour
 
             if (AllObjectsDestroyed())
             {
-                anim.SetBool("open", true);
+                anim.Play("Open");
                 Debug.Log("¡Todos los objetos han sido destruidos!");
                 enabled = false;  // Desactiva este script si ya no es necesario
             }
