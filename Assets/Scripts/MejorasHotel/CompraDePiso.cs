@@ -10,6 +10,7 @@ public class CompraDePiso : MonoBehaviour
     public int costo, reputacion, id;
     public GameObject precio;
     public GameObject particlePrefat;
+    public GameObject particleStars;
 
     private void Update()
     {
@@ -24,6 +25,12 @@ public class CompraDePiso : MonoBehaviour
         if (hotel.presupuesto >= costo)
         {
             Instantiate(particlePrefat, this.transform.position, Quaternion.identity);
+            if (particleStars != null)
+            {
+                Instantiate(particleStars, this.transform.position, Quaternion.identity);
+                Instantiate(particleStars, new Vector3(this.transform.position.x + .8f, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+                Instantiate(particleStars, new Vector3(this.transform.position.x - .8f, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+            }
             hotel.CompraPiso(costo, reputacion, id);
             Debug.Log("Compra");
             precio.SetActive(false);

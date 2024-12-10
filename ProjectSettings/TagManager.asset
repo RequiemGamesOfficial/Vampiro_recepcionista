@@ -32,6 +32,7 @@ TagManager:
   - Water
   - Volume
   - Floor
+  - TargetReputation
   layers:
   - Default
   - TransparentFX
