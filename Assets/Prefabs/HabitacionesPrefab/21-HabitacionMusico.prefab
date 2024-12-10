@@ -212,8 +212,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &3669325706397789627
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -671,8 +673,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &8444084294617043538
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -831,8 +835,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &7479639984811731996
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1076,6 +1082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetcToMove: {fileID: 1631414798494743259}
   spriteRenderer: {fileID: 0}
+  flipY: 1
   startPoint: {fileID: 1470207753041840851}
   endPoint: {fileID: 8831780178805757908}
   velocity: 2
@@ -1432,8 +1439,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &9080976598130231131
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1639,7 +1648,7 @@ GameObject:
   - component: {fileID: 1617613689352496968}
   - component: {fileID: 2419951373762244470}
   - component: {fileID: 8946708633854368642}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mueble (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1983,8 +1992,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &7977776964658213918
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4008,8 +4019,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &7750003731116002888
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4137,8 +4150,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &883083157047802429
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4996,8 +5011,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 0
+  particle: {fileID: 0}
 --- !u!61 &1672517510695881726
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5188,6 +5205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetcToMove: {fileID: 3703271811967346014}
   spriteRenderer: {fileID: 0}
+  flipY: 1
   startPoint: {fileID: 6393273498195562907}
   endPoint: {fileID: 1029216807697665013}
   velocity: 3

@@ -1094,8 +1094,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 1
+  particle: {fileID: 0}
 --- !u!58 &7383413452670463713
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1379,8 +1381,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 1
+  particle: {fileID: 0}
 --- !u!58 &7383413452858771418
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1577,8 +1581,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 1
+  particle: {fileID: 0}
 --- !u!61 &7383413452859350295
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1766,8 +1772,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 1
+  particle: {fileID: 0}
 --- !u!61 &7383413452916946096
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2134,8 +2142,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 1
+  particle: {fileID: 0}
 --- !u!61 &7383413452996371321
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3248,8 +3258,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 1
+  particle: {fileID: 0}
 --- !u!58 &7383413453515188566
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3654,8 +3666,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 1
+  particle: {fileID: 0}
 --- !u!61 &7383413453728911442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3784,8 +3798,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 1
+  particle: {fileID: 0}
 --- !u!58 &7383413453744419195
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4352,8 +4368,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 1
+  particle: {fileID: 0}
 --- !u!61 &7383413453903805234
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4760,8 +4778,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 1
+  particle: {fileID: 0}
 --- !u!61 &7383413454180097146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5013,8 +5033,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 1
+  particle: {fileID: 0}
 --- !u!61 &7383413454222466108
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5226,8 +5248,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 1
+  particle: {fileID: 0}
 --- !u!61 &7383413454343541664
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5957,8 +5981,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 1
+  particle: {fileID: 0}
 --- !u!61 &7383413454567167933
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6086,8 +6112,10 @@ MonoBehaviour:
   destroyObject: 0
   destroyTimer: 0
   destroyTime: 0
+  destroyInFloor: 0
   instaKill: 0
   boss: 1
+  particle: {fileID: 0}
 --- !u!61 &7383413454582403142
 BoxCollider2D:
   m_ObjectHideFlags: 0

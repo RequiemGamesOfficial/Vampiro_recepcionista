@@ -13,6 +13,7 @@ public class SkinManager : MonoBehaviour
     public int portalNumber;
     public int numberToPortal;
     public GameObject portal,miniportal;
+    public GameObject tutorial;
     public Slider portalSlider;
     public GameObject sliderObject;
 
@@ -44,6 +45,7 @@ public class SkinManager : MonoBehaviour
             if (portalNumber >= numberToPortal)
             {
                 portal.SetActive(true);
+                tutorial.SetActive(false);
                 miniportal.SetActive(false);
                 sliderObject.SetActive(false);
             }

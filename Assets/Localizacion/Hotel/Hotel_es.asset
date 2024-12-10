@@ -74,6 +74,14 @@ MonoBehaviour:
       hotel y vendr\xE1n m\xE1s y nuevos hu\xE9spedes de distintas partes del mundo.\r"
     m_Metadata:
       m_Items: []
+  - m_Id: 240109315598680064
+    m_Localized: "\xA1Cuidado, Amo! Si ves al fantasma de color rojo, no te muevas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240113465325617152
+    m_Localized: "Sacrifica m\xE1s hu\xE9spedes si quieres volver a ver a tu perro."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

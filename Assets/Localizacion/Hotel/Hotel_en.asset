@@ -75,6 +75,14 @@ MonoBehaviour:
       and more new guests will come from different parts of the world.
     m_Metadata:
       m_Items: []
+  - m_Id: 240109315598680064
+    m_Localized: Careful, Master! If you see the red ghost, don't move.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240113465325617152
+    m_Localized: Sacrifice more guests if you want to see your dog again.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
