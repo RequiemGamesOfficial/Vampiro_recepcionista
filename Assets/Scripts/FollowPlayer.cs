@@ -6,6 +6,11 @@ public class FollowPlayer : MonoBehaviour
 {
     GameObject player;
     Transform playerTransform;
+
+    public bool hotel;
+
+    public bool wakeUp, canMove;
+
     public SpriteRenderer spriteRenderer;
     public Rigidbody2D rgb2D;
     public CapsuleCollider2D capsuleCollider;
@@ -28,6 +33,11 @@ public class FollowPlayer : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         playerTransform = player.transform;
         normalSpeed = speed;
+        if (!wakeUp)
+        {
+            anim.SetBool("WakeUp", false);
+            canMove = false;
+        }
     }
 
 
@@ -37,7 +47,7 @@ public class FollowPlayer : MonoBehaviour
         distance = Mathf.Abs(this.transform.position.x - playerTransform.position.x);
         anim.SetBool("ground", IsGrounded());
 
-        if (distance > 3)
+        if (distance > 3 && canMove)
         {
             anim.SetBool("move", true);
             transform.position = Vector2.MoveTowards(this.transform.position, playerTransform.position, speed * Time.deltaTime);
@@ -105,10 +115,30 @@ public class FollowPlayer : MonoBehaviour
         rgb2D.velocity = new Vector2(0, 0);
     }
 
+    public void WakeUpDog()
+    {
+        if (!wakeUp)
+        {
+            wakeUp = true;
+            canMove = true;
+            anim.SetBool("WakeUp", true);
+        }
+        else
+        {
+            wakeUp = false;
+            canMove = false;
+            anim.SetBool("WakeUp", false);
+        }
+    }
+
     public void PetDog()
     {
         player.SendMessage("PlayerPet");
         PlayTargetAnimation("Pet", true);
+        if (hotel)
+        {
+            WakeUpDog();
+        }
     }
 
     public void PlayTargetAnimation(string targetAnim, bool isInteracting = false)

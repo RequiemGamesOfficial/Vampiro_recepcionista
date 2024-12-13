@@ -45,7 +45,10 @@ public class FullScreen : MonoBehaviour
         // Usamos un HashSet para eliminar resoluciones duplicadas
         HashSet<string> uniqueResolutions = new HashSet<string>();
 
-        // Recorremos las resoluciones y las agregamos si son únicas
+        // Variable temporal para encontrar la resolución guardada
+        int savedResolutionIndex = PlayerPrefs.GetInt("numeroResolucion", -1);
+        bool isResolutionSaved = false;
+
         for (int i = 0; i < resolutions.Length; i++)
         {
             string option = resolutions[i].width + " x " + resolutions[i].height;
@@ -54,24 +57,34 @@ public class FullScreen : MonoBehaviour
             {
                 options.Add(option);
 
-                // Si esta es la resolución actual de la pantalla, guardamos el índice
-                if (resolutions[i].width == Screen.currentResolution.width &&
+                // Si la resolución coincide con la guardada, tomamos el índice
+                if (savedResolutionIndex == -1 && resolutions[i].width == Screen.currentResolution.width &&
                     resolutions[i].height == Screen.currentResolution.height)
                 {
                     currentResolutionIndex = i;
                 }
+
+                // Si encontramos la resolución guardada
+                if (i == savedResolutionIndex)
+                {
+                    currentResolutionIndex = i;
+                    isResolutionSaved = true;
+                }
             }
+        }
+
+        // Si no había resolución guardada, usamos la resolución actual del monitor
+        if (!isResolutionSaved)
+        {
+            PlayerPrefs.SetInt("numeroResolucion", currentResolutionIndex);
         }
 
         // Añadimos las opciones al TMP_Dropdown
         resolutionDropdown.AddOptions(options);
 
-        // Establecemos la resolución actual como la opción seleccionada
+        // Establecemos la resolución guardada como la opción seleccionada
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
-
-        // Aplicamos la resolución guardada en PlayerPrefs (si la hay)
-        resolutionDropdown.value = PlayerPrefs.GetInt("numeroResolucion", currentResolutionIndex);
     }
 
     public void CambiarResolucion(int resolutionIndex)
@@ -86,5 +99,6 @@ public class FullScreen : MonoBehaviour
 
         // Guardamos la selección en PlayerPrefs
         PlayerPrefs.SetInt("numeroResolucion", resolutionIndex);
+        PlayerPrefs.Save(); // Asegura que se guarde inmediatamente
     }
 }

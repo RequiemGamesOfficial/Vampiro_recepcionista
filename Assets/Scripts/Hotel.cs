@@ -10,6 +10,7 @@ public class Hotel : MonoBehaviour
 
     GameObject player,cameraObject;
     public GameObject pet;
+    FollowPlayer followPlayer;
 
     public GameObject[] puerta = new GameObject[12];
     public GameObject[] habitacionUI = new GameObject[12];
@@ -77,6 +78,7 @@ public class Hotel : MonoBehaviour
         if(manager.pet >= 1)
         {
             pet.SetActive(true);
+            followPlayer = pet.GetComponent<FollowPlayer>();
         }
     }
 
@@ -288,7 +290,7 @@ public class Hotel : MonoBehaviour
         habitacionActualGameObject.transform.parent = posicionHabitacion.transform;
         player.transform.position = new Vector3(67.75f, 5.4f, 0);
         cameraObject.transform.position = player.transform.position;
-        if (pet != null)
+        if (pet != null && followPlayer.wakeUp)
         {
             pet.transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 1);
         }
@@ -299,7 +301,7 @@ public class Hotel : MonoBehaviour
         habitacionActualGameObject.transform.parent = posicionHabitacion.transform;
         player.transform.position = new Vector3(67.75f, 5.4f, 0);
         cameraObject.transform.position = player.transform.position;
-        if (pet != null)
+        if (pet != null && followPlayer.wakeUp)
         {
             pet.transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 1);
         }
@@ -316,7 +318,7 @@ public class Hotel : MonoBehaviour
             player.transform.position = new Vector3(0, 0f, 0);
         }      
         cameraObject.transform.position = player.transform.position;
-        if (pet != null)
+        if (pet != null && followPlayer.wakeUp)
         {
             pet.transform.position = player.transform.position;
         }
@@ -345,7 +347,7 @@ public class Hotel : MonoBehaviour
             player.transform.position = new Vector3(0, 7.86f, 0);
         }        
         cameraObject.transform.position = player.transform.position;
-        if (pet != null)
+        if (pet != null && followPlayer.wakeUp)
         {
             pet.transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 1);
         }
@@ -361,7 +363,7 @@ public class Hotel : MonoBehaviour
             player.transform.position = new Vector3(0, 14.63f, 0);
         }    
         cameraObject.transform.position = player.transform.position;
-        if (pet != null)
+        if (pet != null && followPlayer.wakeUp)
         {
             pet.transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 1);
         }
@@ -378,7 +380,7 @@ public class Hotel : MonoBehaviour
             player.transform.position = new Vector3(0, 21.33f, 0);
         }       
         cameraObject.transform.position = player.transform.position;
-        if (pet != null)
+        if (pet != null && followPlayer.wakeUp)
         {
             pet.transform.position = player.transform.position;
         }
@@ -389,7 +391,7 @@ public class Hotel : MonoBehaviour
         player.transform.position = place;
         player.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
         cameraObject.transform.position = player.transform.position;
-        if (pet != null)
+        if (pet != null && followPlayer.wakeUp)
         {
             pet.transform.position = player.transform.position;
         }

@@ -33,6 +33,7 @@ TagManager:
   - Volume
   - Floor
   - TargetReputation
+  - DogBed
   layers:
   - Default
   - TransparentFX
