@@ -8394,6 +8394,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1112437556489605838, guid: 60e24a5d93cff974c9264360efeb2c8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1548702088524836053, guid: 60e24a5d93cff974c9264360efeb2c8e, type: 3}
       propertyPath: m_Name
       value: "S\xF3tano"
@@ -8486,9 +8490,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6818895904438205867, guid: 60e24a5d93cff974c9264360efeb2c8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7889032914688376588, guid: 60e24a5d93cff974c9264360efeb2c8e, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749205664667343407, guid: 60e24a5d93cff974c9264360efeb2c8e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749205664667343407, guid: 60e24a5d93cff974c9264360efeb2c8e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6244185707853342336, guid: 60e24a5d93cff974c9264360efeb2c8e, type: 3}

@@ -10,7 +10,7 @@ public class Hotel : MonoBehaviour
 
     GameObject player,cameraObject;
     public GameObject pet;
-    FollowPlayer followPlayer;
+    public FollowPlayer followPlayer;
 
     public GameObject[] puerta = new GameObject[12];
     public GameObject[] habitacionUI = new GameObject[12];

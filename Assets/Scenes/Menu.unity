@@ -2112,6 +2112,7 @@ MonoBehaviour:
   numberToPortal: 15
   portal: {fileID: 0}
   miniportal: {fileID: 0}
+  tutorial: {fileID: 0}
   portalSlider: {fileID: 0}
   sliderObject: {fileID: 0}
 --- !u!114 &156862097
@@ -6173,7 +6174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397568, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: m_RootOrder
