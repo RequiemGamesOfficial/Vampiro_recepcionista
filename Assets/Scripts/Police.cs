@@ -5,6 +5,8 @@ using TMPro;
 
 public class Police : MonoBehaviour
 {
+    SteamAchievement steamAchievement;
+
     private Hotel hotel;
     public GameObject buttonCosto;
     public TextMeshProUGUI textMeshPro;
@@ -17,6 +19,7 @@ public class Police : MonoBehaviour
 
     private void Start()
     {
+        steamAchievement = GameObject.FindGameObjectWithTag("Manager").GetComponent<SteamAchievement>();
         hotel = GameObject.FindGameObjectWithTag("HotelManager").GetComponent<Hotel>();
         canvasWorld.worldCamera = Camera.main;
         textMeshPro.text = "$" + costo;
@@ -52,6 +55,16 @@ public class Police : MonoBehaviour
         //Mover acciones a Hotel para actualizar stats
         if (costo <= hotel.presupuesto)
         {
+#if UNITY_STANDALONE || UNITY_EDITOR
+            // Steam logros
+            steamAchievement.UnlockAchievement("BRIBING_COP");
+#elif UNITY_ANDROID
+    // Google Play logros
+    Debug.Log("Desbloquear logro en Google Play");
+#elif UNITY_IOS
+    // Game Center logros
+    Debug.Log("Desbloquear logro en Game Center");
+#endif
             hotel.CompraGeneral(costo, reputation);
             paid = true;
             buttonCosto.SetActive(false);

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class SkinManager : MonoBehaviour
 {
+    GameObject managerObject;
+    SteamAchievement steamAchievement;
     Manager manager;
     ChangeLook changeLook;
     public GameObject skinSelect;
@@ -19,7 +21,9 @@ public class SkinManager : MonoBehaviour
 
     void Start()
     {
-        manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
+        managerObject = GameObject.FindGameObjectWithTag("Manager");
+        steamAchievement = managerObject.GetComponent<SteamAchievement>();
+        manager = managerObject.GetComponent<Manager>();
         changeLook = GameObject.FindGameObjectWithTag("Player").GetComponent<ChangeLook>();
         for (int i = 0; i < manager.globalDead.Length; i++)
         {
@@ -68,7 +72,17 @@ public class SkinManager : MonoBehaviour
 
     public void SelectSkinID(int id)
     {
-        //Play audio
+#if UNITY_STANDALONE || UNITY_EDITOR
+        // Steam logros
+        steamAchievement.UnlockAchievement("CHANGING_OUTFITS");
+#elif UNITY_ANDROID
+    // Google Play logros
+    Debug.Log("Desbloquear logro en Google Play");
+#elif UNITY_IOS
+    // Game Center logros
+    Debug.Log("Desbloquear logro en Game Center");
+#endif
+        //Play audio       
         soundAnimator.PlayAudioClip02();
         manager.skin = id;
         changeLook.ChangeAnimatorID(id);

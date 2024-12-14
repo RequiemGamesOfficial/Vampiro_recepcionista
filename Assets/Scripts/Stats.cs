@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Stats : MonoBehaviour
 {
+    GameObject managerObject;
+    SteamAchievement steamAchievement;
     public Manager manager;
 
     public Slider sliderReputacion, sliderReputacionNew, sliderSangre, sliderSangreNew;
@@ -20,7 +22,9 @@ public class Stats : MonoBehaviour
 
     private void Awake()
     {
-        manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
+        managerObject = GameObject.FindGameObjectWithTag("Manager");
+        steamAchievement = managerObject.GetComponent<SteamAchievement>();
+        manager = managerObject.GetComponent<Manager>();
         SetValoresActuales();
     }
 
@@ -189,6 +193,20 @@ public class Stats : MonoBehaviour
         else
         {
             SetReputationDown();
+        }
+
+        if(manager.reputation >= 100)
+        {
+#if UNITY_STANDALONE || UNITY_EDITOR
+            // Steam logros
+            steamAchievement.UnlockAchievement("5_STARS");
+#elif UNITY_ANDROID
+    // Google Play logros
+    Debug.Log("Desbloquear logro en Google Play");
+#elif UNITY_IOS
+    // Game Center logros
+    Debug.Log("Desbloquear logro en Game Center");
+#endif
         }
         currentReputation = manager.reputation;
     }

@@ -48106,6 +48106,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1694260287}
+        m_TargetAssemblyTypeName: SteamAchievement, Assembly-CSharp
+        m_MethodName: UnlockAchievement
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: TUTORIAL_COMPLETED
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 961254501}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -59751,6 +59763,17 @@ PrefabInstance:
       objectReference: {fileID: 2037152623}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+--- !u!114 &1694260287 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7147050603795775288, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
+  m_PrefabInstance: {fileID: 1694260286}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6faa681b3161ff41bfd15063b317bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1694935597
 GameObject:
   m_ObjectHideFlags: 0

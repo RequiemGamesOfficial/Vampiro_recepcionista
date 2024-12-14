@@ -7078,7 +7078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toggle: {fileID: 1104285124}
-  resolutionDropdow: {fileID: 545168046}
+  resolutionDropdown: {fileID: 0}
 --- !u!114 &993722557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11457,8 +11457,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b124b49fbe54e34449ab74ad7d454908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
   textNoche: {fileID: 334456058}
+  logroID: BEHIND_BARS
 --- !u!114 &1583245914
 MonoBehaviour:
   m_ObjectHideFlags: 0

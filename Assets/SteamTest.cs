@@ -23,7 +23,7 @@ public class SteamTest : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    void Update()
     {
         Steamworks.SteamClient.RunCallbacks();
     }
