@@ -10321,6 +10321,7 @@ GameObject:
   - component: {fileID: 1752158362}
   - component: {fileID: 1752158363}
   - component: {fileID: 1752158364}
+  - component: {fileID: 1752158365}
   m_Layer: 0
   m_Name: RecepcionManager
   m_TagString: Untagged
@@ -10379,6 +10380,7 @@ MonoBehaviour:
   - {fileID: 36060417}
   - {fileID: 657370242}
   - {fileID: 182536256}
+  logroManager: {fileID: 0}
 --- !u!4 &1752158361
 Transform:
   m_ObjectHideFlags: 0
@@ -10531,6 +10533,19 @@ MonoBehaviour:
   audioSource: {fileID: 1752158363}
   clipLoop: {fileID: 8300000, guid: 1d6d22f22852d1f4ea8079f05d662de0, type: 3}
   timeToLoop: 69.2
+--- !u!114 &1752158365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752158359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330b30197ba7d144f89a17cf8d83b46a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  achievementID: 
 --- !u!1 &1758879584
 GameObject:
   m_ObjectHideFlags: 0

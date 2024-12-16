@@ -5,6 +5,7 @@ using System;
 using System.IO;
 using UnityEngine.SceneManagement;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Linq;
 
 public class Manager : MonoBehaviour
 {
@@ -38,6 +39,8 @@ public class Manager : MonoBehaviour
 
     public bool demo;
     public bool android, ui;
+
+    public SteamAchievement steamAchievement;
 
     private void Awake()
     {
@@ -90,10 +93,12 @@ public class Manager : MonoBehaviour
         if (piso == 3)
         {
             piso3 += 1;
+            steamAchievement.UnlockAchievement("NEW_FLOOR");
         }
         if (piso == 4)
         {
             piso4 += 1;
+            steamAchievement.UnlockAchievement("COMPLETE_HOTEL");
         }
     }
     public void MejoraHotel(int mejora)
@@ -173,6 +178,19 @@ public class Manager : MonoBehaviour
     {
         huespedDead[id] += 1;
         globalDead[id] += 1;
+        CheckClosetStatus();
+    }
+
+    void CheckClosetStatus()
+    {
+        if (globalDead.All(value => value >= 1))
+        {
+            steamAchievement.UnlockAchievement("FULL_CLOSET");
+        }
+        else
+        {
+            Debug.Log("No todos los valores son mayores o iguales a 1.");
+        }
     }
     
     //DataManager

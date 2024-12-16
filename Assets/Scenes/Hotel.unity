@@ -35744,6 +35744,7 @@ GameObject:
   - component: {fileID: 961254504}
   - component: {fileID: 961254503}
   - component: {fileID: 961254505}
+  - component: {fileID: 961254506}
   m_Layer: 5
   m_Name: TutorialPerro
   m_TagString: Untagged
@@ -35908,6 +35909,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &961254506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961254501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330b30197ba7d144f89a17cf8d83b46a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  achievementID: 
 --- !u!1 &961547115
 GameObject:
   m_ObjectHideFlags: 0
@@ -48106,9 +48120,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1694260287}
-        m_TargetAssemblyTypeName: SteamAchievement, Assembly-CSharp
-        m_MethodName: UnlockAchievement
+      - m_Target: {fileID: 961254506}
+        m_TargetAssemblyTypeName: LogroManager, Assembly-CSharp
+        m_MethodName: SetUnlockAchievement
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -59763,17 +59777,6 @@ PrefabInstance:
       objectReference: {fileID: 2037152623}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
---- !u!114 &1694260287 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7147050603795775288, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
-  m_PrefabInstance: {fileID: 1694260286}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6faa681b3161ff41bfd15063b317bea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1694935597
 GameObject:
   m_ObjectHideFlags: 0

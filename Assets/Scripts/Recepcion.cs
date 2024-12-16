@@ -23,6 +23,8 @@ public class Recepcion : MonoBehaviour
     public GameObject[] llave = new GameObject[12];
     public GameObject[] telaraña = new GameObject[12];
 
+    public LogroManager logroManager;
+
     void Start()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
@@ -33,14 +35,17 @@ public class Recepcion : MonoBehaviour
             if (manager.playa1 >= 1 && manager.playa2 >= 1 && manager.playa3 >= 1)
             {
                 generadorHuespeds.SetPlaya();
+                logroManager.SetUnlockAchievement("CASTAWAY_SET");
             }
             if (manager.japones1 >= 1 && manager.japones2 >= 1 && manager.japones3 >= 1)
             {
                 generadorHuespeds.SetJapones();
+                logroManager.SetUnlockAchievement("JAPANESE_SET");
             }
         }     
         habitacionesDisponibles = 0;
         manager.noche += 1;
+        AchievementPerNight();
         if(manager.noche >= manager.nocheScore)
         {
             manager.nocheScore = manager.noche;
@@ -58,6 +63,23 @@ public class Recepcion : MonoBehaviour
         {
             manager.habitacionDead[i] = false;
         }              
+    }
+
+    //Logros por Noches
+    public void AchievementPerNight()
+    {
+        if (manager.noche >= 15)
+        {
+            logroManager.SetUnlockAchievement("NIGHT_15");
+        }
+        if (manager.noche >= 30)
+        {
+            logroManager.SetUnlockAchievement("NIGHT_30");
+        }
+        if (manager.noche >= 50)
+        {
+            logroManager.SetUnlockAchievement("NIGHT_50");
+        }
     }
 
     public void AdministracionLlaves()

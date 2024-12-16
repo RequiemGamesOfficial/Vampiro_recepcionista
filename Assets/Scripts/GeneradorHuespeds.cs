@@ -17,6 +17,7 @@ public class GeneradorHuespeds : MonoBehaviour
     public bool fullHotel;
     bool setPlaya, setJapones;
 
+    //Llamado desde Recepcion
     public void SetPlaya()
     {
         setPlaya = true;
@@ -25,6 +26,7 @@ public class GeneradorHuespeds : MonoBehaviour
     {
         setJapones = true;
     }
+
     //Crea Huespedes depediendo de la reputacion
     public void VIPReputation()
     {

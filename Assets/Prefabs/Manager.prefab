@@ -113,6 +113,7 @@ MonoBehaviour:
   demo: 0
   android: 0
   ui: 0
+  steamAchievement: {fileID: 7147050603795775288}
 --- !u!114 &6189942462693397568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,6 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notConnected: 0
+  textMeshProText: {fileID: 0}
 --- !u!114 &7147050603795775288
 MonoBehaviour:
   m_ObjectHideFlags: 0
