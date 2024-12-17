@@ -128,7 +128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2717837308235856507
 Transform:
   m_ObjectHideFlags: 0
@@ -1204,7 +1204,6 @@ GameObject:
   - component: {fileID: 7383413452745155588}
   - component: {fileID: 7383413452745155585}
   - component: {fileID: 7383413452745155586}
-  - component: {fileID: 7383413452745155587}
   m_Layer: 0
   m_Name: ActivadorMarciano
   m_TagString: Untagged
@@ -1267,18 +1266,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dead: 0
   obetoExtra: {fileID: 0}
---- !u!114 &7383413452745155587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7383413452745155589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3082474cea3404c9e9c91038c493d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7383413452858771420
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class TriggerEToButton : MonoBehaviour
 {
-    public FollowPlayer followPlayer;
-    public bool dogBed;
-
     public GameObject objectToTrigger;
     public GameObject button;
 
     bool detected;
     public string message;
+
+    //Pet
+    public bool petBool;
+
+    public FollowPlayer followPlayer;
+    public bool dogBed;
 
     private void Update()
     {
@@ -23,39 +26,61 @@ public class TriggerEToButton : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("DogBed") && followPlayer.hotel)
+        if (!petBool)
         {
-            dogBed = true;
-        }
-
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            if (!followPlayer.hotel)
+            if (collision.gameObject.CompareTag("Player"))
             {
                 detected = true;
                 button.SetActive(true);
             }
-            else
+        }
+        else
+        {
+            if (collision.gameObject.CompareTag("DogBed") && followPlayer.hotel)
             {
-                if (dogBed)
+                dogBed = true;
+            }
+
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                if (!followPlayer.hotel)
                 {
                     detected = true;
                     button.SetActive(true);
-                }                
-            }         
-        }
+                }
+                else
+                {
+                    if (dogBed)
+                    {
+                        detected = true;
+                        button.SetActive(true);
+                    }
+                }
+            }
+        }        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("DogBed") && followPlayer.hotel)
+        if (!petBool)
         {
-            dogBed = false;
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                detected = false;
+                button.SetActive(false);
+            }
         }
-        if (collision.gameObject.CompareTag("Player"))
+        else
         {
-            detected = false;
-            button.SetActive(false);
-        }     
+            if (collision.gameObject.CompareTag("DogBed") && followPlayer.hotel)
+            {
+                dogBed = false;
+            }
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                detected = false;
+                button.SetActive(false);
+            }
+        }        
     }
 }

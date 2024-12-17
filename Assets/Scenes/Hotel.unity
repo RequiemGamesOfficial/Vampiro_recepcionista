@@ -1964,7 +1964,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &66219736
 RectTransform:
   m_ObjectHideFlags: 0
@@ -59722,7 +59722,7 @@ PrefabInstance:
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 1eb1a98930f99204097e64e39d5f576a, type: 2}
+      objectReference: {fileID: 11400000, guid: 464d585421a34004aa755e6780fb1cd9, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[1]
       value: 
@@ -77708,6 +77708,10 @@ PrefabInstance:
     - target: {fileID: 3425421980568622238, guid: fef507ba36f4dbc439f6972084484022, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3991438730675364236, guid: fef507ba36f4dbc439f6972084484022, type: 3}
+      propertyPath: petBool
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3991438730675364236, guid: fef507ba36f4dbc439f6972084484022, type: 3}
       propertyPath: followPlayer

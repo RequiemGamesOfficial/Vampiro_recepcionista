@@ -194,6 +194,16 @@ public class Manager : MonoBehaviour
     }
     
     //DataManager
+    public void Unlock()
+    {
+        money = 900;
+        pet = 1;      
+        for (int i = 0; i < globalDead.Length; i++)
+        {
+            globalDead[i] = 5;
+        }
+        Guardar();
+    }
     public void Guardar()
     {
         BinaryFormatter bf = new BinaryFormatter();

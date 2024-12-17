@@ -6797,6 +6797,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 132803150}
     m_Modifications:
+    - target: {fileID: 1679716036274457865, guid: 5904e671248c1cf4a915f9631104a2e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6536546570781528645, guid: 5904e671248c1cf4a915f9631104a2e3, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -6844,6 +6848,14 @@ PrefabInstance:
     - target: {fileID: 6536546570781528664, guid: 5904e671248c1cf4a915f9631104a2e3, type: 3}
       propertyPath: m_Name
       value: Fuego Negro
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536546570781528666, guid: 5904e671248c1cf4a915f9631104a2e3, type: 3}
+      propertyPath: ringBufferMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536546570781528667, guid: 5904e671248c1cf4a915f9631104a2e3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5904e671248c1cf4a915f9631104a2e3, type: 3}
@@ -17321,6 +17333,9 @@ MonoBehaviour:
   objectToTrigger: {fileID: 1894714079}
   button: {fileID: 1092962214}
   message: ButtonBoss1
+  petBool: 0
+  followPlayer: {fileID: 0}
+  dogBed: 0
 --- !u!61 &1229356917
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25326,6 +25341,9 @@ MonoBehaviour:
   objectToTrigger: {fileID: 1894714079}
   button: {fileID: 652793983}
   message: ButtonBoss2
+  petBool: 0
+  followPlayer: {fileID: 0}
+  dogBed: 0
 --- !u!61 &1650854288
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31599,6 +31617,9 @@ MonoBehaviour:
   objectToTrigger: {fileID: 1894714079}
   button: {fileID: 771580919}
   message: ButtonBoss3
+  petBool: 0
+  followPlayer: {fileID: 0}
+  dogBed: 0
 --- !u!61 &2033585762
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34135,14 +34156,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed15b53028fecb6429fe09ccdb7310e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 0}
-  audioSource1: {fileID: 0}
-  audioSource2: {fileID: 0}
+  playerController: {fileID: 2085065515}
+  audioSource1: {fileID: 1617770897}
+  audioSource2: {fileID: 4463652330494728129}
   audio1: {fileID: 8300000, guid: 07142d1a830b9fa4587c298f996db38f, type: 3}
   audio2: {fileID: 8300000, guid: 485b6ac58de0b814fa6bd2a826b0ff3c, type: 3}
   audio3: {fileID: 8300000, guid: f91b8543c5779654da42eb4d5055e028, type: 3}
   audio4: {fileID: 8300000, guid: ab16e736237f7774cbe0990eec986459, type: 3}
-  swimming: {fileID: 0}
+  swimming: {fileID: 8300000, guid: a4ee8ea519fe34949b0deb15dfcd4bf4, type: 3}
   climbing: []
 --- !u!114 &4463652330494728128
 MonoBehaviour:
