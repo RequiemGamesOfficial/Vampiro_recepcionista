@@ -68,6 +68,7 @@ public class Recepcion : MonoBehaviour
     //Logros por Noches
     public void AchievementPerNight()
     {
+#if UNITY_STANDALONE || UNITY_EDITOR
         if (manager.noche >= 15)
         {
             logroManager.SetUnlockAchievement("NIGHT_15");
@@ -80,6 +81,13 @@ public class Recepcion : MonoBehaviour
         {
             logroManager.SetUnlockAchievement("NIGHT_50");
         }
+#elif UNITY_ANDROID
+    // Google Play logros
+    Debug.Log("Desbloquear logro en Google Play");
+#elif UNITY_IOS
+    // Game Center logros
+    Debug.Log("Desbloquear logro en Game Center");
+#endif
     }
 
     public void AdministracionLlaves()

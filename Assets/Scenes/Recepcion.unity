@@ -10380,7 +10380,7 @@ MonoBehaviour:
   - {fileID: 36060417}
   - {fileID: 657370242}
   - {fileID: 182536256}
-  logroManager: {fileID: 0}
+  logroManager: {fileID: 1752158365}
 --- !u!4 &1752158361
 Transform:
   m_ObjectHideFlags: 0

@@ -32,8 +32,10 @@ public class ChangeScene : MonoBehaviour
     }
     public void ChecarAccidentes()
     {
-        if (manager.noche > 4)
+        Debug.Log("Checar!!!!");
+        if (manager.noche > 4 && manager.piso3 >=2)
         {
+            Debug.Log("AccidentPanel!!!!");
             //Activar AccidentPanel
             accidentPanel.SetActive(true);
         }

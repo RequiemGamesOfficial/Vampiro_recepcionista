@@ -5,10 +5,10 @@ using UnityEngine;
 public class LogroManager : MonoBehaviour
 {
 
-    SteamAchievement steamAchievement;
+    public SteamAchievement steamAchievement;
     public string achievementID;
 
-    private void Start()
+    private void Awake()
     {
         steamAchievement = GameObject.FindGameObjectWithTag("Manager").GetComponent<SteamAchievement>();
     }
