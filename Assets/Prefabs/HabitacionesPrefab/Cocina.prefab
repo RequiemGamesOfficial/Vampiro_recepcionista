@@ -1197,6 +1197,7 @@ MonoBehaviour:
   generateBurger: {fileID: 8895642405052535192}
   ingrPedidos: 00000000000000000000000000000000
   buttonCocinaFunction: {fileID: 3093430061840726164}
+  particleStars: {fileID: 5067929206152730905, guid: 832bf1cbc21d59c4fa9341de42274c53, type: 3}
 --- !u!1 &3888235965794388821
 GameObject:
   m_ObjectHideFlags: 0

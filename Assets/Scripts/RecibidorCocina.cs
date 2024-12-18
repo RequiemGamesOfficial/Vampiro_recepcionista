@@ -20,6 +20,8 @@ public class RecibidorCocina : MonoBehaviour
     public ButtonCocinaFunction buttonCocinaFunction;
     bool iniciar;
 
+    public GameObject particleStars;
+
     private void Start()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
@@ -110,6 +112,7 @@ public class RecibidorCocina : MonoBehaviour
         if(charola.ingrID[0] == ingrPedidos[0])
         {
             Debug.Log("+ 5 puntos de Reputacion");
+            Instantiate(particleStars, new Vector3(this.transform.position.x - 0.5f, this.transform.position.y + .5f, this.transform.position.z), Quaternion.identity);
             manager.reputation += 5;
         }
         else
@@ -120,6 +123,7 @@ public class RecibidorCocina : MonoBehaviour
         if (charola.ingrID[1] == ingrPedidos[1])
         {
             Debug.Log("+ 5 puntos de Reputacion");
+            Instantiate(particleStars, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             manager.reputation += 5;
         }
         else
@@ -130,6 +134,7 @@ public class RecibidorCocina : MonoBehaviour
         if (charola.ingrID[2] == ingrPedidos[2])
         {
             Debug.Log("+ 5 puntos de Reputacion");
+            Instantiate(particleStars, new Vector3(this.transform.position.x + 0.5f, this.transform.position.y + .5f, this.transform.position.z), Quaternion.identity);
             manager.reputation += 5;
         }
         else
@@ -140,6 +145,7 @@ public class RecibidorCocina : MonoBehaviour
         if (charola.ingrID[3] == ingrPedidos[3])
         {
             Debug.Log("+ 5 puntos de Reputacion");
+            Instantiate(particleStars, new Vector3(this.transform.position.x + 1, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             manager.reputation += 5;
         }
         else

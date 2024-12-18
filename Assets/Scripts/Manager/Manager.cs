@@ -196,7 +196,7 @@ public class Manager : MonoBehaviour
     //DataManager
     public void Unlock()
     {
-        money = 900;
+        money = 6660;
         pet = 1;      
         for (int i = 0; i < globalDead.Length; i++)
         {
