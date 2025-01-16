@@ -10,6 +10,7 @@ public class PlayerPlatformMove : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("PlatformMove"))
         {
+            Debug.Log("platformParent");
             player.transform.parent = collision.transform;
         }
 

@@ -35921,6 +35921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330b30197ba7d144f89a17cf8d83b46a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  steamAchievement: {fileID: 0}
   achievementID: 
 --- !u!1 &961547115
 GameObject:
@@ -59722,7 +59723,7 @@ PrefabInstance:
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 049567f8ffdfcd24ea38aaa6753b8b65, type: 2}
+      objectReference: {fileID: 11400000, guid: d0941a92d9d92484580fa8049bf1cca9, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[1]
       value: 
