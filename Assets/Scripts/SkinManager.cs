@@ -25,6 +25,10 @@ public class SkinManager : MonoBehaviour
         steamAchievement = managerObject.GetComponent<SteamAchievement>();
         manager = managerObject.GetComponent<Manager>();
         changeLook = GameObject.FindGameObjectWithTag("Player").GetComponent<ChangeLook>();
+        UpdateState();
+    }
+    public void UpdateState()
+    {
         for (int i = 0; i < manager.globalDead.Length; i++)
         {
             if (manager.globalDead[i] >= 5)
@@ -38,7 +42,7 @@ public class SkinManager : MonoBehaviour
             }
         }
         Debug.Log("Huesped Number" + portalNumber);
-        if(portal != null)
+        if (portal != null)
         {
             portalSlider.value = portalNumber;
             if (portalNumber >= 2)
@@ -55,6 +59,7 @@ public class SkinManager : MonoBehaviour
             }
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
