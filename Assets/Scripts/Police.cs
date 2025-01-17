@@ -16,6 +16,7 @@ public class Police : MonoBehaviour
     bool paid;
     public Animator patrolAnim;
     bool detected;
+    public GameObject particleStars;
 
     private void Start()
     {
@@ -69,6 +70,12 @@ public class Police : MonoBehaviour
             paid = true;
             buttonCosto.SetActive(false);
             patrolAnim.Play("Paid");
+            if (particleStars != null)
+            {
+                Instantiate(particleStars, this.transform.position, Quaternion.identity);
+                Instantiate(particleStars, new Vector3(this.transform.position.x + .8f, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+                Instantiate(particleStars, new Vector3(this.transform.position.x - .8f, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+            }
         }
         else
         {

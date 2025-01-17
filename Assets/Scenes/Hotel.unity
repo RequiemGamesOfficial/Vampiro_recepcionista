@@ -59418,7 +59418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: money
-      value: 50
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: noche
@@ -59482,7 +59482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: reputation
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: habitaciones

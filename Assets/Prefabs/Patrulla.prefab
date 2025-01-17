@@ -477,6 +477,7 @@ MonoBehaviour:
   reputation: 20
   canvasWorld: {fileID: 5351961719671851046}
   patrolAnim: {fileID: 5351961720957330082}
+  particleStars: {fileID: 5067929206152730905, guid: 832bf1cbc21d59c4fa9341de42274c53, type: 3}
 --- !u!61 &5351961720957330085
 BoxCollider2D:
   m_ObjectHideFlags: 0
