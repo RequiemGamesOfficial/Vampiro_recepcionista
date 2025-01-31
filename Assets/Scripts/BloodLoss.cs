@@ -13,6 +13,7 @@ public class BloodLoss : MonoBehaviour
     void Start()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
+
         if(manager.noche <= 2)
         {
             manager.blood -= 10;
@@ -30,6 +31,13 @@ public class BloodLoss : MonoBehaviour
                 manager.blood -= 10;
             }            
         }
+
+        if (manager.blood <= 0)
+        {
+            Debug.Log("Muerte por sangre");
+            anim.Play("Dead");
+        }
+
         if (manager.blood <= 20)
         {
             for (int i = 0; i < borde.Length; i++)
@@ -37,11 +45,7 @@ public class BloodLoss : MonoBehaviour
                 borde[i].SetActive(true);
             }
         }
-        if (manager.blood <= 0)
-        {
-            //anim.SetBool("dead", true);
-            anim.Play("Dead");
-        }
+       
         stats.SetNewBlood();
     }
 
