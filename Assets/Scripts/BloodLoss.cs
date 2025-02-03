@@ -8,6 +8,7 @@ public class BloodLoss : MonoBehaviour
     public Animator anim;
     public Stats stats;
     public GameObject[] borde;
+    public AnimatorPalyer animatorPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +36,8 @@ public class BloodLoss : MonoBehaviour
         if (manager.blood <= 0)
         {
             Debug.Log("Muerte por sangre");
-            anim.Play("Dead");
+            animatorPlayer.CinematicaMuerte();
+            //anim.Play("Dead");
         }
 
         if (manager.blood <= 20)
