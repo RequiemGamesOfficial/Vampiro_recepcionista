@@ -337,7 +337,7 @@ public class PlayerController : MonoBehaviour
         useButtonsTouchs = false;
     }
     public void ClickJump()
-    {
+    {       
         if (!anim.GetBool("isInteracting"))
         {
             isJump = true;

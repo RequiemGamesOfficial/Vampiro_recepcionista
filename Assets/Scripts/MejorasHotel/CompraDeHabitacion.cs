@@ -17,11 +17,11 @@ public class CompraDeHabitacion : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && detected)
         {
-            QuitarTablas();
+            Buying();
         }
     }
 
-    public void QuitarTablas()
+    public void Buying()
     {
         if(hotel.presupuesto >= costo)
         {
@@ -50,6 +50,9 @@ public class CompraDeHabitacion : MonoBehaviour
         {
             detected = true;
             precio.SetActive(true);
+
+            //button Android 
+            collision.gameObject.GetComponent<DynamicBotton>().UpdateButton(this.gameObject, 2);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -58,6 +61,9 @@ public class CompraDeHabitacion : MonoBehaviour
         {
             detected = false;
             precio.SetActive(false);
+
+            //button Android 
+            collision.gameObject.GetComponent<DynamicBotton>().ResetButton();
         }
     }
 }

@@ -3798,7 +3798,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 890089328}
         m_TargetAssemblyTypeName: CompraMejora, Assembly-CSharp
-        m_MethodName: Mejorar
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3873,7 +3873,7 @@ RectTransform:
   - {fileID: 1055471759}
   - {fileID: 543616852}
   m_Father: {fileID: 170875118}
-  m_RootOrder: 21
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4125,7 +4125,7 @@ RectTransform:
   m_Children:
   - {fileID: 1940206337}
   m_Father: {fileID: 170875118}
-  m_RootOrder: 19
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5337,14 +5337,14 @@ RectTransform:
   - {fileID: 818853241}
   - {fileID: 1160654260}
   - {fileID: 2090065900}
-  - {fileID: 478127191}
-  - {fileID: 126999275}
   - {fileID: 224943463}
   - {fileID: 122412670}
-  - {fileID: 2074688425}
-  - {fileID: 1216809145}
   - {fileID: 1434785208}
   - {fileID: 2020915588}
+  - {fileID: 478127191}
+  - {fileID: 126999275}
+  - {fileID: 2074688425}
+  - {fileID: 1216809145}
   - {fileID: 1614357894}
   - {fileID: 929337781}
   m_Father: {fileID: 74408800}
@@ -6797,7 +6797,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 504540263}
         m_TargetAssemblyTypeName: CompraMejora, Assembly-CSharp
-        m_MethodName: Mejorar
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6872,7 +6872,7 @@ RectTransform:
   - {fileID: 405124481}
   - {fileID: 98809551}
   m_Father: {fileID: 170875118}
-  m_RootOrder: 20
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8208,7 +8208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1250280055}
         m_TargetAssemblyTypeName: CompraMejora, Assembly-CSharp
-        m_MethodName: Mejorar
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10393,7 +10393,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 517765177}
         m_TargetAssemblyTypeName: CompraDePiso, Assembly-CSharp
-        m_MethodName: Mejorar
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16664,7 +16664,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 417067568}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2085065519}
+        m_TargetAssemblyTypeName: DynamicBotton, Assembly-CSharp
+        m_MethodName: UseButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &417067568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16720,9 +16732,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2085065515}
-          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-          m_MethodName: ClickJump
+        - m_Target: {fileID: 2085065519}
+          m_TargetAssemblyTypeName: DynamicBotton, Assembly-CSharp
+          m_MethodName: PointerDown
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -16736,9 +16748,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2085065515}
-          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-          m_MethodName: ReleaseJump
+        - m_Target: {fileID: 2085065519}
+          m_TargetAssemblyTypeName: DynamicBotton, Assembly-CSharp
+          m_MethodName: PointerUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -19015,7 +19027,7 @@ RectTransform:
   m_Children:
   - {fileID: 853435948}
   m_Father: {fileID: 170875118}
-  m_RootOrder: 18
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -20236,7 +20248,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2118376131}
         m_TargetAssemblyTypeName: CompraDeHabitacion, Assembly-CSharp
-        m_MethodName: QuitarTablas
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -31099,7 +31111,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2040616334}
         m_TargetAssemblyTypeName: CompraMejora, Assembly-CSharp
-        m_MethodName: Mejorar
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -35066,7 +35078,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1096646443}
         m_TargetAssemblyTypeName: CompraDeHabitacion, Assembly-CSharp
-        m_MethodName: QuitarTablas
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -42462,7 +42474,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 794104778}
         m_TargetAssemblyTypeName: CompraDeHabitacion, Assembly-CSharp
-        m_MethodName: QuitarTablas
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -42896,7 +42908,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1133215885}
         m_TargetAssemblyTypeName: CompraMejora, Assembly-CSharp
-        m_MethodName: Mejorar
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -44662,7 +44674,7 @@ RectTransform:
   m_Children:
   - {fileID: 1068535846}
   m_Father: {fileID: 170875118}
-  m_RootOrder: 23
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -44947,7 +44959,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 992358016}
         m_TargetAssemblyTypeName: CompraMejora, Assembly-CSharp
-        m_MethodName: Mejorar
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -47882,7 +47894,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 517765177}
         m_TargetAssemblyTypeName: CompraDePiso, Assembly-CSharp
-        m_MethodName: Mejorar
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -52020,7 +52032,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 767443421}
         m_TargetAssemblyTypeName: CompraDeHabitacion, Assembly-CSharp
-        m_MethodName: QuitarTablas
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -52359,7 +52371,7 @@ RectTransform:
   - {fileID: 809884308}
   - {fileID: 168583970}
   m_Father: {fileID: 170875118}
-  m_RootOrder: 24
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -52412,7 +52424,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 506693599}
         m_TargetAssemblyTypeName: CompraMejora, Assembly-CSharp
-        m_MethodName: Mejorar
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -52837,7 +52849,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1124083862}
         m_TargetAssemblyTypeName: CompraDeHabitacion, Assembly-CSharp
-        m_MethodName: QuitarTablas
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -52971,7 +52983,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 481366095}
         m_TargetAssemblyTypeName: CompraDeHabitacion, Assembly-CSharp
-        m_MethodName: QuitarTablas
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -54658,7 +54670,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2060983335}
         m_TargetAssemblyTypeName: CompraMejora, Assembly-CSharp
-        m_MethodName: Mejorar
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -59439,7 +59451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: android
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: basura1
@@ -60605,7 +60617,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 556277779}
         m_TargetAssemblyTypeName: CompraDeHabitacion, Assembly-CSharp
-        m_MethodName: QuitarTablas
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -62221,7 +62233,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 966336347}
         m_TargetAssemblyTypeName: CompraDePiso, Assembly-CSharp
-        m_MethodName: Mejorar
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -67675,7 +67687,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1004994450}
         m_TargetAssemblyTypeName: CompraDeHabitacion, Assembly-CSharp
-        m_MethodName: QuitarTablas
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -69308,7 +69320,7 @@ RectTransform:
   - {fileID: 2118189995}
   - {fileID: 2093905545}
   m_Father: {fileID: 170875118}
-  m_RootOrder: 25
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -69361,7 +69373,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 838900426}
         m_TargetAssemblyTypeName: CompraMejora, Assembly-CSharp
-        m_MethodName: Mejorar
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -71209,7 +71221,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1794811062}
         m_TargetAssemblyTypeName: CompraDeHabitacion, Assembly-CSharp
-        m_MethodName: QuitarTablas
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -72277,7 +72289,7 @@ RectTransform:
   m_Children:
   - {fileID: 1234864171}
   m_Father: {fileID: 170875118}
-  m_RootOrder: 22
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -72674,6 +72686,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3736710888455107463, guid: 44f6c093762c9b64a9b96cff737fb78e, type: 3}
   m_PrefabInstance: {fileID: 3736710887989633194}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2085065519 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8654648000760188848, guid: 44f6c093762c9b64a9b96cff737fb78e, type: 3}
+  m_PrefabInstance: {fileID: 3736710887989633194}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085065514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc33d917475ee5947bb2c3fd1a914663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2090065896
 GameObject:
   m_ObjectHideFlags: 0
@@ -72741,7 +72764,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 429127183}
         m_TargetAssemblyTypeName: CompraMejora, Assembly-CSharp
-        m_MethodName: Mejorar
+        m_MethodName: Buying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -77698,6 +77721,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5957387761502725353, guid: 44f6c093762c9b64a9b96cff737fb78e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654648000760188848, guid: 44f6c093762c9b64a9b96cff737fb78e, type: 3}
+      propertyPath: buttonIcon
+      value: 
+      objectReference: {fileID: 417067568}
+    - target: {fileID: 8654648000760188848, guid: 44f6c093762c9b64a9b96cff737fb78e, type: 3}
+      propertyPath: dynamicObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654648000760188848, guid: 44f6c093762c9b64a9b96cff737fb78e, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 2085065515}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44f6c093762c9b64a9b96cff737fb78e, type: 3}
 --- !u!114 &3736710887989633195 stripped

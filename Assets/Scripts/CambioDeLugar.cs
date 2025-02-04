@@ -214,6 +214,9 @@ public class CambioDeLugar : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Player") && nuevoLugar != "")
         {
+            //button Android 
+            collision.gameObject.GetComponent<DynamicBotton>().UpdateButton(this.gameObject,0);
+            
             if (habitacion && !hotel.manager.habitacionDead[numeroHabitacion])
             {
                 //Habitaciones donde no han muerto
@@ -244,6 +247,9 @@ public class CambioDeLugar : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") && nuevoLugar != "")
         {
+            //button Android 
+            collision.gameObject.GetComponent<DynamicBotton>().ResetButton();
+
             detected = false;
             button.SetActive(false);
             if(iconGuest != null)

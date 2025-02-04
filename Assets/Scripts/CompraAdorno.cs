@@ -14,7 +14,7 @@ public class CompraAdorno : MonoBehaviour
         {
             Debug.Log("Compra con E");
             mejoraDoble.Comprado(true);
-            compraMejora.Mejorar();
+            compraMejora.Buying();
             //Mejorar();
         }
     }

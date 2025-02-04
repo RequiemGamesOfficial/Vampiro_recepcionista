@@ -17,11 +17,11 @@ public class CompraMejora : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && detected)
         {
-            Mejorar();
+            Buying();
         }
     }
 
-    public void Mejorar()
+    public void Buying()
     {
         if (hotel.presupuesto >= costo)
         {
@@ -53,6 +53,9 @@ public class CompraMejora : MonoBehaviour
         {
             detected = true;
             precio.SetActive(true);
+
+            //button Android 
+            collision.gameObject.GetComponent<DynamicBotton>().UpdateButton(this.gameObject, 2);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -61,6 +64,9 @@ public class CompraMejora : MonoBehaviour
         {
             detected = false;
             precio.SetActive(false);
+
+            //button Android 
+            collision.gameObject.GetComponent<DynamicBotton>().ResetButton();
         }
     }
 }
