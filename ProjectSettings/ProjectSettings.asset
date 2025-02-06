@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.01
+  bundleVersion: 1.01.2
   preloadedAssets:
   - {fileID: 11400000, guid: 490007e85481bfd4cb9273de099fc8cd, type: 2}
   metroInputSource: 0
@@ -251,7 +251,7 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/rober/Documents/Keystore/VampireReceptionist.keystore
+  AndroidKeystoreName: '{dedicated}: Documents/VampireReceptionist.keystore'
   AndroidKeyaliasName: vampirereceptionist
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
@@ -701,7 +701,7 @@ PlayerSettings:
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
   enableRoslynAnalyzers: 1
-  selectedPlatform: 0
+  selectedPlatform: 2
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
   gcIncremental: 1

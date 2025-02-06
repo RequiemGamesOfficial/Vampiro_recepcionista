@@ -6242,7 +6242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: android
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: iconSave
@@ -9918,7 +9918,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 49.69287, y: 4}
+  m_AnchoredPosition: {x: 49.69336, y: 4}
   m_SizeDelta: {x: 537.01, y: 89.23}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1032619721
@@ -13209,7 +13209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1943, y: -41.110107}
+  m_AnchoredPosition: {x: 1943, y: -41.11035}
   m_SizeDelta: {x: 353.52, y: 705.38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1410934645
