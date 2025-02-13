@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DynamicBotton : MonoBehaviour
 {
     public PlayerController playerController;
+    public ControllerManager controllerManager;
     public GameObject dynamicObject;
     public int idbutton = 3;
     public Image buttonIcon;
@@ -36,6 +37,11 @@ public class DynamicBotton : MonoBehaviour
         {
             dynamicObject.SendMessage("Buying");
         }
+        //SendMesage
+        if (idbutton == 4)
+        {
+            dynamicObject.SendMessage("SendMesageToObject");
+        }
     }
 
     public void PointerDown()
@@ -44,6 +50,7 @@ public class DynamicBotton : MonoBehaviour
         if (idbutton == 3)
         {
             playerController.ClickJump();
+            controllerManager.SkateJump();
         }
     }
     public void PointerUp()

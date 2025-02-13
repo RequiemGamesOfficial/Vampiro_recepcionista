@@ -22,7 +22,7 @@ public class Skate : MonoBehaviour
     public float jumpForce;
     bool used,entrada;
     //public bool android;
-    bool useButtonsTouchs;
+    public bool useButtonsTouchs;
 
     private void Start()
     {

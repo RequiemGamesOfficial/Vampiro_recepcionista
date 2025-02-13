@@ -28,6 +28,8 @@ public class ActivarBoton : MonoBehaviour
         {
             detected = true;
             button.SetActive(true);
+            //button Android 
+            collision.gameObject.GetComponent<DynamicBotton>().UpdateButton(this.gameObject, 4);
         }
     }
 
@@ -37,6 +39,9 @@ public class ActivarBoton : MonoBehaviour
         {
             detected = false;
             button.SetActive(false);
+
+            //button Android 
+            collision.gameObject.GetComponent<DynamicBotton>().ResetButton();
         }
     }
 }

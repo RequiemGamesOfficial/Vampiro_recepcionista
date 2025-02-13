@@ -55,6 +55,9 @@ public class Npc : MonoBehaviour
         {
             detected = true;
             button.SetActive(true);
+
+            //button Android 
+            collision.gameObject.GetComponent<DynamicBotton>().UpdateButton(this.gameObject, 1);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -63,6 +66,9 @@ public class Npc : MonoBehaviour
         {
             detected = false;
             button.SetActive(false);
+
+            //button Android 
+            collision.gameObject.GetComponent<DynamicBotton>().ResetButton();
         }
     }
 }

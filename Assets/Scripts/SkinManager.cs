@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SkinManager : MonoBehaviour
 {
     GameObject managerObject;
-    SteamAchievement steamAchievement;
+    //SteamAchievement steamAchievement;
     Manager manager;
     ChangeLook changeLook;
     public GameObject skinSelect;
@@ -22,7 +22,7 @@ public class SkinManager : MonoBehaviour
     void Start()
     {
         managerObject = GameObject.FindGameObjectWithTag("Manager");
-        steamAchievement = managerObject.GetComponent<SteamAchievement>();
+        //steamAchievement = managerObject.GetComponent<SteamAchievement>();
         manager = managerObject.GetComponent<Manager>();
         changeLook = GameObject.FindGameObjectWithTag("Player").GetComponent<ChangeLook>();
         UpdateState();
@@ -79,7 +79,7 @@ public class SkinManager : MonoBehaviour
     {
 #if UNITY_STANDALONE || UNITY_EDITOR
         // Steam logros
-        steamAchievement.UnlockAchievement("CHANGING_OUTFITS");
+        //steamAchievement.UnlockAchievement("CHANGING_OUTFITS");
 #elif UNITY_ANDROID
     // Google Play logros
     Debug.Log("Desbloquear logro en Google Play");

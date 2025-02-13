@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ResetNewGame : MonoBehaviour
 {
     GameObject managerObject;
-    SteamAchievement steamAchievement;
+    //SteamAchievement steamAchievement;
     Manager manager;
     public Text textNoche;
 
@@ -16,14 +16,14 @@ public class ResetNewGame : MonoBehaviour
     void Start()
     {
         managerObject = GameObject.FindGameObjectWithTag("Manager");
-        steamAchievement = managerObject.GetComponent<SteamAchievement>();
+        //steamAchievement = managerObject.GetComponent<SteamAchievement>();
         manager = managerObject.GetComponent<Manager>();
         textNoche.text = (""+manager.noche);
 #if UNITY_STANDALONE || UNITY_EDITOR
         // Steam logros
         if (!string.IsNullOrEmpty(logroID))
         {
-            steamAchievement.UnlockAchievement(logroID);
+            //steamAchievement.UnlockAchievement(logroID);
         }
 #elif UNITY_ANDROID
     // Google Play logros

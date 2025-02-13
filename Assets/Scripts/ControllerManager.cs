@@ -71,6 +71,43 @@ public class ControllerManager : MonoBehaviour
             }
         }
     }
+    //control android
+    public void SkateRight()
+    {
+        if (skate != null)
+        {
+            skate.SendMessage("ClickRight");
+        }
+    }
+    public void SkateReleaseRight()
+    {
+        if (skate != null)
+        {
+            skate.SendMessage("ReleaseRight");
+        }
+    }
+    public void SkateLeft()
+    {
+        if(skate != null)
+        {
+            skate.SendMessage("ClickLeft");
+        }
+    }
+    public void SkateReleaseLeft()
+    {
+        if (skate != null)
+        {
+            skate.SendMessage("ReleaseLeft");
+        }
+    }
+
+    public void SkateJump()
+    {
+        if (skate != null)
+        {
+            skate.SendMessage("ClickJump");
+        }
+    }
 
     public void OnLiana(float lianaPosx)
     {

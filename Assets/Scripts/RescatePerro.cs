@@ -6,13 +6,13 @@ public class RescatePerro : MonoBehaviour
 {
     public GameObject perro,portal,particule;
     GameObject managerObject;
-    SteamAchievement steamAchievement;
+    //SteamAchievement steamAchievement;
     public Manager manager;
 
     private void Start()
     {
         managerObject = GameObject.FindGameObjectWithTag("Manager");
-        steamAchievement = managerObject.GetComponent<SteamAchievement>();
+        //steamAchievement = managerObject.GetComponent<SteamAchievement>();
         manager = managerObject.GetComponent<Manager>();
         manager.pet = 1;
         manager.Guardar();
@@ -20,7 +20,7 @@ public class RescatePerro : MonoBehaviour
 
 #if UNITY_STANDALONE || UNITY_EDITOR
         // Steam logros
-        steamAchievement.UnlockAchievement("PUPPY_RESCUE");
+        //steamAchievement.UnlockAchievement("PUPPY_RESCUE");
 #elif UNITY_ANDROID
     // Google Play logros
     Debug.Log("Desbloquear logro en Google Play");

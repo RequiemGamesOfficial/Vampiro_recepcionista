@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Stats : MonoBehaviour
 {
     GameObject managerObject;
-    SteamAchievement steamAchievement;
+    //SteamAchievement steamAchievement;
     public Manager manager;
 
     public Slider sliderReputacion, sliderReputacionNew, sliderSangre, sliderSangreNew;
@@ -23,7 +23,7 @@ public class Stats : MonoBehaviour
     private void Awake()
     {
         managerObject = GameObject.FindGameObjectWithTag("Manager");
-        steamAchievement = managerObject.GetComponent<SteamAchievement>();
+        //steamAchievement = managerObject.GetComponent<SteamAchievement>();
         manager = managerObject.GetComponent<Manager>();
         SetValoresActuales();
     }
@@ -199,7 +199,7 @@ public class Stats : MonoBehaviour
         {
 #if UNITY_STANDALONE || UNITY_EDITOR
             // Steam logros
-            steamAchievement.UnlockAchievement("5_STARS");
+            //steamAchievement.UnlockAchievement("5_STARS");
 #elif UNITY_ANDROID
     // Google Play logros
     Debug.Log("Desbloquear logro en Google Play");

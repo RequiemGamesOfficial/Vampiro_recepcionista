@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 6189942462693397569}
   - component: {fileID: 6189942462693397570}
   - component: {fileID: 6189942462693397568}
-  - component: {fileID: 1392116773559016201}
-  - component: {fileID: 7147050603795775288}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Manager
@@ -113,7 +111,7 @@ MonoBehaviour:
   demo: 0
   android: 0
   ui: 0
-  steamAchievement: {fileID: 7147050603795775288}
+  steamAchievement: {fileID: 0}
 --- !u!114 &6189942462693397568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,29 +126,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   limitFps: 1
   fps: 60
---- !u!114 &1392116773559016201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6189942462693397571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28f40ed891e986843a29392fc4b772e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  notConnected: 0
-  textMeshProText: {fileID: 0}
---- !u!114 &7147050603795775288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6189942462693397571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6faa681b3161ff41bfd15063b317bea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

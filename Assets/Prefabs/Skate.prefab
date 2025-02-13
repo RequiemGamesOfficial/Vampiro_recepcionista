@@ -134,6 +134,8 @@ MonoBehaviour:
   posPlayer: {fileID: 4892943500379361412}
   skateController: 0
   grid: 0
+  playerSkating: 0
+  eventBool: 0
   horizontal: 0
   speed: 6
   groundCheck: {fileID: 6746598508663638436}
@@ -141,6 +143,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jumpForce: 6
+  useButtonsTouchs: 0
 --- !u!50 &3443426376153520100
 Rigidbody2D:
   serializedVersion: 4

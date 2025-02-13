@@ -79,6 +79,9 @@ public class CambioDeLugar2 : MonoBehaviour
             controllerManager = collision.GetComponent<ControllerManager>();
             detected = true;
             button.SetActive(true);
+
+            //button Android 
+            collision.gameObject.GetComponent<DynamicBotton>().UpdateButton(this.gameObject, 0);
         }
     }
 
@@ -88,6 +91,9 @@ public class CambioDeLugar2 : MonoBehaviour
         {
             detected = false;
             button.SetActive(false);
+
+            //button Android 
+            collision.gameObject.GetComponent<DynamicBotton>().ResetButton();
         }
     }
 }

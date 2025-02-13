@@ -6062,7 +6062,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -8.872314, y: 25.182861}
+  m_AnchoredPosition: {x: -8.8723755, y: 25.182861}
   m_SizeDelta: {x: 2177.01, y: 793.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &181152038
@@ -25664,7 +25664,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 9, y: -0.9998779}
+  m_AnchoredPosition: {x: 9.000061, y: -0.9998779}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &631380511
@@ -35934,7 +35934,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330b30197ba7d144f89a17cf8d83b46a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  steamAchievement: {fileID: 0}
   achievementID: 
 --- !u!1 &961547115
 GameObject:
@@ -58266,9 +58265,9 @@ RectTransform:
   m_Father: {fileID: 63491589}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 540}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1648327204
@@ -59363,7 +59362,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6189942462693397568, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6189942462693397569, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: m_RootOrder
@@ -59736,7 +59735,7 @@ PrefabInstance:
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: d0941a92d9d92484580fa8049bf1cca9, type: 2}
+      objectReference: {fileID: 11400000, guid: 899709c61201cf04688e10d41945455b, type: 2}
     - target: {fileID: 6189942462693397570, guid: aab0f2217ba92e0448f8c2b55dc0229b, type: 3}
       propertyPath: numeroHabitacion.Array.data[1]
       value: 
@@ -66313,6 +66312,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 2085065520}
+          m_TargetAssemblyTypeName: ControllerManager, Assembly-CSharp
+          m_MethodName: SkateLeft
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 3
     callback:
       m_PersistentCalls:
@@ -66320,6 +66331,18 @@ MonoBehaviour:
         - m_Target: {fileID: 2085065515}
           m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
           m_MethodName: ReleaseLeft
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2085065520}
+          m_TargetAssemblyTypeName: ControllerManager, Assembly-CSharp
+          m_MethodName: SkateReleaseLeft
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -70886,6 +70909,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 2085065520}
+          m_TargetAssemblyTypeName: ControllerManager, Assembly-CSharp
+          m_MethodName: SkateRight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 3
     callback:
       m_PersistentCalls:
@@ -70893,6 +70928,18 @@ MonoBehaviour:
         - m_Target: {fileID: 2085065515}
           m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
           m_MethodName: ReleaseRight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2085065520}
+          m_TargetAssemblyTypeName: ControllerManager, Assembly-CSharp
+          m_MethodName: SkateReleaseRight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -72695,6 +72742,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc33d917475ee5947bb2c3fd1a914663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2085065520 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3736710888455107480, guid: 44f6c093762c9b64a9b96cff737fb78e, type: 3}
+  m_PrefabInstance: {fileID: 3736710887989633194}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085065514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd8d63f4ba39404baeed35b3c6d4bb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2090065896
@@ -77737,6 +77795,10 @@ PrefabInstance:
       propertyPath: playerController
       value: 
       objectReference: {fileID: 2085065515}
+    - target: {fileID: 8654648000760188848, guid: 44f6c093762c9b64a9b96cff737fb78e, type: 3}
+      propertyPath: controllerManager
+      value: 
+      objectReference: {fileID: 2085065520}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44f6c093762c9b64a9b96cff737fb78e, type: 3}
 --- !u!114 &3736710887989633195 stripped

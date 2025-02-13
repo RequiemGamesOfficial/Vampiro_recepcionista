@@ -40,7 +40,7 @@ public class Manager : MonoBehaviour
     public bool demo;
     public bool android, ui;
 
-    public SteamAchievement steamAchievement;
+    //public SteamAchievement steamAchievement;
 
     private void Awake()
     {
@@ -93,12 +93,12 @@ public class Manager : MonoBehaviour
         if (piso == 3)
         {
             piso3 += 1;
-            steamAchievement.UnlockAchievement("NEW_FLOOR");
+            //steamAchievement.UnlockAchievement("NEW_FLOOR");
         }
         if (piso == 4)
         {
             piso4 += 1;
-            steamAchievement.UnlockAchievement("COMPLETE_HOTEL");
+            //steamAchievement.UnlockAchievement("COMPLETE_HOTEL");
         }
     }
     public void MejoraHotel(int mejora)
@@ -185,7 +185,7 @@ public class Manager : MonoBehaviour
     {
         if (globalDead.All(value => value >= 1))
         {
-            steamAchievement.UnlockAchievement("FULL_CLOSET");
+            //steamAchievement.UnlockAchievement("FULL_CLOSET");
         }
         else
         {

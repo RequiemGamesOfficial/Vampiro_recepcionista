@@ -41,6 +41,9 @@ public class Teleport : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            //button Android 
+            collision.gameObject.GetComponent<DynamicBotton>().UpdateButton(this.gameObject, 0);
+
             detected = true;
             button.SetActive(true);
         }
@@ -50,6 +53,9 @@ public class Teleport : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            //button Android 
+            collision.gameObject.GetComponent<DynamicBotton>().ResetButton();
+
             detected = false;
             button.SetActive(false);
         }

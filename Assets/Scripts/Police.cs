@@ -5,7 +5,7 @@ using TMPro;
 
 public class Police : MonoBehaviour
 {
-    SteamAchievement steamAchievement;
+    //SteamAchievement steamAchievement;
 
     private Hotel hotel;
     public GameObject buttonCosto;
@@ -20,7 +20,7 @@ public class Police : MonoBehaviour
 
     private void Start()
     {
-        steamAchievement = GameObject.FindGameObjectWithTag("Manager").GetComponent<SteamAchievement>();
+        //steamAchievement = GameObject.FindGameObjectWithTag("Manager").GetComponent<SteamAchievement>();
         hotel = GameObject.FindGameObjectWithTag("HotelManager").GetComponent<Hotel>();
         canvasWorld.worldCamera = Camera.main;
         textMeshPro.text = "$" + costo;
@@ -58,7 +58,7 @@ public class Police : MonoBehaviour
         {
 #if UNITY_STANDALONE || UNITY_EDITOR
             // Steam logros
-            steamAchievement.UnlockAchievement("BRIBING_COP");
+            //steamAchievement.UnlockAchievement("BRIBING_COP");
 #elif UNITY_ANDROID
     // Google Play logros
     Debug.Log("Desbloquear logro en Google Play");

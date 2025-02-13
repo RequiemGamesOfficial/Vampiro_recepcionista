@@ -6791,7 +6791,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1560903807
   m_SortingLayer: -1
-  m_SortingOrder: -20
+  m_SortingOrder: -25
   m_Sprite: {fileID: 21300000, guid: bbfadebab9c07224a9dfaa90eb2122ae, type: 3}
   m_Color: {r: 0.75191534, g: 0.7228996, b: 0.8962264, a: 1}
   m_FlipX: 0
@@ -8528,7 +8528,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 18.290771, y: -0.3807373}
+  m_AnchoredPosition: {x: 18.290771, y: -0.38079834}
   m_SizeDelta: {x: 447.29, y: 1785.38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1406393606
@@ -10717,7 +10717,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330b30197ba7d144f89a17cf8d83b46a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  steamAchievement: {fileID: 0}
   achievementID: 
 --- !u!1 &1758879584
 GameObject:
