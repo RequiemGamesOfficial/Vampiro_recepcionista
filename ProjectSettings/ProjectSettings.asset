@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.01
+  bundleVersion: 1.02
   preloadedAssets:
   - {fileID: 11400000, guid: 490007e85481bfd4cb9273de099fc8cd, type: 2}
   metroInputSource: 0
@@ -159,7 +159,7 @@ PlayerSettings:
     Android: com.RequiemGames.VampireReceptionist
     Standalone: com.RequiemGames.VampireReceptionist
   buildNumber:
-    Standalone: 1
+    Standalone: 2
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 0
