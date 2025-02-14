@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: MenuUI_es-ES
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es-ES
+  m_SharedData: {fileID: 11400000, guid: e293c0269d5637d4b8b04d507d207db8, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 291761356800
+    m_Localized: Jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374066184192
+    m_Localized: Opciones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396916752384
+    m_Localized: Nuevo juego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417821163520
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1271714349056
+    m_Localized: "Cr\xE9ditos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139236058923008
+    m_Localized: "Noche n.\xBA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139548320661504
+    m_Localized: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139568121970688
+    m_Localized: Pantalla completa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139609754632192
+    m_Localized: Musica
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139680793559040
+    m_Localized: "Resoluci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140291077373952
+    m_Localized: "Atr\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 142894502838272
+    m_Localized: Continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 145236895793152
+    m_Localized: Pausa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 145512008581120
+    m_Localized: "Men\xFA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1130228308312064
+    m_Localized: Postprocesamiento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79103112807546880
+    m_Localized: Para moverte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79103293053566976
+    m_Localized: Para saltar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79103486650056704
+    m_Localized: 'Para interactuar '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 126097676743049216
+    m_Localized: "Men\xFA principal"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 153986451196182528
+    m_Localized: "Conozco tu secreto, vampiro. Te estar\xE9 esperando en el jard\xEDn."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 199396129614692352
+    m_Localized: Puntaje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 199399879561543680
+    m_Localized: Muertes globales
+    m_Metadata:
+      m_Items: []
+  - m_Id: 199399913199861760
+    m_Localized: Muertes locales
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
