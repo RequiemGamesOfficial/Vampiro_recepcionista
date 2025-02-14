@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: Hotel_es
+  m_Name: Hotel_es-MX
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: es
+    m_Code: es-MX
   m_SharedData: {fileID: 11400000, guid: 53481476c3f320845a0f862d1946f8f1, type: 2}
   m_Metadata:
     m_Items: []
@@ -27,55 +27,56 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 136082953242771456
-    m_Localized: "Amo, ha despertado, me alegra mucho. \xA1R\xE1pido! Demos un paseo
-      nocturno. \xBFRecuerda c\xF3mo moverse y abrir las puertas verdad?\r"
+    m_Localized: "Amo, ya despert\xF3, me da mucho gusto. \xA1R\xE1pido! Vamos a
+      dar un paseo nocturno. \xBFSe acuerda c\xF3mo moverse y abrir las puertas,
+      verdad?"
     m_Metadata:
       m_Items: []
   - m_Id: 136082986491019264
-    m_Localized: "Amo, durmi\xF3 demasiado esta vez, debe estar hambriento, seguro
-      encontramos algo rico de comer.\r"
+    m_Localized: "Amo, durmi\xF3 un mont\xF3n esta vez, seguro ya tiene hambre. Ahorita
+      encontramos algo rico para comer."
     m_Metadata:
       m_Items: []
   - m_Id: 136083028308230144
-    m_Localized: "Recuerde cuidarse a s\xED mismo amo, dirigir un hotel hace que
-      le de hambre, deber\xEDas visitar a alguno de los hu\xE9spedes para invitarlo
-      a cenar, *gui\xF1o*gui\xF1o*."
+    m_Localized: "Acu\xE9rdese de cuidarse, amo. Eso de manejar un hotel da hambre,
+      \xBFpor qu\xE9 no visita a uno de los hu\xE9spedes y lo invita a cenar? gui\xF1o
+      gui\xF1o."
     m_Metadata:
       m_Items: []
   - m_Id: 136083044779261952
     m_Localized: "La tabla de resultados te dar\xE1 pistas para ver qu\xE9 hu\xE9spedes
-      son mejores clientes o mejores v\xEDctimas. \xA1Suerte amo! Guau Guau."
+      son mejores clientes o mejores v\xEDctimas. \xA1Suerte, amo! Guau guau."
     m_Metadata:
       m_Items: []
   - m_Id: 136083086231568384
-    m_Localized: "\xA1A Trabajar! Si quieres volver a ver a tu mascota m\xE1s te
-      vale que este lugar quede como nuevo y mejor."
+    m_Localized: "\xA1Ponte a chambear! Si quieres volver a ver a tu mascota, m\xE1s
+      te vale dejar este lugar como nuevo y hasta mejor."
     m_Metadata:
       m_Items: []
   - m_Id: 136083130666024960
-    m_Localized: "No podemos recibir hu\xE9spedes sin habitaciones. Con el dinero
-      que tienes, deber\xEDa ser suficiente para reparar tres puertas. Cuando termines,
-      regresa aqu\xED a la recepci\xF3n. \xA1R\xE1pido!"
+    m_Localized: "No podemos recibir hu\xE9spedes sin habitaciones. Con la lana que
+      tienes, deber\xEDa alcanzar para arreglar tres puertas. Cuando termines, regresa
+      aqu\xED a la recepci\xF3n. \xA1\xC1ndale, r\xE1pido!"
     m_Metadata:
       m_Items: []
   - m_Id: 136083154850381824
-    m_Localized: "Para seguir mejorando el hotel necesitas m\xE1s dinero, mucho m\xE1s
-      dinero. Dale a los visitantes habitaciones, llena el hotel y recuerda bien
-      donde los pones."
+    m_Localized: "Para seguir mejorando el hotel, necesitas m\xE1s dinero, mucho
+      m\xE1s dinero. As\xED que dales habitaciones a los visitantes, llena el hotel
+      y acu\xE9rdate bien de d\xF3nde los pones."
     m_Metadata:
       m_Items: []
   - m_Id: 136083180448219136
-    m_Localized: "\xA1Ey! recuerda dejar algunos hu\xE9spedes vivos para obtener
-      su dinero. "
+    m_Localized: "\xA1Oye! Acu\xE9rdate de dejar algunos hu\xE9spedes vivos para
+      sacarles dinero."
     m_Metadata:
       m_Items: []
   - m_Id: 136083219585269760
-    m_Localized: "Los hu\xE9spedes que dejes vivos nos dar\xE1n dinero, mejora el
-      hotel y vendr\xE1n m\xE1s y nuevos hu\xE9spedes de distintas partes del mundo.\r"
+    m_Localized: "Los hu\xE9spedes que dejes vivos nos dar\xE1n dinero. Mejora el
+      hotel y vendr\xE1n m\xE1s y nuevos hu\xE9spedes de todas partes del mundo."
     m_Metadata:
       m_Items: []
   - m_Id: 240109315598680064
-    m_Localized: "\xA1Cuidado, Amo! Si ves al fantasma de color rojo, no te muevas."
+    m_Localized: "\xA1Aguas, Amo! Si ves al fantasma rojo, ni te muevas."
     m_Metadata:
       m_Items: []
   - m_Id: 240113465325617152

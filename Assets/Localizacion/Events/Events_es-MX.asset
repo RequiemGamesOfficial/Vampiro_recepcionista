@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Events_es-MX
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es-MX
+  m_SharedData: {fileID: 11400000, guid: dee4f6972f90e3a4b8363b1c4f1f6a3d, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 57672040448
+    m_Localized: "0 Evento en espa\xF1ol"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91822063616
+    m_Localized: "1 Evento en espa\xF1ol"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 104581136384
+    m_Localized: "Mi show se sali\xF3 de control"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 149623767040
+    m_Localized: "Evento en espa\xF1ol"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 158654103552
+    m_Localized: Deje un cochinero en el pasillo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193991114752
+    m_Localized: "Evento en espa\xF1ol"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206968291328
+    m_Localized: "Hay una fuga de agua en mi habitaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 218540376064
+    m_Localized: "Evento en espa\xF1ol"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 229957271552
+    m_Localized: "\xBFD\xF3nde est\xE1 tu diezmo hereje?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2145374273536
+    m_Localized: "El termostato de mi habitaci\xF3n est\xE1 roto"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2166547120128
+    m_Localized: "Romp\xED mi patineta"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2191666806784
+    m_Localized: "Creo que romp\xED algo de cristal, lo siento"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2205960994816
+    m_Localized: "Vomit\xE9 en el pasillo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2219441487872
+    m_Localized: Tengo mucha chatarra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2232494161920
+    m_Localized: "Necesitamos control de plagas\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2256913399808
+    m_Localized: "La gravedad est\xE1 fallando"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
