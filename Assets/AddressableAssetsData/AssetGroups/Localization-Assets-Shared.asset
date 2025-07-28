@@ -17,22 +17,26 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 8651f569103718c44a05ba4962cb9ded
   m_SerializeEntries:
-  - m_GUID: e293c0269d5637d4b8b04d507d207db8
-    m_Address: Assets/Localizacion/MultiLenguaje Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
   - m_GUID: 134def6b2d3339842ad10196576bd3c9
     m_Address: Assets/Localizacion/Recepcion/Recepcion Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 53481476c3f320845a0f862d1946f8f1
     m_Address: Assets/Localizacion/Hotel/Hotel Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: dee4f6972f90e3a4b8363b1c4f1f6a3d
     m_Address: Assets/Localizacion/Events/Events Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e293c0269d5637d4b8b04d507d207db8
+    m_Address: Assets/Localizacion/MultiLenguaje Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: d06577281ce312748b50a3d478ce7180, type: 2}
   m_SchemaSet:

@@ -17,26 +17,30 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 00e425e2600558948becb161b0ade13a
   m_SerializeEntries:
-  - m_GUID: 9b1f229527ea968499d5fd01b42dec87
-    m_Address: English (en)
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale
-  - m_GUID: 79300b8d917755c4c96aee538eb560b2
-    m_Address: Spanish (es)
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale
-  - m_GUID: 4263678159703924a8492186e94bebcc
-    m_Address: Spanish (Mexico) (es-MX)
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale
   - m_GUID: 10d2160189e35c54e84190b2bbf22cce
     m_Address: Spanish (Spain) (es-ES)
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4263678159703924a8492186e94bebcc
+    m_Address: Spanish (Mexico) (es-MX)
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 79300b8d917755c4c96aee538eb560b2
+    m_Address: Spanish (es)
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b1f229527ea968499d5fd01b42dec87
+    m_Address: English (en)
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: d06577281ce312748b50a3d478ce7180, type: 2}
   m_SchemaSet:

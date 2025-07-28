@@ -110,6 +110,11 @@ MonoBehaviour:
     m_Localized: Muertes locales
     m_Metadata:
       m_Items: []
+  - m_Id: 270504445423427584
+    m_Localized: "\xA1Gracias por jugar!\nObt\xE9n la versi\xF3n Deluxe para m\xE1s
+      contenido y rescatar a tu perro."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

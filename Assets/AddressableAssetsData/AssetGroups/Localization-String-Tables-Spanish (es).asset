@@ -23,24 +23,28 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-es
     - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4cabfced9c6ce83409e05515dcb528d0
     m_Address: Recepcion_es
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-es
     - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4e714c4bb594c104bb84e62cfd9f447f
     m_Address: Hotel_es
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-es
     - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b983200b2dda5264388dd05e79fc28f1
     m_Address: Events_es
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-es
     - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: d06577281ce312748b50a3d478ce7180, type: 2}
   m_SchemaSet:

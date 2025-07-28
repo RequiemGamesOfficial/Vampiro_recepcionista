@@ -113,6 +113,10 @@ MonoBehaviour:
     m_Key: Muertes Locales
     m_Metadata:
       m_Items: []
+  - m_Id: 270504445423427584
+    m_Key: Agradecimiento
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
