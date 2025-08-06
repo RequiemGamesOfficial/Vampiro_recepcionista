@@ -27,7 +27,7 @@ public class Police : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && detected && !paid)
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.JoystickButton2) && detected && !paid)
         {
             PayBribery();
         }

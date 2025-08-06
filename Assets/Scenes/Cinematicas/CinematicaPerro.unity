@@ -825,7 +825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 5144418562937687646}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &194617623
@@ -7637,8 +7637,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b124b49fbe54e34449ab74ad7d454908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 1327930473}
   textNoche: {fileID: 650916804}
+  logroID: 
 --- !u!82 &2005351711
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14827,7 +14827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toggle: {fileID: 4032491785675275844}
-  resolutionDropdow: {fileID: 7664428135100656811}
+  resolutionDropdown: {fileID: 0}
 --- !u!222 &7706797697956432099
 CanvasRenderer:
   m_ObjectHideFlags: 0

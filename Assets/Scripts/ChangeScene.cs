@@ -12,6 +12,7 @@ public class ChangeScene : MonoBehaviour
     public GameObject trancision;
     bool detected;
     public bool pressE = true;
+    public bool tablaResultados;
     public GameObject accidentPanel;
 
     private void Start()
@@ -47,9 +48,19 @@ public class ChangeScene : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && detected && pressE)
+        if (!tablaResultados)
         {
-            ChangeSceneTrigger();
+            if ((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.JoystickButton2)) && detected && pressE)
+            {
+                ChangeSceneTrigger();
+            }
+        }
+        else
+        {
+            if ((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.JoystickButton2)))
+            {
+                ChangeSceneTrigger();
+            }
         }
     }
 

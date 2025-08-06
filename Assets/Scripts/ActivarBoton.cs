@@ -11,7 +11,7 @@ public class ActivarBoton : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && detected)
+        if ((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.JoystickButton2)) && detected)
         {
             SendMesageToObject();
         }

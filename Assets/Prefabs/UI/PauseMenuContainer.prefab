@@ -510,6 +510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuPanel: {fileID: 386963749416575236}
   fondo: {fileID: 5661736986449562674}
+  buttonSelect: {fileID: 386963748313291807}
 --- !u!1 &386963749416575236
 GameObject:
   m_ObjectHideFlags: 0

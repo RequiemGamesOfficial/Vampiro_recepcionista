@@ -408,7 +408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 386963749756005296}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &194617623
@@ -2415,3 +2415,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fa5ecde59607ed428e9628f0adfccdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &386963749756005296 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 386963748313291807, guid: 2f55f4e93a3edb74184f872e123200b5, type: 3}
+  m_PrefabInstance: {fileID: 386963749756005294}
+  m_PrefabAsset: {fileID: 0}

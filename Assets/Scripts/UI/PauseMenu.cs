@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -9,10 +10,12 @@ public class PauseMenu : MonoBehaviour
 
     bool pausedGame;
 
+    public GameObject buttonSelect;
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyUp(KeyCode.JoystickButton7))
+        {            
             if (pausedGame)
             {               
                 ResumeGame();
@@ -30,6 +33,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuPanel.SetActive(true);
         fondo.SetActive(true);
         Time.timeScale = 0;
+        buttonSelect = EventSystem.current.currentSelectedGameObject;
     }
     public void ResumeGame()
     {

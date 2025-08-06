@@ -83,11 +83,11 @@ public class PlayerController : MonoBehaviour
                 isRight = false;
                 isLeft = false;
             }
-            if (Input.GetKeyDown("space") && !anim.GetBool("isInteracting"))
+            if (Input.GetKeyDown("space") && !anim.GetBool("isInteracting") || Input.GetKeyDown(KeyCode.JoystickButton0) && !anim.GetBool("isInteracting"))
             {
                 isJump = true;
             }
-            if (Input.GetKeyUp("space"))
+            if (Input.GetKeyUp("space") || Input.GetKeyUp(KeyCode.JoystickButton0))
             {
                 coyoteTimeCounter = 0f;
             }

@@ -13,7 +13,7 @@ public class TriggerEToActive : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && detected)
+        if (Input.GetKeyDown(KeyCode.E) && detected || Input.GetKeyUp(KeyCode.JoystickButton2) && detected)
         {
             if (hotel && !timeOver)
             {

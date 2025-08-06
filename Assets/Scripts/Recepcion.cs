@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class Recepcion : MonoBehaviour
 {
     public Manager manager;
 
     public GameObject panelHuesped, yesButton, nextButton, tablaHabitaciones;
+    public GameObject[] llaves;
     public GameObject huesped;
     public TMP_Text moneyText;
     public TMP_Text nightsText;
@@ -156,6 +158,28 @@ public class Recepcion : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (panelHuesped.activeSelf) // Verifica si está activo
+        {
+            // Botón B del control (Cancelar, por ejemplo)
+            if (Input.GetKeyDown(KeyCode.JoystickButton1))
+            {
+                // Acción al presionar B
+                Debug.Log("Botón B presionado");
+                AnswerNo();
+            }
+
+            // Botón X del control (Confirmar, por ejemplo)
+            if (habitacionesDisponibles >= 1 && Input.GetKeyDown(KeyCode.JoystickButton0))
+            {
+                // Acción al presionar A con habitaciones disponibles
+                Debug.Log("Botón A presionado con habitaciones disponibles");
+                AnswerYes();
+            }
+        }
+    }
+
     public void AtencionAlHuesped(GameObject huespedObject, HuespedData huespedData)
     {
         currentHuespedData = huespedData;
@@ -174,9 +198,18 @@ public class Recepcion : MonoBehaviour
 
     public void AnswerYes()
     {
+
         panelHuesped.SetActive(false);
         //Borrar huespedname
         tablaHabitaciones.SetActive(true);
+        foreach (GameObject llave in llaves)
+        {
+            if (llave.activeInHierarchy)
+            {
+                EventSystem.current.SetSelectedGameObject(llave);
+                break; // Termina al encontrar la primera activa
+            }
+        }
     }
 
     public void AsignarHabitacion(int habitacion)

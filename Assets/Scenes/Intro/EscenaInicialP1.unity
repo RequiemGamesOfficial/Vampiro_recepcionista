@@ -8561,8 +8561,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 0
+  m_FirstSelected: {fileID: 1966664863}
+  m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &487237528
 Transform:
@@ -23352,6 +23352,7 @@ MonoBehaviour:
   cinematicaDemo: CinematicaDemo
   trancision: {fileID: 0}
   pressE: 1
+  tablaResultados: 0
   accidentPanel: {fileID: 0}
 --- !u!114 &1144597814
 MonoBehaviour:
@@ -38930,6 +38931,7 @@ MonoBehaviour:
   cinematicaDemo: CinematicaDemo
   trancision: {fileID: 0}
   pressE: 0
+  tablaResultados: 0
   accidentPanel: {fileID: 0}
 --- !u!114 &1786634051
 MonoBehaviour:
@@ -44362,6 +44364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenuContainer
       objectReference: {fileID: 0}
+    - target: {fileID: 386963749416575236, guid: 2f55f4e93a3edb74184f872e123200b5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1488514701885480595, guid: 2f55f4e93a3edb74184f872e123200b5, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -44459,6 +44465,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1966664863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 386963748313291807, guid: 2f55f4e93a3edb74184f872e123200b5, type: 3}
+  m_PrefabInstance: {fileID: 1966664859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1967464469
 GameObject:
   m_ObjectHideFlags: 0
